@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export function Footer() {
   return (
@@ -6,9 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <p className="text-white font-extrabold text-lg mb-3 tracking-tight">
-              🚀 ELLY APPS &amp; WEBSITES
-            </p>
+            <Image src="/elly-logo.png" alt="Elly Apps & Websites" width={140} height={35} className="brightness-0 invert mb-3" />
             <p className="text-sm leading-relaxed">
               Elly Apps bouwt en beheert professionele websites voor het MKB.
               Betaalbaar, snel en volledig ontzorgd.
