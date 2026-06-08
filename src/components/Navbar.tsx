@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { MobileMenu } from './MobileMenu'
 
 const navLinks = [
@@ -30,8 +31,8 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 font-extrabold text-lg text-[#1a1a2e] tracking-tight">
-              🚀 ELLY APPS &amp; WEBSITES
+            <Link href="/" className="flex items-center">
+              <Image src="/elly-logo.png" alt="Elly Apps & Websites" width={160} height={40} priority />
             </Link>
 
             {/* Desktop nav */}
