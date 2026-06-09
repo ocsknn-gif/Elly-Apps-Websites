@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   GlobeIcon,
@@ -136,8 +137,14 @@ export default function HomePage() {
 
             {/* Rechter kolom — device mockup placeholder */}
             <div className="flex items-center justify-center">
-              <div className="w-full max-w-sm h-72 bg-gray-100 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center text-gray-400 text-sm font-medium">
-                Website mockup
+              <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/hero-image.jpg"
+                  alt="SEO dashboard op laptop — professionele website laten maken"
+                  fill
+                  className="object-cover object-center"
+                  priority
+                />
               </div>
             </div>
           </div>
