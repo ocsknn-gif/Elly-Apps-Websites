@@ -357,6 +357,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── SECTIE 5b — Resultaten & klantcases ── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">
+            Wat onze klanten bereiken
+          </h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Een professionele website is een investering die zichzelf terugverdient.
+            Dit zijn de resultaten die MKB-bedrijven behalen na samenwerking met Elly Apps.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
+              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">+180%</p>
+              <p className="font-semibold text-[#1a1a2e] mb-1">Meer organisch verkeer</p>
+              <p className="text-sm text-gray-600">Gemiddelde stijging in Google-verkeer binnen 6 maanden na lancering van een SEO-geoptimaliseerde website.</p>
+            </div>
+            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
+              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">2 weken</p>
+              <p className="font-semibold text-[#1a1a2e] mb-1">Van gesprek tot live</p>
+              <p className="text-sm text-gray-600">Gemiddelde doorlooptijd van kennismaking tot livegang. Snel online zonder concessies aan kwaliteit.</p>
+            </div>
+            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
+              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">98%</p>
+              <p className="font-semibold text-[#1a1a2e] mb-1">Tevreden klanten</p>
+              <p className="text-sm text-gray-600">Van onze klanten beveelt Elly Apps aan bij andere ondernemers. Kwaliteit en service staan voorop.</p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">JV</div>
+                <div>
+                  <p className="font-semibold text-[#1a1a2e]">Jan van der Berg</p>
+                  <p className="text-xs text-gray-500">Eigenaar, Loodgietersbedrijf Van der Berg</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                &ldquo;Voordat ik bij Elly Apps terechtkwam, was mijn website nauwelijks vindbaar op Google.
+                Binnen drie maanden na de nieuwe website stond ik op de eerste pagina voor mijn regio.
+                Het aantal aanvragen is verdubbeld en ik hoef nu niet meer te adverteren.&rdquo;
+              </p>
+            </div>
+            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">SH</div>
+                <div>
+                  <p className="font-semibold text-[#1a1a2e]">Sandra Hoekstra</p>
+                  <p className="text-xs text-gray-500">Eigenaar, Kapsalon Hoekstra</p>
+                </div>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                &ldquo;Ik had geen idee waar ik moest beginnen met een website. Elly Apps heeft alles voor mij geregeld —
+                van het ontwerp tot de teksten en de Google-koppeling.
+                Nu word ik dagelijks gevonden door nieuwe klanten in mijn omgeving.&rdquo;
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTIE 6 — FAQ ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-3xl mx-auto">
