@@ -25,7 +25,7 @@ export default function SEOvsGoogleAdsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 prose prose-gray prose-lg max-w-none">
-        <Link href="/blog" className="text-sm text-indigo-600 hover:underline not-prose">
+        <Link href="/blog" className="text-sm text-[#E53E3E] hover:underline not-prose">
           ← Terug naar blog
         </Link>
 
@@ -117,13 +117,13 @@ export default function SEOvsGoogleAdsPage() {
         <div className="not-prose mt-10 flex flex-col sm:flex-row gap-4">
           <Link
             href="/gratis-websitescan"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700 transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold text-sm hover:bg-[#C53030] transition-colors"
           >
             Gratis adviesgesprek aanvragen
           </Link>
           <Link
             href="/diensten"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-semibold text-sm hover:bg-indigo-50 transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold text-sm hover:bg-red-50 transition-colors"
           >
             Bekijk onze diensten
           </Link>
