@@ -88,10 +88,10 @@ export default function HomePage() {
             {/* Linker kolom — tekst */}
             <div>
               <h1 className="text-5xl sm:text-6xl font-extrabold text-[#1a1a2e] leading-tight">
-                Meer klanten via Google
+                Professionele website laten maken voor MKB
               </h1>
-              <p className="text-4xl sm:text-5xl font-extrabold italic text-[#E53E3E] mt-2 leading-tight">
-                zonder gedoe.
+              <p className="text-3xl sm:text-4xl font-extrabold italic text-[#E53E3E] mt-2 leading-tight">
+                AI-gedreven websites. Maximaal resultaat op Google.
               </p>
               <p className="mt-6 text-lg text-gray-600 max-w-lg">
                 Elly Apps bouwt en beheert professionele websites voor het Nederlandse MKB.
