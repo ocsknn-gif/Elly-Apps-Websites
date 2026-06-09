@@ -16,14 +16,21 @@ import {
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps',
+  '@type': ['LocalBusiness', 'ProfessionalService'],
+  name: 'Elly Apps & Websites',
   telephone: '+31636278515',
   email: 'info@elly-apps.nl',
   url: 'https://elly-apps.nl',
+  logo: 'https://elly-apps.nl/elly-logo.png',
+  description: 'Elly Apps bouwt en beheert professionele, SEO-geoptimaliseerde websites voor het Nederlandse MKB. AI-gedreven aanpak, vaste maandprijs vanaf €49.',
+  areaServed: {
+    '@type': 'Country',
+    name: 'Netherlands',
+  },
   address: {
     '@type': 'PostalAddress',
-    addressLocality: 'Amsterdam',
+    addressLocality: 'Aalsmeer',
+    addressRegion: 'Noord-Holland',
     addressCountry: 'NL',
   },
   openingHoursSpecification: [
@@ -34,6 +41,60 @@ const localBusinessSchema = {
       closes: '18:00',
     },
   ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Website en SEO pakketten',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Starter pakket — Professionele website',
+          description: "Professionele website inclusief hosting, SSL en basis SEO. Ideaal voor zzp'ers en kleine ondernemers.",
+        },
+        price: '49',
+        priceCurrency: 'EUR',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '49',
+          priceCurrency: 'EUR',
+          unitText: 'per maand',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Groei pakket — Website met SEO',
+          description: 'Professionele website met uitgebreide SEO, Google Business optimalisatie en maandelijkse rapportage.',
+        },
+        price: '199',
+        priceCurrency: 'EUR',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '199',
+          priceCurrency: 'EUR',
+          unitText: 'per maand',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Pro pakket — Maatwerk website of app',
+          description: 'Volledig maatwerk website of webapplicatie met AI-gedreven SEO en Google Ads beheer.',
+        },
+        price: '0',
+        priceCurrency: 'EUR',
+        priceSpecification: {
+          '@type': 'UnitPriceSpecification',
+          price: '0',
+          priceCurrency: 'EUR',
+          unitText: 'op aanvraag',
+        },
+      },
+    ],
+  },
 }
 
 const faqItems = [
