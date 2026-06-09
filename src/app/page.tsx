@@ -38,27 +38,27 @@ const localBusinessSchema = {
 const faqItems = [
   {
     q: 'Wat kost een website laten maken bij Elly Apps?',
-    a: 'Bij Elly Apps betaalt u een vaste maandprijs zonder verborgen kosten. Het Starter pakket begint vanaf €49 per maand met een eenmalige setup van €299. Het Groei pakket kost €199 per maand met een eenmalige setup van €499. Het Pro pakket heeft een eenmalige setup van €799 met een maandprijs op aanvraag.',
+    a: "Bij Elly Apps betaalt u een vaste maandprijs zonder verborgen kosten. Het Starter pakket begint vanaf €49 per maand met een eenmalige setup van €299 — ideaal voor zzp'ers en kleine ondernemers die een professionele online aanwezigheid willen. Het Groei pakket kost €199 per maand met een eenmalige setup van €499 en bevat uitgebreide SEO en Google Business optimalisatie. Voor maatwerk websites en apps is het Pro pakket beschikbaar, met een eenmalige setup vanaf €799 en een maandprijs op aanvraag.",
   },
   {
     q: 'Hoe snel wordt mijn website opgeleverd?',
-    a: 'Wij leveren uw website gemiddeld binnen twee weken op. Na een gratis kennismaking gaan wij direct aan de slag met het ontwerp en de technische opzet.',
+    a: 'Wij leveren uw website gemiddeld binnen twee weken op. Na een gratis kennismaking en een kort intakegesprek gaan wij direct aan de slag met het ontwerp en de technische opzet. U ontvangt regelmatige updates en heeft altijd inzicht in de voortgang.',
   },
   {
     q: 'Moet ik zelf iets doen aan de website?',
-    a: 'Nee, wij ontzorgen u volledig. Van ontwerp tot lancering tot maandelijks onderhoud — wij regelen alles.',
+    a: 'Nee, wij ontzorgen u volledig. Van het eerste ontwerp tot de lancering en alle maandelijkse updates daarna — wij regelen alles. U hoeft geen technische kennis te hebben en hoeft zich nergens druk om te maken.',
   },
   {
     q: 'Wordt mijn website gevonden op Google?',
-    a: 'Ja. Alle websites die wij bouwen zijn standaard geoptimaliseerd voor Google. In het Groei en Pro pakket voegen we ook lokale SEO en Google Business optimalisatie toe.',
+    a: 'Ja. Alle websites die wij bouwen zijn technisch geoptimaliseerd voor zoekmachines. Dit betekent correcte HTML-structuur, snelle laadtijden, mobielvriendelijk ontwerp en relevante metadata. In het Groei en Pro pakket voegen we ook actieve SEO toe, waaronder lokale zoekmachineoptimalisatie en Google Business Profile optimalisatie.',
   },
   {
     q: 'Kan ik mijn huidige website laten verbeteren?',
-    a: 'Ja, dat kan. Wij analyseren uw huidige website gratis via onze websitescan en adviseren u over de beste aanpak.',
+    a: 'Ja, dat kan. Wij analyseren uw huidige website gratis via onze websitescan. Daarin kijken we naar laadtijd, SEO-score, technische fouten en mobiele weergave. Op basis van de resultaten adviseren wij u over de beste aanpak — of dat nu een verbetering is of een compleet nieuwe website.',
   },
   {
     q: 'Zit ik vast aan een lang contract?',
-    a: 'Wij hanteren een minimale contractduur van 1 jaar. Na het eerste jaar wordt het contract automatisch verlengd.',
+    a: 'Wij hanteren een minimale contractduur van 1 jaar. Na het eerste jaar wordt het contract automatisch maandelijks verlengd. Zo houden wij de service betaalbaar en zorgen wij dat wij ons kunnen blijven inzetten voor uw online groei.',
   },
 ]
 
@@ -93,8 +93,10 @@ export default function HomePage() {
                 zonder gedoe.
               </p>
               <p className="mt-6 text-lg text-gray-600 max-w-lg">
-                Elly Apps bouwt en beheert professionele websites voor het MKB.
-                SEO-geoptimaliseerd, betaalbaar en volledig ontzorgd. Vanaf €49 per maand.
+                Elly Apps bouwt en beheert professionele websites voor het Nederlandse MKB.
+                Volledig SEO-geoptimaliseerd, snel, veilig en voor een vaste maandprijs.
+                Wij zorgen dat uw bedrijf gevonden wordt op Google — zodat u zich kunt focussen op wat u echt doet.
+                Geen technische kennis nodig. Geen verborgen kosten. Alleen resultaat.
               </p>
 
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
@@ -196,10 +198,10 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Onze diensten</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', description: 'Professionele, snelle en SEO-geoptimaliseerde websites die bezoekers omzetten in klanten.' },
-              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', description: 'Maatwerk webapplicaties en mobiele apps die aansluiten op uw bedrijfsprocessen.' },
-              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', description: 'Zoekmachineoptimalisatie zodat uw bedrijf lokaal en nationaal gevonden wordt op Google.' },
-              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', description: 'Gerichte advertentiecampagnes die direct meer verkeer en leads genereren.' },
+              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', description: 'Wij bouwen professionele websites die niet alleen mooi zijn, maar ook snel laden en hoog scoren in Google. Elke website is technisch SEO-geoptimaliseerd, mobielvriendelijk en voorzien van de juiste structuur om bezoekers om te zetten in klanten.' },
+              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', description: 'Van een eenvoudige webapplicatie tot een volledig maatwerk platform — wij bouwen digitale oplossingen die aansluiten op uw bedrijfsprocessen en meegroeien met uw organisatie.' },
+              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', description: 'Met zoekmachineoptimalisatie zorgen wij dat uw website structureel beter scoort in Google. Wij analyseren uw website, optimaliseren de technische basis, versterken uw content en bouwen autoriteit op zodat u duurzaam meer bezoekers trekt.' },
+              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', description: 'Wij beheren gerichte Google Ads campagnes die precies de juiste mensen bereiken op het juiste moment. Van zoekwoord strategie tot advertentieteksten en biedstrategie — volledig beheerd door ons.' },
             ].map((dienst) => (
               <div key={dienst.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                 <div className="mb-4">{dienst.icon}</div>
@@ -207,6 +209,55 @@ export default function HomePage() {
                 <p className="text-sm text-gray-600">{dienst.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTIE 3b — Waarom Elly Apps ── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-6">
+            Waarom MKB-bedrijven kiezen voor Elly Apps
+          </h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Een professionele website laten maken hoeft niet ingewikkeld of duur te zijn.
+            Wij combineren technische kwaliteit met betaalbaarheid — speciaal voor het Nederlandse MKB.
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="rounded-2xl bg-[#f7f7f7] p-8">
+              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Gebouwd om gevonden te worden</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Elke website die wij bouwen is van de grond af aan geoptimaliseerd voor Google.
+                Wij zorgen voor een technisch correcte structuur, snelle laadtijden en relevante content —
+                de drie pijlers die bepalen hoe hoog uw website scoort in de zoekresultaten.
+                Zo trekt uw website structureel meer bezoekers zonder dat u betaalt voor elke klik.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-[#f7f7f7] p-8">
+              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Volledig ontzorgd, vaste prijs</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Veel MKB-ondernemers hebben geen tijd om zich bezig te houden met websites,
+                updates en Google-algoritmes. Wij nemen dat volledig over.
+                Voor een vaste maandprijs zorgen wij dat uw website altijd actueel, snel en veilig is.
+                Geen verrassingen op de factuur, geen technische zorgen.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-[#f7f7f7] p-8">
+              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Voor elk type bedrijf</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Wij bouwen websites voor zzp&apos;ers, kleine bedrijven en groeiende MKB-ondernemingen
+                in uiteenlopende sectoren — van loodgieters en kappers tot tandartsen,
+                fysiotherapeuten en online webshops. Elk bedrijf verdient een professionele online aanwezigheid.
+              </p>
+            </div>
+            <div className="rounded-2xl bg-[#f7f7f7] p-8">
+              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Resultaat dat meetbaar is</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Wij leveren geen website en verdwijnen. In het Groei en Pro pakket ontvangt u
+                maandelijks een helder rapport met uw zoekposities, websiteverkeer en
+                aanbevelingen om verder te groeien. Transparantie is de basis van onze samenwerking.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -282,10 +333,10 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Zo werken wij</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: '1', title: 'Gratis kennismaking', description: 'We bespreken uw wensen en doelen zonder verplichtingen.' },
-              { step: '2', title: 'Ontwerp & bouw', description: 'Wij ontwerpen en bouwen uw website op maat.' },
-              { step: '3', title: 'Review & lancering', description: 'U keurt goed, wij lanceren — binnen 2 weken.' },
-              { step: '4', title: 'Beheer & groei', description: 'Wij beheren uw website en helpen u groeien.' },
+              { step: '1', title: 'Gratis kennismaking', description: 'We plannen een gratis kennismakingsgesprek en bespreken uw doelen, wensen en budget. Geen verplichtingen, geen verkooppraat — gewoon een eerlijk gesprek.' },
+              { step: '2', title: 'Ontwerp & bouw', description: 'Op basis van uw wensen ontwerpen en bouwen wij een website die past bij uw bedrijf en doelgroep. U wordt op de hoogte gehouden gedurende het hele proces.' },
+              { step: '3', title: 'Review & lancering', description: 'U bekijkt het eindresultaat en geeft feedback. Na uw goedkeuring gaan we live. Gemiddeld staat uw website binnen 2 weken online.' },
+              { step: '4', title: 'Beheer & groei', description: 'Wij nemen het beheer volledig uit handen. Updates, beveiliging, technische monitoring en maandelijkse rapportages — zodat uw website altijd optimaal presteert.' },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="inline-flex items-center justify-center size-12 rounded-full bg-[#E53E3E] text-white font-bold text-xl mb-4">
@@ -320,7 +371,10 @@ export default function HomePage() {
       {/* ── SECTIE 7 — CTA banner ── */}
       <section className="bg-[#E53E3E] py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Klaar om gevonden te worden?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">Klaar om gevonden te worden op Google?</h2>
+          <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto">
+            Vraag een gratis websitescan aan en ontdek in 24 uur wat er beter kan aan uw online aanwezigheid.
+          </p>
           <Link
             href="/gratis-websitescan"
             className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#E53E3E] font-bold text-lg hover:bg-red-50 transition-colors shadow-md"
