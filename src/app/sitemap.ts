@@ -39,6 +39,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'restaurant',
     'tandarts',
     'fysiotherapeut',
+    'horeca',
+    'accountantskantoor',
+    'bouwbedrijf',
   ].map((slug) => ({
     url: `${BASE}/branche/${slug}`,
     lastModified,
@@ -52,6 +55,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'breda',
     'tilburg',
     'app-ontwikkelaar-tilburg',
+    'noord-holland',
   ].map((slug) => ({
     url: `${BASE}/apps/${slug}`,
     lastModified: new Date(),

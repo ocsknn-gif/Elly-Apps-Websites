@@ -23,7 +23,7 @@ export default function RestaurantPage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         <div>
-          <p className="text-sm text-indigo-600 font-medium mb-2">Branche</p>
+          <p className="text-sm text-[#E53E3E] font-medium mb-2">Branche</p>
           <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
             Website laten maken voor restaurants
           </h1>
@@ -64,6 +64,23 @@ export default function RestaurantPage() {
             gelegenheid heeft — wij bouwen een website die past bij de sfeer en doelgroep van
             uw zaak. Uw website weerspiegelt wie u bent.
           </p>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8">App laten maken voor uw restaurant</h2>
+          <p>
+            Steeds meer restauranthouders kiezen voor een maatwerk app naast hun website.
+            Denk aan een eigen bestel-app waarmee gasten thuis of onderweg een bestelling plaatsen,
+            een loyalty-app waarbij vaste klanten punten sparen, of een keuken-app die bestellingen
+            direct naar de keuken stuurt. Een eigen app geeft u meer controle dan platforms zoals
+            Thuisbezorgd — en u betaalt geen commissie per bestelling. Elly Apps bouwt dit soort
+            apps voor een vaste prijs, inclusief beheer en updates.
+          </p>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online reserveringssysteem voor restaurants</h2>
+          <p>
+            Een online reserveringssysteem is voor elk restaurant een must. Gasten willen 24/7
+            een tafel kunnen boeken — ook als uw zaak gesloten is. Wij integreren een professioneel
+            reserveringssysteem op uw website, inclusief automatische bevestigingsmails en
+            herinneringen. Hiermee vermindert u het aantal no-shows met gemiddeld 40 procent.
+            Wilt u ook dat gasten vooraf kunnen betalen of een borgsom storten? Dat regelen wij.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -76,20 +93,20 @@ export default function RestaurantPage() {
             'Mobiel-vriendelijk en snel',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-indigo-500 shrink-0" />
+              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
               {f}
             </div>
           ))}
         </div>
 
-        <div className="bg-indigo-50 rounded-2xl p-8 text-center">
+        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Meer gasten voor uw zaak?</h2>
           <p className="text-gray-600 mb-6">Vraag een gratis websitescan aan en ontdek wat er beter kan.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors">
+            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
               Gratis websitescan
             </Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors">
+            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
               Bekijk prijzen
             </Link>
           </div>

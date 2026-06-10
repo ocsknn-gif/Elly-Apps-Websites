@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
-import { WebVitals } from '@/components/WebVitals'
 import { Footer } from '@/components/Footer'
 
 const inter = Inter({
@@ -45,7 +44,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="font-[var(--font-inter)] antialiased bg-white text-gray-900">
         <Navbar />
-        <WebVitals />
         <main>{children}</main>
         <Footer />
       </body>
