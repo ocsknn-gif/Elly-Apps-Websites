@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/faq`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${BASE}/gratis-websitescan`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${BASE}/diensten/boekingssysteem`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
   ]
 
   const blogRoutes: MetadataRoute.Sitemap = [
@@ -47,11 +48,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const appsRoutes: MetadataRoute.Sitemap = [
     'amsterdam',
+    'den-haag',
+    'breda',
+    'tilburg',
+    'app-ontwikkelaar-tilburg',
   ].map((slug) => ({
     url: `${BASE}/apps/${slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
-    priority: 0.7,
+    priority: 0.8,
   }))
 
   const stadRoutes: MetadataRoute.Sitemap = [
