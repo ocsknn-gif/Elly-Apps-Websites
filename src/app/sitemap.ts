@@ -45,6 +45,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
+  const appsRoutes: MetadataRoute.Sitemap = [
+    'amsterdam',
+  ].map((slug) => ({
+    url: `${BASE}/apps/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
+  }))
+
   const stadRoutes: MetadataRoute.Sitemap = [
     'amsterdam',
     'rotterdam',
@@ -58,5 +67,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  return [...staticRoutes, ...blogRoutes, ...brancheRoutes, ...stadRoutes]
+  return [...staticRoutes, ...blogRoutes, ...brancheRoutes, ...stadRoutes, ...appsRoutes]
 }
