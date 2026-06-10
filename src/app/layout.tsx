@@ -35,6 +35,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          href="/hero-image.webp"
+          as="image"
+          type="image/webp"
+        />
       </head>
       <body className="font-[var(--font-inter)] antialiased bg-white text-gray-900">
         <Navbar />

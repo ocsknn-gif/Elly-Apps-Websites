@@ -200,11 +200,13 @@ export default function HomePage() {
             <div className="flex items-center justify-center">
               <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/hero-image.jpg"
+                  src="/hero-image.webp"
                   alt="SEO dashboard op laptop — professionele website laten maken"
                   fill
                   className="object-cover object-center"
                   priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  quality={85}
                 />
               </div>
             </div>
