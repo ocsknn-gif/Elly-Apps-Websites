@@ -1,64 +1,222 @@
-import type { Metadata } from 'next'
+'use client'
+
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { useState } from 'react'
 
-export const metadata: Metadata = {
-  title: 'Prijzen website laten maken | Elly Apps',
-  description:
-    'Bekijk de transparante prijzen van Elly Apps. Website laten maken vanaf €49 per maand. Geen verborgen kosten, vaste maandprijs.',
-}
+const diensten = ['Websites', 'Apps', 'Social Media', 'Google Ads', 'SEO']
 
-const offerSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  itemListElement: [
+const pakketten = {
+  Websites: [
     {
-      '@type': 'ListItem',
-      position: 1,
-      item: {
-        '@type': 'Offer',
-        name: 'Starter',
-        description: 'Professionele website, hosting, SSL, basis SEO, WhatsApp support',
-        price: '49',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '49',
-          priceCurrency: 'EUR',
-          billingDuration: 'P1M',
-        },
-      },
+      naam: 'Starter',
+      prijs: '€49',
+      eenmalig: '€299 eenmalige setup',
+      populair: false,
+      features: [
+        '4 pagina\'s',
+        'Basis SEO',
+        'Contactformulier',
+        'Hosting & SSL',
+        'Maandelijks beheer',
+      ],
+      cta: 'Ja, ik wil mijn gratis websitescan',
+      href: '/gratis-websitescan',
     },
     {
-      '@type': 'ListItem',
-      position: 2,
-      item: {
-        '@type': 'Offer',
-        name: 'Groei',
-        description:
-          'Alles van Starter + lokale SEO, Google Business, maandrapport, prioriteit support',
-        price: '199',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '199',
-          priceCurrency: 'EUR',
-          billingDuration: 'P1M',
-        },
-      },
+      naam: 'Boost',
+      prijs: '€199',
+      eenmalig: '€499 eenmalige setup',
+      populair: true,
+      features: [
+        '6 pagina\'s + 3 stadspagina\'s',
+        'Lokale SEO',
+        'Google Business optimalisatie',
+        'Maandelijkse updates',
+        'Performance rapportage',
+        'Teksten optioneel beschikbaar (+€149)',
+      ],
+      cta: 'Ja, ik wil mijn gratis websitescan',
+      href: '/gratis-websitescan',
     },
     {
-      '@type': 'ListItem',
-      position: 3,
-      item: {
-        '@type': 'Offer',
-        name: 'Pro',
-        description: 'Maatwerk, apps, geavanceerde SEO, dedicated support',
-        priceSpecification: {
-          '@type': 'PriceSpecification',
-          description: 'Prijs op aanvraag',
-        },
-      },
+      naam: 'Pro',
+      prijs: 'Op maat',
+      eenmalig: '€799 eenmalige setup · Prijs op aanvraag',
+      populair: false,
+      features: [
+        '10+ pagina\'s',
+        'Volledige SEO-strategie',
+        'Blog',
+        'Video integratie',
+        'Maandrapportages',
+        'Persoonlijke accountmanager',
+        'Websiteteksten inbegrepen',
+      ],
+      cta: 'Ja, ik wil mijn gratis websitescan',
+      href: '/gratis-websitescan',
+    },
+  ],
+  Apps: [
+    {
+      naam: 'App op maat',
+      prijs: 'Op maat',
+      eenmalig: 'Prijs op aanvraag',
+      populair: false,
+      features: [
+        'Volledig maatwerk',
+        'Web- of mobiele app',
+        'API koppelingen',
+        'Beheer & onderhoud',
+        'Persoonlijke accountmanager',
+      ],
+      cta: 'Vraag offerte aan',
+      href: '/contact',
+    },
+  ],
+  'Social Media': [
+    {
+      naam: 'Starter',
+      prijs: '€149',
+      eenmalig: '€149 eenmalige opstartkosten',
+      populair: false,
+      features: [
+        'Campagne setup Facebook + Instagram',
+        '1 advertentie per maand',
+        'Doelgroep targeting op maat',
+        'Maandelijkse rapportage',
+      ],
+      cta: 'Ja, ik wil meer klanten via social media',
+      href: '/contact',
+    },
+    {
+      naam: 'Boost',
+      prijs: '€299',
+      eenmalig: '€249 eenmalige opstartkosten',
+      populair: true,
+      features: [
+        'Alles uit Starter',
+        '3 advertenties per maand',
+        'A/B testen',
+        'Retargeting',
+        'Wekelijkse rapportage',
+      ],
+      cta: 'Ja, ik wil meer klanten via social media',
+      href: '/contact',
+    },
+    {
+      naam: 'Pro',
+      prijs: 'Op maat',
+      eenmalig: '€399 eenmalige opstartkosten · Prijs op aanvraag',
+      populair: false,
+      features: [
+        'Alles uit Boost',
+        'Videoadvertenties',
+        'Volledige strategie per kwartaal',
+        'Persoonlijke accountmanager',
+        'Bi-weekly gesprek',
+      ],
+      cta: 'Ja, ik wil meer klanten via social media',
+      href: '/contact',
+    },
+  ],
+  'Google Ads': [
+    {
+      naam: 'Starter',
+      prijs: '€199',
+      eenmalig: '€249 eenmalige opstartkosten',
+      populair: false,
+      features: [
+        'Campagne setup Google Ads',
+        '1 zoekcampagne',
+        'Zoekwoordenonderzoek',
+        'Conversiemeting',
+        'Maandelijkse rapportage',
+        'Aanbevolen ad spend: €300-€500/mnd',
+      ],
+      cta: 'Ja, ik wil meer klanten via Google Ads',
+      href: '/contact',
+    },
+    {
+      naam: 'Boost',
+      prijs: '€349',
+      eenmalig: '€399 eenmalige opstartkosten',
+      populair: true,
+      features: [
+        'Alles uit Starter',
+        'Meerdere zoekcampagnes',
+        'Remarketing',
+        'A/B testen advertenties',
+        'Wekelijkse optimalisatie',
+        'Aanbevolen ad spend: €500-€1.000/mnd',
+      ],
+      cta: 'Ja, ik wil meer klanten via Google Ads',
+      href: '/contact',
+    },
+    {
+      naam: 'Pro',
+      prijs: 'Op maat',
+      eenmalig: 'Op aanvraag eenmalige opstartkosten · Prijs op aanvraag',
+      populair: false,
+      features: [
+        'Alles uit Boost',
+        'Display & Performance Max',
+        'Volledige strategie per kwartaal',
+        'Persoonlijke accountmanager',
+        'Bi-weekly gesprek',
+        'Aanbevolen ad spend: €1.000+/mnd',
+      ],
+      cta: 'Ja, ik wil meer klanten via Google Ads',
+      href: '/contact',
+    },
+  ],
+  SEO: [
+    {
+      naam: 'Starter',
+      prijs: '€149',
+      eenmalig: '€199 eenmalige opstartkosten',
+      populair: false,
+      features: [
+        'Technische SEO audit',
+        'Zoekwoordenonderzoek',
+        '5 pagina\'s per maand geoptimaliseerd',
+        'Lokale SEO basis',
+        'Maandelijkse rapportage',
+      ],
+      cta: 'Ja, ik wil hoger in Google',
+      href: '/contact',
+    },
+    {
+      naam: 'Boost',
+      prijs: '€299',
+      eenmalig: '€299 eenmalige opstartkosten',
+      populair: true,
+      features: [
+        'Alles uit Starter',
+        '10 pagina\'s per maand geoptimaliseerd',
+        '1 nieuwe blogpost per maand',
+        'Linkbuilding (basis)',
+        'Google Business optimalisatie',
+        'Wekelijkse monitoring',
+      ],
+      cta: 'Ja, ik wil hoger in Google',
+      href: '/contact',
+    },
+    {
+      naam: 'Pro',
+      prijs: 'Op maat',
+      eenmalig: 'Op aanvraag eenmalige opstartkosten · Prijs op aanvraag',
+      populair: false,
+      features: [
+        'Alles uit Boost',
+        'Volledige website geoptimaliseerd',
+        '2+ blogposts per maand',
+        'Actieve linkbuilding campagne',
+        'Persoonlijke accountmanager',
+        'Bi-weekly strategiegesprek',
+      ],
+      cta: 'Ja, ik wil hoger in Google',
+      href: '/contact',
     },
   ],
 }
@@ -83,151 +241,126 @@ const faqItems = [
 ]
 
 export default function PrijzenPage() {
+  const [actief, setActief] = useState('Websites')
+  const huidigePakketten = pakketten[actief as keyof typeof pakketten]
+
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(offerSchema) }}
-      />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
-        {/* Header */}
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-            Transparante prijzen, geen verrassingen
-          </h1>
-          <p className="mt-4 text-xl text-gray-600">
-            Vaste maandprijs. Alles inbegrepen. Geen verborgen kosten.
-          </p>
-        </div>
-
-        {/* Prijskaarten */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-          {/* Starter */}
-          <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-            <p className="text-lg font-bold text-gray-900">Starter</p>
-            <p className="mt-2 text-4xl font-extrabold text-indigo-600">
-              €49<span className="text-lg font-medium text-gray-500">/mnd</span>
-            </p>
-            <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €299</p>
-            <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-              {[
-                'Professionele website',
-                'Hosting inbegrepen',
-                'SSL-certificaat',
-                'Basis SEO',
-                'WhatsApp support',
-              ].map((f) => (
-                <li key={f} className="flex items-center gap-2">
-                  <CheckCircleIcon className="size-4 text-indigo-500 shrink-0" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/contact"
-              className="mt-8 block text-center py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors"
-            >
-              Aan de slag
-            </Link>
-          </div>
-
-          {/* Groei */}
-          <div className="flex flex-col rounded-2xl border-2 border-indigo-600 p-8 shadow-lg relative">
-            <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-indigo-600 text-white text-xs font-bold px-4 py-1 rounded-full">
-              Meest gekozen
-            </span>
-            <p className="text-lg font-bold text-gray-900">Groei</p>
-            <p className="mt-2 text-4xl font-extrabold text-indigo-600">
-              €199<span className="text-lg font-medium text-gray-500">/mnd</span>
-            </p>
-            <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €499</p>
-            <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-              {[
-                'Alles van Starter',
-                'Lokale SEO',
-                'Google Business optimalisatie',
-                'Maandelijks rapport',
-                'Prioriteit support',
-              ].map((f) => (
-                <li key={f} className="flex items-center gap-2">
-                  <CheckCircleIcon className="size-4 text-indigo-500 shrink-0" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/contact"
-              className="mt-8 block text-center py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
-            >
-              Aan de slag
-            </Link>
-          </div>
-
-          {/* Pro */}
-          <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-            <p className="text-lg font-bold text-gray-900">Pro</p>
-            <p className="mt-2 text-4xl font-extrabold text-indigo-600">Op aanvraag</p>
-            <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €799</p>
-            <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-              {[
-                'Maatwerk website of app',
-                'Geavanceerde SEO',
-                'Dedicated support',
-                'Google Ads beheer',
-              ].map((f) => (
-                <li key={f} className="flex items-center gap-2">
-                  <CheckCircleIcon className="size-4 text-indigo-500 shrink-0" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href="/contact"
-              className="mt-8 block text-center py-3 rounded-xl border-2 border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors"
-            >
-              Neem contact op
-            </Link>
-          </div>
-        </div>
-
-        {/* FAQ */}
-        <section className="max-w-3xl mx-auto">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-            Vragen over onze prijzen
-          </h2>
-          <div className="space-y-4">
-            {faqItems.map((item) => (
-              <details
-                key={item.q}
-                className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden"
-              >
-                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50 transition-colors">
-                  {item.q}
-                  <span className="shrink-0 text-indigo-600 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
-                    +
-                  </span>
-                </summary>
-                <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA */}
-        <div className="text-center bg-indigo-50 rounded-2xl p-10">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Twijfelt u nog?</h2>
-          <p className="text-gray-600 mb-6">
-            Vraag vrijblijvend een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen.
-          </p>
-          <Link
-            href="/gratis-websitescan"
-            className="inline-flex items-center px-7 py-3.5 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
-          >
-            Gratis websitescan aanvragen
-          </Link>
-        </div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+      {/* Header */}
+      <div className="text-center">
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
+          Transparante prijzen — wat u ziet is wat u betaalt
+        </h1>
+        <p className="mt-4 text-xl text-gray-600">
+          Geen verborgen kosten. Vaste maandprijs. Tevredenheidsgarantie.
+        </p>
       </div>
-    </>
+
+      {/* Vergelijking banner */}
+      <div className="max-w-3xl mx-auto text-center bg-gray-50 rounded-2xl px-6 py-4 text-sm text-gray-600 border border-gray-200">
+        <span className="font-semibold text-gray-900">Traditioneel webbureau:</span> €3.000 - €10.000 eenmalig, zonder doorlopend beheer. &nbsp;·&nbsp;
+        <span className="font-semibold text-[#E53E3E]">Elly Apps:</span> vanaf €49/maand — inclusief hosting, SEO en onderhoud.
+      </div>
+
+      {/* Tabs */}
+      <div className="flex flex-wrap justify-center gap-2">
+        {diensten.map((dienst) => (
+          <button
+            key={dienst}
+            onClick={() => setActief(dienst)}
+            className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${
+              actief === dienst
+                ? 'bg-[#E53E3E] text-white'
+                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+            }`}
+          >
+            {dienst}
+          </button>
+        ))}
+      </div>
+
+      {/* Pakketten */}
+      <div className={`grid gap-8 items-stretch ${huidigePakketten.length === 1 ? 'max-w-sm mx-auto' : 'grid-cols-1 md:grid-cols-3'}`}>
+        {huidigePakketten.map((pakket) => (
+          <div
+            key={pakket.naam}
+            className={`flex flex-col rounded-2xl p-8 shadow-sm relative ${
+              pakket.populair
+                ? 'border-2 border-[#E53E3E] shadow-lg'
+                : 'border border-gray-200'
+            }`}
+          >
+            {pakket.populair && (
+              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E53E3E] text-white text-xs font-bold px-4 py-1 rounded-full">
+                Meest gekozen
+              </span>
+            )}
+            <p className="text-lg font-bold text-gray-900">{pakket.naam}</p>
+            <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
+              {pakket.prijs.startsWith('€') ? (
+                <>{pakket.prijs}<span className="text-lg font-medium text-gray-500">/maand</span></>
+              ) : pakket.prijs}
+            </p>
+            <p className="text-sm text-gray-500 mt-1">{pakket.eenmalig}</p>
+            <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
+              {pakket.features.map((f) => (
+                <li key={f} className="flex items-start gap-2">
+                  <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0 mt-0.5" />
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href={pakket.href}
+              className={`mt-8 block text-center py-3 rounded-xl font-semibold transition-colors text-sm ${
+                pakket.populair
+                  ? 'bg-[#E53E3E] text-white hover:bg-[#C53030]'
+                  : 'border-2 border-[#E53E3E] text-[#E53E3E] hover:bg-red-50'
+              }`}
+            >
+              {pakket.cta}
+            </Link>
+            <p className="text-xs text-gray-400 text-center mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
+          </div>
+        ))}
+      </div>
+
+      {/* FAQ */}
+      <section className="max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Vragen over onze prijzen
+        </h2>
+        <div className="space-y-4">
+          {faqItems.map((item) => (
+            <details
+              key={item.q}
+              className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden"
+            >
+              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50 transition-colors">
+                {item.q}
+                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">
+                  +
+                </span>
+              </summary>
+              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* CTA */}
+      <div className="text-center bg-[#E53E3E] rounded-2xl p-10">
+        <h2 className="text-2xl font-bold text-white mb-4">Twijfelt u nog?</h2>
+        <p className="text-white/90 mb-6">
+          Vraag vrijblijvend een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen.
+        </p>
+        <Link
+          href="/gratis-websitescan"
+          className="inline-flex items-center px-7 py-3.5 rounded-xl bg-white text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors"
+        >
+          Gratis websitescan aanvragen
+        </Link>
+      </div>
+    </div>
   )
 }
