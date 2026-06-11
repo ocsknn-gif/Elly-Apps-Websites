@@ -10,8 +10,6 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://elly-apps.nl/prijzen' },
 }
 
-const diensten = ['Websites', 'Apps', 'Social Media', 'Google Ads', 'SEO']
-
 const pakketten = {
   Websites: [
     {
