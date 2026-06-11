@@ -1,8 +1,6 @@
-'use client'
-
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
-import { useState } from 'react'
+import { PrijzenFilter } from '@/components/PrijzenFilter'
 
 const diensten = ['Websites', 'Apps', 'Social Media', 'Google Ads', 'SEO']
 
@@ -240,9 +238,13 @@ const faqItems = [
   },
 ]
 
-export default function PrijzenPage() {
-  const [actief, setActief] = useState('Websites')
-  const huidigePakketten = pakketten[actief as keyof typeof pakketten]
+export default function PrijzenPage({
+  searchParams,
+}: {
+  searchParams: { dienst?: string }
+}) {
+  const actief = searchParams.dienst ?? 'Websites'
+  const huidigePakketten = pakketten[actief as keyof typeof pakketten] ?? pakketten['Websites']
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
@@ -263,21 +265,7 @@ export default function PrijzenPage() {
       </div>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-2">
-        {diensten.map((dienst) => (
-          <button
-            key={dienst}
-            onClick={() => setActief(dienst)}
-            className={`px-5 py-2 rounded-full text-sm font-semibold transition-colors ${
-              actief === dienst
-                ? 'bg-[#E53E3E] text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {dienst}
-          </button>
-        ))}
-      </div>
+      <PrijzenFilter actief={actief} />
 
       {/* Pakketten */}
       <div className={`grid gap-8 items-stretch ${huidigePakketten.length === 1 ? 'max-w-sm mx-auto' : 'grid-cols-1 md:grid-cols-3'}`}>

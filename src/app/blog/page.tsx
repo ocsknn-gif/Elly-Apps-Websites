@@ -1,9 +1,14 @@
-'use client'
-
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ArrowRightIcon } from 'lucide-react'
-import { useState } from 'react'
+import { BlogFilter } from '@/components/BlogFilter'
+
+export const metadata: Metadata = {
+  title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+  description:
+    'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
+}
 
 const artikelen = [
   {
@@ -64,8 +69,6 @@ const artikelen = [
   },
 ]
 
-const categorieën = ['Alle', 'SEO', 'Google Ads', 'Websites', 'Strategie']
-
 const categorieKleur: Record<string, string> = {
   Websites: 'bg-blue-50 text-blue-700',
   SEO: 'bg-green-50 text-green-700',
@@ -73,12 +76,17 @@ const categorieKleur: Record<string, string> = {
   Strategie: 'bg-purple-50 text-purple-700',
 }
 
-export default function BlogOverzichtPage() {
-  const [actieveCategorie, setActieveCategorie] = useState('Alle')
+export default function BlogOverzichtPage({
+  searchParams,
+}: {
+  searchParams: { categorie?: string }
+}) {
+  const actieveCategorie = searchParams.categorie ?? 'Alle'
 
-  const gefilterdeArtikelen = actieveCategorie === 'Alle'
-    ? artikelen
-    : artikelen.filter((a) => a.categorie === actieveCategorie)
+  const gefilterdeArtikelen =
+    actieveCategorie === 'Alle'
+      ? artikelen
+      : artikelen.filter((a) => a.categorie === actieveCategorie)
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -89,21 +97,7 @@ export default function BlogOverzichtPage() {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-2 mb-10">
-        {categorieën.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActieveCategorie(cat)}
-            className={`px-4 py-2 rounded-full text-sm font-semibold transition-colors ${
-              cat === actieveCategorie
-                ? 'bg-[#E53E3E] text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
-          >
-            {cat}
-          </button>
-        ))}
-      </div>
+      <BlogFilter actief={actieveCategorie} />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {gefilterdeArtikelen.map((artikel) => (
