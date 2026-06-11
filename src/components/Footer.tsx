@@ -36,6 +36,7 @@ export function Footer() {
                 { label: 'Contact', href: '/contact' },
                 { label: 'Privacybeleid', href: '/privacybeleid' },
                 { label: 'Algemene voorwaarden', href: '/algemene-voorwaarden' },
+                { label: 'Sitemap', href: '/sitemap-pagina' },
               ].map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-[#E53E3E] transition-colors">{item.label}</Link>
