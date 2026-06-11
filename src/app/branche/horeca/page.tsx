@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
   description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/horeca' },
 }
 
 const schema = {

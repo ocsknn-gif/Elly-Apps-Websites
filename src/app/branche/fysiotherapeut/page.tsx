@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
   description:
     'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/fysiotherapeut' },
 }
 
 const schema = {

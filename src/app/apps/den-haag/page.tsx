@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'App laten maken Den Haag | Elly Apps',
   description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven, betaalbaar en snel live.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/den-haag' },
 }
 
 const schema = {

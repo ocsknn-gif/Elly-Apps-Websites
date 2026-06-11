@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'App laten maken Breda | Elly Apps',
   description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/breda' },
 }
 
 const schema = {

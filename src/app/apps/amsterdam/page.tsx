@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'App laten maken Amsterdam | Elly Apps',
   description:
     'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/amsterdam' },
 }
 
 const schema = {

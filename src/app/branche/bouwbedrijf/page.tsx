@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Website laten maken voor bouwbedrijf | Elly Apps',
   description: 'Website laten maken voor uw bouwbedrijf? Elly Apps bouwt professionele websites voor aannemers en bouwbedrijven. Portfolio, offerteformulier en lokale SEO. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/bouwbedrijf' },
 }
 
 const schema = {

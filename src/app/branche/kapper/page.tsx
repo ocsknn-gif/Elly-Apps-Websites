@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor kappers | Elly Apps',
   description:
     'Een professionele website voor uw kapperszaak. Online afspraken, portfolio en lokale SEO. Vanaf €49/maand volledig beheerd.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/kapper' },
 }
 
 const schema = {

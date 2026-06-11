@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'App laten maken Tilburg | Elly Apps',
   description: 'App laten maken in Tilburg? Elly Apps bouwt professionele web-apps voor MKB-bedrijven in Tilburg en Midden-Brabant. AI-gedreven ontwikkeling, vaste prijs.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/tilburg' },
 }
 
 const schema = {

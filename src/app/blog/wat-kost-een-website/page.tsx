@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Wat kost een website laten maken? | Elly Apps',
   description:
     'Een complete uitleg over de kosten van een professionele website in 2026. Wat bepaalt de prijs, wat zijn de valkuilen en waarom Elly Apps een slimme keuze is voor het MKB.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-een-website' },
 }
 
 const articleSchema = {

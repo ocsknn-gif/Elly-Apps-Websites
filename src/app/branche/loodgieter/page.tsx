@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor loodgieters | Elly Apps',
   description:
     'Een professionele website voor uw loodgietersbedrijf. Lokaal gevonden worden, spoedaanvragen ontvangen en reviews verzamelen. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/loodgieter' },
 }
 
 const schema = {

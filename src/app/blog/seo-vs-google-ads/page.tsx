@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'SEO vs Google Ads: wat werkt beter? | Elly Apps',
   description:
     'SEO of Google Ads inzetten voor uw bedrijf? Wij vergelijken beide kanalen en leggen uit wanneer je wat gebruikt — en hoe de combinatie het sterkst werkt.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/seo-vs-google-ads' },
 }
 
 const articleSchema = {

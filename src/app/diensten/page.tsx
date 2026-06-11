@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'Diensten | Elly Apps',
   description:
     'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+  alternates: { canonical: 'https://elly-apps.nl/diensten' },
 }
 
 const diensten = [

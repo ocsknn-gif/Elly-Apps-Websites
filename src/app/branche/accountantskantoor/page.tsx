@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Website laten maken voor accountantskantoor | Elly Apps',
   description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/accountantskantoor' },
 }
 
 const schema = {

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken Utrecht | Elly Apps',
   description:
     'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/stad/utrecht' },
 }
 
 const schema = {

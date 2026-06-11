@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
   description:
     'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/seo-tips-mkb' },
 }
 
 const articleSchema = {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Goedkope website laten maken: wat is slim en wat niet? | Elly Apps',
   description:
     'Op zoek naar een goedkope website? Wij leggen uit wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel kunt zijn.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/goedkope-website' },
 }
 
 const articleSchema = {

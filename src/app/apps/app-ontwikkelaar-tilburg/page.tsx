@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Tilburg | Elly Apps',
   description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg' },
 }
 
 const schema = {

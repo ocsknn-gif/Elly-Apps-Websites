@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken Rotterdam | Elly Apps',
   description:
     'Website laten maken in Rotterdam? Elly Apps bouwt professionele websites voor Rotterdamse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/stad/rotterdam' },
 }
 
 const schema = {

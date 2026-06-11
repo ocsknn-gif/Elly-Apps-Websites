@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Wat kost SEO in Nederland? | Elly Apps',
   description:
     'Wat betaal je voor SEO in Nederland? Een eerlijk overzicht van SEO-kosten, wat je kunt verwachten en wanneer SEO de moeite waard is voor jouw bedrijf.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-seo' },
 }
 
 const articleSchema = {

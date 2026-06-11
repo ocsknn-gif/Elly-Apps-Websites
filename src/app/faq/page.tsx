@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: 'Veelgestelde vragen | Elly Apps',
   description:
     'Antwoorden op de meestgestelde vragen over websites laten maken, SEO, prijzen en werkwijze bij Elly Apps.',
+  alternates: { canonical: 'https://elly-apps.nl/faq' },
 }
 
 const faqItems = [

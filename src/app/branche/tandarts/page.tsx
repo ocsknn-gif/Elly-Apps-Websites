@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor tandartsen | Elly Apps',
   description:
     'Professionele website voor uw tandartspraktijk. Online afspraken, behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/tandarts' },
 }
 
 const schema = {

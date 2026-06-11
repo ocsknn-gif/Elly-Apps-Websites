@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Over ons | Elly Apps',
   description:
     'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+  alternates: { canonical: 'https://elly-apps.nl/over-ons' },
 }
 
 const organizationSchema = {

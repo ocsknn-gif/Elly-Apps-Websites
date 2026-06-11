@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Gratis websitescan | Elly Apps',
   description:
     'Ontvang gratis een professionele websitescan van Elly Apps. Wij analyseren uw SEO, snelheid en mobiele weergave en adviseren u zonder verplichtingen.',
+  alternates: { canonical: 'https://elly-apps.nl/gratis-websitescan' },
 }
 
 const checks = [

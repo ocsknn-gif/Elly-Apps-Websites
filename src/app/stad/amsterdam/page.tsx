@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken Amsterdam | Elly Apps',
   description:
     'Website laten maken in Amsterdam? Elly Apps bouwt professionele websites voor Amsterdamse MKB-bedrijven. Lokale SEO, snel live en volledig ontzorgd. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/stad/amsterdam' },
 }
 
 const schema = {

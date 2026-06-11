@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
   description:
     'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/website-niet-gevonden-google' },
 }
 
 const articleSchema = {

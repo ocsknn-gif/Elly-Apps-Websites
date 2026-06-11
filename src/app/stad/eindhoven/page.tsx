@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken Eindhoven | Elly Apps',
   description:
     'Website laten maken in Eindhoven? Elly Apps bouwt professionele websites voor Eindhovense MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/stad/eindhoven' },
 }
 
 const schema = {

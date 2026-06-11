@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Contact | Elly Apps',
   description:
     'Neem contact op met Elly Apps. Bel, mail of stuur een WhatsApp bericht. Wij reageren binnen één werkdag.',
+  alternates: { canonical: 'https://elly-apps.nl/contact' },
 }
 
 const contactSchema = {

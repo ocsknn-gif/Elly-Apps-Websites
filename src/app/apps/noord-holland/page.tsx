@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Noord-Holland | Elly Apps',
   description: 'App ontwikkelaar in Noord-Holland? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem, Alkmaar en heel Noord-Holland.',
+  alternates: { canonical: 'https://elly-apps.nl/apps/noord-holland' },
 }
 
 const schema = {

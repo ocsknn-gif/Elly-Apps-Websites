@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor restaurants | Elly Apps',
   description:
     'Professionele website voor uw restaurant. Online menu, reserveringen, Google Maps en reviews. Volledig beheerd vanaf €49/maand.',
+  alternates: { canonical: 'https://elly-apps.nl/branche/restaurant' },
 }
 
 const schema = {

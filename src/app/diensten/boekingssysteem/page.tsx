@@ -5,6 +5,7 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Boekingssysteem website laten integreren | Elly Apps',
   description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een professioneel online reserveringssysteem aan uw bestaande website. Snel, betaalbaar en volledig beheerd.',
+  alternates: { canonical: 'https://elly-apps.nl/diensten/boekingssysteem' },
 }
 
 const schema = {

@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
   description:
     'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+  alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-google-ads' },
 }
 
 const articleSchema = {

@@ -1,6 +1,14 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { PrijzenFilter } from '@/components/PrijzenFilter'
+
+export const metadata: Metadata = {
+  title: 'Prijzen | Elly Apps',
+  description:
+    'Bekijk de transparante prijzen van Elly Apps voor websites, SEO, Google Ads, social media en apps. Geen verborgen kosten. Vaste maandprijs.',
+  alternates: { canonical: 'https://elly-apps.nl/prijzen' },
+}
 
 const diensten = ['Websites', 'Apps', 'Social Media', 'Google Ads', 'SEO']
 
