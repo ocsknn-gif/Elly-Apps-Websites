@@ -3,6 +3,11 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
+import WhatsAppButton from '@/components/WhatsAppButton'
+import MobileStickyBar from '@/components/MobileStickyBar'
+import CookieBanner from '@/components/CookieBanner'
+import ScrollCTA from '@/components/ScrollCTA'
+import TimedPopup from '@/components/TimedPopup'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -68,6 +73,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
+        <MobileStickyBar />
+        <CookieBanner />
+        <ScrollCTA />
+        <TimedPopup />
       </body>
     </html>
   )
