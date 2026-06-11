@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
 type Status = 'loading' | 'valid' | 'already' | 'invalid' | 'success' | 'error'
 
-export default function UnsubscribePage() {
+function UnsubscribeContent() {
   const params = useSearchParams()
   const token = params.get('token')
   const [status, setStatus] = useState<Status>('loading')
@@ -79,5 +79,13 @@ export default function UnsubscribePage() {
         )}
       </div>
     </section>
+  )
+}
+
+export default function UnsubscribePage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><p className="text-gray-500">Laden...</p></div>}>
+      <UnsubscribeContent />
+    </Suspense>
   )
 }
