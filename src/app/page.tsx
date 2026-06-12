@@ -198,17 +198,16 @@ export default function HomePage() {
 
             {/* Rechter kolom — device mockup placeholder */}
             <div className="flex items-center justify-center">
-              <div className="relative w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/hero-image.webp"
                   alt="SEO dashboard op laptop — professionele website laten maken"
-                  fill
-                  className="object-cover object-center"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
                   priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
                   quality={60}
-                  placeholder="blur"
-                  blurDataURL="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoBAAEAAkA4JZQCdAEO/gHOAAA="
+                  fetchPriority="high"
                 />
               </div>
             </div>

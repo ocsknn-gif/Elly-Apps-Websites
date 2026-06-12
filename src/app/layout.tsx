@@ -6,8 +6,10 @@ import { Footer } from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileStickyBar from '@/components/MobileStickyBar'
 import CookieBanner from '@/components/CookieBanner'
-import ScrollCTA from '@/components/ScrollCTA'
-import TimedPopup from '@/components/TimedPopup'
+import Script from 'next/script'
+import dynamic from 'next/dynamic'
+const TimedPopup = dynamic(() => import('@/components/TimedPopup'), { ssr: false })
+const ScrollCTA = dynamic(() => import('@/components/ScrollCTA'), { ssr: false })
 
 const inter = Inter({
   subsets: ['latin'],
@@ -45,24 +47,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="nl" className={inter.variable}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="preload"
           href="/hero-image.webp"
           as="image"
           type="image/webp"
-        />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZJ22GGTS4"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YZJ22GGTS4');
-            `,
-          }}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -85,6 +74,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieBanner />
         <ScrollCTA />
         <TimedPopup />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-YZJ22GGTS4"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YZJ22GGTS4');
+          `}
+        </Script>
       </body>
     </html>
   )
