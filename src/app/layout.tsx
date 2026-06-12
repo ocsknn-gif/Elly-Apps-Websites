@@ -7,9 +7,8 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileStickyBar from '@/components/MobileStickyBar'
 import CookieBanner from '@/components/CookieBanner'
 import Script from 'next/script'
-import dynamic from 'next/dynamic'
-const TimedPopup = dynamic(() => import('@/components/TimedPopup'), { ssr: false })
-const ScrollCTA = dynamic(() => import('@/components/ScrollCTA'), { ssr: false })
+import TimedPopup from '@/components/TimedPopup'
+import ScrollCTA from '@/components/ScrollCTA'
 
 const inter = Inter({
   subsets: ['latin'],
