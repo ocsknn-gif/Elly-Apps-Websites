@@ -32,7 +32,7 @@ export function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <Image src="/elly-logo.png" alt="Elly Apps & Websites" width={160} height={40} priority />
+              <Image src="/elly-logo.png" alt="Elly Apps & Websites" width={160} height={40} loading="eager" />
             </Link>
 
             {/* Desktop nav */}
