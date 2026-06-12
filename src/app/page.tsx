@@ -206,7 +206,9 @@ export default function HomePage() {
                   className="object-cover object-center"
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  quality={85}
+                  quality={60}
+                  placeholder="blur"
+                  blurDataURL="data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoBAAEAAkA4JZQCdAEO/gHOAAA="
                 />
               </div>
             </div>

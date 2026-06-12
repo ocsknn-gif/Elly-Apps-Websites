@@ -15,6 +15,7 @@ export default function ScrollCTA() {
   }, [pathname])
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
     const handler = () => {
       const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight)
       if (scrollPercent > 0.5 && !dismissed) setShow(true)

@@ -16,7 +16,7 @@ export default function TimedPopup() {
   useEffect(() => {
     const dismissed = sessionStorage.getItem('popup-dismissed')
     if (dismissed) return
-    const timer = setTimeout(() => setShow(true), 45000)
+    const timer = setTimeout(() => setShow(true), 8000)
     return () => clearTimeout(timer)
   }, [])
 
