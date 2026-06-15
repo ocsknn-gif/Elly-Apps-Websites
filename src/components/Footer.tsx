@@ -66,7 +66,7 @@ export function Footer() {
             <p className="text-white font-semibold mb-3">Contact</p>
             <ul className="space-y-2 text-sm">
               <li><a href="tel:+31636278515" className="hover:text-[#E53E3E] transition-colors">+31 6 36 27 85 15</a></li>
-              <li><a href="mailto:info@elly-apps.nl" className="hover:text-[#E53E3E] transition-colors">info@elly-apps.nl</a></li>
+              <li><Link href="/contact" className="hover:text-[#E53E3E] transition-colors">Stuur een bericht</Link></li>
               <li><a href="https://wa.me/31636278515" target="_blank" rel="noopener noreferrer" className="hover:text-[#E53E3E] transition-colors">WhatsApp</a></li>
             </ul>
           </div>
