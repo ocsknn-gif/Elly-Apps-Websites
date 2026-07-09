@@ -18,10 +18,26 @@ const schema = {
   description: 'Professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam. AI-gedreven en volledig beheerd.',
 }
 
+const faqItems = [
+  { q: 'Wat kost een app laten maken in Amsterdam?', a: 'De kosten hangen af van het type en de complexiteit van de app. Wij werken altijd met een transparante vaste prijs — geen uurtarieven en geen verrassingen achteraf. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },
+  { q: 'Hoe lang duurt het om een app te laten bouwen?', a: 'Gemiddeld leveren wij een app op binnen 4 tot 6 weken, van eerste kennismaking tot live lancering. Eenvoudige applicaties kunnen sneller, complexere platforms vragen wat meer tijd.' },
+  { q: 'Bouwen jullie web-apps of ook native mobiele apps?', a: 'Beide. Voor veel Amsterdamse MKB-bedrijven is een web-app de slimste keuze: toegankelijk via elke browser, sneller te bouwen en makkelijker te onderhouden. Waar een native app in de App Store of Google Play meerwaarde biedt, bouwen wij die uiteraard ook.' },
+  { q: 'Kan de app gekoppeld worden aan mijn bestaande systemen?', a: 'Ja. Wij bouwen koppelingen met CRM-systemen, boekhoudpakketten, betaalproviders en andere externe platformen, zodat uw data automatisch synchroniseert en u niet dubbel werkt.' },
+]
+
 export default function AppAmsterdamPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map(item => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a }
+        }))
+      }) }} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
         <div>
@@ -83,6 +99,35 @@ export default function AppAmsterdamPage() {
               {f}
             </div>
           ))}
+        </div>
+
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over app ontwikkeling in Amsterdam</h2>
+          {faqItems.map((item) => (
+            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
+                {item.q}
+                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
+              </summary>
+              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
+            </details>
+          ))}
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde pagina&apos;s</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'App laten maken — overzicht', href: '/diensten/apps' },
+              { label: 'Website laten maken in Amsterdam', href: '/stad/amsterdam' },
+              { label: 'App ontwikkelaar Noord-Holland', href: '/apps/noord-holland' },
+              { label: 'App laten maken Den Haag', href: '/apps/den-haag' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">

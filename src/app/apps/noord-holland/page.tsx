@@ -124,6 +124,22 @@ export default function AppNoordHollandPage() {
           ))}
         </div>
 
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde pagina&apos;s</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'App laten maken — overzicht', href: '/diensten/apps' },
+              { label: 'App laten maken Amsterdam', href: '/apps/amsterdam' },
+              { label: 'App laten maken Den Haag', href: '/apps/den-haag' },
+              { label: 'Werkgebied Noord-Holland', href: '/werkgebied/noord-holland' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">App laten maken in Noord-Holland?</h2>
           <p className="text-gray-600 mb-6">Plan een gratis kennismakingsgesprek en ontdek wat wij voor uw bedrijf kunnen bouwen.</p>

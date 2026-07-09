@@ -48,9 +48,9 @@ export default function AppBredaPage() {
         <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
           <p>Breda is een van de snelst groeiende steden van Nederland. De stad heeft een bloeiend ondernemersklimaat met een sterke mix van industrie, logistiek, retail en creatieve sector. Steeds meer Bredase ondernemers kiezen voor digitale innovatie om hun concurrentiepositie te versterken. Een maatwerk app is daarbij een krachtig instrument — of het nu gaat om het automatiseren van interne processen, het verbeteren van de klantbeleving of het ontsluiten van nieuwe inkomstenstromen.</p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">App bouwen in Breda: wat zijn de mogelijkheden?</h2>
-          <p>Elly Apps bouwt alle soorten digitale applicaties. Van een eenvoudig reserveringssysteem voor een Bredasrestaurant tot een complex logistiek platform voor een distributiebedrijf in West-Brabant. Wij beginnen altijd met een grondige analyse van uw bedrijfsprocessen en doelgroep — zodat de app die wij bouwen niet alleen technisch perfect is, maar ook daadwerkelijk de problemen oplost die u heeft. Elk project is uniek en verdient een unieke aanpak.</p>
+          <p>Elly Apps bouwt alle soorten digitale applicaties. Van een eenvoudig reserveringssysteem voor een restaurant in Breda tot een complex logistiek platform voor een distributiebedrijf in West-Brabant. Wij beginnen altijd met een grondige analyse van uw bedrijfsprocessen en doelgroep — zodat de app die wij bouwen niet alleen technisch perfect is, maar ook daadwerkelijk de problemen oplost die u heeft. Elk project is uniek en verdient een unieke aanpak.</p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">AI-integratie: slimmere apps voor Bredase bedrijven</h2>
-          <p>Wij integreren standaard AI-mogelijkheden in onze apps. Dit betekent dat uw applicatie niet alleen doet wat u vraagt, maar ook leert van gebruik en steeds slimmer wordt. Denk aan automatische dataverwerkingvan formulieren, intelligente zoekfuncties, aanbevelingssystemen of geautomatiseerde rapportages. AI maakt uw app toekomstbestendig en geeft u een voorsprong op concurrenten die nog met verouderde systemen werken.</p>
+          <p>Wij integreren standaard AI-mogelijkheden in onze apps. Dit betekent dat uw applicatie niet alleen doet wat u vraagt, maar ook leert van gebruik en steeds slimmer wordt. Denk aan automatische dataverwerking van formulieren, intelligente zoekfuncties, aanbevelingssystemen of geautomatiseerde rapportages. AI maakt uw app toekomstbestendig en geeft u een voorsprong op concurrenten die nog met verouderde systemen werken.</p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Snelle oplevering, geen gedoe</h2>
           <p>Wij leveren gemiddeld binnen 4 tot 6 weken op. Dat is mogelijk omdat wij een bewezen ontwikkelproces hanteren waarbij wij snel kunnen schakelen. Wekelijkse updates, een duidelijk projectplan en een vaste contactpersoon zorgen ervoor dat u altijd weet waar u aan toe bent. Na oplevering is uw app klaar voor gebruik — en wij staan klaar voor eventuele vragen of aanpassingen.</p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Lokale expertise, landelijke kwaliteit</h2>
@@ -77,6 +77,22 @@ export default function AppBredaPage() {
               <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
             </details>
           ))}
+        </div>
+
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde pagina&apos;s</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'App laten maken — overzicht', href: '/diensten/apps' },
+              { label: 'Website laten maken in Breda', href: '/stad/breda' },
+              { label: 'App laten maken Tilburg', href: '/apps/tilburg' },
+              { label: 'App laten maken Den Haag', href: '/apps/den-haag' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
         </div>
 
         <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">

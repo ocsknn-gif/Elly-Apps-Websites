@@ -269,16 +269,16 @@ export default function HomePage() {
           <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Onze diensten</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', description: 'Wij bouwen professionele websites die niet alleen mooi zijn, maar ook snel laden en hoog scoren in Google. Elke website is technisch SEO-geoptimaliseerd, mobielvriendelijk en voorzien van de juiste structuur om bezoekers om te zetten in klanten.' },
-              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', description: 'Van een eenvoudige webapplicatie tot een volledig maatwerk platform — wij bouwen digitale oplossingen die aansluiten op uw bedrijfsprocessen en meegroeien met uw organisatie.' },
-              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', description: 'Met zoekmachineoptimalisatie zorgen wij dat uw website structureel beter scoort in Google. Wij analyseren uw website, optimaliseren de technische basis, versterken uw content en bouwen autoriteit op zodat u duurzaam meer bezoekers trekt.' },
-              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', description: 'Wij beheren gerichte Google Ads campagnes die precies de juiste mensen bereiken op het juiste moment. Van zoekwoord strategie tot advertentieteksten en biedstrategie — volledig beheerd door ons.' },
+              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', href: '/diensten/websites', description: 'Wij bouwen professionele websites die niet alleen mooi zijn, maar ook snel laden en hoog scoren in Google. Elke website is technisch SEO-geoptimaliseerd, mobielvriendelijk en voorzien van de juiste structuur om bezoekers om te zetten in klanten.' },
+              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', href: '/diensten/apps', description: 'Van een eenvoudige webapplicatie tot een volledig maatwerk platform — wij bouwen digitale oplossingen die aansluiten op uw bedrijfsprocessen en meegroeien met uw organisatie.' },
+              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', href: '/diensten/seo', description: 'Met zoekmachineoptimalisatie zorgen wij dat uw website structureel beter scoort in Google. Wij analyseren uw website, optimaliseren de technische basis, versterken uw content en bouwen autoriteit op zodat u duurzaam meer bezoekers trekt.' },
+              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', href: '/diensten/sea', description: 'Wij beheren gerichte Google Ads campagnes die precies de juiste mensen bereiken op het juiste moment. Van zoekwoord strategie tot advertentieteksten en biedstrategie — volledig beheerd door ons.' },
             ].map((dienst) => (
-              <div key={dienst.title} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <Link key={dienst.title} href={dienst.href} className="block bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#E53E3E]/40 transition-all">
                 <div className="mb-4">{dienst.icon}</div>
                 <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">{dienst.title}</h3>
                 <p className="text-sm text-gray-600">{dienst.description}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

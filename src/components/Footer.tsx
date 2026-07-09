@@ -17,9 +17,15 @@ export function Footer() {
           <div>
             <p className="text-white font-semibold mb-3">Diensten</p>
             <ul className="space-y-2 text-sm">
-              {['Websites', 'Apps', 'SEO', 'SEA', 'Social Media'].map((item) => (
-                <li key={item}>
-                  <Link href="/diensten" className="hover:text-[#E53E3E] transition-colors">{item}</Link>
+              {[
+                { label: 'Websites', href: '/diensten/websites' },
+                { label: 'Apps', href: '/diensten/apps' },
+                { label: 'SEO', href: '/diensten/seo' },
+                { label: 'SEA', href: '/diensten/sea' },
+                { label: 'Social Media', href: '/diensten/social-media' },
+              ].map((item) => (
+                <li key={item.href}>
+                  <Link href={item.href} className="hover:text-[#E53E3E] transition-colors">{item.label}</Link>
                 </li>
               ))}
             </ul>

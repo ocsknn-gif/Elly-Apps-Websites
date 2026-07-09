@@ -14,6 +14,15 @@ const appTypes = [
   { title: 'Ledenapp', desc: 'Voor sportclubs, zorginstellingen en verenigingen. Communicatie en planning.', Icon: Users },
 ]
 
+const steden = [
+  { label: 'App laten maken Amsterdam', href: '/apps/amsterdam' },
+  { label: 'App laten maken Den Haag', href: '/apps/den-haag' },
+  { label: 'App laten maken Breda', href: '/apps/breda' },
+  { label: 'App laten maken Tilburg', href: '/apps/tilburg' },
+  { label: 'App ontwikkelaar Tilburg', href: '/apps/app-ontwikkelaar-tilburg' },
+  { label: 'App ontwikkelaar Noord-Holland', href: '/apps/noord-holland' },
+]
+
 const faq = [
   { q: 'Hoeveel kost een app laten maken?', a: 'Dit is afhankelijk van de complexiteit. Neem contact op voor een vrijblijvende offerte op maat.' },
   { q: 'Hoe lang duurt het om een app te bouwen?', a: 'Gemiddeld 6–12 weken, afhankelijk van de functionaliteit.' },
@@ -82,6 +91,19 @@ export default function DienstenAppsPage() {
               <span className="font-semibold text-sm text-gray-900">{s}</span>
               {i < 5 && <span className="text-gray-400">→</span>}
             </div>
+          ))}
+        </div>
+      </div>
+
+      {/* App laten maken per stad */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">App laten maken per stad en regio</h2>
+        <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">Wij bouwen apps voor ondernemers door heel Nederland. Bekijk de mogelijkheden voor uw stad of regio.</p>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {steden.map((s) => (
+            <Link key={s.href} href={s.href} className="border rounded-xl p-5 font-semibold text-gray-900 hover:border-[#E53E3E] hover:text-[#E53E3E] transition-colors">
+              {s.label} →
+            </Link>
           ))}
         </div>
       </div>
