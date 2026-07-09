@@ -342,6 +342,26 @@ export default function PrijzenPage({
         </div>
       </section>
 
+      {/* Branches */}
+      <section className="max-w-3xl mx-auto">
+        <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Prijzen per branche</h2>
+        <p className="text-center text-gray-600 mb-8">Benieuwd hoe een website er voor uw vak uitziet? Bekijk de mogelijkheden per branche.</p>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {[
+            { label: 'Kapper', href: '/branche/kapper' },
+            { label: 'Restaurant', href: '/branche/restaurant' },
+            { label: 'Loodgieter', href: '/branche/loodgieter' },
+            { label: 'Tandarts', href: '/branche/tandarts' },
+            { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut' },
+            { label: 'Alle branches', href: '/branche' },
+          ].map((b) => (
+            <Link key={b.href} href={b.href} className="text-center text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+              {b.label}
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <div className="text-center bg-[#E53E3E] rounded-2xl p-10">
         <h2 className="text-2xl font-bold text-white mb-4">Twijfelt u nog?</h2>

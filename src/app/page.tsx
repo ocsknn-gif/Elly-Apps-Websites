@@ -333,6 +333,32 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── SECTIE 3c — Voor jouw branche ── */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">Een website voor jouw branche</h2>
+          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+            Wij kennen de wensen per sector en bouwen websites die aansluiten op uw vak — met de juiste functies en lokale vindbaarheid.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[
+              { label: 'Kapper', href: '/branche/kapper', emoji: '✂️' },
+              { label: 'Restaurant', href: '/branche/restaurant', emoji: '🍽️' },
+              { label: 'Loodgieter', href: '/branche/loodgieter', emoji: '🔧' },
+              { label: 'Tandarts', href: '/branche/tandarts', emoji: '🦷' },
+              { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut', emoji: '💪' },
+              { label: 'Bouwbedrijf', href: '/branche/bouwbedrijf', emoji: '🏗️' },
+              { label: 'Rijschool', href: '/branche/rijschool', emoji: '🚗' },
+              { label: 'Alle branches', href: '/branche', emoji: '→' },
+            ].map((b) => (
+              <Link key={b.href} href={b.href} className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm border border-gray-100 font-semibold text-[#1a1a2e] hover:border-[#E53E3E] hover:text-[#E53E3E] transition-colors">
+                <span className="text-xl">{b.emoji}</span> {b.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── SECTIE 4 — Prijzen ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
