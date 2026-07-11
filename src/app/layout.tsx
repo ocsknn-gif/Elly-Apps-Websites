@@ -20,7 +20,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'Professionele website laten maken voor MKB | Elly Apps',
   description:
-    'Elly Apps bouwt en beheert professionele websites voor het MKB. SEO-geoptimaliseerd, betaalbaar en volledig ontzorgd. Vanaf €49/maand.',
+    'Elly Apps bouwt professionele websites voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49 per maand.',
   metadataBase: new URL('https://elly-apps.nl'),
   alternates: {
     canonical: 'https://elly-apps.nl',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: 'https://elly-apps.nl',
     title: 'Professionele website laten maken voor MKB | Elly Apps',
     description:
-      'Elly Apps bouwt en beheert professionele websites voor het MKB. SEO-geoptimaliseerd, betaalbaar en volledig ontzorgd. Vanaf €49/maand.',
+      'Elly Apps bouwt professionele websites voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49 per maand.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [
