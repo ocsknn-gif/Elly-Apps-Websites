@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken Eindhoven | Elly Apps',
+  title: 'Website laten maken Eindhoven – vanaf €49/mnd | Elly Apps',
   description:
     'Website laten maken in Eindhoven? Elly Apps bouwt professionele websites voor Eindhovense MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/stad/eindhoven' },

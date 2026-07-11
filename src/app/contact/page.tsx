@@ -3,9 +3,9 @@ import { PhoneIcon, MailIcon, MessageCircleIcon, ClockIcon } from 'lucide-react'
 import { ContactForm } from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Contact | Elly Apps',
+  title: 'Contact & gratis websitescan | Elly Apps & Websites',
   description:
-    'Neem contact op met Elly Apps. Bel, mail of stuur een WhatsApp bericht. Wij reageren binnen één werkdag.',
+    'Vraag vrijblijvend een offerte of gratis websitescan aan. Bel, mail of stuur een WhatsApp — wij reageren binnen één werkdag. Websites vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/contact' },
 }
 

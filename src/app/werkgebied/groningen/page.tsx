@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken in Groningen | Elly Apps',
-  description: 'Van de stad Groningen tot de Groningse regio — Elly Apps bouwt professionele websites voor lokale ondernemers.',
+  title: 'Website laten maken in Groningen – vanaf €49/mnd | Elly Apps',
+  description: 'Professionele website laten maken in Groningen? Elly Apps bouwt en beheert websites voor lokale ondernemers. Lokale SEO, volledig ontzorgd, vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/werkgebied/groningen' },
 }
 

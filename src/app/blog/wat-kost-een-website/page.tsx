@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Wat kost een website laten maken? | Elly Apps',
+  title: 'Wat kost een website laten maken in 2026? | Elly Apps',
   description:
-    'Een complete uitleg over de kosten van een professionele website in 2026. Wat bepaalt de prijs, wat zijn de valkuilen en waarom Elly Apps een slimme keuze is voor het MKB.',
+    'Wat kost een professionele website in 2026? Ontdek wat de prijs bepaalt, de veelgemaakte fouten en waarom een vaste maandprijs vanaf €49 vaak slimmer is voor het MKB.',
   alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-een-website' },
 }
 

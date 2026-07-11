@@ -4,9 +4,9 @@ import { CheckCircleIcon } from 'lucide-react'
 import { PrijzenFilter } from '@/components/PrijzenFilter'
 
 export const metadata: Metadata = {
-  title: 'Prijzen | Elly Apps',
+  title: 'Wat kost een website? Prijzen vanaf €49 p/m | Elly Apps',
   description:
-    'Bekijk de transparante prijzen van Elly Apps voor websites, SEO, Google Ads, social media en apps. Geen verborgen kosten. Vaste maandprijs.',
+    'Transparante vaste maandprijzen voor websites, SEO, Google Ads, social media en apps — vanaf €49 per maand. Geen verborgen kosten, geen hoge investering vooraf.',
   alternates: { canonical: 'https://elly-apps.nl/prijzen' },
 }
 
