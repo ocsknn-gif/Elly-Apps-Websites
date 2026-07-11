@@ -38,7 +38,23 @@ export const metadata: Metadata = {
     title: 'Professionele website laten maken voor MKB | Elly Apps',
     description:
       'Elly Apps bouwt en beheert professionele websites voor het MKB. SEO-geoptimaliseerd, betaalbaar en volledig ontzorgd. Vanaf €49/maand.',
-    siteName: 'Elly Apps',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Elly Apps & Websites — professionele websites en apps voor het MKB, vanaf €49 per maand',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professionele website laten maken voor MKB | Elly Apps',
+    description:
+      'Professionele websites en apps voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49/maand.',
+    images: ['/og-image.png'],
   },
 }
 
