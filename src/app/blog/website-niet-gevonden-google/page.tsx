@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/blog/website-niet-gevonden-google' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/website-niet-gevonden-google',
+    title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
+    description: 'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
+    description: 'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

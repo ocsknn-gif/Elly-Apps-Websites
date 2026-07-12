@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken in Gelderland | Elly Apps',
   description: 'Van Arnhem tot Nijmegen — Elly Apps bouwt professionele, goed vindbare websites voor MKB-bedrijven in Gelderland.',
   alternates: { canonical: 'https://elly-apps.nl/werkgebied/gelderland' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/werkgebied/gelderland',
+    title: 'Website laten maken in Gelderland | Elly Apps',
+    description: 'Van Arnhem tot Nijmegen — Elly Apps bouwt professionele, goed vindbare websites voor MKB-bedrijven in Gelderland.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken in Gelderland | Elly Apps',
+    description: 'Van Arnhem tot Nijmegen — Elly Apps bouwt professionele, goed vindbare websites voor MKB-bedrijven in Gelderland.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function WerkgebiedGelderlandPage() {

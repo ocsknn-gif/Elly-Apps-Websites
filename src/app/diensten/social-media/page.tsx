@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Social Media Advertenties voor MKB | Facebook & Instagram | Elly Apps',
   description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/social-media' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/diensten/social-media',
+    title: 'Social Media Advertenties voor MKB | Facebook & Instagram | Elly Apps',
+    description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Social Media Advertenties voor MKB | Facebook & Instagram | Elly Apps',
+    description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

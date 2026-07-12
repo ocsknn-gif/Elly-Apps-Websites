@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Google Ads: zelf doen of uitbesteden? | Elly Apps',
   description: 'Google Ads zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij zodat u de juiste keuze maakt voor uw bedrijf.',
   alternates: { canonical: 'https://elly-apps.nl/blog/google-ads-zelf-of-uitbesteden' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/google-ads-zelf-of-uitbesteden',
+    title: 'Google Ads: zelf doen of uitbesteden? | Elly Apps',
+    description: 'Google Ads zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij zodat u de juiste keuze maakt voor uw bedrijf.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Google Ads: zelf doen of uitbesteden? | Elly Apps',
+    description: 'Google Ads zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij zodat u de juiste keuze maakt voor uw bedrijf.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

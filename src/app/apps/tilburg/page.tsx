@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'App laten maken Tilburg | Elly Apps',
   description: 'App laten maken in Tilburg? Elly Apps bouwt professionele web-apps voor MKB-bedrijven in Tilburg en Midden-Brabant. AI-gedreven ontwikkeling, vaste prijs.',
   alternates: { canonical: 'https://elly-apps.nl/apps/tilburg' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/apps/tilburg',
+    title: 'App laten maken Tilburg | Elly Apps',
+    description: 'App laten maken in Tilburg? Elly Apps bouwt professionele web-apps voor MKB-bedrijven in Tilburg en Midden-Brabant. AI-gedreven ontwikkeling, vaste prijs.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App laten maken Tilburg | Elly Apps',
+    description: 'App laten maken in Tilburg? Elly Apps bouwt professionele web-apps voor MKB-bedrijven in Tilburg en Midden-Brabant. AI-gedreven ontwikkeling, vaste prijs.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

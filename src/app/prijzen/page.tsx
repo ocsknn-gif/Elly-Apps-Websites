@@ -8,6 +8,21 @@ export const metadata: Metadata = {
   description:
     'Transparante vaste maandprijzen voor websites, SEO, Google Ads, social media en apps — vanaf €49 per maand. Geen verborgen kosten, geen hoge investering vooraf.',
   alternates: { canonical: 'https://elly-apps.nl/prijzen' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/prijzen',
+    title: 'Wat kost een website? Prijzen vanaf €49 p/m | Elly Apps',
+    description: 'Transparante vaste maandprijzen voor websites, SEO, Google Ads, social media en apps — vanaf €49 per maand. Geen verborgen kosten, geen hoge investering vooraf.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wat kost een website? Prijzen vanaf €49 p/m | Elly Apps',
+    description: 'Transparante vaste maandprijzen voor websites, SEO, Google Ads, social media en apps — vanaf €49 per maand. Geen verborgen kosten, geen hoge investering vooraf.',
+    images: ['/og-image.png'],
+  },
 }
 
 const pakketten = {

@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'Professionele website voor uw restaurant. Online menu, reserveringen, Google Maps en reviews. Volledig beheerd vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/branche/restaurant' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/restaurant',
+    title: 'Website laten maken voor restaurants | Elly Apps',
+    description: 'Professionele website voor uw restaurant. Online menu, reserveringen, Google Maps en reviews. Volledig beheerd vanaf €49/maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor restaurants | Elly Apps',
+    description: 'Professionele website voor uw restaurant. Online menu, reserveringen, Google Maps en reviews. Volledig beheerd vanaf €49/maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

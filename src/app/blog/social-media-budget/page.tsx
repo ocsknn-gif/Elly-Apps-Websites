@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Hoeveel budget heb je nodig voor social media advertenties? | Elly Apps',
   description: 'Wat is een realistisch budget voor Facebook en Instagram advertenties als MKB? Wij geven concrete cijfers en uitleg over hoe u uw budget het beste inzet.',
   alternates: { canonical: 'https://elly-apps.nl/blog/social-media-budget' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/social-media-budget',
+    title: 'Hoeveel budget heb je nodig voor social media advertenties? | Elly Apps',
+    description: 'Wat is een realistisch budget voor Facebook en Instagram advertenties als MKB? Wij geven concrete cijfers en uitleg over hoe u uw budget het beste inzet.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hoeveel budget heb je nodig voor social media advertenties? | Elly Apps',
+    description: 'Wat is een realistisch budget voor Facebook en Instagram advertenties als MKB? Wij geven concrete cijfers en uitleg over hoe u uw budget het beste inzet.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

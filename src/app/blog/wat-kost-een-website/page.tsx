@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'Wat kost een professionele website in 2026? Ontdek wat de prijs bepaalt, de veelgemaakte fouten en waarom een vaste maandprijs vanaf €49 vaak slimmer is voor het MKB.',
   alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-een-website' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/wat-kost-een-website',
+    title: 'Wat kost een website laten maken in 2026? | Elly Apps',
+    description: 'Wat kost een professionele website in 2026? Ontdek wat de prijs bepaalt, de veelgemaakte fouten en waarom een vaste maandprijs vanaf €49 vaak slimmer is voor het MKB.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wat kost een website laten maken in 2026? | Elly Apps',
+    description: 'Wat kost een professionele website in 2026? Ontdek wat de prijs bepaalt, de veelgemaakte fouten en waarom een vaste maandprijs vanaf €49 vaak slimmer is voor het MKB.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

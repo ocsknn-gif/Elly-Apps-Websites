@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
   alternates: { canonical: 'https://elly-apps.nl/blog/seo-tips-mkb' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/seo-tips-mkb',
+    title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
+    description: 'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
+    description: 'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

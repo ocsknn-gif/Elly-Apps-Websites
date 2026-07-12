@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
   description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
   alternates: { canonical: 'https://elly-apps.nl/stad/groningen' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/stad/groningen',
+    title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
+    description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
+    description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

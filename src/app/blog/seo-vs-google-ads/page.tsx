@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'SEO of Google Ads inzetten voor uw bedrijf? Wij vergelijken beide kanalen en leggen uit wanneer je wat gebruikt — en hoe de combinatie het sterkst werkt.',
   alternates: { canonical: 'https://elly-apps.nl/blog/seo-vs-google-ads' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/seo-vs-google-ads',
+    title: 'SEO vs Google Ads: wat werkt beter? | Elly Apps',
+    description: 'SEO of Google Ads inzetten voor uw bedrijf? Wij vergelijken beide kanalen en leggen uit wanneer je wat gebruikt — en hoe de combinatie het sterkst werkt.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SEO vs Google Ads: wat werkt beter? | Elly Apps',
+    description: 'SEO of Google Ads inzetten voor uw bedrijf? Wij vergelijken beide kanalen en leggen uit wanneer je wat gebruikt — en hoe de combinatie het sterkst werkt.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

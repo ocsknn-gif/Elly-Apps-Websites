@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   description:
     'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/blog' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog',
+    title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+    description: 'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+    description: 'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
+    images: ['/og-image.png'],
+  },
 }
 
 const artikelen = [

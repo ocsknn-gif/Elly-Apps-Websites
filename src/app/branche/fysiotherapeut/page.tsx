@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
   alternates: { canonical: 'https://elly-apps.nl/branche/fysiotherapeut' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/fysiotherapeut',
+    title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
+    description: 'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
+    description: 'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

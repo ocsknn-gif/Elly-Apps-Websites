@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'Wat betaal je voor SEO in Nederland? Een eerlijk overzicht van SEO-kosten, wat je kunt verwachten en wanneer SEO de moeite waard is voor jouw bedrijf.',
   alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-seo' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/wat-kost-seo',
+    title: 'Wat kost SEO in Nederland? | Elly Apps',
+    description: 'Wat betaal je voor SEO in Nederland? Een eerlijk overzicht van SEO-kosten, wat je kunt verwachten en wanneer SEO de moeite waard is voor jouw bedrijf.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wat kost SEO in Nederland? | Elly Apps',
+    description: 'Wat betaal je voor SEO in Nederland? Een eerlijk overzicht van SEO-kosten, wat je kunt verwachten en wanneer SEO de moeite waard is voor jouw bedrijf.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

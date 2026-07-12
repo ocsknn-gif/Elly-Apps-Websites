@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken Den Bosch | Professioneel & Betaalbaar | Elly Apps',
   description: 'Professionele website laten maken in Den Bosch? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Den Bosch. Vraag vandaag een gratis offerte aan!',
   alternates: { canonical: 'https://elly-apps.nl/stad/den-bosch' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/stad/den-bosch',
+    title: 'Website laten maken Den Bosch | Professioneel & Betaalbaar | Elly Apps',
+    description: 'Professionele website laten maken in Den Bosch? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Den Bosch. Vraag vandaag een gratis offerte aan!',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken Den Bosch | Professioneel & Betaalbaar | Elly Apps',
+    description: 'Professionele website laten maken in Den Bosch? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Den Bosch. Vraag vandaag een gratis offerte aan!',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

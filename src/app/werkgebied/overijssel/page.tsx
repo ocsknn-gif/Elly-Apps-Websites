@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken in Overijssel | Elly Apps',
   description: 'Van Zwolle tot Enschede — Elly Apps bouwt websites die MKB-bedrijven in Overijssel beter vindbaar maken in Google.',
   alternates: { canonical: 'https://elly-apps.nl/werkgebied/overijssel' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/werkgebied/overijssel',
+    title: 'Website laten maken in Overijssel | Elly Apps',
+    description: 'Van Zwolle tot Enschede — Elly Apps bouwt websites die MKB-bedrijven in Overijssel beter vindbaar maken in Google.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken in Overijssel | Elly Apps',
+    description: 'Van Zwolle tot Enschede — Elly Apps bouwt websites die MKB-bedrijven in Overijssel beter vindbaar maken in Google.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function WerkgebiedOverijsselPage() {

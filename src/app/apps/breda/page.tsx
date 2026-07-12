@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'App laten maken Breda | Elly Apps',
   description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
   alternates: { canonical: 'https://elly-apps.nl/apps/breda' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/apps/breda',
+    title: 'App laten maken Breda | Elly Apps',
+    description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App laten maken Breda | Elly Apps',
+    description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

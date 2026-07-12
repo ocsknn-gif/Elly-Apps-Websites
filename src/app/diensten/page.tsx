@@ -13,6 +13,21 @@ export const metadata: Metadata = {
   description:
     'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
   alternates: { canonical: 'https://elly-apps.nl/diensten' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/diensten',
+    title: 'Diensten | Elly Apps',
+    description: 'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Diensten | Elly Apps',
+    description: 'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+    images: ['/og-image.png'],
+  },
 }
 
 const diensten = [

@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
   description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/branche/horeca' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/horeca',
+    title: 'Horeca website laten maken | Elly Apps',
+    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Horeca website laten maken | Elly Apps',
+    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

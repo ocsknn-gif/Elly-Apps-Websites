@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Sitemap | Elly Apps & Websites',
   description: 'Overzicht van alle paginas op elly-apps.nl',
   alternates: { canonical: 'https://elly-apps.nl/sitemap-pagina' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/sitemap-pagina',
+    title: 'Sitemap | Elly Apps & Websites',
+    description: 'Overzicht van alle paginas op elly-apps.nl',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sitemap | Elly Apps & Websites',
+    description: 'Overzicht van alle paginas op elly-apps.nl',
+    images: ['/og-image.png'],
+  },
 }
 
 const sections = [

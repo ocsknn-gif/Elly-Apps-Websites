@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken in Groningen – vanaf €49/mnd | Elly Apps',
   description: 'Professionele website laten maken in Groningen? Elly Apps bouwt en beheert websites voor lokale ondernemers. Lokale SEO, volledig ontzorgd, vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/werkgebied/groningen' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/werkgebied/groningen',
+    title: 'Website laten maken in Groningen – vanaf €49/mnd | Elly Apps',
+    description: 'Professionele website laten maken in Groningen? Elly Apps bouwt en beheert websites voor lokale ondernemers. Lokale SEO, volledig ontzorgd, vanaf €49 per maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken in Groningen – vanaf €49/mnd | Elly Apps',
+    description: 'Professionele website laten maken in Groningen? Elly Apps bouwt en beheert websites voor lokale ondernemers. Lokale SEO, volledig ontzorgd, vanaf €49 per maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function WerkgebiedGroningenPage() {

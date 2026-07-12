@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Websites per branche | Elly Apps',
   description: 'Elly Apps bouwt professionele websites voor diverse branches. Bekijk ons aanbod per branche.',
   alternates: { canonical: 'https://elly-apps.nl/branche' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche',
+    title: 'Websites per branche | Elly Apps',
+    description: 'Elly Apps bouwt professionele websites voor diverse branches. Bekijk ons aanbod per branche.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Websites per branche | Elly Apps',
+    description: 'Elly Apps bouwt professionele websites voor diverse branches. Bekijk ons aanbod per branche.',
+    images: ['/og-image.png'],
+  },
 }
 
 const branches = [

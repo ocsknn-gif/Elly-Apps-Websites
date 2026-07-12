@@ -4,6 +4,21 @@ export const metadata: Metadata = {
   title: 'Algemene Voorwaarden | Elly Apps & Websites',
   description: 'De algemene voorwaarden van Elly Apps & Websites.',
   alternates: { canonical: 'https://elly-apps.nl/algemene-voorwaarden' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/algemene-voorwaarden',
+    title: 'Algemene Voorwaarden | Elly Apps & Websites',
+    description: 'De algemene voorwaarden van Elly Apps & Websites.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Algemene Voorwaarden | Elly Apps & Websites',
+    description: 'De algemene voorwaarden van Elly Apps & Websites.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function AlgemeneVoorwaardenPage() {

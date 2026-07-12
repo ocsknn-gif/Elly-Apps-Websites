@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken in Utrecht | Elly Apps',
   description: 'Centraal gelegen, sterk concurrerend — Elly Apps helpt Utrechtse MKB-bedrijven groeien via een betere online aanwezigheid.',
   alternates: { canonical: 'https://elly-apps.nl/werkgebied/utrecht' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/werkgebied/utrecht',
+    title: 'Website laten maken in Utrecht | Elly Apps',
+    description: 'Centraal gelegen, sterk concurrerend — Elly Apps helpt Utrechtse MKB-bedrijven groeien via een betere online aanwezigheid.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken in Utrecht | Elly Apps',
+    description: 'Centraal gelegen, sterk concurrerend — Elly Apps helpt Utrechtse MKB-bedrijven groeien via een betere online aanwezigheid.',
+    images: ['/og-image.png'],
+  },
 }
 
 export default function WerkgebiedUtrechtPage() {

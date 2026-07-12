@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'Website laten maken in Den Haag? Elly Apps bouwt professionele websites voor Haagse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/stad/den-haag' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/stad/den-haag',
+    title: 'Website laten maken Den Haag | Elly Apps',
+    description: 'Website laten maken in Den Haag? Elly Apps bouwt professionele websites voor Haagse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken Den Haag | Elly Apps',
+    description: 'Website laten maken in Den Haag? Elly Apps bouwt professionele websites voor Haagse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

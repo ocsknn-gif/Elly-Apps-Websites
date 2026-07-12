@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor een restaurant in 2026 | Elly Apps',
   description: 'Als restauranteigenaar meer gasten aantrekken via Google? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/blog/restaurant' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/restaurant',
+    title: 'Website laten maken voor een restaurant in 2026 | Elly Apps',
+    description: 'Als restauranteigenaar meer gasten aantrekken via Google? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor een restaurant in 2026 | Elly Apps',
+    description: 'Als restauranteigenaar meer gasten aantrekken via Google? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const IMAGE_URL = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&fm=webp&q=75'

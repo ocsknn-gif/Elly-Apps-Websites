@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'Ontvang gratis een professionele websitescan van Elly Apps. Wij analyseren uw SEO, snelheid en mobiele weergave en adviseren u zonder verplichtingen.',
   alternates: { canonical: 'https://elly-apps.nl/gratis-websitescan' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/gratis-websitescan',
+    title: 'Gratis websitescan | Elly Apps',
+    description: 'Ontvang gratis een professionele websitescan van Elly Apps. Wij analyseren uw SEO, snelheid en mobiele weergave en adviseren u zonder verplichtingen.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Gratis websitescan | Elly Apps',
+    description: 'Ontvang gratis een professionele websitescan van Elly Apps. Wij analyseren uw SEO, snelheid en mobiele weergave en adviseren u zonder verplichtingen.',
+    images: ['/og-image.png'],
+  },
 }
 
 const checks = [

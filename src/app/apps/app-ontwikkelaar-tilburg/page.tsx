@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'App ontwikkelaar Tilburg | Elly Apps',
   description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
   alternates: { canonical: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg',
+    title: 'App ontwikkelaar Tilburg | Elly Apps',
+    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App ontwikkelaar Tilburg | Elly Apps',
+    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

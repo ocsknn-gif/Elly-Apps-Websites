@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Portfolio — Onze websites & resultaten | Elly Apps',
   description: 'Bekijk onze gerealiseerde websites voor MKB-bedrijven. Loodgieters, tandartsen, restaurants en meer — allemaal beter vindbaar in Google.',
   alternates: { canonical: 'https://elly-apps.nl/portfolio' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/portfolio',
+    title: 'Portfolio — Onze websites & resultaten | Elly Apps',
+    description: 'Bekijk onze gerealiseerde websites voor MKB-bedrijven. Loodgieters, tandartsen, restaurants en meer — allemaal beter vindbaar in Google.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Portfolio — Onze websites & resultaten | Elly Apps',
+    description: 'Bekijk onze gerealiseerde websites voor MKB-bedrijven. Loodgieters, tandartsen, restaurants en meer — allemaal beter vindbaar in Google.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

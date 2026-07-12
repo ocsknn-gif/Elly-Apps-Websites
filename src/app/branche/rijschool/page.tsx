@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor rijscholen | Elly Apps',
   description: 'Een professionele website voor uw rijschool. Meer leerlingen aantrekken, online rijlesaanvragen ontvangen en uw reviews laten zien. Vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/branche/rijschool' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/rijschool',
+    title: 'Website laten maken voor rijscholen | Elly Apps',
+    description: 'Een professionele website voor uw rijschool. Meer leerlingen aantrekken, online rijlesaanvragen ontvangen en uw reviews laten zien. Vanaf €49/maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor rijscholen | Elly Apps',
+    description: 'Een professionele website voor uw rijschool. Meer leerlingen aantrekken, online rijlesaanvragen ontvangen en uw reviews laten zien. Vanaf €49/maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

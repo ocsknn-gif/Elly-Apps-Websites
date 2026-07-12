@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Social media: zelf doen of uitbesteden? | Elly Apps',
   description: 'Social media zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij voor MKB-ondernemers die de juiste keuze willen maken.',
   alternates: { canonical: 'https://elly-apps.nl/blog/social-media-zelf-of-uitbesteden' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/social-media-zelf-of-uitbesteden',
+    title: 'Social media: zelf doen of uitbesteden? | Elly Apps',
+    description: 'Social media zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij voor MKB-ondernemers die de juiste keuze willen maken.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Social media: zelf doen of uitbesteden? | Elly Apps',
+    description: 'Social media zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij voor MKB-ondernemers die de juiste keuze willen maken.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

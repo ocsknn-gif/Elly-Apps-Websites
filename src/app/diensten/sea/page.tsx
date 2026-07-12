@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Google Ads voor MKB | SEA & Betaald Adverteren | Elly Apps',
   description: 'Direct bovenaan Google met Google Ads? Elly Apps beheert uw campagnes volledig. Vaste beheerkosten, meetbaar resultaat, geen verborgen kosten. Vraag gratis scan aan.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/sea' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/diensten/sea',
+    title: 'Google Ads voor MKB | SEA & Betaald Adverteren | Elly Apps',
+    description: 'Direct bovenaan Google met Google Ads? Elly Apps beheert uw campagnes volledig. Vaste beheerkosten, meetbaar resultaat, geen verborgen kosten. Vraag gratis scan aan.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Google Ads voor MKB | SEA & Betaald Adverteren | Elly Apps',
+    description: 'Direct bovenaan Google met Google Ads? Elly Apps beheert uw campagnes volledig. Vaste beheerkosten, meetbaar resultaat, geen verborgen kosten. Vraag gratis scan aan.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

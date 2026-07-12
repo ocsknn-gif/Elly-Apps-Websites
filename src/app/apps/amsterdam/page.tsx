@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
   alternates: { canonical: 'https://elly-apps.nl/apps/amsterdam' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/apps/amsterdam',
+    title: 'App laten maken Amsterdam | Elly Apps',
+    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App laten maken Amsterdam | Elly Apps',
+    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

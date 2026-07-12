@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Professionele app laten maken & beheren | Elly Apps',
   description: 'Elly Apps bouwt en beheert uw iOS én Android app. Op maat voor uw bedrijf. Van bestelapp tot ledenapp — volledig ontzorgd.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/apps' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/diensten/apps',
+    title: 'Professionele app laten maken & beheren | Elly Apps',
+    description: 'Elly Apps bouwt en beheert uw iOS én Android app. Op maat voor uw bedrijf. Van bestelapp tot ledenapp — volledig ontzorgd.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professionele app laten maken & beheren | Elly Apps',
+    description: 'Elly Apps bouwt en beheert uw iOS én Android app. Op maat voor uw bedrijf. Van bestelapp tot ledenapp — volledig ontzorgd.',
+    images: ['/og-image.png'],
+  },
 }
 
 const appTypes = [

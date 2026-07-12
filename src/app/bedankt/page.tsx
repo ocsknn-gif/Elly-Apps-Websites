@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   title: 'Bedankt voor uw aanvraag | Elly Apps',
   description: 'Bedankt! U ontvangt binnen 24 uur een persoonlijke reactie van ons.',
   alternates: { canonical: 'https://elly-apps.nl/bedankt' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/bedankt',
+    title: 'Bedankt voor uw aanvraag | Elly Apps',
+    description: 'Bedankt! U ontvangt binnen 24 uur een persoonlijke reactie van ons.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bedankt voor uw aanvraag | Elly Apps',
+    description: 'Bedankt! U ontvangt binnen 24 uur een persoonlijke reactie van ons.',
+    images: ['/og-image.png'],
+  },
 }
 
 const steps = [

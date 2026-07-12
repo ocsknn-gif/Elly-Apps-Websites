@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   description:
     'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
   alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-google-ads' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/blog/wat-kost-google-ads',
+    title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
+    description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
+    description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+    images: ['/og-image.png'],
+  },
 }
 
 const articleSchema = {

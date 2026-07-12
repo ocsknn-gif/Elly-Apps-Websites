@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor accountantskantoor | Elly Apps',
   description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
   alternates: { canonical: 'https://elly-apps.nl/branche/accountantskantoor' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/accountantskantoor',
+    title: 'Website laten maken voor accountantskantoor | Elly Apps',
+    description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor accountantskantoor | Elly Apps',
+    description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

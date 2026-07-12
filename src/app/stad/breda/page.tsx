@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken Breda | Professioneel & Betaalbaar | Elly Apps',
   description: 'Professionele website laten maken in Breda? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Breda. Vraag vandaag een gratis offerte aan!',
   alternates: { canonical: 'https://elly-apps.nl/stad/breda' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/stad/breda',
+    title: 'Website laten maken Breda | Professioneel & Betaalbaar | Elly Apps',
+    description: 'Professionele website laten maken in Breda? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Breda. Vraag vandaag een gratis offerte aan!',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken Breda | Professioneel & Betaalbaar | Elly Apps',
+    description: 'Professionele website laten maken in Breda? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Breda. Vraag vandaag een gratis offerte aan!',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

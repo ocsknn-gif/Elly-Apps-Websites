@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'App ontwikkelaar Noord-Holland | Elly Apps',
   description: 'App ontwikkelaar in Noord-Holland? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem, Alkmaar en heel Noord-Holland.',
   alternates: { canonical: 'https://elly-apps.nl/apps/noord-holland' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/apps/noord-holland',
+    title: 'App ontwikkelaar Noord-Holland | Elly Apps',
+    description: 'App ontwikkelaar in Noord-Holland? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem, Alkmaar en heel Noord-Holland.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'App ontwikkelaar Noord-Holland | Elly Apps',
+    description: 'App ontwikkelaar in Noord-Holland? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem, Alkmaar en heel Noord-Holland.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {

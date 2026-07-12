@@ -7,6 +7,21 @@ export const metadata: Metadata = {
   description:
     'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
   alternates: { canonical: 'https://elly-apps.nl/over-ons' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/over-ons',
+    title: 'Over ons | Elly Apps',
+    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Over ons | Elly Apps',
+    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+    images: ['/og-image.png'],
+  },
 }
 
 const organizationSchema = {

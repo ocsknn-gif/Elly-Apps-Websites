@@ -5,6 +5,21 @@ export const metadata: Metadata = {
   description:
     'Antwoorden op de meestgestelde vragen over websites laten maken, SEO, prijzen en werkwijze bij Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/faq' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/faq',
+    title: 'Veelgestelde vragen | Elly Apps',
+    description: 'Antwoorden op de meestgestelde vragen over websites laten maken, SEO, prijzen en werkwijze bij Elly Apps.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Veelgestelde vragen | Elly Apps',
+    description: 'Antwoorden op de meestgestelde vragen over websites laten maken, SEO, prijzen en werkwijze bij Elly Apps.',
+    images: ['/og-image.png'],
+  },
 }
 
 const faqItems = [

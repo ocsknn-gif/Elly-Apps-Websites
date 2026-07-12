@@ -6,6 +6,21 @@ export const metadata: Metadata = {
   title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
   description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant, online afspraken en volledig beheer. Vanaf €49/maand.',
   alternates: { canonical: 'https://elly-apps.nl/branche/zorg' },
+  openGraph: {
+    type: 'website',
+    url: 'https://elly-apps.nl/branche/zorg',
+    title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
+    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant, online afspraken en volledig beheer. Vanaf €49/maand.',
+    siteName: 'Elly Apps & Websites',
+    locale: 'nl_NL',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
+    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant, online afspraken en volledig beheer. Vanaf €49/maand.',
+    images: ['/og-image.png'],
+  },
 }
 
 const schema = {
