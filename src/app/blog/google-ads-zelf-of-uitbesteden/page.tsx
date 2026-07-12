@@ -82,6 +82,22 @@ export default function BlogGoogleAdsZelfOfUitbestedenPage() {
           Twijfelt u? Laat ons uw huidige campagne gratis analyseren. Wij geven u eerlijk advies — ook als we concluderen dat zelf doen voor u de beste optie is.
         </p>
 
+        <div className="not-prose mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde artikelen</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'Wat kost Google Ads?', href: '/blog/wat-kost-google-ads' },
+              { label: 'SEO vs Google Ads: wat werkt beter?', href: '/blog/seo-vs-google-ads' },
+              { label: 'Onze Google Ads-dienst', href: '/diensten/sea' },
+              { label: 'Bekijk onze prijzen', href: '/prijzen' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="not-prose mt-10 flex flex-col sm:flex-row gap-4">
           <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold text-sm hover:bg-[#C53030] transition-colors">
             Vraag gratis Google Ads analyse aan

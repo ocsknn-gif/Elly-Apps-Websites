@@ -78,6 +78,22 @@ export default function DienstenSeaPage() {
           </div>
         </div>
 
+        <div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Meer lezen over Google Ads</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'Wat kost Google Ads?', href: '/blog/wat-kost-google-ads' },
+              { label: 'Google Ads: zelf doen of uitbesteden?', href: '/blog/google-ads-zelf-of-uitbesteden' },
+              { label: 'SEO vs Google Ads: wat werkt beter?', href: '/blog/seo-vs-google-ads' },
+              { label: 'Bekijk onze prijzen', href: '/prijzen' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="bg-[#E53E3E] rounded-2xl p-8 text-center text-white">
           <h2 className="text-2xl font-bold mb-3">Klaar om direct meer klanten te krijgen via Google?</h2>
           <p className="opacity-90 mb-6">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>

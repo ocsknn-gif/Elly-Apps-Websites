@@ -68,6 +68,55 @@ const artikelen = [
     categorie: 'Websites',
     afbeelding: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=60',
   },
+  {
+    href: '/blog/google-ads-zelf-of-uitbesteden',
+    titel: 'Google Ads: zelf doen of uitbesteden?',
+    beschrijving: 'Google Ads zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij zodat u de juiste keuze maakt.',
+    categorie: 'Google Ads',
+    afbeelding: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/social-media-zelf-of-uitbesteden',
+    titel: 'Social media: zelf doen of uitbesteden?',
+    beschrijving: 'Social media zelf beheren of uitbesteden aan een bureau? Wij zetten de voor- en nadelen eerlijk op een rij voor MKB-ondernemers.',
+    categorie: 'Social Media',
+    afbeelding: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/social-media-budget',
+    titel: 'Hoeveel budget voor social media advertenties?',
+    beschrijving: 'Wat is een realistisch budget voor Facebook- en Instagram-advertenties als MKB? Concrete cijfers en uitleg over slim inzetten.',
+    categorie: 'Social Media',
+    afbeelding: 'https://images.unsplash.com/photo-1611162616475-46b635cb6868?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/social-media-ai',
+    titel: 'Social media met AI: zo doet u het slim',
+    beschrijving: 'AI maakt social media beheer sneller en goedkoper. Ontdek hoe MKB-bedrijven AI-tools inzetten — en waar de grenzen liggen.',
+    categorie: 'Social Media',
+    afbeelding: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/kapper',
+    titel: 'Website laten maken voor een kapper',
+    beschrijving: 'Als kapper meer klanten via Google? Ontdek wat een professionele kapperswebsite moet hebben en wat het kost.',
+    categorie: 'Branche',
+    afbeelding: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/restaurant',
+    titel: 'Website laten maken voor een restaurant',
+    beschrijving: 'Als restauranteigenaar meer gasten aantrekken via Google? Ontdek wat een professionele restaurantwebsite moet hebben.',
+    categorie: 'Branche',
+    afbeelding: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    href: '/blog/loodgieter',
+    titel: 'Website laten maken voor een loodgieter',
+    beschrijving: 'Als loodgieter meer klanten via Google? Ontdek wat een professionele loodgieterswebsite moet hebben en wat het kost.',
+    categorie: 'Branche',
+    afbeelding: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=600&auto=format&fit=crop&q=60',
+  },
 ]
 
 const categorieKleur: Record<string, string> = {
@@ -75,6 +124,8 @@ const categorieKleur: Record<string, string> = {
   SEO: 'bg-green-50 text-green-700',
   'Google Ads': 'bg-yellow-50 text-yellow-700',
   Strategie: 'bg-purple-50 text-purple-700',
+  'Social Media': 'bg-pink-50 text-pink-700',
+  Branche: 'bg-orange-50 text-orange-700',
 }
 
 export default function BlogOverzichtPage({

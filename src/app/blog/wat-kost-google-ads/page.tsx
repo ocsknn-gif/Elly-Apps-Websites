@@ -19,12 +19,32 @@ const articleSchema = {
   url: 'https://elly-apps.nl/blog/wat-kost-google-ads',
 }
 
+const faqItems = [
+  { q: 'Wat is een realistisch startbudget voor Google Ads?', a: 'Voor een MKB-bedrijf is een advertentiebudget vanaf ongeveer €300 tot €500 per maand een realistisch startpunt. Daarmee verzamelt u genoeg data om te zien welke zoekwoorden werken. Een te klein budget levert te weinig vertoningen op om iets zinnigs te leren.' },
+  { q: 'Betaal ik per klik of per vertoning?', a: 'Bij Google Ads betaalt u standaard per klik (cost-per-click). U betaalt dus alleen wanneer iemand daadwerkelijk op uw advertentie klikt, niet wanneer die alleen wordt getoond. Wat u per klik betaalt, hangt af van de concurrentie op uw zoekwoorden.' },
+  { q: 'Wat kost het om Google Ads te laten beheren?', a: 'Naast uw advertentiebudget betaalt u een vergoeding voor het beheer: het opzetten van campagnes, zoekwoordonderzoek, advertentieteksten, biedstrategie en optimalisatie. Bij Elly Apps zit dit beheer in een vaste maandprijs, zodat u vooraf precies weet waar u aan toe bent.' },
+  { q: 'Hoe snel zie ik resultaat van Google Ads?', a: 'Anders dan bij SEO ziet u vrijwel direct verkeer: zodra uw campagne live staat, kunnen mensen op uw advertentie klikken. De eerste weken zijn vooral bedoeld om data te verzamelen en bij te sturen. Reken op enkele weken voordat een campagne echt geoptimaliseerd draait.' },
+  { q: 'Is Google Ads of SEO slimmer voor mijn bedrijf?', a: 'Google Ads levert direct verkeer maar stopt zodra u stopt met betalen. SEO bouwt duurzaam op maar kost tijd. Voor de meeste MKB-bedrijven werkt een combinatie het best: Ads voor snelle resultaten, SEO voor structurele groei op de lange termijn.' },
+]
+
 export default function WatKostGoogleAdsPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqItems.map(item => ({
+            '@type': 'Question',
+            name: item.q,
+            acceptedAnswer: { '@type': 'Answer', text: item.a }
+          }))
+        }) }}
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 prose prose-gray prose-lg max-w-none">
         <Link href="/blog" className="text-sm text-[#E53E3E] hover:underline not-prose">
@@ -143,6 +163,37 @@ export default function WatKostGoogleAdsPage() {
           te voorkomen en uw investering maximaal te laten renderen.
         </p>
 
+        <div className="not-prose mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Veelgestelde vragen over de kosten van Google Ads</h2>
+          <div className="space-y-3">
+            {faqItems.map((item) => (
+              <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
+                  {item.q}
+                  <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
+                </summary>
+                <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
+              </details>
+            ))}
+          </div>
+        </div>
+
+        <div className="not-prose mt-12">
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde artikelen</h2>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              { label: 'Google Ads: zelf doen of uitbesteden?', href: '/blog/google-ads-zelf-of-uitbesteden' },
+              { label: 'SEO vs Google Ads: wat werkt beter?', href: '/blog/seo-vs-google-ads' },
+              { label: 'Onze Google Ads-dienst', href: '/diensten/sea' },
+              { label: 'Bekijk onze prijzen', href: '/prijzen' },
+            ].map((r) => (
+              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
+                <span className="text-[#E53E3E]">→</span> {r.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
         <div className="not-prose mt-10 flex flex-col sm:flex-row gap-4">
           <Link
             href="/contact"
@@ -151,10 +202,10 @@ export default function WatKostGoogleAdsPage() {
             Vraag een gratis adviesgesprek aan
           </Link>
           <Link
-            href="/diensten"
+            href="/diensten/sea"
             className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold text-sm hover:bg-red-50 transition-colors"
           >
-            Bekijk onze diensten
+            Bekijk onze Google Ads-dienst
           </Link>
         </div>
       </article>
