@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { PhoneIcon, MailIcon, MessageCircleIcon, ClockIcon } from 'lucide-react'
 import { ContactForm } from '@/components/ContactForm'
+import ContactLink from '@/components/ContactLink'
 
 export const metadata: Metadata = {
   title: 'Contact & gratis websitescan | Elly Apps & Websites',
@@ -74,12 +75,13 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Telefoon</p>
-                    <a
-                      href="tel:+31636278515"
+                    <ContactLink
+                      type="phone"
+                      location="contactpagina"
                       className="font-semibold text-gray-900 hover:text-indigo-600 transition-colors"
                     >
                       +31 6 36 27 85 15
-                    </a>
+                    </ContactLink>
                   </div>
                 </li>
 
@@ -104,14 +106,13 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">WhatsApp</p>
-                    <a
-                      href="https://wa.me/31636278515"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <ContactLink
+                      type="whatsapp"
+                      location="contactpagina"
                       className="font-semibold text-gray-900 hover:text-green-600 transition-colors"
                     >
                       Stuur een WhatsApp bericht
-                    </a>
+                    </ContactLink>
                   </div>
                 </li>
               </ul>

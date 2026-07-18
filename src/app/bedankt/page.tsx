@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import LeadConversion from '@/components/LeadConversion'
 
 export const metadata: Metadata = {
   title: 'Bedankt voor uw aanvraag | Elly Apps',
@@ -31,6 +32,7 @@ const steps = [
 export default function BedanktPage() {
   return (
     <section className="min-h-[60vh] flex items-center py-16">
+      <LeadConversion />
       <div className="max-w-xl mx-auto px-4 text-center w-full">
         <div className="text-5xl mb-4">🎉</div>
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Bedankt voor uw aanvraag!</h1>

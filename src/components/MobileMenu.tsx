@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import ContactLink from '@/components/ContactLink'
 import { MenuIcon, XIcon } from 'lucide-react'
 
 type NavLink = { label: string; href: string }
@@ -32,13 +33,14 @@ export function MobileMenu({ links }: { links: NavLink[] }) {
                 {link.label}
               </Link>
             ))}
-            <a
-              href="tel:+31636278515"
+            <ContactLink
+              type="phone"
+              location="mobiel-menu"
               onClick={() => setOpen(false)}
               className="mt-2 py-2 px-3 rounded-lg border-2 border-[#E53E3E] text-[#E53E3E] text-sm font-semibold text-center hover:bg-red-50 transition-colors"
             >
               Bel ons: 06-36278515
-            </a>
+            </ContactLink>
             <Link
               href="/gratis-websitescan"
               onClick={() => setOpen(false)}

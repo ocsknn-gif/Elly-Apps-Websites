@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import ContactLink from '@/components/ContactLink'
 import Image from 'next/image'
 import { MobileMenu } from './MobileMenu'
 
@@ -49,12 +50,13 @@ export function Navbar() {
             </nav>
 
             {/* CTA knop */}
-            <a
-              href="tel:+31636278515"
+            <ContactLink
+              type="phone"
+              location="navbar"
               className="hidden lg:inline-flex items-center px-4 py-2 rounded-lg border-2 border-[#E53E3E] text-[#E53E3E] text-sm font-semibold hover:bg-red-50 transition-colors"
             >
               Bel ons direct: 06-36278515
-            </a>
+            </ContactLink>
 
             <MobileMenu links={navLinks} />
           </div>
