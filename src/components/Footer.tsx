@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import ContactLink from '@/components/ContactLink'
 import Image from 'next/image'
+import CookieSettingsButton from '@/components/CookieSettingsButton'
 
 export function Footer() {
   return (
@@ -49,6 +50,9 @@ export function Footer() {
                   <Link href={item.href} className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">{item.label}</Link>
                 </li>
               ))}
+              <li>
+                <CookieSettingsButton className="text-left hover:text-on-navy hover:underline underline-offset-4 transition-colors" />
+              </li>
             </ul>
           </div>
 
