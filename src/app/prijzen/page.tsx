@@ -43,7 +43,7 @@ const pakketten = {
       href: '/gratis-websitescan',
     },
     {
-      naam: 'Boost',
+      naam: 'Groei',
       prijs: '€199',
       eenmalig: '€499 eenmalige setup',
       populair: true,
