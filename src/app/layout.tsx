@@ -6,7 +6,7 @@ import { Footer } from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileStickyBar from '@/components/MobileStickyBar'
 import CookieBanner from '@/components/CookieBanner'
-import Script from 'next/script'
+import Analytics from '@/components/Analytics'
 import TimedPopup from '@/components/TimedPopup'
 import ScrollCTA from '@/components/ScrollCTA'
 
@@ -72,16 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieBanner />
         <ScrollCTA />
         <TimedPopup />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-YZJ22GGTS4"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YZJ22GGTS4');`}
-        </Script>
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wnxdne8bn4");`}
-        </Script>
+        {/* GA4 en Clarity laden pas na toestemming in de cookiebanner */}
+        <Analytics />
       </body>
     </html>
   )
