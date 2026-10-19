@@ -181,13 +181,18 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
         <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-1">
           Website URL <span className="text-red-500">*</span>
         </label>
+        {/* Zelfde aanpak als de compacte variant: "uwbedrijf.nl" zonder https:// wordt ook geaccepteerd */}
         <input
           id="website"
           name="website"
-          type="url"
+          type="text"
+          inputMode="url"
+          autoComplete="url"
+          autoCapitalize="none"
+          spellCheck={false}
           required
           className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
-          placeholder="https://uwbedrijf.nl"
+          placeholder="uwbedrijf.nl"
         />
       </div>
 
