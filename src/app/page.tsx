@@ -1,13 +1,9 @@
 import Link from 'next/link'
-import {
-  GlobeIcon,
-  SmartphoneIcon,
-  SearchIcon,
-  TrendingUpIcon,
-} from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
 import { Goals } from '@/components/home/Goals'
 import { Benefits } from '@/components/home/Benefits'
+import { Services } from '@/components/home/Services'
+import { Branches } from '@/components/home/Branches'
 import { Pricing } from '@/components/home/Pricing'
 import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
 
@@ -124,25 +120,7 @@ export default function HomePage() {
       <Benefits />
 
       {/* ── SECTIE 3 — Diensten ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Onze diensten</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', href: '/diensten/websites', description: 'Wij bouwen professionele websites die niet alleen mooi zijn, maar ook snel laden en hoog scoren in Google. Elke website is technisch SEO-geoptimaliseerd, mobielvriendelijk en voorzien van de juiste structuur om bezoekers om te zetten in klanten.' },
-              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', href: '/diensten/apps', description: 'Van een eenvoudige webapplicatie tot een volledig maatwerk platform — wij bouwen digitale oplossingen die aansluiten op uw bedrijfsprocessen en meegroeien met uw organisatie.' },
-              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', href: '/diensten/seo', description: 'Met zoekmachineoptimalisatie zorgen wij dat uw website structureel beter scoort in Google. Wij analyseren uw website, optimaliseren de technische basis, versterken uw content en bouwen autoriteit op zodat u duurzaam meer bezoekers trekt.' },
-              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', href: '/diensten/sea', description: 'Wij beheren gerichte Google Ads campagnes die precies de juiste mensen bereiken op het juiste moment. Van zoekwoord strategie tot advertentieteksten en biedstrategie — volledig beheerd door ons.' },
-            ].map((dienst) => (
-              <Link key={dienst.title} href={dienst.href} className="block bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#E53E3E]/40 transition-all">
-                <div className="mb-4">{dienst.icon}</div>
-                <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">{dienst.title}</h3>
-                <p className="text-sm text-gray-600">{dienst.description}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Services />
 
       {/* ── SECTIE 3b — Waarom Elly Apps ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
@@ -193,31 +171,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTIE 3c — Voor jouw branche ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">Een website voor jouw branche</h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Wij kennen de wensen per sector en bouwen websites die aansluiten op uw vak — met de juiste functies en lokale vindbaarheid.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              { label: 'Kapper', href: '/branche/kapper', emoji: '✂️' },
-              { label: 'Restaurant', href: '/branche/restaurant', emoji: '🍽️' },
-              { label: 'Loodgieter', href: '/branche/loodgieter', emoji: '🔧' },
-              { label: 'Tandarts', href: '/branche/tandarts', emoji: '🦷' },
-              { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut', emoji: '💪' },
-              { label: 'Bouwbedrijf', href: '/branche/bouwbedrijf', emoji: '🏗️' },
-              { label: 'Rijschool', href: '/branche/rijschool', emoji: '🚗' },
-              { label: 'Alle branches', href: '/branche', emoji: '→' },
-            ].map((b) => (
-              <Link key={b.href} href={b.href} className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm border border-gray-100 font-semibold text-[#1a1a2e] hover:border-[#E53E3E] hover:text-[#E53E3E] transition-colors">
-                <span className="text-xl">{b.emoji}</span> {b.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 3c — Branches ── */}
+      <Branches />
 
       {/* ── SECTIE 4 — Prijzen ── */}
       <Pricing />
