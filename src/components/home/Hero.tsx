@@ -15,16 +15,17 @@ export function Hero() {
         sizes="100vw"
         className="object-cover object-center"
       />
-      {/* Witte laag voor leesbaarheid: mobiel egaal, desktop van links (wit) naar rechts (doorzichtig) */}
+      {/* Witte laag: mobiel egaal 90%, desktop alleen een lichte rand links (max. 30% breed) */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-bg/90 lg:bg-transparent lg:bg-gradient-to-r lg:from-bg lg:from-25% lg:via-bg/90 lg:via-50% lg:to-bg/0 lg:to-75%"
+        className="absolute inset-0 bg-bg/90 lg:bg-transparent lg:bg-gradient-to-r lg:from-bg/60 lg:to-bg/0 lg:to-30%"
       />
 
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-16 lg:items-center">
         <div>
-          <h1 className="h1 text-ink">Een professionele website die gevonden wordt op Google</h1>
-          <p className="body md:body-lg text-muted mt-3 md:mt-5 max-w-xl">
+          {/* Desktop: eigen, deels doorzichtige ondergrond per tekstblok, zodat de foto zichtbaar blijft */}
+          <h1 className="h1 text-ink lg:w-fit lg:-mx-4 lg:px-4 lg:py-2 lg:rounded-xl lg:bg-bg/60 lg:backdrop-blur-sm">Een professionele website die gevonden wordt op Google</h1>
+          <p className="body md:body-lg text-muted mt-3 md:mt-5 max-w-xl lg:w-fit lg:-mx-4 lg:px-4 lg:py-2 lg:rounded-xl lg:bg-bg/90 lg:backdrop-blur-sm">
             Wij bouwen en beheren uw website voor een vaste maandprijs. Vanaf €49 per maand.
           </p>
         </div>
@@ -34,7 +35,7 @@ export function Hero() {
             <WebsiteScanForm variant="compact" />
           </div>
           {/* Witte ondergrond: deze tekst staat over het beeld */}
-          <div className="mt-3 rounded-xl bg-bg/90 px-4 py-3">
+          <div className="mt-3 rounded-xl bg-bg/95 px-4 py-3">
             <p className="text-sm text-muted">
               Gratis en vrijblijvend. Persoonlijk rapport binnen één werkdag.
             </p>
