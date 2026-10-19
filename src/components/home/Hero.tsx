@@ -25,9 +25,6 @@ export function Hero() {
         <div>
           {/* Desktop: eigen, deels doorzichtige ondergrond per tekstblok, zodat de foto zichtbaar blijft */}
           <h1 className="h1 text-ink lg:w-fit lg:-mx-4 lg:px-4 lg:py-2 lg:rounded-xl lg:bg-bg/60 lg:backdrop-blur-sm">Een professionele website die gevonden wordt op Google</h1>
-          <p className="body md:body-lg text-muted mt-3 md:mt-5 max-w-xl lg:w-fit lg:-mx-4 lg:px-4 lg:py-2 lg:rounded-xl lg:bg-bg/90 lg:backdrop-blur-sm">
-            Wij bouwen en beheren uw website voor een vaste maandprijs. Vanaf €49 per maand.
-          </p>
         </div>
 
         <div className="w-full max-w-md lg:justify-self-end">
