@@ -3,8 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority"
 
 import { cn } from "@/lib/utils"
 
-// Ook bruikbaar op links: <Link className={buttonVariants({ variant: "secondary" })}>
-const buttonVariants = cva(
+const variants = cva(
   "inline-flex shrink-0 items-center justify-center gap-2 font-semibold whitespace-nowrap transition-colors select-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-strong disabled:pointer-events-none disabled:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0",
   {
     variants: {
@@ -36,12 +35,16 @@ const buttonVariants = cva(
   }
 )
 
+// Ook bruikbaar op links: <Link className={buttonVariants({ variant: "secondary" })}>.
+// Via cn, zodat bv. px-0 van de link-variant de px-6 van de size echt overschrijft.
+const buttonVariants = (props?: Parameters<typeof variants>[0]) => cn(variants(props))
+
 function Button({
   className,
   variant = "primary",
   size = "default",
   ...props
-}: ButtonPrimitive.Props & VariantProps<typeof buttonVariants>) {
+}: ButtonPrimitive.Props & VariantProps<typeof variants>) {
   return (
     <ButtonPrimitive
       data-slot="button"

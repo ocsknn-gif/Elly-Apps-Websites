@@ -25,7 +25,8 @@ export default function ScrollCTA() {
     return () => window.removeEventListener('scroll', handler)
   }, [dismissed])
 
-  if (!show || dismissed) return null
+  // Niet op de homepage: daar staat het scanformulier al in de hero
+  if (!show || dismissed || pathname === '/') return null
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50 bg-[#E53E3E] text-white py-3 px-4 text-center text-sm font-semibold shadow-lg">

@@ -11,6 +11,10 @@ type FormType = 'contact' | 'websitescan'
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
+function domainOf(website: string) {
+  return website.replace(/^[a-z]+:\/\//i, '').replace(/^www\./i, '').split(/[/?#]/)[0]
+}
+
 /** Beperkt lengte en verwijdert regeleindes uit korte velden. */
 function clean(value: unknown, maxLength = 2000): string {
   if (typeof value !== 'string') return ''
@@ -100,11 +104,11 @@ export async function POST(request: Request) {
   let fields: Array<[string, string]>
 
   if ((formType as FormType) === 'websitescan') {
-    const bedrijf = clean(payload.bedrijf, 200)
     const website = clean(payload.website, 500)
+    // Het korte scanformulier op de homepage vraagt geen bedrijfsnaam; dan het domein gebruiken.
+    const bedrijf = clean(payload.bedrijf, 200) || domainOf(website)
     const telefoon = clean(payload.telefoon, 50)
 
-    if (!bedrijf) missing.push('bedrijf')
     if (!website) missing.push('website')
 
     if (missing.length > 0) {

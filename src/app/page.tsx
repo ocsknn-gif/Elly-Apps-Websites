@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import {
   GlobeIcon,
@@ -8,9 +7,8 @@ import {
   CheckCircleIcon,
   ClockIcon,
   ShieldCheckIcon,
-  MapPinIcon,
-  StarIcon,
 } from 'lucide-react'
+import { Hero } from '@/components/home/Hero'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
 
@@ -143,96 +141,7 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── SECTIE 1 — Hero ── */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Linker kolom — tekst */}
-            <div>
-              <h1 className="text-5xl sm:text-6xl font-extrabold text-[#1a1a2e] leading-tight">
-                Professionele website laten maken voor MKB
-              </h1>
-              <p className="text-3xl sm:text-4xl font-extrabold italic text-[#E53E3E] mt-2 leading-tight">
-                AI-gedreven websites. Maximaal resultaat op Google.
-              </p>
-              <p className="mt-6 text-lg text-gray-600 max-w-lg">
-                Elly Apps bouwt en beheert professionele websites voor het Nederlandse MKB.
-                Volledig SEO-geoptimaliseerd, snel, veilig en voor een vaste maandprijs.
-                Wij zorgen dat uw bedrijf gevonden wordt op Google — zodat u zich kunt focussen op wat u echt doet.
-                Geen technische kennis nodig. Geen verborgen kosten. Alleen resultaat.
-              </p>
-
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/gratis-websitescan"
-                  className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#E53E3E] text-white font-semibold text-base hover:bg-[#C53030] transition-colors shadow-md"
-                >
-                  Ja, ik wil mijn gratis websitescan
-                </Link>
-                <Link
-                  href="/prijzen"
-                  className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold text-base hover:bg-red-50 transition-colors"
-                >
-                  Bekijk onze pakketten
-                </Link>
-              </div>
-
-              <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium text-gray-600">
-                {['✓ Gratis', '✓ Vrijblijvend', '✓ Binnen 24 uur reactie'].map((b) => (
-                  <span key={b}>{b}</span>
-                ))}
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-4">
-                {[
-                  { icon: <ShieldCheckIcon className="size-4 text-[#E53E3E]" />, label: '100% tevredenheidsgarantie' },
-                  { icon: <StarIcon className="size-4 text-[#E53E3E]" />, label: 'Google Partner' },
-                  { icon: <StarIcon className="size-4 text-[#E53E3E]" />, label: 'Trustpilot' },
-                ].map((t) => (
-                  <div key={t.label} className="flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded-full px-3 py-1.5">
-                    {t.icon}
-                    {t.label}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Rechter kolom — device mockup placeholder */}
-            <div className="flex items-center justify-center">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/hero-image.webp"
-                  alt="SEO dashboard op laptop — professionele website laten maken"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                  priority
-                  quality={60}
-                  fetchPriority="high"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Stats balk ── */}
-      <section className="bg-[#f7f7f7] py-8 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            {[
-              { icon: <ClockIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: 'Gemiddeld binnen 2 weken online' },
-              { icon: <StarIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: '15+ jaar ervaring' },
-              { icon: <ShieldCheckIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: '100% tevredenheidsgarantie' },
-              { icon: <MapPinIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: 'Heel Nederland' },
-            ].map((s) => (
-              <div key={s.stat}>
-                {s.icon}
-                <p className="text-sm font-semibold text-[#1a1a2e]">{s.stat}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Hero />
 
       {/* ── SECTIE 2 — USPs ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">

@@ -25,7 +25,8 @@ export default function TimedPopup() {
     sessionStorage.setItem('popup-dismissed', 'true')
   }
 
-  if (!show) return null
+  // Niet op de homepage: daar staat het scanformulier al in de hero
+  if (!show || pathname === '/') return null
 
   return (
     <div

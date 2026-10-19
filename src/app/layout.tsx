@@ -62,15 +62,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="nl" className={jakarta.variable}>
-      <head>
-        <link
-          rel="preload"
-          href="/hero-image.webp"
-          as="image"
-          type="image/webp"
-        />
-      </head>
-      <body className="font-sans antialiased bg-bg text-ink">
+      {/* pb-16 op mobiel: ruimte voor MobileStickyBar onder de footer */}
+      <body className="font-sans antialiased bg-bg text-ink pb-16 md:pb-0">
         <Navbar />
         <main>{children}</main>
         <Footer />
