@@ -1,4 +1,7 @@
 import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
+
+const token = (name: string) => `rgb(var(--${name}) / <alpha-value>)`;
 
 const config: Config = {
   content: [
@@ -8,16 +11,40 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        bg: token("bg"),
+        surface: token("surface"),
+        line: token("line"),
+        ink: token("ink"),
+        muted: token("muted"),
+        brand: {
+          DEFAULT: token("brand"),
+          strong: token("brand-strong"),
+          "strong-hover": token("brand-strong-hover"),
+          tint: token("brand-tint"),
+        },
+        navy: {
+          DEFAULT: token("navy"),
+          muted: token("navy-muted"),
+        },
+        "on-navy": token("on-navy"),
+        success: token("success"),
+        // Aliassen voor bestaande code
+        background: token("bg"),
+        foreground: token("ink"),
         primary: {
-          DEFAULT: "#E53E3E",
-          hover: "#C53030",
+          DEFAULT: token("brand"),
+          hover: token("brand-strong"),
         },
-        muted: {
-          DEFAULT: "#f7f7f7",
-        },
+      },
+      borderRadius: {
+        btn: "10px",
+      },
+      spacing: {
+        section: "96px",
       },
     },
   },

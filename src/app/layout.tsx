@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
@@ -10,9 +10,10 @@ import Script from 'next/script'
 import TimedPopup from '@/components/TimedPopup'
 import ScrollCTA from '@/components/ScrollCTA'
 
-const inter = Inter({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  weight: ['400', '600', '700', '800'],
+  variable: '--font-sans',
   display: 'swap',
   preload: true,
 })
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="nl" className={inter.variable}>
+    <html lang="nl" className={jakarta.variable}>
       <head>
         <link
           rel="preload"
@@ -69,7 +70,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="image/webp"
         />
       </head>
-      <body className="font-[var(--font-inter)] antialiased bg-white text-gray-900">
+      <body className="font-sans antialiased bg-bg text-ink">
         <Navbar />
         <main>{children}</main>
         <Footer />
