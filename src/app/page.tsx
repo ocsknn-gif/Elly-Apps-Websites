@@ -9,8 +9,17 @@ import {
   ShieldCheckIcon,
 } from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
+import { Pricing } from '@/components/home/Pricing'
+import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
+
+// Pakketinhoud komt uit src/lib/pakketten.ts, zodat schema en zichtbare prijzen gelijk blijven
+const schemaNamen: Record<WebsitePakket['naam'], string> = {
+  Starter: 'Professionele website',
+  Groei: 'Website met lokale SEO',
+  Pro: 'Uitgebreide website met SEO-strategie',
+}
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -42,56 +51,22 @@ const localBusinessSchema = {
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Website en SEO pakketten',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Starter pakket — Professionele website',
-          description: "Professionele website inclusief hosting, SSL en basis SEO. Ideaal voor zzp'ers en kleine ondernemers.",
-        },
-        price: '49',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '49',
-          priceCurrency: 'EUR',
-          unitText: 'per maand',
-        },
+    itemListElement: websitePakketten.map((p) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: `${p.naam} pakket — ${schemaNamen[p.naam]}`,
+        description: `${p.features.join(', ')}. ${p.eenmalig}.`,
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Groei pakket — Website met SEO',
-          description: 'Professionele website met uitgebreide SEO, Google Business optimalisatie en maandelijkse rapportage.',
-        },
-        price: '199',
+      price: String(p.maandprijs ?? 0),
+      priceCurrency: 'EUR',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: String(p.maandprijs ?? 0),
         priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '199',
-          priceCurrency: 'EUR',
-          unitText: 'per maand',
-        },
+        unitText: p.maandprijs === null ? 'op aanvraag' : 'per maand',
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Pro pakket — Maatwerk website of app',
-          description: 'Volledig maatwerk website of webapplicatie met AI-gedreven SEO en Google Ads beheer.',
-        },
-        price: '0',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '0',
-          priceCurrency: 'EUR',
-          unitText: 'op aanvraag',
-        },
-      },
-    ],
+    })),
   },
 }
 
@@ -269,69 +244,7 @@ export default function HomePage() {
       </section>
 
       {/* ── SECTIE 4 — Prijzen ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">Transparante prijzen</h2>
-          <p className="text-center text-gray-600 mb-12">Geen verrassingen. Vaste maandprijs.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            {/* Starter */}
-            <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <p className="text-lg font-bold text-[#1a1a2e]">Starter</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
-                €49<span className="text-lg font-medium text-gray-500">/mnd</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €299</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Professionele website', 'Hosting inbegrepen', 'SSL-certificaat', 'Basis SEO'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
-                Aan de slag
-              </Link>
-            </div>
-            {/* Groei */}
-            <div className="flex flex-col rounded-2xl border-2 border-[#E53E3E] p-8 shadow-lg relative">
-              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E53E3E] text-white text-xs font-bold px-4 py-1 rounded-full">
-                Meest gekozen
-              </span>
-              <p className="text-lg font-bold text-[#1a1a2e]">Groei</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
-                €199<span className="text-lg font-medium text-gray-500">/mnd</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €499</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Alles van Starter', 'Lokale SEO', 'Google Business optimalisatie', 'Maandelijks rapport'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
-                Aan de slag
-              </Link>
-            </div>
-            {/* Pro */}
-            <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <p className="text-lg font-bold text-[#1a1a2e]">Pro</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">Op aanvraag</p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €799</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Maatwerk website of app', 'Geavanceerde SEO', 'Dedicated support', 'Google Ads beheer'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
-                Neem contact op
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Pricing />
 
       {/* ── SECTIE 5 — Werkwijze ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
