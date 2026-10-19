@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export function WebsiteScanForm() {
   const [sending, setSending] = useState(false)
@@ -63,7 +65,7 @@ export function WebsiteScanForm() {
             name="naam"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="Uw volledige naam"
           />
         </div>
@@ -77,7 +79,7 @@ export function WebsiteScanForm() {
             name="bedrijf"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="Uw bedrijfsnaam"
           />
         </div>
@@ -92,7 +94,7 @@ export function WebsiteScanForm() {
           name="website"
           type="url"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
           placeholder="https://uwbedrijf.nl"
         />
       </div>
@@ -107,7 +109,7 @@ export function WebsiteScanForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="u@bedrijf.nl"
           />
         </div>
@@ -120,7 +122,7 @@ export function WebsiteScanForm() {
             id="telefoon"
             name="telefoon"
             type="tel"
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="+31 6 12345678"
           />
         </div>
@@ -148,7 +150,7 @@ export function WebsiteScanForm() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className={cn(buttonVariants(), 'w-full')}
       >
         {sending ? 'Versturen…' : 'Vraag gratis websitescan aan'}
       </button>

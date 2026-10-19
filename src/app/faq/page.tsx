@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { buttonVariants } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Veelgestelde vragen | Elly Apps',
@@ -112,7 +113,7 @@ export default function FAQPage() {
             >
               <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50 transition-colors">
                 {item.q}
-                <span className="shrink-0 text-indigo-600 text-xl leading-none group-open:rotate-45 transition-transform duration-200">
+                <span className="shrink-0 text-brand-strong text-xl leading-none group-open:rotate-45 transition-transform duration-200">
                   +
                 </span>
               </summary>
@@ -121,11 +122,11 @@ export default function FAQPage() {
           ))}
         </div>
 
-        <div className="mt-12 text-center bg-indigo-50 rounded-2xl p-8">
+        <div className="mt-12 text-center bg-brand-tint rounded-2xl p-8">
           <p className="text-gray-700 font-medium mb-4">Heeft u een andere vraag?</p>
           <a
             href="/contact"
-            className="inline-flex items-center px-6 py-3 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+            className={buttonVariants()}
           >
             Neem contact op
           </a>

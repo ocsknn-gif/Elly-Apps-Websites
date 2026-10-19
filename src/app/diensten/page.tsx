@@ -7,6 +7,7 @@ import {
   TrendingUpIcon,
   Share2Icon,
 } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Diensten | Elly Apps',
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
 
 const diensten = [
   {
-    icon: <GlobeIcon className="size-8 text-indigo-600" />,
+    icon: <GlobeIcon className="size-8 text-brand" />,
     title: 'Websites',
     body: `Een professionele website is het fundament van uw online aanwezigheid. Bij Elly Apps bouwen
     wij websites die niet alleen mooi ogen, maar ook technisch uitstekend presteren. Elke website
@@ -44,7 +45,7 @@ const diensten = [
     Hosting, SSL-certificaat en technische updates zijn bij elk pakket inbegrepen.`,
   },
   {
-    icon: <SmartphoneIcon className="size-8 text-indigo-600" />,
+    icon: <SmartphoneIcon className="size-8 text-brand" />,
     title: 'Apps',
     body: `Heeft uw bedrijf behoefte aan een maatwerk webapplicatie of mobiele app? Elly Apps
     ontwikkelt slimme digitale oplossingen die aansluiten op uw specifieke bedrijfsprocessen.
@@ -57,7 +58,7 @@ const diensten = [
     mogelijkheden.`,
   },
   {
-    icon: <SearchIcon className="size-8 text-indigo-600" />,
+    icon: <SearchIcon className="size-8 text-brand" />,
     title: 'SEO',
     body: `Gevonden worden op Google is voor elk bedrijf essentieel. Elly Apps biedt uitgebreide
     zoekmachineoptimalisatie (SEO) die uw website structureel hoger in de zoekresultaten brengt.
@@ -70,7 +71,7 @@ const diensten = [
     lokale zichtbaarheid structureel. Elke maand ontvangt u een helder rapport met uw resultaten.`,
   },
   {
-    icon: <TrendingUpIcon className="size-8 text-indigo-600" />,
+    icon: <TrendingUpIcon className="size-8 text-brand" />,
     title: 'Google Ads',
     body: `Wilt u snel meer bezoekers en leads? Met Google Ads (SEA) betaalt u alleen voor kliks van
     potentiële klanten die actief zoeken naar uw product of dienst. Elly Apps beheert uw
@@ -83,7 +84,7 @@ const diensten = [
     budget. Geen verborgen kosten, geen ingewikkelde contracten.`,
   },
   {
-    icon: <Share2Icon className="size-8 text-indigo-600" />,
+    icon: <Share2Icon className="size-8 text-brand" />,
     title: 'Social Media',
     body: `Een actieve aanwezigheid op sociale media versterkt uw merk en bouwt vertrouwen bij
     potentiële klanten. Elly Apps verzorgt het beheer van uw social media kanalen — van strategie
@@ -116,7 +117,7 @@ export default function DienstenPage() {
           <p className="text-gray-600 leading-relaxed mb-6">{d.body}</p>
           <Link
             href="/gratis-websitescan"
-            className="inline-flex items-center px-5 py-2.5 rounded-lg bg-indigo-600 text-white text-sm font-semibold hover:bg-indigo-700 transition-colors"
+            className={buttonVariants()}
           >
             Vraag een gratis scan aan
           </Link>

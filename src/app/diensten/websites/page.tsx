@@ -151,7 +151,7 @@ export default function DienstenWebsitesPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
           {techSpecs.map((s) => (
             <div key={s.text} className="p-6 rounded-xl border bg-white">
-              <div className="mb-2 flex justify-center"><s.Icon size={24} color="#DC2626" /></div>
+              <div className="mb-2 flex justify-center"><s.Icon size={24} className="text-brand" /></div>
               <p className="font-semibold text-sm text-gray-900">{s.text}</p>
             </div>
           ))}
@@ -161,7 +161,7 @@ export default function DienstenWebsitesPage() {
       {/* Copywriting USP */}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-          <PenLine size={24} color="#DC2626" /> Wij schrijven ook uw teksten
+          <PenLine size={24} className="text-brand" /> Wij schrijven ook uw teksten
         </h2>
         <p className="text-gray-600 mb-6">
           Geen idee wat u op uw website moet zetten? Geen probleem. Wij nemen ook het schrijven van uw websiteteksten volledig over. U vertelt, wij schrijven. Zo heeft u echt nergens omkijken naar.
