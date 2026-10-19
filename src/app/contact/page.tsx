@@ -70,15 +70,15 @@ export default function ContactPage() {
               <h2 className="text-xl font-bold text-gray-900 mb-5">Contactgegevens</h2>
               <ul className="space-y-5">
                 <li className="flex items-start gap-4">
-                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-indigo-100 shrink-0">
-                    <PhoneIcon className="size-5 text-indigo-600" />
+                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-brand-tint shrink-0">
+                    <PhoneIcon className="size-5 text-brand" />
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Telefoon</p>
                     <ContactLink
                       type="phone"
                       location="contactpagina"
-                      className="font-semibold text-gray-900 hover:text-indigo-600 transition-colors"
+                      className="font-semibold text-gray-900 hover:text-brand-strong transition-colors"
                     >
                       +31 6 36 27 85 15
                     </ContactLink>
@@ -86,14 +86,14 @@ export default function ContactPage() {
                 </li>
 
                 <li className="flex items-start gap-4">
-                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-indigo-100 shrink-0">
-                    <MailIcon className="size-5 text-indigo-600" />
+                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-brand-tint shrink-0">
+                    <MailIcon className="size-5 text-brand" />
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">E-mail</p>
                     <a
                       href="mailto:info@elly-apps.nl"
-                      className="font-semibold text-gray-900 hover:text-indigo-600 transition-colors"
+                      className="font-semibold text-gray-900 hover:text-brand-strong transition-colors"
                     >
                       info@elly-apps.nl
                     </a>
@@ -101,15 +101,15 @@ export default function ContactPage() {
                 </li>
 
                 <li className="flex items-start gap-4">
-                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-green-100 shrink-0">
-                    <MessageCircleIcon className="size-5 text-green-600" />
+                  <div className="inline-flex items-center justify-center size-10 rounded-full bg-success/10 shrink-0">
+                    <MessageCircleIcon className="size-5 text-success" />
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">WhatsApp</p>
                     <ContactLink
                       type="whatsapp"
                       location="contactpagina"
-                      className="font-semibold text-gray-900 hover:text-green-600 transition-colors"
+                      className="font-semibold text-gray-900 hover:text-success transition-colors"
                     >
                       Stuur een WhatsApp bericht
                     </ContactLink>
@@ -121,8 +121,8 @@ export default function ContactPage() {
             <div>
               <h2 className="text-xl font-bold text-gray-900 mb-4">Openingstijden</h2>
               <div className="flex items-start gap-4">
-                <div className="inline-flex items-center justify-center size-10 rounded-full bg-indigo-100 shrink-0">
-                  <ClockIcon className="size-5 text-indigo-600" />
+                <div className="inline-flex items-center justify-center size-10 rounded-full bg-brand-tint shrink-0">
+                  <ClockIcon className="size-5 text-brand" />
                 </div>
                 <div className="text-sm text-gray-700 space-y-1">
                   <p>Maandag t/m vrijdag</p>

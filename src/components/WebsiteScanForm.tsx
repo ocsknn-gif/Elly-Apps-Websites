@@ -2,8 +2,15 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
-export function WebsiteScanForm() {
+type Props = {
+  /** 'compact': drie velden (website, naam, e-mail) voor de hero op de homepage. */
+  variant?: 'full' | 'compact'
+}
+
+export function WebsiteScanForm({ variant = 'full' }: Props) {
   const [sending, setSending] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const router = useRouter()
@@ -51,6 +58,93 @@ export function WebsiteScanForm() {
     }
   }
 
+  const honeypot = (
+    /* Honeypot — onzichtbaar voor bezoekers, wordt door bots wel ingevuld */
+    <input
+      type="text"
+      name="company_website"
+      tabIndex={-1}
+      autoComplete="off"
+      aria-hidden="true"
+      className="hidden"
+    />
+  )
+
+  const errorBox = error && (
+    <div
+      role="alert"
+      className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700"
+    >
+      {error}
+    </div>
+  )
+
+  if (variant === 'compact') {
+    const label = 'block text-sm font-semibold text-ink mb-1'
+    const input =
+      'w-full min-h-12 rounded-btn border border-line bg-bg px-4 text-base text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-strong'
+
+    return (
+      <form onSubmit={handleSubmit} className="space-y-3">
+        <div>
+          <label htmlFor="scan-website" className={label}>
+            Uw website
+          </label>
+          {/* type="text" i.p.v. "url": dan wordt "uwbedrijf.nl" zonder https:// ook geaccepteerd */}
+          <input
+            id="scan-website"
+            name="website"
+            type="text"
+            inputMode="url"
+            autoComplete="url"
+            autoCapitalize="none"
+            spellCheck={false}
+            required
+            className={input}
+            placeholder="uwbedrijf.nl"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="scan-naam" className={label}>
+            Naam
+          </label>
+          <input
+            id="scan-naam"
+            name="naam"
+            type="text"
+            autoComplete="name"
+            required
+            className={input}
+            placeholder="Uw naam"
+          />
+        </div>
+
+        <div>
+          <label htmlFor="scan-email" className={label}>
+            E-mailadres
+          </label>
+          <input
+            id="scan-email"
+            name="email"
+            type="email"
+            autoComplete="email"
+            required
+            className={input}
+            placeholder="u@bedrijf.nl"
+          />
+        </div>
+
+        {honeypot}
+        {errorBox}
+
+        <button type="submit" disabled={sending} className={cn(buttonVariants(), 'w-full')}>
+          {sending ? 'Versturen…' : 'Start gratis scan'}
+        </button>
+      </form>
+    )
+  }
+
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -63,7 +157,7 @@ export function WebsiteScanForm() {
             name="naam"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="Uw volledige naam"
           />
         </div>
@@ -77,7 +171,7 @@ export function WebsiteScanForm() {
             name="bedrijf"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="Uw bedrijfsnaam"
           />
         </div>
@@ -87,13 +181,18 @@ export function WebsiteScanForm() {
         <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-1">
           Website URL <span className="text-red-500">*</span>
         </label>
+        {/* Zelfde aanpak als de compacte variant: "uwbedrijf.nl" zonder https:// wordt ook geaccepteerd */}
         <input
           id="website"
           name="website"
-          type="url"
+          type="text"
+          inputMode="url"
+          autoComplete="url"
+          autoCapitalize="none"
+          spellCheck={false}
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          placeholder="https://uwbedrijf.nl"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+          placeholder="uwbedrijf.nl"
         />
       </div>
 
@@ -107,7 +206,7 @@ export function WebsiteScanForm() {
             name="email"
             type="email"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="u@bedrijf.nl"
           />
         </div>
@@ -120,36 +219,16 @@ export function WebsiteScanForm() {
             id="telefoon"
             name="telefoon"
             type="tel"
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
             placeholder="+31 6 12345678"
           />
         </div>
       </div>
 
-      {/* Honeypot — onzichtbaar voor bezoekers, wordt door bots wel ingevuld */}
-      <input
-        type="text"
-        name="company_website"
-        tabIndex={-1}
-        autoComplete="off"
-        aria-hidden="true"
-        className="hidden"
-      />
+      {honeypot}
+      {errorBox}
 
-      {error && (
-        <div
-          role="alert"
-          className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700"
-        >
-          {error}
-        </div>
-      )}
-
-      <button
-        type="submit"
-        disabled={sending}
-        className="w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
-      >
+      <button type="submit" disabled={sending} className={cn(buttonVariants(), 'w-full')}>
         {sending ? 'Versturen…' : 'Vraag gratis websitescan aan'}
       </button>
 

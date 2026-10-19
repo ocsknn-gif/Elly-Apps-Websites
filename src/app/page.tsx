@@ -1,18 +1,24 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import {
-  GlobeIcon,
-  SmartphoneIcon,
-  SearchIcon,
-  TrendingUpIcon,
-  CheckCircleIcon,
-  ClockIcon,
-  ShieldCheckIcon,
-  MapPinIcon,
-  StarIcon,
-} from 'lucide-react'
+import { Hero } from '@/components/home/Hero'
+import { Goals } from '@/components/home/Goals'
+import { Benefits } from '@/components/home/Benefits'
+import { Services } from '@/components/home/Services'
+import { Branches } from '@/components/home/Branches'
+import { Pricing } from '@/components/home/Pricing'
+import { Steps } from '@/components/home/Steps'
+import { Expectations } from '@/components/home/Expectations'
+import { Faq } from '@/components/home/Faq'
+import { About } from '@/components/home/About'
+import { ClosingCta } from '@/components/home/ClosingCta'
+import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
+
+// Pakketinhoud komt uit src/lib/pakketten.ts, zodat schema en zichtbare prijzen gelijk blijven
+const schemaNamen: Record<WebsitePakket['naam'], string> = {
+  Starter: 'Professionele website',
+  Groei: 'Website met lokale SEO',
+  Pro: 'Uitgebreide website met SEO-strategie',
+}
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -44,56 +50,22 @@ const localBusinessSchema = {
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Website en SEO pakketten',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Starter pakket — Professionele website',
-          description: "Professionele website inclusief hosting, SSL en basis SEO. Ideaal voor zzp'ers en kleine ondernemers.",
-        },
-        price: '49',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '49',
-          priceCurrency: 'EUR',
-          unitText: 'per maand',
-        },
+    itemListElement: websitePakketten.map((p) => ({
+      '@type': 'Offer',
+      itemOffered: {
+        '@type': 'Service',
+        name: `${p.naam} pakket — ${schemaNamen[p.naam]}`,
+        description: `${p.features.join(', ')}. ${p.eenmalig}.`,
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Groei pakket — Website met SEO',
-          description: 'Professionele website met uitgebreide SEO, Google Business optimalisatie en maandelijkse rapportage.',
-        },
-        price: '199',
+      price: String(p.maandprijs ?? 0),
+      priceCurrency: 'EUR',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: String(p.maandprijs ?? 0),
         priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '199',
-          priceCurrency: 'EUR',
-          unitText: 'per maand',
-        },
+        unitText: p.maandprijs === null ? 'op aanvraag' : 'per maand',
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Pro pakket — Maatwerk website of app',
-          description: 'Volledig maatwerk website of webapplicatie met AI-gedreven SEO en Google Ads beheer.',
-        },
-        price: '0',
-        priceCurrency: 'EUR',
-        priceSpecification: {
-          '@type': 'UnitPriceSpecification',
-          price: '0',
-          priceCurrency: 'EUR',
-          unitText: 'op aanvraag',
-        },
-      },
-    ],
+    })),
   },
 }
 
@@ -143,404 +115,37 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── SECTIE 1 — Hero ── */}
-      <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Linker kolom — tekst */}
-            <div>
-              <h1 className="text-5xl sm:text-6xl font-extrabold text-[#1a1a2e] leading-tight">
-                Professionele website laten maken voor MKB
-              </h1>
-              <p className="text-3xl sm:text-4xl font-extrabold italic text-[#E53E3E] mt-2 leading-tight">
-                AI-gedreven websites. Maximaal resultaat op Google.
-              </p>
-              <p className="mt-6 text-lg text-gray-600 max-w-lg">
-                Elly Apps bouwt en beheert professionele websites voor het Nederlandse MKB.
-                Volledig SEO-geoptimaliseerd, snel, veilig en voor een vaste maandprijs.
-                Wij zorgen dat uw bedrijf gevonden wordt op Google — zodat u zich kunt focussen op wat u echt doet.
-                Geen technische kennis nodig. Geen verborgen kosten. Alleen resultaat.
-              </p>
+      <Hero />
 
-              <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Link
-                  href="/gratis-websitescan"
-                  className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl bg-[#E53E3E] text-white font-semibold text-base hover:bg-[#C53030] transition-colors shadow-md"
-                >
-                  Ja, ik wil mijn gratis websitescan
-                </Link>
-                <Link
-                  href="/prijzen"
-                  className="inline-flex items-center justify-center px-6 py-3.5 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold text-base hover:bg-red-50 transition-colors"
-                >
-                  Bekijk onze pakketten
-                </Link>
-              </div>
+      {/* ── SECTIE 2 — Wat wilt u bereiken? ── */}
+      <Goals />
 
-              <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium text-gray-600">
-                {['✓ Gratis', '✓ Vrijblijvend', '✓ Binnen 24 uur reactie'].map((b) => (
-                  <span key={b}>{b}</span>
-                ))}
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-4">
-                {[
-                  { icon: <ShieldCheckIcon className="size-4 text-[#E53E3E]" />, label: '100% tevredenheidsgarantie' },
-                  { icon: <StarIcon className="size-4 text-[#E53E3E]" />, label: 'Google Partner' },
-                  { icon: <StarIcon className="size-4 text-[#E53E3E]" />, label: 'Trustpilot' },
-                ].map((t) => (
-                  <div key={t.label} className="flex items-center gap-1.5 text-xs text-gray-500 bg-gray-50 border border-gray-200 rounded-full px-3 py-1.5">
-                    {t.icon}
-                    {t.label}
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Rechter kolom — device mockup placeholder */}
-            <div className="flex items-center justify-center">
-              <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <Image
-                  src="/hero-image.webp"
-                  alt="SEO dashboard op laptop — professionele website laten maken"
-                  width={600}
-                  height={400}
-                  className="w-full h-auto object-cover"
-                  priority
-                  quality={60}
-                  fetchPriority="high"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── Stats balk ── */}
-      <section className="bg-[#f7f7f7] py-8 px-4 sm:px-6 lg:px-8 border-t border-b border-gray-200">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-            {[
-              { icon: <ClockIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: 'Gemiddeld binnen 2 weken online' },
-              { icon: <StarIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: '15+ jaar ervaring' },
-              { icon: <ShieldCheckIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: '100% tevredenheidsgarantie' },
-              { icon: <MapPinIcon className="size-5 text-[#E53E3E] mx-auto mb-1" />, stat: 'Heel Nederland' },
-            ].map((s) => (
-              <div key={s.stat}>
-                {s.icon}
-                <p className="text-sm font-semibold text-[#1a1a2e]">{s.stat}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTIE 2 — USPs ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <CheckCircleIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Betaalbaar vanaf €49/maand</h2>
-              <p className="text-gray-600 text-sm">Vaste lage maandprijs, geen verborgen kosten.</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <ClockIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Binnen 2 weken live</h2>
-              <p className="text-gray-600 text-sm">Van kennismaking tot lancering in gemiddeld 14 dagen.</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <ShieldCheckIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Volledig ontzorgd</h2>
-              <p className="text-gray-600 text-sm">Hosting, updates, beveiliging — wij regelen alles.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 2b — Voordelen ── */}
+      <Benefits />
 
       {/* ── SECTIE 3 — Diensten ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Onze diensten</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { icon: <GlobeIcon className="size-7 text-[#E53E3E]" />, title: 'Websites', href: '/diensten/websites', description: 'Wij bouwen professionele websites die niet alleen mooi zijn, maar ook snel laden en hoog scoren in Google. Elke website is technisch SEO-geoptimaliseerd, mobielvriendelijk en voorzien van de juiste structuur om bezoekers om te zetten in klanten.' },
-              { icon: <SmartphoneIcon className="size-7 text-[#E53E3E]" />, title: 'Apps', href: '/diensten/apps', description: 'Van een eenvoudige webapplicatie tot een volledig maatwerk platform — wij bouwen digitale oplossingen die aansluiten op uw bedrijfsprocessen en meegroeien met uw organisatie.' },
-              { icon: <SearchIcon className="size-7 text-[#E53E3E]" />, title: 'SEO', href: '/diensten/seo', description: 'Met zoekmachineoptimalisatie zorgen wij dat uw website structureel beter scoort in Google. Wij analyseren uw website, optimaliseren de technische basis, versterken uw content en bouwen autoriteit op zodat u duurzaam meer bezoekers trekt.' },
-              { icon: <TrendingUpIcon className="size-7 text-[#E53E3E]" />, title: 'Google Ads', href: '/diensten/sea', description: 'Wij beheren gerichte Google Ads campagnes die precies de juiste mensen bereiken op het juiste moment. Van zoekwoord strategie tot advertentieteksten en biedstrategie — volledig beheerd door ons.' },
-            ].map((dienst) => (
-              <Link key={dienst.title} href={dienst.href} className="block bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-[#E53E3E]/40 transition-all">
-                <div className="mb-4">{dienst.icon}</div>
-                <h3 className="text-lg font-bold text-[#1a1a2e] mb-2">{dienst.title}</h3>
-                <p className="text-sm text-gray-600">{dienst.description}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Services />
 
-      {/* ── SECTIE 3b — Waarom Elly Apps ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-6">
-            Waarom MKB-bedrijven kiezen voor Elly Apps
-          </h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Een professionele website laten maken hoeft niet ingewikkeld of duur te zijn.
-            Wij combineren technische kwaliteit met betaalbaarheid — speciaal voor het Nederlandse MKB.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl bg-[#f7f7f7] p-8">
-              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Gebouwd om gevonden te worden</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Elke website die wij bouwen is van de grond af aan geoptimaliseerd voor Google.
-                Wij zorgen voor een technisch correcte structuur, snelle laadtijden en relevante content —
-                de drie pijlers die bepalen hoe hoog uw website scoort in de zoekresultaten.
-                Zo trekt uw website structureel meer bezoekers zonder dat u betaalt voor elke klik.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-[#f7f7f7] p-8">
-              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Volledig ontzorgd, vaste prijs</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Veel MKB-ondernemers hebben geen tijd om zich bezig te houden met websites,
-                updates en Google-algoritmes. Wij nemen dat volledig over.
-                Voor een vaste maandprijs zorgen wij dat uw website altijd actueel, snel en veilig is.
-                Geen verrassingen op de factuur, geen technische zorgen.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-[#f7f7f7] p-8">
-              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Voor elk type bedrijf</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Wij bouwen websites voor zzp&apos;ers, kleine bedrijven en groeiende MKB-ondernemingen
-                in uiteenlopende sectoren — van loodgieters en kappers tot tandartsen,
-                fysiotherapeuten en online webshops. Elk bedrijf verdient een professionele online aanwezigheid.
-              </p>
-            </div>
-            <div className="rounded-2xl bg-[#f7f7f7] p-8">
-              <h3 className="text-xl font-bold text-[#1a1a2e] mb-3">Resultaat dat meetbaar is</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Wij leveren geen website en verdwijnen. In het Groei en Pro pakket ontvangt u
-                maandelijks een helder rapport met uw zoekposities, websiteverkeer en
-                aanbevelingen om verder te groeien. Transparantie is de basis van onze samenwerking.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ── SECTIE 3c — Voor jouw branche ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">Een website voor jouw branche</h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Wij kennen de wensen per sector en bouwen websites die aansluiten op uw vak — met de juiste functies en lokale vindbaarheid.
-          </p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              { label: 'Kapper', href: '/branche/kapper', emoji: '✂️' },
-              { label: 'Restaurant', href: '/branche/restaurant', emoji: '🍽️' },
-              { label: 'Loodgieter', href: '/branche/loodgieter', emoji: '🔧' },
-              { label: 'Tandarts', href: '/branche/tandarts', emoji: '🦷' },
-              { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut', emoji: '💪' },
-              { label: 'Bouwbedrijf', href: '/branche/bouwbedrijf', emoji: '🏗️' },
-              { label: 'Rijschool', href: '/branche/rijschool', emoji: '🚗' },
-              { label: 'Alle branches', href: '/branche', emoji: '→' },
-            ].map((b) => (
-              <Link key={b.href} href={b.href} className="flex items-center gap-3 bg-white rounded-xl p-4 shadow-sm border border-gray-100 font-semibold text-[#1a1a2e] hover:border-[#E53E3E] hover:text-[#E53E3E] transition-colors">
-                <span className="text-xl">{b.emoji}</span> {b.label}
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 3c — Branches ── */}
+      <Branches />
 
       {/* ── SECTIE 4 — Prijzen ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">Transparante prijzen</h2>
-          <p className="text-center text-gray-600 mb-12">Geen verrassingen. Vaste maandprijs.</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
-            {/* Starter */}
-            <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <p className="text-lg font-bold text-[#1a1a2e]">Starter</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
-                €49<span className="text-lg font-medium text-gray-500">/mnd</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €299</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Professionele website', 'Hosting inbegrepen', 'SSL-certificaat', 'Basis SEO'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
-                Aan de slag
-              </Link>
-            </div>
-            {/* Groei */}
-            <div className="flex flex-col rounded-2xl border-2 border-[#E53E3E] p-8 shadow-lg relative">
-              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E53E3E] text-white text-xs font-bold px-4 py-1 rounded-full">
-                Meest gekozen
-              </span>
-              <p className="text-lg font-bold text-[#1a1a2e]">Groei</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
-                €199<span className="text-lg font-medium text-gray-500">/mnd</span>
-              </p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €499</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Alles van Starter', 'Lokale SEO', 'Google Business optimalisatie', 'Maandelijks rapport'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
-                Aan de slag
-              </Link>
-            </div>
-            {/* Pro */}
-            <div className="flex flex-col rounded-2xl border border-gray-200 p-8 shadow-sm">
-              <p className="text-lg font-bold text-[#1a1a2e]">Pro</p>
-              <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">Op aanvraag</p>
-              <p className="text-sm text-gray-500 mt-1">Eenmalige setup: €799</p>
-              <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-                {['Maatwerk website of app', 'Geavanceerde SEO', 'Dedicated support', 'Google Ads beheer'].map((f) => (
-                  <li key={f} className="flex items-center gap-2">
-                    <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" /> {f}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/contact" className="mt-8 block text-center py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
-                Neem contact op
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Pricing />
 
-      {/* ── SECTIE 5 — Werkwijze ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Zo werken wij</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { step: '1', title: 'Gratis kennismaking', description: 'We plannen een gratis kennismakingsgesprek en bespreken uw doelen, wensen en budget. Geen verplichtingen, geen verkooppraat — gewoon een eerlijk gesprek.' },
-              { step: '2', title: 'Ontwerp & bouw', description: 'Op basis van uw wensen ontwerpen en bouwen wij een website die past bij uw bedrijf en doelgroep. U wordt op de hoogte gehouden gedurende het hele proces.' },
-              { step: '3', title: 'Review & lancering', description: 'U bekijkt het eindresultaat en geeft feedback. Na uw goedkeuring gaan we live. Gemiddeld staat uw website binnen 2 weken online.' },
-              { step: '4', title: 'Beheer & groei', description: 'Wij nemen het beheer volledig uit handen. Updates, beveiliging, technische monitoring en maandelijkse rapportages — zodat uw website altijd optimaal presteert.' },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="inline-flex items-center justify-center size-12 rounded-full bg-[#E53E3E] text-white font-bold text-xl mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-base font-bold text-[#1a1a2e] mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 5 — Zo werken wij ── */}
+      <Steps />
 
-      {/* ── SECTIE 5b — Resultaten & klantcases ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">
-            Wat onze klanten bereiken
-          </h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Een professionele website is een investering die zichzelf terugverdient.
-            Dit zijn de resultaten die MKB-bedrijven behalen na samenwerking met Elly Apps.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">+180%</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Meer organisch verkeer</p>
-              <p className="text-sm text-gray-600">Gemiddelde stijging in Google-verkeer binnen 6 maanden na lancering van een SEO-geoptimaliseerde website.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">2 weken</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Van gesprek tot live</p>
-              <p className="text-sm text-gray-600">Gemiddelde doorlooptijd van kennismaking tot livegang. Snel online zonder concessies aan kwaliteit.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">98%</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Tevreden klanten</p>
-              <p className="text-sm text-gray-600">Van onze klanten beveelt Elly Apps aan bij andere ondernemers. Kwaliteit en service staan voorop.</p>
-            </div>
-          </div>
+      {/* ── SECTIE 5b — Wat u van ons kunt verwachten ── */}
+      <Expectations />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">JV</div>
-                <div>
-                  <p className="font-semibold text-[#1a1a2e]">Jan van der Berg</p>
-                  <p className="text-xs text-gray-500">Eigenaar, Loodgietersbedrijf Van der Berg</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                &ldquo;Voordat ik bij Elly Apps terechtkwam, was mijn website nauwelijks vindbaar op Google.
-                Binnen drie maanden na de nieuwe website stond ik op de eerste pagina voor mijn regio.
-                Het aantal aanvragen is verdubbeld en ik hoef nu niet meer te adverteren.&rdquo;
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">SH</div>
-                <div>
-                  <p className="font-semibold text-[#1a1a2e]">Sandra Hoekstra</p>
-                  <p className="text-xs text-gray-500">Eigenaar, Kapsalon Hoekstra</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                &ldquo;Ik had geen idee waar ik moest beginnen met een website. Elly Apps heeft alles voor mij geregeld —
-                van het ontwerp tot de teksten en de Google-koppeling.
-                Nu word ik dagelijks gevonden door nieuwe klanten in mijn omgeving.&rdquo;
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 6 — Veelgestelde vragen (zelfde items als faqSchema) ── */}
+      <Faq items={faqItems} />
 
-      {/* ── SECTIE 6 — FAQ ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-10">Veelgestelde vragen</h2>
-          <div className="space-y-4">
-            {faqItems.map((item) => (
-              <details key={item.q} className="group rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden">
-                <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-[#1a1a2e] list-none select-none hover:bg-gray-50 transition-colors">
-                  {item.q}
-                  <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-                </summary>
-                <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 6b — Website laten maken voor het MKB (korte SEO-tekst) ── */}
+      <About />
 
-      {/* ── SECTIE 7 — CTA banner ── */}
-      <section className="bg-[#E53E3E] py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Klaar om gevonden te worden op Google?</h2>
-          <p className="text-white/90 text-lg mb-8 max-w-xl mx-auto">
-            Vraag een gratis websitescan aan en ontdek in 24 uur wat er beter kan aan uw online aanwezigheid.
-          </p>
-          <Link
-            href="/gratis-websitescan"
-            className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-[#E53E3E] font-bold text-lg hover:bg-red-50 transition-colors shadow-md"
-          >
-            Start met een gratis websitescan
-          </Link>
-        </div>
-      </section>
+      {/* ── SECTIE 7 — Afsluitende CTA ── */}
+      <ClosingCta />
     </>
   )
 }

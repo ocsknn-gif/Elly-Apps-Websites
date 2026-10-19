@@ -1,18 +1,19 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import MobileStickyBar from '@/components/MobileStickyBar'
 import CookieBanner from '@/components/CookieBanner'
-import Script from 'next/script'
+import Analytics from '@/components/Analytics'
 import TimedPopup from '@/components/TimedPopup'
 import ScrollCTA from '@/components/ScrollCTA'
 
-const inter = Inter({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  weight: ['400', '600', '700', '800'],
+  variable: '--font-sans',
   display: 'swap',
   preload: true,
 })
@@ -60,16 +61,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="nl" className={inter.variable}>
-      <head>
-        <link
-          rel="preload"
-          href="/hero-image.webp"
-          as="image"
-          type="image/webp"
-        />
-      </head>
-      <body className="font-[var(--font-inter)] antialiased bg-white text-gray-900">
+    <html lang="nl" className={jakarta.variable}>
+      {/* pb-16 op mobiel: ruimte voor MobileStickyBar onder de footer */}
+      <body className="font-sans antialiased bg-bg text-ink pb-16 md:pb-0">
         <Navbar />
         <main>{children}</main>
         <Footer />
@@ -78,16 +72,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CookieBanner />
         <ScrollCTA />
         <TimedPopup />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-YZJ22GGTS4"
-          strategy="lazyOnload"
-        />
-        <Script id="google-analytics" strategy="lazyOnload">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YZJ22GGTS4');`}
-        </Script>
-        <Script id="microsoft-clarity" strategy="lazyOnload">
-          {`(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","wnxdne8bn4");`}
-        </Script>
+        {/* GA4 en Clarity laden pas na toestemming in de cookiebanner */}
+        <Analytics />
       </body>
     </html>
   )

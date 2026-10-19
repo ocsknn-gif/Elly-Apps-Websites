@@ -1,10 +1,11 @@
 import Link from 'next/link'
 import ContactLink from '@/components/ContactLink'
 import Image from 'next/image'
+import CookieSettingsButton from '@/components/CookieSettingsButton'
 
 export function Footer() {
   return (
-    <footer style={{ backgroundColor: '#1a1a2e' }} className="text-gray-300">
+    <footer className="bg-navy text-navy-muted">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
@@ -16,7 +17,7 @@ export function Footer() {
           </div>
 
           <div>
-            <p className="text-white font-semibold mb-3">Diensten</p>
+            <p className="text-on-navy font-semibold mb-3">Diensten</p>
             <ul className="space-y-2 text-sm">
               {[
                 { label: 'Websites', href: '/diensten/websites' },
@@ -26,14 +27,14 @@ export function Footer() {
                 { label: 'Social Media', href: '/diensten/social-media' },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-[#E53E3E] transition-colors">{item.label}</Link>
+                  <Link href={item.href} className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">{item.label}</Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <p className="text-white font-semibold mb-3">Snel naar</p>
+            <p className="text-on-navy font-semibold mb-3">Snel naar</p>
             <ul className="space-y-2 text-sm">
               {[
                 { label: 'Home', href: '/' },
@@ -46,14 +47,17 @@ export function Footer() {
                 { label: 'Sitemap', href: '/sitemap-pagina' },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-[#E53E3E] transition-colors">{item.label}</Link>
+                  <Link href={item.href} className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">{item.label}</Link>
                 </li>
               ))}
+              <li>
+                <CookieSettingsButton className="text-left hover:text-on-navy hover:underline underline-offset-4 transition-colors" />
+              </li>
             </ul>
           </div>
 
           <div>
-            <p className="text-white font-semibold mb-3">Werkgebied</p>
+            <p className="text-on-navy font-semibold mb-3">Werkgebied</p>
             <ul className="space-y-2 text-sm mb-6">
               {[
                 { label: 'Noord-Holland', href: '/werkgebied/noord-holland' },
@@ -65,21 +69,21 @@ export function Footer() {
                 { label: 'Groningen', href: '/werkgebied/groningen' },
               ].map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="hover:text-[#E53E3E] transition-colors">{item.label}</Link>
+                  <Link href={item.href} className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">{item.label}</Link>
                 </li>
               ))}
             </ul>
 
-            <p className="text-white font-semibold mb-3">Contact</p>
+            <p className="text-on-navy font-semibold mb-3">Contact</p>
             <ul className="space-y-2 text-sm">
-              <li><ContactLink type="phone" location="footer" className="hover:text-[#E53E3E] transition-colors">+31 6 36 27 85 15</ContactLink></li>
-              <li><Link href="/contact" className="hover:text-[#E53E3E] transition-colors">Stuur een bericht</Link></li>
-              <li><ContactLink type="whatsapp" location="footer" className="hover:text-[#E53E3E] transition-colors">WhatsApp</ContactLink></li>
+              <li><ContactLink type="phone" location="footer" className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">+31 6 36 27 85 15</ContactLink></li>
+              <li><Link href="/contact" className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">Stuur een bericht</Link></li>
+              <li><ContactLink type="whatsapp" location="footer" className="hover:text-on-navy hover:underline underline-offset-4 transition-colors">WhatsApp</ContactLink></li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-white/10 text-center text-xs text-gray-500">
+        <div className="mt-10 pt-8 border-t border-white/10 text-center text-sm text-navy-muted">
           © {new Date().getFullYear()} Elly Apps &amp; Websites. Alle rechten voorbehouden.
         </div>
       </div>

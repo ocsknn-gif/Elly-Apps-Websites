@@ -58,7 +58,6 @@ const nextConfig = {
       { source: '/seo', destination: '/diensten/seo', permanent: true },
       { source: '/sea', destination: '/diensten/sea', permanent: true },
       { source: '/social-media', destination: '/diensten/social-media', permanent: true },
-      { source: '/diensten/websites', destination: '/diensten/websites', permanent: false },
 
       // Oude blog URLs
       { source: '/blog/website-laten-maken-loodgieter', destination: '/blog/loodgieter', permanent: true },

@@ -80,7 +80,7 @@ export default function DienstenAppsPage() {
         <div className="grid md:grid-cols-3 gap-6">
           {appTypes.map((t) => (
             <div key={t.title} className="border rounded-xl p-6 hover:border-[#E53E3E] transition-colors">
-              <div className="mb-3"><t.Icon size={24} color="#DC2626" /></div>
+              <div className="mb-3"><t.Icon size={24} className="text-brand" /></div>
               <h3 className="font-bold text-gray-900 mb-2">{t.title}</h3>
               <p className="text-sm text-gray-600">{t.desc}</p>
             </div>

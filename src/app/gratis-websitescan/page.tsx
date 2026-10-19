@@ -26,19 +26,19 @@ export const metadata: Metadata = {
 
 const checks = [
   {
-    icon: <SearchIcon className="size-6 text-indigo-600" />,
+    icon: <SearchIcon className="size-6 text-brand" />,
     title: 'SEO-check',
     description:
       'Wij analyseren hoe goed uw website scoort op zoekmachines. Denk aan zoekwoorden, metateksten, interne links en technische SEO-factoren die invloed hebben op uw positie in Google.',
   },
   {
-    icon: <ZapIcon className="size-6 text-indigo-600" />,
+    icon: <ZapIcon className="size-6 text-brand" />,
     title: 'Snelheidstest',
     description:
       'Een trage website kost u bezoekers én Google-posities. Wij meten de laadsnelheid van uw website op desktop en mobiel en geven concrete aanbevelingen voor verbetering.',
   },
   {
-    icon: <SmartphoneIcon className="size-6 text-indigo-600" />,
+    icon: <SmartphoneIcon className="size-6 text-brand" />,
     title: 'Mobiel-vriendelijk check',
     description:
       'Meer dan de helft van alle websitebezoeken komt van een smartphone. Wij controleren of uw website correct wordt weergegeven op alle schermformaten en of de gebruikerservaring optimaal is.',
@@ -70,7 +70,7 @@ export default function GratisWebsitescanPage() {
               key={c.title}
               className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6"
             >
-              <div className="inline-flex items-center justify-center size-11 rounded-full bg-indigo-100 mb-4">
+              <div className="inline-flex items-center justify-center size-11 rounded-full bg-brand-tint mb-4">
                 {c.icon}
               </div>
               <h3 className="text-base font-bold text-gray-900 mb-2">{c.title}</h3>

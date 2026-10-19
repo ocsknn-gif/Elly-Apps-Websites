@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
 export function ContactForm() {
   const [sending, setSending] = useState(false)
@@ -60,7 +62,7 @@ export function ContactForm() {
           name="naam"
           type="text"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
           placeholder="Uw volledige naam"
         />
       </div>
@@ -74,7 +76,7 @@ export function ContactForm() {
           name="email"
           type="email"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
           placeholder="u@bedrijf.nl"
         />
       </div>
@@ -88,7 +90,7 @@ export function ContactForm() {
           name="bericht"
           required
           rows={5}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 resize-none"
+          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong resize-none"
           placeholder="Hoe kunnen wij u helpen?"
         />
       </div>
@@ -115,7 +117,7 @@ export function ContactForm() {
       <button
         type="submit"
         disabled={sending}
-        className="w-full py-3 rounded-xl bg-indigo-600 text-white font-semibold text-sm hover:bg-indigo-700 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className={cn(buttonVariants(), 'w-full')}
       >
         {sending ? 'Versturen…' : 'Verstuur bericht'}
       </button>

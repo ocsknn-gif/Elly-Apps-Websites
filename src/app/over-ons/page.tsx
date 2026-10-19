@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { HeartIcon, UsersIcon, TargetIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Over ons | Elly Apps',
@@ -46,19 +47,19 @@ const organizationSchema = {
 
 const kernwaarden = [
   {
-    icon: <HeartIcon className="size-7 text-indigo-600" />,
+    icon: <HeartIcon className="size-7 text-brand" />,
     title: 'Betaalbaar',
     description:
       'Wij geloven dat elke ondernemer recht heeft op een professionele online aanwezigheid, ongeacht het budget. Daarom bieden wij vaste, eerlijke maandprijzen zonder verborgen kosten.',
   },
   {
-    icon: <UsersIcon className="size-7 text-indigo-600" />,
+    icon: <UsersIcon className="size-7 text-brand" />,
     title: 'Persoonlijk',
     description:
       'Bij Elly Apps bent u geen nummer. Wij werken nauw samen met elke klant, luisteren naar uw wensen en denken mee over de beste aanpak voor uw specifieke situatie.',
   },
   {
-    icon: <TargetIcon className="size-7 text-indigo-600" />,
+    icon: <TargetIcon className="size-7 text-brand" />,
     title: 'Resultaatgericht',
     description:
       'Een mooie website is een middel, geen doel. Wij richten ons altijd op meetbare resultaten: meer bezoekers, meer leads en meer omzet voor uw bedrijf.',
@@ -116,7 +117,7 @@ export default function OverOnsPage() {
                 key={w.title}
                 className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm"
               >
-                <div className="inline-flex items-center justify-center size-12 rounded-full bg-indigo-100 mb-4">
+                <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint mb-4">
                   {w.icon}
                 </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-2">{w.title}</h3>
@@ -127,7 +128,7 @@ export default function OverOnsPage() {
         </section>
 
         {/* CTA */}
-        <div className="text-center bg-indigo-50 rounded-2xl p-10">
+        <div className="text-center bg-brand-tint rounded-2xl p-10">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Klaar voor een kennismaking?</h2>
           <p className="text-gray-600 mb-6">
             Neem vrijblijvend contact op of vraag direct een gratis websitescan aan.
@@ -135,13 +136,13 @@ export default function OverOnsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/gratis-websitescan"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition-colors"
+              className={buttonVariants()}
             >
               Gratis websitescan
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl border-2 border-indigo-600 text-indigo-600 font-semibold hover:bg-indigo-50 transition-colors"
+              className={buttonVariants({ variant: 'secondary' })}
             >
               Neem contact op
             </Link>

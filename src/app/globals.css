@@ -2,11 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Kleuren als RGB-kanalen, zodat Tailwind-opacity werkt (bijv. bg-success/10). */
 :root {
-  --primary: #E53E3E;
-  --primary-hover: #C53030;
-  --background: #ffffff;
-  --foreground: #1a1a2e;
-  --muted: #f7f7f7;
-  --border: #e2e8f0;
+  --bg: 255 255 255;
+  --surface: 247 247 250;
+  --line: 228 228 236;
+  --ink: 26 26 46;
+  --muted: 91 95 112;
+  /* brand: alleen accenten, iconen en grote vlakken — nooit onder kleine tekst of witte knoptekst */
+  --brand: 229 62 62;
+  /* brand-strong: knoppen en rode links (wit erop ≈ 5,5:1) */
+  --brand-strong: 197 48 48;
+  --brand-strong-hover: 155 44 44;
+  --brand-tint: 253 236 236;
+  --navy: 26 26 46;
+  --on-navy: 255 255 255;
+  --navy-muted: 184 186 200;
+  --success: 47 133 90;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid rgb(var(--brand-strong));
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* ── Typografie ── */
+  .h1 {
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+  }
+  .h2 {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .h3 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  .body-lg {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .h1 {
+      font-size: 52px;
+      line-height: 1.1;
+    }
+    .h2 {
+      font-size: 36px;
+    }
+  }
+
+  /* ── Ruimte ── */
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .section {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
+  }
 }

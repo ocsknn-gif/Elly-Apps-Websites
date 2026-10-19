@@ -1,11 +1,19 @@
+'use client'
+
 import ContactLink from '@/components/ContactLink'
+import { useCookieConsent } from '@/hooks/use-cookie-consent'
 
 export default function WhatsAppButton() {
+  const { status } = useCookieConsent()
+  // Verborgen zolang de cookiebanner open staat
+  if (status !== 'decided') return null
+
   return (
     <ContactLink
       type="whatsapp"
       location="zwevende-knop"
-      className="fixed bottom-20 md:bottom-6 right-6 z-40"
+      // Mobiel: boven de sticky balk (64px hoog) + 16px ruimte
+      className="fixed bottom-20 md:bottom-6 right-4 md:right-6 z-40"
       aria-label="Chat met ons via WhatsApp"
     >
       <div className="h-14 w-14 min-h-[56px] min-w-[56px] rounded-full bg-[#25D366] hover:bg-[#1DA851] shadow-xl hover:shadow-2xl flex items-center justify-center transition-all duration-200">

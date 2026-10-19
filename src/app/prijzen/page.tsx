@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { PrijzenFilter } from '@/components/PrijzenFilter'
+import { websitePakketten } from '@/lib/pakketten'
 
 export const metadata: Metadata = {
   title: 'Wat kost een website? Prijzen vanaf €49 p/m | Elly Apps',
@@ -26,56 +27,12 @@ export const metadata: Metadata = {
 }
 
 const pakketten = {
-  Websites: [
-    {
-      naam: 'Starter',
-      prijs: '€49',
-      eenmalig: '€299 eenmalige setup',
-      populair: false,
-      features: [
-        '4 pagina\'s',
-        'Basis SEO',
-        'Contactformulier',
-        'Hosting & SSL',
-        'Maandelijks beheer',
-      ],
-      cta: 'Ja, ik wil mijn gratis websitescan',
-      href: '/gratis-websitescan',
-    },
-    {
-      naam: 'Boost',
-      prijs: '€199',
-      eenmalig: '€499 eenmalige setup',
-      populair: true,
-      features: [
-        '6 pagina\'s + 3 stadspagina\'s',
-        'Lokale SEO',
-        'Google Business optimalisatie',
-        'Maandelijkse updates',
-        'Performance rapportage',
-        'Teksten optioneel beschikbaar (+€149)',
-      ],
-      cta: 'Ja, ik wil mijn gratis websitescan',
-      href: '/gratis-websitescan',
-    },
-    {
-      naam: 'Pro',
-      prijs: 'Op maat',
-      eenmalig: '€799 eenmalige setup · Prijs op aanvraag',
-      populair: false,
-      features: [
-        '10+ pagina\'s',
-        'Volledige SEO-strategie',
-        'Blog',
-        'Video integratie',
-        'Maandrapportages',
-        'Persoonlijke accountmanager',
-        'Websiteteksten inbegrepen',
-      ],
-      cta: 'Ja, ik wil mijn gratis websitescan',
-      href: '/gratis-websitescan',
-    },
-  ],
+  // Websitepakketten komen uit één bron (ook gebruikt op de homepage)
+  Websites: websitePakketten.map((p) => ({
+    ...p,
+    cta: 'Ja, ik wil mijn gratis websitescan',
+    href: '/gratis-websitescan',
+  })),
   Apps: [
     {
       naam: 'App op maat',
