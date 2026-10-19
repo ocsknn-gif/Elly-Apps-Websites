@@ -67,7 +67,14 @@
 
   /* ── Ruimte ── */
   .section {
-    padding-top: 96px;
-    padding-bottom: 96px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: theme('screens.md')) {
+    .section {
+      padding-top: 96px;
+      padding-bottom: 96px;
+    }
   }
 }
