@@ -58,7 +58,7 @@ export default function PrivacybeleidPage() {
       <section className="space-y-4 text-gray-700">
         <h2 className="text-xl font-bold text-gray-900">1. Wie zijn wij?</h2>
         <p>Elly Apps & Websites is gevestigd in Nederland en bouwt en beheert professionele websites voor het MKB.</p>
-        <p>Vestigingsplaats: Aalsmeer. KvK-nummer: [KVKNUMMER].</p>
+        <p>Vestigingsplaats: Aalsmeer. KvK-nummer: 42092063.</p>
         <p>Contactgegevens: <a href="mailto:info@elly-apps.nl" className="text-brand-strong hover:underline">info@elly-apps.nl</a> | 06-36278515</p>
       </section>
       <section className="space-y-4 text-gray-700">
@@ -151,7 +151,7 @@ export default function PrivacybeleidPage() {
           <li>Bezwaar tegen verwerking</li>
           <li>Overdracht van uw gegevens</li>
         </ul>
-        <p>Verzoeken naar <a href="mailto:info@elly-apps.nl" className="text-brand-strong hover:underline">info@elly-apps.nl</a>. Reactie binnen 30 dagen.</p>
+        <p>Verzoeken naar <a href="mailto:info@elly-apps.nl" className="text-brand-strong hover:underline">info@elly-apps.nl</a>. Reactie binnen één maand.</p>
       </section>
       <section className="space-y-4 text-gray-700">
         <h2 className="text-xl font-bold text-gray-900">9. Klachten</h2>
