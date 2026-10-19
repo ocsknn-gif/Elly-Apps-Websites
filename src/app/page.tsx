@@ -4,11 +4,10 @@ import {
   SmartphoneIcon,
   SearchIcon,
   TrendingUpIcon,
-  CheckCircleIcon,
-  ClockIcon,
-  ShieldCheckIcon,
 } from 'lucide-react'
 import { Hero } from '@/components/home/Hero'
+import { Goals } from '@/components/home/Goals'
+import { Benefits } from '@/components/home/Benefits'
 import { Pricing } from '@/components/home/Pricing'
 import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
 
@@ -118,34 +117,11 @@ export default function HomePage() {
       {/* ── SECTIE 1 — Hero ── */}
       <Hero />
 
-      {/* ── SECTIE 2 — USPs ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <CheckCircleIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Betaalbaar vanaf €49/maand</h2>
-              <p className="text-gray-600 text-sm">Vaste lage maandprijs, geen verborgen kosten.</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <ClockIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Binnen 2 weken live</h2>
-              <p className="text-gray-600 text-sm">Van kennismaking tot lancering in gemiddeld 14 dagen.</p>
-            </div>
-            <div className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm">
-              <div className="inline-flex items-center justify-center size-12 rounded-full bg-red-50 mb-4">
-                <ShieldCheckIcon className="size-6 text-[#E53E3E]" />
-              </div>
-              <h2 className="text-xl font-bold text-[#1a1a2e] mb-2">Volledig ontzorgd</h2>
-              <p className="text-gray-600 text-sm">Hosting, updates, beveiliging — wij regelen alles.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 2 — Wat wilt u bereiken? ── */}
+      <Goals />
+
+      {/* ── SECTIE 2b — Voordelen ── */}
+      <Benefits />
 
       {/* ── SECTIE 3 — Diensten ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
