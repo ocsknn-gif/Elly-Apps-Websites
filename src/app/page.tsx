@@ -5,6 +5,8 @@ import { Benefits } from '@/components/home/Benefits'
 import { Services } from '@/components/home/Services'
 import { Branches } from '@/components/home/Branches'
 import { Pricing } from '@/components/home/Pricing'
+import { Steps } from '@/components/home/Steps'
+import { Expectations } from '@/components/home/Expectations'
 import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
@@ -177,89 +179,11 @@ export default function HomePage() {
       {/* ── SECTIE 4 — Prijzen ── */}
       <Pricing />
 
-      {/* ── SECTIE 5 — Werkwijze ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-[#f7f7f7]">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-12">Zo werken wij</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              { step: '1', title: 'Gratis kennismaking', description: 'We plannen een gratis kennismakingsgesprek en bespreken uw doelen, wensen en budget. Geen verplichtingen, geen verkooppraat — gewoon een eerlijk gesprek.' },
-              { step: '2', title: 'Ontwerp & bouw', description: 'Op basis van uw wensen ontwerpen en bouwen wij een website die past bij uw bedrijf en doelgroep. U wordt op de hoogte gehouden gedurende het hele proces.' },
-              { step: '3', title: 'Review & lancering', description: 'U bekijkt het eindresultaat en geeft feedback. Na uw goedkeuring gaan we live. Gemiddeld staat uw website binnen 2 weken online.' },
-              { step: '4', title: 'Beheer & groei', description: 'Wij nemen het beheer volledig uit handen. Updates, beveiliging, technische monitoring en maandelijkse rapportages — zodat uw website altijd optimaal presteert.' },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="inline-flex items-center justify-center size-12 rounded-full bg-[#E53E3E] text-white font-bold text-xl mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-base font-bold text-[#1a1a2e] mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 5 — Zo werken wij ── */}
+      <Steps />
 
-      {/* ── SECTIE 5b — Resultaten & klantcases ── */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-center text-[#1a1a2e] mb-4">
-            Wat onze klanten bereiken
-          </h2>
-          <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Een professionele website is een investering die zichzelf terugverdient.
-            Dit zijn de resultaten die MKB-bedrijven behalen na samenwerking met Elly Apps.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">+180%</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Meer organisch verkeer</p>
-              <p className="text-sm text-gray-600">Gemiddelde stijging in Google-verkeer binnen 6 maanden na lancering van een SEO-geoptimaliseerde website.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">2 weken</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Van gesprek tot live</p>
-              <p className="text-sm text-gray-600">Gemiddelde doorlooptijd van kennismaking tot livegang. Snel online zonder concessies aan kwaliteit.</p>
-            </div>
-            <div className="text-center p-8 rounded-2xl bg-[#f7f7f7]">
-              <p className="text-5xl font-extrabold text-[#E53E3E] mb-2">98%</p>
-              <p className="font-semibold text-[#1a1a2e] mb-1">Tevreden klanten</p>
-              <p className="text-sm text-gray-600">Van onze klanten beveelt Elly Apps aan bij andere ondernemers. Kwaliteit en service staan voorop.</p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">JV</div>
-                <div>
-                  <p className="font-semibold text-[#1a1a2e]">Jan van der Berg</p>
-                  <p className="text-xs text-gray-500">Eigenaar, Loodgietersbedrijf Van der Berg</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                &ldquo;Voordat ik bij Elly Apps terechtkwam, was mijn website nauwelijks vindbaar op Google.
-                Binnen drie maanden na de nieuwe website stond ik op de eerste pagina voor mijn regio.
-                Het aantal aanvragen is verdubbeld en ik hoef nu niet meer te adverteren.&rdquo;
-              </p>
-            </div>
-            <div className="rounded-2xl border border-gray-200 p-8 bg-white shadow-sm">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 rounded-full bg-[#E53E3E] flex items-center justify-center text-white font-bold text-sm">SH</div>
-                <div>
-                  <p className="font-semibold text-[#1a1a2e]">Sandra Hoekstra</p>
-                  <p className="text-xs text-gray-500">Eigenaar, Kapsalon Hoekstra</p>
-                </div>
-              </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                &ldquo;Ik had geen idee waar ik moest beginnen met een website. Elly Apps heeft alles voor mij geregeld —
-                van het ontwerp tot de teksten en de Google-koppeling.
-                Nu word ik dagelijks gevonden door nieuwe klanten in mijn omgeving.&rdquo;
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* ── SECTIE 5b — Wat u van ons kunt verwachten ── */}
+      <Expectations />
 
       {/* ── SECTIE 6 — FAQ ── */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
