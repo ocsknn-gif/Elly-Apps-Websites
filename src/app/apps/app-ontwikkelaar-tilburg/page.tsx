@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Tilburg | Elly Apps',
@@ -53,49 +55,48 @@ export default function AppOntwikkelaarTilburgPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Tilburg</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">App ontwikkelaar in Tilburg</h1>
-          <p className="text-xl text-gray-600">Elly Apps is uw app ontwikkelaar in Tilburg en omgeving. Wij bouwen professionele web-apps en mobiele applicaties met AI-gedreven functionaliteiten — snel, betrouwbaar en voor een vaste prijs.</p>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Tilburg</p>
+          <h1 className="h1 text-ink">App ontwikkelaar in Tilburg</h1>
+          <p className="body-lg text-muted mt-4">Elly Apps is uw app ontwikkelaar in Tilburg en omgeving. Wij bouwen professionele web-apps en mobiele applicaties met AI-gedreven functionaliteiten — snel, betrouwbaar en voor een vaste prijs.</p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Op zoek naar een betrouwbare app ontwikkelaar in Tilburg? Elly Apps is gespecialiseerd in het bouwen van maatwerk web-apps en mobiele applicaties voor MKB-bedrijven in Tilburg en de regio Midden-Brabant. Wij combineren technische expertise met een diep begrip van de uitdagingen waar ondernemers tegenaan lopen — zodat de apps die wij bouwen niet alleen technisch perfect zijn, maar ook echt het verschil maken voor uw bedrijf.</p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Wat doet een app ontwikkelaar precies?</h2>
+          <h2 className="h2 text-ink pt-6">Wat doet een app ontwikkelaar precies?</h2>
           <p>Een app ontwikkelaar analyseert uw bedrijfsprocessen, vertaalt die naar functionele eisen, ontwerpt de gebruikersinterface, schrijft de code en test de applicatie uitgebreid voor oplevering. Bij Elly Apps gaat dat verder: wij denken actief mee over hoe technologie uw bedrijf vooruitkan helpen. Wij zijn niet alleen uitvoerders — wij zijn strategische partners die u helpen de juiste digitale beslissingen te nemen.</p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Waarom kiezen voor Elly Apps als app ontwikkelaar in Tilburg?</h2>
+          <h2 className="h2 text-ink pt-6">Waarom kiezen voor Elly Apps als app ontwikkelaar in Tilburg?</h2>
           <p>Er zijn meerdere redenen waarom Tilburgse ondernemers voor Elly Apps kiezen. Ten eerste onze transparante werkwijze: vaste prijs, heldere communicatie en geen verrassingen. Ten tweede onze AI-expertise: wij integreren standaard AI-functionaliteiten in onze apps waardoor uw applicatie slimmer en toekomstbestendiger wordt. Ten derde onze brede sectorervaring: van horeca en retail tot zorg en zakelijke dienstverlening. En ten vierde onze snelheid: gemiddeld binnen 4 tot 6 weken van idee naar werkende app.</p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Technologie die we gebruiken</h2>
+          <h2 className="h2 text-ink pt-6">Technologie die we gebruiken</h2>
           <p>Wij werken met moderne, bewezen technologieën die schaalbaar en onderhoudsvriendelijk zijn. Voor web-apps gebruiken wij Next.js en React, voor databases Supabase of PostgreSQL, voor AI-integraties de Anthropic Claude API, en voor betalingen Stripe of Mollie. Al onze code is goed gedocumenteerd en overdraagbaar — u bent nooit afhankelijk van ons voor de technologie die u bezit.</p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Van idee naar app: ons bewezen proces</h2>
+          <h2 className="h2 text-ink pt-6">Van idee naar app: ons bewezen proces</h2>
           <p>Ons ontwikkelproces is lean en transparant. Na een gratis kennismakingsgesprek stellen wij een gedetailleerde offerte op. Na akkoord starten wij met het functioneel ontwerp. Daarna bouwen wij in twee-wekelijkse sprints, waarbij u na elke sprint een werkende versie kunt testen. Na uitgebreid testen lanceren wij de app en begeleiden wij de go-live. Daarna nemen wij het beheer volledig over.</p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {['Specialist in Next.js, React en AI', 'Transparante vaste prijs', 'Gemiddeld binnen 4-6 weken live', 'Code reviews en geautomatiseerde tests', 'Volledig beheer na lancering', 'Sectorervaring in horeca, zorg en retail'].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over app ontwikkeling</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over app ontwikkeling" className="bg-bg" />
 
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde pagina&apos;s</h2>
+      {/* Gerelateerde pagina's */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="h2 text-ink mb-6">Gerelateerde pagina&apos;s</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { label: 'App laten maken — overzicht', href: '/diensten/apps' },
@@ -103,22 +104,25 @@ export default function AppOntwikkelaarTilburgPage() {
               { label: 'Website laten maken in Tilburg', href: '/stad/tilburg' },
               { label: 'App laten maken Breda', href: '/apps/breda' },
             ].map((r) => (
-              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
-                <span className="text-[#E53E3E]">→</span> {r.label}
+              <Link key={r.href} href={r.href} className="flex min-h-12 items-center gap-2 rounded-2xl border border-line bg-bg px-4 py-3 font-semibold text-ink shadow-sm transition-all hover:border-brand-strong hover:text-brand-strong hover:shadow-md">
+                <span className="text-brand" aria-hidden="true">→</span> {r.label}
               </Link>
             ))}
           </div>
         </div>
+      </section>
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">App laten ontwikkelen in Tilburg?</h2>
-          <p className="text-gray-600 mb-6">Plan een gratis kennismakingsgesprek en ontdek wat wij voor u kunnen bouwen.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">Gratis kennismakingsgesprek</Link>
-            <Link href="/apps/tilburg" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">Meer over apps in Tilburg</Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">App laten ontwikkelen in Tilburg?</h2>
+          <p className="body-lg text-navy-muted mt-4">Plan een gratis kennismakingsgesprek en ontdek wat wij voor u kunnen bouwen.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className={buttonVariants({ size: 'lg' })}>Gratis kennismakingsgesprek</Link>
+            <Link href="/apps/tilburg" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Meer over apps in Tilburg</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
