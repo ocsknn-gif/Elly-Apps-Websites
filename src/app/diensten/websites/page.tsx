@@ -1,6 +1,12 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Zap, Search, Accessibility, Smartphone, PenLine } from 'lucide-react'
+import { Zap, Search, Accessibility, Smartphone, PenLine, CheckIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { PakketKaart } from '@/components/PakketKaart'
+import { Faq } from '@/components/home/Faq'
+import { ClosingCta } from '@/components/home/ClosingCta'
+import { SectionHeader } from '@/components/home/SectionHeader'
+import { websitePakketten } from '@/lib/pakketten'
 
 export const metadata: Metadata = {
   title: 'Professionele website laten maken & beheren | Elly Apps',
@@ -49,12 +55,6 @@ const comparison = [
   ['Kwaliteit', 'Variabel', 'Hoog', 'Hoog'],
 ]
 
-const packages = [
-  { name: 'Starter', items: ["4 pagina's", 'Basis SEO', 'Contactformulier', 'Hosting & SSL', 'Maandelijks beheer'] },
-  { name: 'Groei', items: ["6 pagina's + 3 stadspagina's", 'Lokale SEO', 'Google Business optimalisatie', 'Maandelijkse updates', 'Performance rapportage'] },
-  { name: 'Pro', items: ["10+ pagina's", 'Volledige SEO-strategie', 'Blog', 'Video integratie', 'Persoonlijke accountmanager', 'Maandrapportages'] },
-]
-
 const techSpecs = [
   { Icon: Zap, text: 'Laadtijd onder 2 seconden' },
   { Icon: Search, text: 'SEO-geoptimaliseerd vanaf dag 1' },
@@ -70,25 +70,27 @@ const faq = [
   { q: 'Beheert Elly Apps mijn website volledig?', a: 'Ja, wij nemen het volledige beheer over zodat u zich kunt focussen op uw bedrijf.' },
 ]
 
+const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen 24 uur reactie'
+
 export default function DienstenWebsitesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       {/* Hero */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professionele website laten maken voor uw bedrijf</h1>
-            <p className="text-lg text-gray-600 mb-6">8 op de 10 MKB-websites worden niet gevonden op Google. Elly Apps zorgt dat u wél gevonden wordt — volledig ontzorgd.</p>
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
+            <h1 className="h1 text-ink">Professionele website laten maken voor uw bedrijf</h1>
+            <p className="body-lg text-muted mt-4 mb-6">8 op de 10 MKB-websites worden niet gevonden op Google. Elly Apps zorgt dat u wél gevonden wordt — volledig ontzorgd.</p>
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
               Ja, ik wil mijn gratis websitescan
             </Link>
-            <p className="text-sm text-gray-500 mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
+            <p className="text-sm text-muted mt-3">{NOTE}</p>
           </div>
           <div className="grid grid-cols-3 gap-4">
             {previews.map((b) => (
-              <div key={b.label} className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg border">
+              <div key={b.label} className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg border border-line">
                 <img src={b.img} alt={`${b.label} website voorbeeld`} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black/45" />
                 <div className="absolute inset-0 flex items-end p-3">
@@ -98,28 +100,28 @@ export default function DienstenWebsitesPage() {
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Comparison table */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Vergelijk uw opties</h2>
-          <div className="overflow-x-auto">
+      {/* Vergelijking */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="vergelijk-titel">
+        <div className="max-w-4xl mx-auto">
+          <SectionHeader id="vergelijk-titel" title="Vergelijk uw opties" />
+          <div className="overflow-x-auto rounded-2xl border border-line">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b">
-                  <th className="text-left py-3 px-4"></th>
-                  <th className="py-3 px-4 text-gray-600">Zelf doen</th>
-                  <th className="py-3 px-4 text-gray-600">Duur bureau</th>
-                  <th className="py-3 px-4 text-[#E53E3E] font-bold">Elly Apps</th>
+                <tr className="border-b border-line bg-surface">
+                  <th scope="col" className="text-left py-3 px-4"><span className="sr-only">Onderdeel</span></th>
+                  <th scope="col" className="py-3 px-4 text-muted">Zelf doen</th>
+                  <th scope="col" className="py-3 px-4 text-muted">Duur bureau</th>
+                  <th scope="col" className="py-3 px-4 text-brand-strong font-bold">Elly Apps</th>
                 </tr>
               </thead>
               <tbody>
                 {comparison.map(([label, ...vals]) => (
-                  <tr key={label} className="border-b">
-                    <td className="py-3 px-4 font-semibold text-gray-900">{label}</td>
+                  <tr key={label} className="border-b border-line last:border-b-0">
+                    <th scope="row" className="py-3 px-4 text-left font-semibold text-ink">{label}</th>
                     {vals.map((v, i) => (
-                      <td key={i} className={`py-3 px-4 text-center ${i === 2 ? 'text-[#E53E3E] font-semibold' : 'text-gray-500'}`}>{v}</td>
+                      <td key={i} className={`py-3 px-4 text-center ${i === 2 ? 'text-brand-strong font-semibold' : 'text-muted'}`}>{v}</td>
                     ))}
                   </tr>
                 ))}
@@ -127,93 +129,95 @@ export default function DienstenWebsitesPage() {
             </table>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Packages */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Wat is inbegrepen?</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {packages.map((p) => (
-            <div key={p.name} className="border rounded-xl p-6">
-              <h3 className="font-bold text-lg text-gray-900 mb-4">{p.name}</h3>
-              <ul className="space-y-2">
-                {p.items.map((f) => (
-                  <li key={f} className="text-sm flex gap-2 text-gray-700"><span className="text-[#E53E3E]">✓</span>{f}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Technical specs */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
-          {techSpecs.map((s) => (
-            <div key={s.text} className="p-6 rounded-xl border bg-white">
-              <div className="mb-2 flex justify-center"><s.Icon size={24} className="text-brand" /></div>
-              <p className="font-semibold text-sm text-gray-900">{s.text}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Copywriting USP */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-          <PenLine size={24} className="text-brand" /> Wij schrijven ook uw teksten
-        </h2>
-        <p className="text-gray-600 mb-6">
-          Geen idee wat u op uw website moet zetten? Geen probleem. Wij nemen ook het schrijven van uw websiteteksten volledig over. U vertelt, wij schrijven. Zo heeft u echt nergens omkijken naar.
-        </p>
-        <ul className="space-y-3">
-          <li className="flex items-start gap-3 text-sm text-gray-700"><span className="text-[#E53E3E] font-bold">✓</span>Professionele, SEO-geoptimaliseerde teksten</li>
-          <li className="flex items-start gap-3 text-sm text-gray-700"><span className="text-[#E53E3E] font-bold">✓</span>Geschreven voor uw doelgroep</li>
-          <li className="flex items-start gap-3 text-sm text-gray-700"><span className="text-[#E53E3E] font-bold">✓</span>Inbegrepen in het Pro pakket, optioneel bij andere pakketten</li>
-        </ul>
-      </div>
-
-      {/* Process */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-8">Ons proces</h2>
-          <div className="flex flex-wrap justify-center gap-4">
-            {['Intake', 'Ontwerp', 'Bouw', 'Lancering', 'Beheer'].map((s, i) => (
-              <div key={s} className="flex items-center gap-2">
-                <div className="bg-[#E53E3E] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold">{i + 1}</div>
-                <span className="font-semibold text-gray-900">{s}</span>
-                {i < 4 && <span className="text-gray-400">→</span>}
-              </div>
+      {/* Pakketten */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="inbegrepen-titel">
+        <div className="max-w-7xl mx-auto">
+          <SectionHeader id="inbegrepen-titel" title="Wat is inbegrepen?" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {websitePakketten.map((p) => (
+              <PakketKaart
+                key={p.naam}
+                naam={p.naam}
+                prijs={p.prijs}
+                periode={p.prijs.startsWith('€') ? '/maand' : undefined}
+                eenmalig={p.eenmalig}
+                populair={p.populair}
+                features={p.features}
+                cta={{ label: 'Ja, ik wil mijn gratis websitescan', href: '/gratis-websitescan' }}
+                note={NOTE}
+              />
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* FAQ */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Veelgestelde vragen over websites laten maken</h2>
-        <div className="space-y-4">
-          {faq.map((item, i) => (
-            <details key={i} className="border rounded-xl p-4">
-              <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                {item.q}<span className="text-[#E53E3E] ml-2">+</span>
-              </summary>
-              <p className="mt-3 text-gray-600 leading-relaxed">{item.a}</p>
-            </details>
+      {/* Technische specs */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-label="Technische kenmerken">
+        <div className="max-w-5xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          {techSpecs.map((s) => (
+            <div key={s.text} className="p-6 rounded-2xl border border-line bg-bg shadow-sm">
+              <div className="mb-3 flex justify-center">
+                <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint">
+                  <s.Icon size={24} className="text-brand" aria-hidden="true" />
+                </div>
+              </div>
+              <p className="font-semibold text-sm text-ink">{s.text}</p>
+            </div>
           ))}
         </div>
-      </div>
+      </section>
 
-      {/* CTA */}
-      <div className="bg-[#E53E3E] py-16 text-center text-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-4">Klaar om uw bedrijf online te laten groeien?</h2>
-          <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[#E53E3E] font-semibold hover:bg-gray-100 transition-colors">
-            Ja, ik wil mijn gratis websitescan
-          </Link>
-          <p className="text-sm text-white/90 mt-3">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
+      {/* Teksten */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="teksten-titel">
+        <div className="max-w-3xl mx-auto">
+          <h2 id="teksten-titel" className="h2 text-ink mb-4 flex items-center gap-3">
+            <PenLine size={28} className="text-brand shrink-0" aria-hidden="true" /> Wij schrijven ook uw teksten
+          </h2>
+          <p className="body text-muted mb-6">
+            Geen idee wat u op uw website moet zetten? Geen probleem. Wij nemen ook het schrijven van uw websiteteksten volledig over. U vertelt, wij schrijven. Zo heeft u echt nergens omkijken naar.
+          </p>
+          <ul className="space-y-3 body text-ink">
+            {[
+              'Professionele, SEO-geoptimaliseerde teksten',
+              'Geschreven voor uw doelgroep',
+              'Inbegrepen in het Pro pakket, optioneel bij andere pakketten',
+            ].map((t) => (
+              <li key={t} className="flex items-start gap-2">
+                <CheckIcon className="size-5 text-brand shrink-0 mt-0.5" aria-hidden="true" />
+                {t}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      </section>
+
+      {/* Proces */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="proces-titel">
+        <div className="max-w-5xl mx-auto text-center">
+          <SectionHeader id="proces-titel" title="Ons proces" />
+          <ol className="flex flex-wrap justify-center gap-4">
+            {['Intake', 'Ontwerp', 'Bouw', 'Lancering', 'Beheer'].map((s, i) => (
+              <li key={s} className="flex items-center gap-2">
+                <span className="bg-brand-strong text-white size-10 rounded-full flex items-center justify-center font-bold">{i + 1}</span>
+                <span className="font-semibold text-ink">{s}</span>
+                {i < 4 && <span className="text-muted" aria-hidden="true">→</span>}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      <Faq items={faq} title="Veelgestelde vragen over websites laten maken" className="bg-surface" />
+
+      <ClosingCta
+        title="Klaar om uw bedrijf online te laten groeien?"
+        text="Vraag een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen."
+        buttonLabel="Ja, ik wil mijn gratis websitescan"
+        note={NOTE}
+        beeld={false}
+      />
     </>
   )
 }
