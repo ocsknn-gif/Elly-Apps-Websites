@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor bouwbedrijf | Elly Apps',
@@ -53,19 +55,18 @@ export default function BouwbedrijfPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Branche</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Website laten maken voor bouwbedrijf
-          </h1>
-          <p className="text-xl text-gray-600">
-            Meer opdrachten via Google. Een professionele website voor uw bouwbedrijf of
-            aannemer — met portfolio, offerteformulier en lokale SEO.
-          </p>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
+          <h1 className="h1 text-ink">Website laten maken voor bouwbedrijf</h1>
+          <p className="body-lg text-muted mt-4">Meer opdrachten via Google. Een professionele website voor uw bouwbedrijf of aannemer — met portfolio, offerteformulier en lokale SEO.</p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             Particulieren en bedrijven die een aannemer of bouwbedrijf zoeken, beginnen hun
             zoektocht steeds vaker online. Ze zoeken op Google, bekijken websites, lezen reviews
@@ -74,7 +75,7 @@ export default function BouwbedrijfPage() {
             Een professionele website is voor elk bouwbedrijf de basis van moderne
             klantacquisitie.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Uw portfolio online: laat uw werk spreken</h2>
+          <h2 className="h2 text-ink pt-6">Uw portfolio online: laat uw werk spreken</h2>
           <p>
             Het sterkste verkoopargument voor een bouwbedrijf is uw eerdere werk. Wij bouwen
             een professionele portfolio sectie waar u uw afgeronde projecten kunt tonen —
@@ -82,7 +83,7 @@ export default function BouwbedrijfPage() {
             een korte beschrijving en eventueel een quote van de opdrachtgever. Dit overtuigt
             potentiële klanten sneller dan welke tekst ook.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online offertes: meer leads, minder telefoontjes</h2>
+          <h2 className="h2 text-ink pt-6">Online offertes: meer leads, minder telefoontjes</h2>
           <p>
             Een slim offerteformulier op uw website werkt 24/7. Potentiële klanten beschrijven
             hun project, uploaden foto's van de situatie en vullen hun contactgegevens in.
@@ -90,7 +91,7 @@ export default function BouwbedrijfPage() {
             cruciaal — wie als eerste terugbelt, krijgt de opdracht. Wij configureren het
             formulier zo dat u alleen relevante aanvragen ontvangt.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Lokale SEO voor bouwbedrijven</h2>
+          <h2 className="h2 text-ink pt-6">Lokale SEO voor bouwbedrijven</h2>
           <p>
             Mensen zoeken doorgaans op lokale termen: "aannemer Utrecht", "verbouwing
             Amsterdam", "dakkapel plaatsen Den Haag". Wij optimaliseren uw website voor
@@ -99,7 +100,7 @@ export default function BouwbedrijfPage() {
             lokale zoekresultaten. Dat levert structureel meer aanvragen op zonder
             advertentiekosten.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Professionele uitstraling, betaalbare prijs</h2>
+          <h2 className="h2 text-ink pt-6">Professionele uitstraling, betaalbare prijs</h2>
           <p>
             Veel bouwbedrijven hebben een slechte of verouderde website — of helemaal geen.
             Dit is een kans voor u. Met een professionele Elly Apps website onderscheidt u
@@ -109,8 +110,11 @@ export default function BouwbedrijfPage() {
             technische ondersteuning.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             'Professionele portfolio sectie',
             'Slim offerteformulier met foto-upload',
@@ -119,35 +123,27 @@ export default function BouwbedrijfPage() {
             'Mobielvriendelijk en snel',
             'Volledig beheerd, vaste prijs',
           ].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over websites voor bouwbedrijven</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over websites voor bouwbedrijven" className="bg-bg" />
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Website voor uw bouwbedrijf?</h2>
-          <p className="text-gray-600 mb-6">Vraag een gratis websitescan aan en ontdek hoe wij meer opdrachten naar uw bedrijf brengen.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">Gratis websitescan</Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">Bekijk prijzen</Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Website voor uw bouwbedrijf?</h2>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij meer opdrachten naar uw bedrijf brengen.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
