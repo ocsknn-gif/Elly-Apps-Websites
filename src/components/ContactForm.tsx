@@ -51,46 +51,50 @@ export function ContactForm() {
     }
   }
 
+  const label = 'block text-sm font-semibold text-ink mb-1'
+  const input =
+    'w-full min-h-12 rounded-btn border border-line bg-bg px-4 text-base text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-strong'
+
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="naam" className="block text-sm font-medium text-gray-700 mb-1">
-          Naam <span className="text-red-500">*</span>
+        <label htmlFor="naam" className={label}>
+          Naam <span className="text-brand-strong" aria-hidden="true">*</span>
         </label>
         <input
           id="naam"
           name="naam"
           type="text"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+          className={input}
           placeholder="Uw volledige naam"
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-          E-mailadres <span className="text-red-500">*</span>
+        <label htmlFor="email" className={label}>
+          E-mailadres <span className="text-brand-strong" aria-hidden="true">*</span>
         </label>
         <input
           id="email"
           name="email"
           type="email"
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+          className={input}
           placeholder="u@bedrijf.nl"
         />
       </div>
 
       <div>
-        <label htmlFor="bericht" className="block text-sm font-medium text-gray-700 mb-1">
-          Bericht <span className="text-red-500">*</span>
+        <label htmlFor="bericht" className={label}>
+          Bericht <span className="text-brand-strong" aria-hidden="true">*</span>
         </label>
         <textarea
           id="bericht"
           name="bericht"
           required
           rows={5}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong resize-none"
+          className={`${input} min-h-0 py-3 resize-none`}
           placeholder="Hoe kunnen wij u helpen?"
         />
       </div>
@@ -108,7 +112,7 @@ export function ContactForm() {
       {error && (
         <div
           role="alert"
-          className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700"
+          className="rounded-btn bg-brand-tint border border-brand-strong px-4 py-3 text-sm text-brand-strong"
         >
           {error}
         </div>
