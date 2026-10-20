@@ -8,10 +8,10 @@ export function BlogFilter({ actief }: { actief: string }) {
           key={cat}
           href={cat === 'Alle' ? '/blog' : `/blog?categorie=${encodeURIComponent(cat)}`}
           className={[
-            'px-4 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer',
+            'inline-flex items-center min-h-10 px-4 rounded-full text-sm font-semibold transition-colors cursor-pointer',
             cat === actief
-              ? 'bg-[#E53E3E] text-white'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+              ? 'bg-brand-strong text-white'
+              : 'border border-line bg-surface text-muted hover:text-ink',
           ].join(' ')}
         >
           {cat}

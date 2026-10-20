@@ -134,14 +134,7 @@ const artikelen = [
   },
 ]
 
-const categorieKleur: Record<string, string> = {
-  Websites: 'bg-blue-50 text-blue-700',
-  SEO: 'bg-green-50 text-green-700',
-  'Google Ads': 'bg-yellow-50 text-yellow-700',
-  Strategie: 'bg-purple-50 text-purple-700',
-  'Social Media': 'bg-pink-50 text-pink-700',
-  Branche: 'bg-orange-50 text-orange-700',
-}
+const categoriePil = 'bg-brand-tint text-brand-strong'
 
 export default function BlogOverzichtPage({
   searchParams,
@@ -156,49 +149,55 @@ export default function BlogOverzichtPage({
       : artikelen.filter((a) => a.categorie === actieveCategorie)
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="text-center mb-10">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">Blog</h1>
-        <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-          Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB.
-        </p>
-      </div>
+    <>
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-6xl mx-auto text-center">
+          <h1 className="h1 text-ink">Blog</h1>
+          <p className="body-lg text-muted mt-4 max-w-2xl mx-auto">
+            Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB.
+          </p>
+        </div>
+      </section>
 
-      <BlogFilter actief={actieveCategorie} />
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-6xl mx-auto">
+          <BlogFilter actief={actieveCategorie} />
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {gefilterdeArtikelen.map((artikel) => (
-          <Link
-            key={artikel.href}
-            href={artikel.href}
-            className="group flex flex-col rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
-          >
-            <div className="relative h-44 w-full">
-              <Image
-                src={artikel.afbeelding}
-                alt={artikel.titel}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-              />
-            </div>
-            <div className="p-5 flex flex-col flex-1">
-              <span
-                className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full mb-3 ${categorieKleur[artikel.categorie] ?? 'bg-gray-100 text-gray-600'}`}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {gefilterdeArtikelen.map((artikel) => (
+              <Link
+                key={artikel.href}
+                href={artikel.href}
+                className="group flex flex-col rounded-2xl border border-line bg-bg overflow-hidden"
               >
-                {artikel.categorie}
-              </span>
-              <h2 className="text-base font-bold text-gray-900 group-hover:text-[#E53E3E] transition-colors mb-2">
-                {artikel.titel}
-              </h2>
-              <p className="text-sm text-gray-600 leading-relaxed flex-1">{artikel.beschrijving}</p>
-              <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-[#E53E3E]">
-                Lees meer <ArrowRightIcon className="size-4" />
-              </span>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </div>
+                <div className="relative h-44 w-full">
+                  <Image
+                    src={artikel.afbeelding}
+                    alt={artikel.titel}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="p-5 flex flex-col flex-1">
+                  <span
+                    className={`self-start text-xs font-semibold px-2.5 py-1 rounded-full mb-3 ${categoriePil}`}
+                  >
+                    {artikel.categorie}
+                  </span>
+                  <h2 className="text-base font-bold text-ink group-hover:text-brand-strong transition-colors mb-2">
+                    {artikel.titel}
+                  </h2>
+                  <p className="text-sm text-muted leading-relaxed flex-1">{artikel.beschrijving}</p>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-strong">
+                    Lees meer <ArrowRightIcon className="size-4" />
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
