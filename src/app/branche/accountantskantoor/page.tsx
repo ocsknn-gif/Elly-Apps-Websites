@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor accountantskantoor | Elly Apps',
@@ -53,19 +55,18 @@ export default function AccountantskantoorPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Branche</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Website laten maken voor accountantskantoor
-          </h1>
-          <p className="text-xl text-gray-600">
-            Een professionele, vertrouwenwekkende website voor uw accountantskantoor.
-            Gevonden worden door MKB-ondernemers die op zoek zijn naar een betrouwbare accountant.
-          </p>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
+          <h1 className="h1 text-ink">Website laten maken voor accountantskantoor</h1>
+          <p className="body-lg text-muted mt-4">Een professionele, vertrouwenwekkende website voor uw accountantskantoor. Gevonden worden door MKB-ondernemers die op zoek zijn naar een betrouwbare accountant.</p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             Ondernemers die een accountant zoeken, vergelijken online. Ze bekijken de website,
             lezen over de expertise, zoeken naar ervaringen van andere klanten en beoordelen
@@ -74,7 +75,7 @@ export default function AccountantskantoorPage() {
             Een professionele accountantswebsite is uw digitale visitekaartje en uw
             belangrijkste marketingtool.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Wat maakt een goede accountantswebsite?</h2>
+          <h2 className="h2 text-ink pt-6">Wat maakt een goede accountantswebsite?</h2>
           <p>
             Een effectieve website voor een accountantskantoor wekt direct vertrouwen.
             Dit bereikt u door een professioneel en strak ontwerp, heldere informatie over
@@ -83,7 +84,7 @@ export default function AccountantskantoorPage() {
             of sectorfocus. Wij helpen u dit alles helder en overtuigend te presenteren —
             zodat een bezoeker binnen tien seconden begrijpt waarom uw kantoor de juiste keuze is.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Gevonden worden door MKB-ondernemers</h2>
+          <h2 className="h2 text-ink pt-6">Gevonden worden door MKB-ondernemers</h2>
           <p>
             De meeste accountants worden gevonden via Google. Zoektermen als "accountant
             [stad]", "boekhouder MKB" of "belastingaangifte zzp" hebben duizenden
@@ -92,7 +93,7 @@ export default function AccountantskantoorPage() {
             zoek zijn naar een accountant. Dit is duurzame marketing die maand na maand
             nieuwe klanten oplevert, zonder advertentiekosten.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Beveiligd klantportaal</h2>
+          <h2 className="h2 text-ink pt-6">Beveiligd klantportaal</h2>
           <p>
             Steeds meer accountantskantoren kiezen voor een digitaal klantportaal waar
             cliënten documenten kunnen uploaden, jaarrekeningen kunnen downloaden en
@@ -100,7 +101,7 @@ export default function AccountantskantoorPage() {
             en volledig geïntegreerd in uw website. Dit bespaart uw team tijd en verhoogt
             de tevredenheid van uw klanten.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Specialisaties en sectorfocus</h2>
+          <h2 className="h2 text-ink pt-6">Specialisaties en sectorfocus</h2>
           <p>
             Veel accountantskantoren hebben een specialisatie — in een bepaalde sector,
             een bepaalde bedrijfsgrootte of een specifiek type dienstverlening. Wij vertalen
@@ -109,8 +110,11 @@ export default function AccountantskantoorPage() {
             scoort daarmee op "boekhouder horeca" — een zoekwoord met hoge conversiekans.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             'Vertrouwenwekkend en professioneel ontwerp',
             'SEO voor "accountant [stad]" zoektermen',
@@ -119,35 +123,27 @@ export default function AccountantskantoorPage() {
             'Google Business optimalisatie',
             'Volledig beheerd, vaste prijs',
           ].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over accountantswebsites</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over accountantswebsites" className="bg-bg" />
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Website voor uw accountantskantoor?</h2>
-          <p className="text-gray-600 mb-6">Vraag een gratis websitescan aan en ontdek hoe wij meer klanten naar uw kantoor brengen.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">Gratis websitescan</Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">Bekijk prijzen</Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Website voor uw accountantskantoor?</h2>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij meer klanten naar uw kantoor brengen.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

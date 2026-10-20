@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
@@ -54,26 +56,25 @@ export default function HorecaPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Branche</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Horeca website laten maken
-          </h1>
-          <p className="text-xl text-gray-600">
-            Meer gasten via Google. Een professionele horecawebsite met online menu
-            en lokale SEO — volledig beheerd vanaf €49 per maand.
-          </p>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
+          <h1 className="h1 text-ink">Horeca website laten maken</h1>
+          <p className="body-lg text-muted mt-4">Meer gasten via Google. Een professionele horecawebsite met online menu en lokale SEO — volledig beheerd vanaf €49 per maand.</p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             De horeca is een van de meest competitieve sectoren van Nederland. Gasten kiezen
             hun restaurant, café of hotel al online — op basis van de website, de foto's, het
             menu en de reviews. Een slechte of verouderde website kost u gasten. Een professionele
             horecawebsite, geoptimaliseerd voor Google, is geen luxe maar een noodzaak voor elk serieus horecabedrijf.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Wat heeft een goede horecawebsite nodig?</h2>
+          <h2 className="h2 text-ink pt-6">Wat heeft een goede horecawebsite nodig?</h2>
           <p>
             Een effectieve horecawebsite doet meer dan er goed uitzien. Ten eerste moet de website
             snel laden — zeker op mobiel, want meer dan 70 procent van de zoekopdrachten naar
@@ -83,7 +84,7 @@ export default function HorecaPage() {
             toe als aparte uitbreiding. En ten vierde moet de website vindbaar zijn in Google — voor zoektermen als "restaurant [stad]"
             of "[uw type keuken] [stad]".
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online bestellen zonder commissie</h2>
+          <h2 className="h2 text-ink pt-6">Online bestellen zonder commissie</h2>
           <p>
             Platforms zoals Thuisbezorgd en Uber Eats zijn handig voor bereik, maar de commissies
             (15 tot 30 procent per bestelling) vreten aan uw marge. Wij bouwen een eigen
@@ -92,7 +93,7 @@ export default function HorecaPage() {
             over de klantrelatie. Gecombineerd met een Google Ads campagne of lokale SEO is dit
             een krachtige manier om uw online omzet te vergroten.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Lokale SEO voor horeca: zo werkt het</h2>
+          <h2 className="h2 text-ink pt-6">Lokale SEO voor horeca: zo werkt het</h2>
           <p>
             Wanneer iemand zoekt op "restaurant Amsterdam-West" of "sushi bezorgen Utrecht",
             bepaalt Google welke bedrijven bovenaan verschijnen op basis van drie factoren:
@@ -101,14 +102,14 @@ export default function HorecaPage() {
             voor consistente NAP-gegevens (naam, adres, telefoonnummer) en helpen u actief
             meer reviews te verzamelen. Het resultaat: structureel meer gasten via Google.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Voor welke horecabedrijven werken wij?</h2>
+          <h2 className="h2 text-ink pt-6">Voor welke horecabedrijven werken wij?</h2>
           <p>
             Elly Apps bouwt websites voor alle soorten horecabedrijven: restaurants van alle
             keukens, cafés en kroegen, lunchrooms en koffiezaken, hotels en B&Bs,
             cateringbedrijven, foodtrucks en pop-up restaurants. Elk type zaak heeft andere
             behoeften en een andere doelgroep — wij passen de website daarop aan.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Volledig ontzorgd, vaste prijs</h2>
+          <h2 className="h2 text-ink pt-6">Volledig ontzorgd, vaste prijs</h2>
           <p>
             U heeft genoeg aan uw hoofd als horecaondernemer. Wij nemen uw online aanwezigheid
             volledig over. Van het eerste ontwerp tot de dagelijkse updates, van de technische
@@ -116,8 +117,11 @@ export default function HorecaPage() {
             vaste maandprijs, zonder verrassingen.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             'Online menu met foto\'s en allergenen',
             'Reserveringssysteem (optionele uitbreiding)',
@@ -126,35 +130,27 @@ export default function HorecaPage() {
             'Reviews integratie',
             'Volledig beheerd, vaste prijs',
           ].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over horeca websites</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over horeca websites" className="bg-bg" />
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Horeca website laten maken?</h2>
-          <p className="text-gray-600 mb-6">Vraag een gratis websitescan aan en ontdek hoe wij meer gasten naar uw zaak brengen.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">Gratis websitescan</Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">Bekijk prijzen</Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Horeca website laten maken?</h2>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij meer gasten naar uw zaak brengen.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
