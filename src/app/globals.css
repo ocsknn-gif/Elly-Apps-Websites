@@ -85,7 +85,8 @@
     font-size: 16px;
     line-height: 1.6;
   }
-  .artikel > :first-child {
+  .artikel > :first-child,
+  .artikel > section:first-child > :first-child {
     margin-top: 0;
   }
   .artikel h2 {
