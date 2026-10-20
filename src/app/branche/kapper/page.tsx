@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor kappers | Elly Apps',
@@ -54,19 +56,18 @@ export default function KapperPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Branche</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Website laten maken voor kappers
-          </h1>
-          <p className="text-xl text-gray-600">
-            Toon uw portfolio en word gevonden door nieuwe
-            klanten in uw buurt — voor een vaste maandprijs, volledig ontzorgd.
-          </p>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
+          <h1 className="h1 text-ink">Website laten maken voor kappers</h1>
+          <p className="body-lg text-muted mt-4">Toon uw portfolio en word gevonden door nieuwe klanten in uw buurt — voor een vaste maandprijs, volledig ontzorgd.</p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             Als kapper is uw vak visueel — en dat moet uw website ook zijn. Een professionele
             kapperswebsite laat uw werk zien, bouwt vertrouwen op bij nieuwe klanten en maakt het
@@ -74,16 +75,16 @@ export default function KapperPage() {
             online, ook buiten openingstijden. Een online afsprakensysteem kunt u als aparte uitbreiding bij ons laten toevoegen.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online afspraken als uitbreiding</h2>
+          <h2 className="h2 text-ink pt-6">Online afspraken als uitbreiding</h2>
           <p>
             Een online afsprakensysteem is geen onderdeel van de websitepakketten, maar kunt u er als
             aparte uitbreiding bij nemen. Het stuurt automatisch bevestigingen en herinneringen en
             kan gekoppeld worden aan uw agenda. De prijs is afhankelijk van uw wensen; wij maken
             daarvoor een vrijblijvende offerte. Wilt u meer weten over hoe zo&apos;n systeem werkt? Bekijk dan onze
-            pagina over het <Link href="/diensten/boekingssysteem" className="text-[#E53E3E] underline hover:no-underline">online boekingssysteem</Link>.
+            pagina over het <Link href="/diensten/boekingssysteem" className="text-brand-strong underline hover:no-underline">online boekingssysteem</Link>.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Een portfolio dat overtuigt</h2>
+          <h2 className="h2 text-ink pt-6">Een portfolio dat overtuigt</h2>
           <p>
             Een sterk portfolio is voor een kapper onmisbaar. Wij bouwen een overzichtelijke
             fotogalerij waar u uw knipwerk, kleuringen en stylings toont. Goede voor-en-na foto&apos;s
@@ -92,55 +93,71 @@ export default function KapperPage() {
             kunnen verwachten.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Gevonden worden in uw stad</h2>
+          <h2 className="h2 text-ink pt-6">Gevonden worden in uw stad</h2>
           <p>
             Lokale SEO is voor kappers essentieel. De meeste klanten zoeken op &quot;kapper [stad]&quot;
             of &quot;kapper [wijk]&quot;. Wij optimaliseren uw website voor deze lokale zoektermen en
             zorgen dat uw Google Bedrijfsprofiel up-to-date is met openingstijden, foto&apos;s en
             reviews. Zo verschijnt u bovenaan in de lokale Google-resultaten en op Google Maps.
             Zit u in een grote stad? Bekijk ook onze pagina&apos;s voor
-            {' '}<Link href="/stad/amsterdam" className="text-[#E53E3E] underline hover:no-underline">Amsterdam</Link>,
-            {' '}<Link href="/stad/rotterdam" className="text-[#E53E3E] underline hover:no-underline">Rotterdam</Link> en
-            {' '}<Link href="/stad/utrecht" className="text-[#E53E3E] underline hover:no-underline">Utrecht</Link>.
+            {' '}<Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">Amsterdam</Link>,
+            {' '}<Link href="/stad/rotterdam" className="text-brand-strong underline hover:no-underline">Rotterdam</Link> en
+            {' '}<Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">Utrecht</Link>.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Een uitstraling die bij u past</h2>
+          <h2 className="h2 text-ink pt-6">Een uitstraling die bij u past</h2>
           <p>
             Naast de technische kant denken wij mee over de uitstraling van uw website. Welke sfeer
             past bij uw salon — luxe en stijlvol, of juist hip en urban? Wij vertalen uw identiteit
             naar een website die echt bij u past en zich onderscheidt van de kapper om de hoek.
           </p>
         </div>
+      </section>
 
-        {/* Prijsanker */}
-        <div className="rounded-2xl border-2 border-[#E53E3E]/20 p-8 bg-white">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Wat kost een kapperswebsite?</h2>
-          <p className="text-gray-600 mb-4">
+      {/* Prijsanker */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="prijs-titel">
+        <div className="max-w-4xl mx-auto rounded-2xl border border-line bg-bg shadow-sm p-6 sm:p-8">
+          <h2 id="prijs-titel" className="h3 text-ink mb-3">Wat kost een kapperswebsite?</h2>
+          <p className="body text-muted mb-6">
             U betaalt een eenmalig startbedrag voor ontwerp en bouw, en daarna een vaste maandprijs
-            <strong className="text-gray-900"> vanaf €49 per maand</strong> voor hosting, onderhoud,
+            <strong className="text-ink"> vanaf €49 per maand</strong> voor hosting, onderhoud,
             updates en beveiliging. Een online afsprakensysteem is een aparte uitbreiding op offertebasis. Geen verrassingen op de factuur.
           </p>
-          <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
+          <Link href="/prijzen" className={buttonVariants()}>
             Bekijk alle pakketten en prijzen
           </Link>
         </div>
+      </section>
 
-        {/* Illustratief voorbeeld */}
-        <div className="rounded-2xl bg-[#f7f7f7] p-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Zo pakken wij het aan</h2>
-          <p className="text-gray-600 mb-4">
-            Stel: u runt een salon met twee stoelen en krijgt nu de meeste boekingen telefonisch,
-            vaak op de drukste momenten van de dag. Zo ziet een typisch traject eruit:
-          </p>
-          <ol className="space-y-3 text-gray-700 text-sm list-decimal pl-5">
-            <li><strong>Intake (dag 1).</strong> We bespreken uw diensten, tarieven, stijl en de wijken waar uw klanten vandaan komen.</li>
-            <li><strong>Bouw (week 1).</strong> Wij zetten de website op met portfolio, dienstenoverzicht en eventueel een online afsprakenmodule (aparte uitbreiding).</li>
-            <li><strong>Lokale SEO (week 2).</strong> We optimaliseren voor &quot;kapper [uw stad]&quot; en richten uw Google Bedrijfsprofiel goed in.</li>
-            <li><strong>Live &amp; beheer.</strong> De site gaat online; heeft u een afsprakenmodule laten toevoegen, dan boeken klanten voortaan zelf, ook &apos;s avonds. Wij houden alles up-to-date.</li>
+      {/* Aanpak */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="aanpak-titel">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="aanpak-titel" className="h2 text-ink mb-3">Zo pakken wij het aan</h2>
+          <p className="body text-muted mb-6">Stel: u runt een salon met twee stoelen en krijgt nu de meeste boekingen telefonisch, vaak op de drukste momenten van de dag. Zo ziet een typisch traject eruit:</p>
+          <ol className="space-y-4 body text-ink">
+            <li className="flex items-start gap-3">
+              <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">1</span>
+              <span><strong>Intake (dag 1).</strong> We bespreken uw diensten, tarieven, stijl en de wijken waar uw klanten vandaan komen.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">2</span>
+              <span><strong>Bouw (week 1).</strong> Wij zetten de website op met portfolio, dienstenoverzicht en eventueel een online afsprakenmodule (aparte uitbreiding).</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</span>
+              <span><strong>Lokale SEO (week 2).</strong> We optimaliseren voor &quot;kapper [uw stad]&quot; en richten uw Google Bedrijfsprofiel goed in.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">4</span>
+              <span><strong>Live &amp; beheer.</strong> De site gaat online; heeft u een afsprakenmodule laten toevoegen, dan boeken klanten voortaan zelf, ook &apos;s avonds. Wij houden alles up-to-date.</span>
+            </li>
           </ol>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             'Online afsprakensysteem (optionele uitbreiding)',
             'Portfolio met voor-en-na foto\'s',
@@ -149,30 +166,20 @@ export default function KapperPage() {
             'Google Bedrijfsprofiel optimalisatie',
             'Mobiel-vriendelijk ontwerp',
           ].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        {/* FAQ */}
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over een kapperswebsite</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over een kapperswebsite" className="bg-bg" />
 
-        {/* Gerelateerde pagina's */}
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Gerelateerde pagina&apos;s</h2>
+      {/* Gerelateerde pagina's */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="gerelateerd-titel">
+        <div className="max-w-4xl mx-auto">
+          <h2 id="gerelateerd-titel" className="h3 text-ink mb-6">Gerelateerde pagina&apos;s</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { label: 'Website laten maken — onze aanpak', href: '/diensten/websites' },
@@ -180,26 +187,29 @@ export default function KapperPage() {
               { label: 'Blog: website voor kappers', href: '/blog/kapper' },
               { label: 'Alle branches', href: '/branche' },
             ].map((r) => (
-              <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
-                <span className="text-[#E53E3E]">→</span> {r.label}
+              <Link
+                key={r.href}
+                href={r.href}
+                className="flex min-h-12 items-center gap-2 rounded-2xl border border-line bg-bg px-4 py-3 font-semibold text-ink shadow-sm transition-all hover:border-brand-strong hover:text-brand-strong hover:shadow-md"
+              >
+                <span className="text-brand" aria-hidden="true">→</span> {r.label}
               </Link>
             ))}
           </div>
         </div>
+      </section>
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Meer klanten voor uw salon?</h2>
-          <p className="text-gray-600 mb-6">Vraag een gratis websitescan aan en ontdek uw kansen online.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
-              Gratis websitescan
-            </Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">
-              Bekijk prijzen
-            </Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Meer klanten voor uw salon?</h2>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek uw kansen online.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
