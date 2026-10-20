@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Boekingssysteem website laten integreren | Elly Apps',
@@ -39,6 +41,15 @@ const faqItems = [
   { q: 'Wat kost het integreren van een boekingssysteem?', a: 'De kosten hangen af van de complexiteit en het type systeem. Wij werken met een vaste prijs. Neem contact op voor een vrijblijvende offerte.' },
 ]
 
+const features = [
+  '24/7 online reserveren voor klanten',
+  'Automatische bevestigings- en herinneringsmails',
+  'Koppeling met bestaande agenda-tools',
+  'Betaalintegratie mogelijk (Mollie/Stripe)',
+  'Mobielvriendelijk en snel',
+  'Geschikt voor alle dienstverleners',
+]
+
 export default function BoekingssysteemPage() {
   return (
     <>
@@ -53,19 +64,21 @@ export default function BoekingssysteemPage() {
         }))
       }) }} />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-12">
-        <div>
-          <p className="text-sm text-[#E53E3E] font-medium mb-2">Dienst</p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
-            Boekingssysteem integreren op uw website
-          </h1>
-          <p className="text-xl text-gray-600">
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Dienst</p>
+          <h1 className="h1 text-ink">Boekingssysteem integreren op uw website</h1>
+          <p className="body-lg text-muted mt-4">
             Laat klanten 24/7 online reserveren. Wij integreren een professioneel
             boekingssysteem op uw bestaande website — snel, betaalbaar en volledig beheerd.
           </p>
         </div>
+      </section>
 
-        <div className="prose prose-lg prose-gray max-w-none text-gray-700 space-y-5">
+      {/* Tekst */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             Klanten verwachten tegenwoordig dat ze op elk moment van de dag een afspraak of
             reservering kunnen maken — niet alleen tijdens uw openingstijden. Een online
@@ -74,7 +87,7 @@ export default function BoekingssysteemPage() {
             plannen, geen handmatige agendabeheer en minder no-shows dankzij automatische
             herinneringen.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Voor wie is een boekingssysteem geschikt?</h2>
+          <h2 className="h2 text-ink pt-6">Voor wie is een boekingssysteem geschikt?</h2>
           <p>
             Een online reserveringssysteem is waardevol voor elke ondernemer die afspraken,
             reserveringen of boekingen verwerkt. Denk aan kappers en schoonheidsspecialisten
@@ -83,7 +96,7 @@ export default function BoekingssysteemPage() {
             verhuurders van ruimtes en apparatuur. Wij hebben ervaring met alle deze sectoren
             en weten welke oplossing het beste werkt voor uw specifieke situatie.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Maatwerk of standaard koppeling?</h2>
+          <h2 className="h2 text-ink pt-6">Maatwerk of standaard koppeling?</h2>
           <p>
             Afhankelijk van uw wensen bouwen wij een volledig maatwerk boekingssysteem of
             koppelen wij een bestaande tool aan uw website. Beide opties hebben hun voordelen.
@@ -92,7 +105,7 @@ export default function BoekingssysteemPage() {
             biedt minder flexibiliteit. Wij adviseren u over de beste keuze voor uw situatie
             en budget.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Automatisering en minder no-shows</h2>
+          <h2 className="h2 text-ink pt-6">Automatisering en minder no-shows</h2>
           <p>
             Een goed boekingssysteem doet meer dan alleen afspraken registreren. Wij
             configureren automatische bevestigingsmails direct na boeking, herinneringsmails
@@ -100,7 +113,7 @@ export default function BoekingssysteemPage() {
             dat automatische herinneringen het aantal no-shows met 30 tot 50 procent
             verminderen. Dat betekent minder inkomstenverlies en een efficiëntere agenda.
           </p>
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Koppeling met betalingen</h2>
+          <h2 className="h2 text-ink pt-6">Koppeling met betalingen</h2>
           <p>
             Wil u dat klanten ook direct kunnen betalen bij het maken van een reservering?
             Wij koppelen het boekingssysteem aan betaalproviders zoals Mollie of Stripe,
@@ -108,45 +121,33 @@ export default function BoekingssysteemPage() {
             verder en verbetert uw cashflow.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            '24/7 online reserveren voor klanten',
-            'Automatische bevestigings- en herinneringsmails',
-            'Koppeling met bestaande agenda-tools',
-            'Betaalintegratie mogelijk (Mollie/Stripe)',
-            'Mobielvriendelijk en snel',
-            'Geschikt voor alle dienstverleners',
-          ].map((f) => (
-            <div key={f} className="flex items-center gap-3 text-sm text-gray-700">
-              <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0" />
+      {/* Kenmerken */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {features.map((f) => (
+            <div key={f} className="flex items-center gap-3 body text-ink">
+              <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
             </div>
           ))}
         </div>
+      </section>
 
-        <div className="space-y-4">
-          <h2 className="text-2xl font-bold text-gray-900">Veelgestelde vragen over boekingssystemen</h2>
-          {faqItems.map((item) => (
-            <details key={item.q} className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">+</span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
-        </div>
+      <Faq items={faqItems} title="Veelgestelde vragen over boekingssystemen" className="bg-bg" />
 
-        <div className="bg-[#f7f7f7] rounded-2xl p-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">Boekingssysteem laten integreren?</h2>
-          <p className="text-gray-600 mb-6">Vertel ons wat u nodig heeft en ontvang binnen 24 uur een vrijblijvende offerte.</p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">Gratis adviesgesprek</Link>
-            <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-[#E53E3E] text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors">Bekijk prijzen</Link>
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Boekingssysteem laten integreren?</h2>
+          <p className="body-lg text-navy-muted mt-4">Vertel ons wat u nodig heeft en ontvang binnen 24 uur een vrijblijvende offerte.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact" className={buttonVariants({ size: 'lg' })}>Gratis adviesgesprek</Link>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
