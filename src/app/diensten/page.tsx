@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 
 const diensten = [
   {
-    icon: <GlobeIcon className="size-8 text-brand" />,
+    icon: <GlobeIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Websites',
     body: `Een professionele website is het fundament van uw online aanwezigheid. Bij Elly Apps bouwen
     wij websites die niet alleen mooi ogen, maar ook technisch uitstekend presteren. Elke website
@@ -45,7 +45,7 @@ const diensten = [
     Hosting, SSL-certificaat en technische updates zijn bij elk pakket inbegrepen.`,
   },
   {
-    icon: <SmartphoneIcon className="size-8 text-brand" />,
+    icon: <SmartphoneIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Apps',
     body: `Heeft uw bedrijf behoefte aan een maatwerk webapplicatie of mobiele app? Elly Apps
     ontwikkelt slimme digitale oplossingen die aansluiten op uw specifieke bedrijfsprocessen.
@@ -58,7 +58,7 @@ const diensten = [
     mogelijkheden.`,
   },
   {
-    icon: <SearchIcon className="size-8 text-brand" />,
+    icon: <SearchIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'SEO',
     body: `Gevonden worden op Google is voor elk bedrijf essentieel. Elly Apps biedt uitgebreide
     zoekmachineoptimalisatie (SEO) die uw website structureel hoger in de zoekresultaten brengt.
@@ -71,7 +71,7 @@ const diensten = [
     lokale zichtbaarheid structureel. Elke maand ontvangt u een helder rapport met uw resultaten.`,
   },
   {
-    icon: <TrendingUpIcon className="size-8 text-brand" />,
+    icon: <TrendingUpIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Google Ads',
     body: `Wilt u snel meer bezoekers en leads? Met Google Ads (SEA) betaalt u alleen voor kliks van
     potentiële klanten die actief zoeken naar uw product of dienst. Elly Apps beheert uw
@@ -84,7 +84,7 @@ const diensten = [
     budget. Geen verborgen kosten, geen ingewikkelde contracten.`,
   },
   {
-    icon: <Share2Icon className="size-8 text-brand" />,
+    icon: <Share2Icon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Social Media',
     body: `Een actieve aanwezigheid op sociale media versterkt uw merk en bouwt vertrouwen bij
     potentiële klanten. Elly Apps verzorgt het beheer van uw social media kanalen — van strategie
@@ -100,30 +100,36 @@ const diensten = [
 
 export default function DienstenPage() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-20">
-      <div className="text-center">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">Onze diensten</h1>
-        <p className="mt-4 text-xl text-gray-600">
-          Alles wat uw bedrijf nodig heeft voor een sterke online aanwezigheid.
-        </p>
-      </div>
+    <>
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="h1 text-ink">Onze diensten</h1>
+          <p className="body-lg text-muted mt-4 max-w-2xl mx-auto">
+            Alles wat uw bedrijf nodig heeft voor een sterke online aanwezigheid.
+          </p>
+        </div>
+      </section>
 
-      {diensten.map((d) => (
-        <section key={d.title} className="scroll-mt-20">
-          <div className="flex items-center gap-4 mb-4">
-            {d.icon}
-            <h2 className="text-2xl font-bold text-gray-900">{d.title}</h2>
+      {diensten.map((d, i) => (
+        <section
+          key={d.title}
+          className={`section px-4 sm:px-6 lg:px-8 scroll-mt-20 ${i % 2 === 0 ? 'bg-bg' : 'bg-surface'}`}
+        >
+          <div className="max-w-3xl mx-auto">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint shrink-0">
+                {d.icon}
+              </div>
+              <h2 className="h2 text-ink">{d.title}</h2>
+            </div>
+            <p className="body text-muted mb-6">{d.body}</p>
+            <Link href="/gratis-websitescan" className={buttonVariants()}>
+              Vraag een gratis scan aan
+            </Link>
           </div>
-          <p className="text-gray-600 leading-relaxed mb-6">{d.body}</p>
-          <Link
-            href="/gratis-websitescan"
-            className={buttonVariants()}
-          >
-            Vraag een gratis scan aan
-          </Link>
-          <hr className="mt-10 border-gray-100" />
         </section>
       ))}
-    </div>
+    </>
   )
 }

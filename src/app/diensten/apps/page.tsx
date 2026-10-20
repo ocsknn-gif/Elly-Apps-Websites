@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ShoppingCart, CalendarCheck, Users } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { Faq } from '@/components/home/Faq'
+import { SectionHeader } from '@/components/home/SectionHeader'
 
 export const metadata: Metadata = {
   title: 'Professionele app laten maken & beheren | Elly Apps',
@@ -49,106 +52,104 @@ export default function DienstenAppsPage() {
   return (
     <>
       {/* Hero */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Professionele app laten maken voor uw bedrijf</h1>
-        <p className="text-lg text-gray-600 mb-6">Van bestelapp tot ledenapp — wij bouwen en beheren uw app voor iOS én Android. Volledig op maat, volledig ontzorgd.</p>
-        <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
-          Neem contact op
-        </Link>
-      </div>
-
-      {/* Website vs App */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Website of app — wanneer wat?</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="border rounded-xl p-6 bg-white">
-              <h3 className="font-bold text-gray-900 mb-3">Website</h3>
-              <p className="text-sm text-gray-600">Ideaal voor informatief, SEO, bereikbaarheid en online zichtbaarheid. Toegankelijk via elke browser.</p>
-            </div>
-            <div className="border rounded-xl p-6 bg-white">
-              <h3 className="font-bold text-gray-900 mb-3">App</h3>
-              <p className="text-sm text-gray-600">Ideaal voor terugkerende interactie: bestellingen, reserveringen, ledenportalen. Direct op het startscherm.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* App types */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">App types</h2>
-        <div className="grid md:grid-cols-3 gap-6">
-          {appTypes.map((t) => (
-            <div key={t.title} className="border rounded-xl p-6 hover:border-[#E53E3E] transition-colors">
-              <div className="mb-3"><t.Icon size={24} className="text-brand" /></div>
-              <h3 className="font-bold text-gray-900 mb-2">{t.title}</h3>
-              <p className="text-sm text-gray-600">{t.desc}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* iOS & Android */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">iOS én Android</h2>
-          <p className="text-gray-600">Wij bouwen uw app voor beide platformen zodat u het maximale bereik heeft. Eén codebase, twee platformen, één prijs.</p>
-        </div>
-      </div>
-
-      {/* Process */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">Ons proces</h2>
-        <div className="flex flex-wrap justify-center gap-4">
-          {['Intake', 'Ontwerp', 'Ontwikkeling', 'Testing', 'Lancering', 'Beheer'].map((s, i) => (
-            <div key={s} className="flex items-center gap-2">
-              <div className="bg-[#E53E3E] text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm">{i + 1}</div>
-              <span className="font-semibold text-sm text-gray-900">{s}</span>
-              {i < 5 && <span className="text-gray-400">→</span>}
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* App laten maken per stad */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-3">App laten maken per stad en regio</h2>
-        <p className="text-gray-600 text-center mb-8 max-w-2xl mx-auto">Wij bouwen apps voor ondernemers door heel Nederland. Bekijk de mogelijkheden voor uw stad of regio.</p>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {steden.map((s) => (
-            <Link key={s.href} href={s.href} className="border rounded-xl p-5 font-semibold text-gray-900 hover:border-[#E53E3E] hover:text-[#E53E3E] transition-colors">
-              {s.label} →
-            </Link>
-          ))}
-        </div>
-      </div>
-
-      {/* FAQ */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Veelgestelde vragen</h2>
-          <div className="space-y-4">
-            {faq.map((item, i) => (
-              <details key={i} className="border rounded-xl p-4 bg-white">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                  {item.q}<span className="text-[#E53E3E] ml-2">+</span>
-                </summary>
-                <p className="mt-3 text-gray-600 leading-relaxed">{item.a}</p>
-              </details>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      {/* CTA */}
-      <div className="bg-[#E53E3E] py-16 text-center text-white">
-        <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-4">Klaar om uw app te laten bouwen?</h2>
-          <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[#E53E3E] font-semibold hover:bg-gray-100 transition-colors">
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="h1 text-ink">Professionele app laten maken voor uw bedrijf</h1>
+          <p className="body-lg text-muted mt-4 mb-8">Van bestelapp tot ledenapp — wij bouwen en beheren uw app voor iOS én Android. Volledig op maat, volledig ontzorgd.</p>
+          <Link href="/contact" className={buttonVariants({ size: 'lg' })}>
             Neem contact op
           </Link>
         </div>
-      </div>
+      </section>
+
+      {/* Website vs App */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="website-app-titel">
+        <div className="max-w-4xl mx-auto">
+          <SectionHeader id="website-app-titel" title="Website of app — wanneer wat?" />
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="rounded-2xl border border-line bg-bg shadow-sm p-6">
+              <h3 className="h3 text-ink mb-3">Website</h3>
+              <p className="body text-muted">Ideaal voor informatief, SEO, bereikbaarheid en online zichtbaarheid. Toegankelijk via elke browser.</p>
+            </div>
+            <div className="rounded-2xl border border-line bg-bg shadow-sm p-6">
+              <h3 className="h3 text-ink mb-3">App</h3>
+              <p className="body text-muted">Ideaal voor terugkerende interactie: bestellingen, reserveringen, ledenportalen. Direct op het startscherm.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* App types */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="app-types-titel">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader id="app-types-titel" title="App types" />
+          <div className="grid md:grid-cols-3 gap-6">
+            {appTypes.map((t) => (
+              <div key={t.title} className="rounded-2xl border border-line bg-bg shadow-sm p-6">
+                <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint mb-4">
+                  <t.Icon size={24} className="text-brand" aria-hidden="true" />
+                </div>
+                <h3 className="h3 text-ink mb-2">{t.title}</h3>
+                <p className="body text-muted">{t.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* iOS & Android */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="platformen-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <SectionHeader id="platformen-titel" title="iOS én Android" intro="Wij bouwen uw app voor beide platformen zodat u het maximale bereik heeft. Eén codebase, twee platformen, één prijs." />
+        </div>
+      </section>
+
+      {/* Proces */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="proces-titel">
+        <div className="max-w-5xl mx-auto text-center">
+          <SectionHeader id="proces-titel" title="Ons proces" />
+          <ol className="flex flex-wrap justify-center gap-4">
+            {['Intake', 'Ontwerp', 'Ontwikkeling', 'Testing', 'Lancering', 'Beheer'].map((s, i) => (
+              <li key={s} className="flex items-center gap-2">
+                <span className="bg-brand-strong text-white size-10 rounded-full flex items-center justify-center font-bold text-sm">{i + 1}</span>
+                <span className="font-semibold text-sm text-ink">{s}</span>
+                {i < 5 && <span className="text-muted" aria-hidden="true">→</span>}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* App laten maken per stad */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="steden-titel">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader id="steden-titel" title="App laten maken per stad en regio" intro="Wij bouwen apps voor ondernemers door heel Nederland. Bekijk de mogelijkheden voor uw stad of regio." />
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            {steden.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="flex min-h-12 items-center justify-between gap-2 rounded-2xl border border-line bg-bg px-5 py-4 font-semibold text-ink shadow-sm transition-all hover:border-brand-strong hover:text-brand-strong hover:shadow-md"
+              >
+                {s.label}
+                <span aria-hidden="true">→</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <Faq items={faq} className="bg-surface" />
+
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om uw app te laten bouwen?</h2>
+          <Link href="/contact" className={buttonVariants({ size: 'lg', className: 'mt-8' })}>
+            Neem contact op
+          </Link>
+        </div>
+      </section>
     </>
   )
 }
