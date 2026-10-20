@@ -58,6 +58,10 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
     }
   }
 
+  const label = 'block text-sm font-semibold text-ink mb-1'
+  const input =
+    'w-full min-h-12 rounded-btn border border-line bg-bg px-4 text-base text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-strong'
+
   const honeypot = (
     /* Honeypot — onzichtbaar voor bezoekers, wordt door bots wel ingevuld */
     <input
@@ -73,17 +77,13 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
   const errorBox = error && (
     <div
       role="alert"
-      className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700"
+      className="rounded-btn bg-brand-tint border border-brand-strong px-4 py-3 text-sm text-brand-strong"
     >
       {error}
     </div>
   )
 
   if (variant === 'compact') {
-    const label = 'block text-sm font-semibold text-ink mb-1'
-    const input =
-      'w-full min-h-12 rounded-btn border border-line bg-bg px-4 text-base text-ink placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand-strong'
-
     return (
       <form onSubmit={handleSubmit} className="space-y-3">
         <div>
@@ -149,37 +149,37 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="naam" className="block text-sm font-medium text-gray-700 mb-1">
-            Naam <span className="text-red-500">*</span>
+          <label htmlFor="naam" className={label}>
+            Naam <span className="text-brand-strong" aria-hidden="true">*</span>
           </label>
           <input
             id="naam"
             name="naam"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+            className={input}
             placeholder="Uw volledige naam"
           />
         </div>
 
         <div>
-          <label htmlFor="bedrijf" className="block text-sm font-medium text-gray-700 mb-1">
-            Bedrijfsnaam <span className="text-red-500">*</span>
+          <label htmlFor="bedrijf" className={label}>
+            Bedrijfsnaam <span className="text-brand-strong" aria-hidden="true">*</span>
           </label>
           <input
             id="bedrijf"
             name="bedrijf"
             type="text"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+            className={input}
             placeholder="Uw bedrijfsnaam"
           />
         </div>
       </div>
 
       <div>
-        <label htmlFor="website" className="block text-sm font-medium text-gray-700 mb-1">
-          Website URL <span className="text-red-500">*</span>
+        <label htmlFor="website" className={label}>
+          Website URL <span className="text-brand-strong" aria-hidden="true">*</span>
         </label>
         {/* Zelfde aanpak als de compacte variant: "uwbedrijf.nl" zonder https:// wordt ook geaccepteerd */}
         <input
@@ -191,35 +191,35 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
           autoCapitalize="none"
           spellCheck={false}
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+          className={input}
           placeholder="uwbedrijf.nl"
         />
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-            E-mailadres <span className="text-red-500">*</span>
+          <label htmlFor="email" className={label}>
+            E-mailadres <span className="text-brand-strong" aria-hidden="true">*</span>
           </label>
           <input
             id="email"
             name="email"
             type="email"
             required
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+            className={input}
             placeholder="u@bedrijf.nl"
           />
         </div>
 
         <div>
-          <label htmlFor="telefoon" className="block text-sm font-medium text-gray-700 mb-1">
+          <label htmlFor="telefoon" className={label}>
             Telefoonnummer
           </label>
           <input
             id="telefoon"
             name="telefoon"
             type="tel"
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-brand-strong"
+            className={input}
             placeholder="+31 6 12345678"
           />
         </div>
@@ -232,7 +232,7 @@ export function WebsiteScanForm({ variant = 'full' }: Props) {
         {sending ? 'Versturen…' : 'Vraag gratis websitescan aan'}
       </button>
 
-      <p className="text-xs text-gray-500 text-center">
+      <p className="text-sm text-muted text-center">
         Wij delen uw gegevens nooit met derden.
       </p>
     </form>

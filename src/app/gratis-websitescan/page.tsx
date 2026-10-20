@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { SearchIcon, ZapIcon, SmartphoneIcon } from 'lucide-react'
 import { WebsiteScanForm } from '@/components/WebsiteScanForm'
+import { SectionHeader } from '@/components/home/SectionHeader'
 
 export const metadata: Metadata = {
   title: 'Gratis websitescan | Elly Apps',
@@ -26,19 +27,19 @@ export const metadata: Metadata = {
 
 const checks = [
   {
-    icon: <SearchIcon className="size-6 text-brand" />,
+    icon: <SearchIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'SEO-check',
     description:
       'Wij analyseren hoe goed uw website scoort op zoekmachines. Denk aan zoekwoorden, metateksten, interne links en technische SEO-factoren die invloed hebben op uw positie in Google.',
   },
   {
-    icon: <ZapIcon className="size-6 text-brand" />,
+    icon: <ZapIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Snelheidstest',
     description:
       'Een trage website kost u bezoekers én Google-posities. Wij meten de laadsnelheid van uw website op desktop en mobiel en geven concrete aanbevelingen voor verbetering.',
   },
   {
-    icon: <SmartphoneIcon className="size-6 text-brand" />,
+    icon: <SmartphoneIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Mobiel-vriendelijk check',
     description:
       'Meer dan de helft van alle websitebezoeken komt van een smartphone. Wij controleren of uw website correct wordt weergegeven op alle schermformaten en of de gebruikerservaring optimaal is.',
@@ -47,46 +48,45 @@ const checks = [
 
 export default function GratisWebsitescanPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <>
       {/* Header */}
-      <div className="text-center mb-14">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-          Ontvang gratis een professionele websitescan
-        </h1>
-        <p className="mt-4 text-xl text-gray-600 max-w-2xl mx-auto">
-          Wij analyseren uw website op SEO, snelheid en mobiele weergave — kosteloos en
-          vrijblijvend. U ontvangt binnen één werkdag een persoonlijk rapport.
-        </p>
-      </div>
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="h1 text-ink">Ontvang gratis een professionele websitescan</h1>
+          <p className="body-lg text-muted mt-4 max-w-2xl mx-auto">
+            Wij analyseren uw website op SEO, snelheid en mobiele weergave — kosteloos en
+            vrijblijvend. U ontvangt binnen één werkdag een persoonlijk rapport.
+          </p>
+        </div>
+      </section>
 
       {/* Wat houdt de scan in */}
-      <section className="mb-14">
-        <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">
-          Wat houdt de scan in?
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {checks.map((c) => (
-            <div
-              key={c.title}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6"
-            >
-              <div className="inline-flex items-center justify-center size-11 rounded-full bg-brand-tint mb-4">
-                {c.icon}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="scan-inhoud-titel">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader id="scan-inhoud-titel" title="Wat houdt de scan in?" />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {checks.map((c) => (
+              <div key={c.title} className="rounded-2xl border border-line bg-bg shadow-sm p-6">
+                <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint mb-4">
+                  {c.icon}
+                </div>
+                <h3 className="h3 text-ink mb-2">{c.title}</h3>
+                <p className="body text-muted">{c.description}</p>
               </div>
-              <h3 className="text-base font-bold text-gray-900 mb-2">{c.title}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{c.description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Formulier */}
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-6">
-          Vul uw gegevens in
-        </h2>
-        <WebsiteScanForm />
-      </div>
-    </div>
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="scan-formulier-titel">
+        <div className="max-w-2xl mx-auto rounded-2xl border border-line bg-bg p-4 sm:p-8 shadow-lg">
+          <h2 id="scan-formulier-titel" className="h3 text-ink mb-6">
+            Vul uw gegevens in
+          </h2>
+          <WebsiteScanForm />
+        </div>
+      </section>
+    </>
   )
 }
