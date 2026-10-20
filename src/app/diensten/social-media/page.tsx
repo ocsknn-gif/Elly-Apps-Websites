@@ -1,5 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { CheckIcon } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { PakketKaart } from '@/components/PakketKaart'
+import { Faq } from '@/components/home/Faq'
+import { SectionHeader } from '@/components/home/SectionHeader'
 
 export const metadata: Metadata = {
   title: 'Social Media Advertenties voor MKB | Facebook & Instagram | Elly Apps',
@@ -76,97 +81,75 @@ const faq = [
   { q: 'Zit ik vast aan een contract?', a: 'Nee. U kunt maandelijks opzeggen zonder verdere verplichtingen.' },
 ]
 
+const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen 24 uur reactie'
+
 export default function DienstenSocialMediaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
-      {/* Hero + Pricing */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Social media advertenties — meer klanten via Facebook &amp; Instagram</h1>
-        <p className="text-lg text-gray-600 mb-10">Geen gedoe met ingewikkelde campagnes. Wij regelen alles. Vaste prijs, meetbaar resultaat.</p>
+      {/* Hero + pakketten */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="h1 text-ink">Social media advertenties — meer klanten via Facebook &amp; Instagram</h1>
+            <p className="body-lg text-muted mt-4 max-w-2xl mx-auto">Geen gedoe met ingewikkelde campagnes. Wij regelen alles. Vaste prijs, meetbaar resultaat.</p>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-6 items-stretch text-left">
-          {packages.map((p) => (
-            <div key={p.name} className={`rounded-xl p-6 border-2 flex flex-col relative ${p.popular ? 'border-[#E53E3E] shadow-xl' : 'border-gray-200'}`}>
-              {p.popular && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#E53E3E] text-white text-xs font-bold px-3 py-1 rounded-full">Meest gekozen</span>
-              )}
-              <h3 className="text-xl font-bold text-gray-900 mb-1">{p.name}</h3>
-              {p.monthly ? (
-                <>
-                  <p className="text-3xl font-bold text-[#E53E3E] mb-1">{p.monthly}<span className="text-base text-gray-500">/maand</span></p>
-                  <p className="text-sm text-gray-500 mb-4">{p.setup} eenmalige opstartkosten</p>
-                </>
-              ) : (
-                <>
-                  <p className="text-2xl font-bold text-[#E53E3E] mb-1">Op maat</p>
-                  <p className="text-sm text-gray-500 mb-4">{p.setup} eenmalige opstartkosten · Prijs op aanvraag</p>
-                </>
-              )}
-              <ul className="space-y-2 mb-6 flex-1">
-                {p.features.map((f) => <li key={f} className="text-sm flex gap-2 text-gray-700"><span className="text-[#E53E3E]">✓</span>{f}</li>)}
-              </ul>
-              <div>
-                <Link href="/gratis-websitescan" className={`w-full inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold text-sm transition-colors ${p.popular ? 'bg-[#E53E3E] text-white hover:bg-[#C53030]' : 'border-2 border-[#E53E3E] text-[#E53E3E] hover:bg-red-50'}`}>
-                  Ja, ik wil meer klanten via social media
-                </Link>
-                <p className="text-xs text-gray-500 text-center mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
-              </div>
-            </div>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+            {packages.map((p) => (
+              <PakketKaart
+                key={p.name}
+                naam={p.name}
+                prijs={p.monthly ?? 'Op maat'}
+                periode={p.monthly ? '/maand' : undefined}
+                eenmalig={p.monthly ? `${p.setup} eenmalige opstartkosten` : `${p.setup} eenmalige opstartkosten · Prijs op aanvraag`}
+                populair={p.popular}
+                features={p.features}
+                cta={{ label: 'Ja, ik wil meer klanten via social media', href: '/gratis-websitescan' }}
+                note={NOTE}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* Platforms */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-8">Hoe werkt het per platform?</h2>
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="platforms-titel">
+        <div className="max-w-5xl mx-auto">
+          <SectionHeader id="platforms-titel" title="Hoe werkt het per platform?" />
           <div className="grid md:grid-cols-3 gap-6">
             {platforms.map((item) => (
-              <div key={item.title} className="rounded-xl p-6 border-2 border-gray-200 bg-white">
-                <h3 className="text-xl font-bold text-[#E53E3E] mb-2">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.text}</p>
+              <div key={item.title} className="rounded-2xl border border-line bg-bg shadow-sm p-6">
+                <h3 className="h3 text-ink mb-2">{item.title}</h3>
+                <p className="body text-muted">{item.text}</p>
               </div>
             ))}
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Conversion goals */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 text-center mb-6">Wat zijn uw conversiedoelen?</h2>
-        <p className="text-gray-600 text-center mb-6">Voordat we starten bepalen we samen wat succes betekent voor uw bedrijf. Wij stellen campagnes in gericht op:</p>
-        <ul className="space-y-3 max-w-xl mx-auto mb-8">
-          {goals.map((d) => (
-            <li key={d} className="flex gap-2 text-sm text-gray-700">
-              <span className="text-[#E53E3E] font-bold">✓</span><span>{d}</span>
-            </li>
-          ))}
-        </ul>
-        <div className="text-center">
-          <Link href="/gratis-websitescan" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
-            Ja, ik wil meer klanten via social media
-          </Link>
-        </div>
-      </div>
-
-      {/* FAQ */}
-      <div className="bg-gray-50 py-16">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-8">Veelgestelde vragen</h2>
-          <div className="space-y-4">
-            {faq.map((item, i) => (
-              <details key={i} className="border rounded-xl p-4 bg-white">
-                <summary className="font-semibold text-gray-900 cursor-pointer list-none flex justify-between items-center">
-                  {item.q}<span className="text-[#E53E3E] ml-2">+</span>
-                </summary>
-                <p className="mt-3 text-gray-600 leading-relaxed">{item.a}</p>
-              </details>
+      {/* Conversiedoelen */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="doelen-titel">
+        <div className="max-w-3xl mx-auto">
+          <SectionHeader id="doelen-titel" title="Wat zijn uw conversiedoelen?" intro="Voordat we starten bepalen we samen wat succes betekent voor uw bedrijf. Wij stellen campagnes in gericht op:" />
+          <ul className="space-y-3 max-w-xl mx-auto mb-8 body text-ink">
+            {goals.map((d) => (
+              <li key={d} className="flex items-start gap-2">
+                <CheckIcon className="size-5 text-brand shrink-0 mt-0.5" aria-hidden="true" />
+                <span>{d}</span>
+              </li>
             ))}
+          </ul>
+          <div className="text-center">
+            <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
+              Ja, ik wil meer klanten via social media
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
+
+      <Faq items={faq} className="bg-bg" />
     </>
   )
 }
