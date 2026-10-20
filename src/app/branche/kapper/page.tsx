@@ -5,13 +5,13 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Website laten maken voor kappers | Elly Apps',
   description:
-    'Een professionele website voor uw kapperszaak: online afspraken, portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand.',
+    'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
   alternates: { canonical: 'https://elly-apps.nl/branche/kapper' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/kapper',
     title: 'Website laten maken voor kappers | Elly Apps',
-    description: 'Een professionele website voor uw kapperszaak: online afspraken, portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand.',
+    description: 'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor kappers | Elly Apps',
-    description: 'Een professionele website voor uw kapperszaak: online afspraken, portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand.',
+    description: 'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     images: ['/og-image.png'],
   },
 }
@@ -29,12 +29,12 @@ const schema = {
   '@type': 'HairSalon',
   name: 'Elly Apps — Websites voor kappers',
   url: 'https://elly-apps.nl/branche/kapper',
-  description: 'Professionele websites voor kappers en kapperszaken, inclusief online afspraken en lokale SEO.',
+  description: 'Professionele websites voor kappers en kapperszaken, met portfolio en lokale SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
 }
 
 const faqItems = [
   { q: 'Wat kost een website voor mijn kapsalon?', a: 'U betaalt een eenmalig startbedrag voor het ontwerp en de bouw, en daarna een vast bedrag vanaf €49 per maand voor hosting, onderhoud, updates en beveiliging. Geen verrassingen achteraf. Bekijk onze pakketten op de prijzenpagina voor een exact overzicht.' },
-  { q: 'Kunnen klanten online een afspraak boeken?', a: 'Ja. Wij integreren een online afsprakensysteem dat 24/7 boekingen aanneemt, automatisch bevestigingen en herinneringen stuurt en gekoppeld is aan uw agenda. Zo boeken klanten ook buiten openingstijden en belt u zelf niemand meer terug.' },
+  { q: 'Kunnen klanten online een afspraak boeken?', a: 'Dat kan, als aparte uitbreiding. Een online afsprakensysteem zit niet in de websitepakketten, maar wij kunnen het voor u integreren: het neemt 24/7 boekingen aan, stuurt bevestigingen en herinneringen en kan gekoppeld worden aan uw agenda. De prijs hangt af van uw wensen; neem contact op voor een vrijblijvende offerte.' },
   { q: 'Hoe snel staat mijn kapperswebsite online?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een korte intake bouwen wij een eerste versie die u kunt bekijken en aanpassen, waarna wij de site publiceren en de lokale SEO inrichten.' },
   { q: 'Word ik gevonden door klanten in mijn stad?', a: 'Daar richten wij de website specifiek op in. Wij optimaliseren uw pagina voor zoektermen als "kapper [uw stad]" en zorgen dat uw Google Bedrijfsprofiel klopt met openingstijden, foto\'s en reviews, zodat u verschijnt in Google Maps en de lokale resultaten.' },
   { q: 'Kan ik mijn portfolio en tarieven zelf bijwerken?', a: 'Ja. U kunt eenvoudig nieuwe foto\'s toevoegen en tarieven aanpassen. Heeft u daar liever geen omkijken naar? Dan regelen wij het voor u als onderdeel van het maandelijkse beheer.' },
@@ -61,7 +61,7 @@ export default function KapperPage() {
             Website laten maken voor kappers
           </h1>
           <p className="text-xl text-gray-600">
-            Laat klanten online afspraken maken, toon uw portfolio en word gevonden door nieuwe
+            Toon uw portfolio en word gevonden door nieuwe
             klanten in uw buurt — voor een vaste maandprijs, volledig ontzorgd.
           </p>
         </div>
@@ -71,15 +71,15 @@ export default function KapperPage() {
             Als kapper is uw vak visueel — en dat moet uw website ook zijn. Een professionele
             kapperswebsite laat uw werk zien, bouwt vertrouwen op bij nieuwe klanten en maakt het
             makkelijk om een afspraak te boeken. Steeds meer klanten boeken hun kappersafspraak
-            online, ook buiten openingstijden. Zonder online afspraakmogelijkheid mist u die klanten.
+            online, ook buiten openingstijden. Een online afsprakensysteem kunt u als aparte uitbreiding bij ons laten toevoegen.
           </p>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online afspraken, dag en nacht</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-8">Online afspraken als uitbreiding</h2>
           <p>
-            Wij integreren een online afsprakensysteem dat automatisch bevestigingen en herinneringen
-            stuurt en uw agenda beheert. U hoeft zelf niet meer te bellen om afspraken te plannen —
-            uw website doet dat voor u. Dat bespaart tijd, vermindert no-shows en vergroot de
-            klanttevredenheid. Wilt u meer weten over hoe zo&apos;n systeem werkt? Bekijk dan onze
+            Een online afsprakensysteem is geen onderdeel van de websitepakketten, maar kunt u er als
+            aparte uitbreiding bij nemen. Het stuurt automatisch bevestigingen en herinneringen en
+            kan gekoppeld worden aan uw agenda. De prijs is afhankelijk van uw wensen; wij maken
+            daarvoor een vrijblijvende offerte. Wilt u meer weten over hoe zo&apos;n systeem werkt? Bekijk dan onze
             pagina over het <Link href="/diensten/boekingssysteem" className="text-[#E53E3E] underline hover:no-underline">online boekingssysteem</Link>.
           </p>
 
@@ -118,7 +118,7 @@ export default function KapperPage() {
           <p className="text-gray-600 mb-4">
             U betaalt een eenmalig startbedrag voor ontwerp en bouw, en daarna een vaste maandprijs
             <strong className="text-gray-900"> vanaf €49 per maand</strong> voor hosting, onderhoud,
-            updates, beveiliging en het online afsprakensysteem. Geen verrassingen op de factuur.
+            updates en beveiliging. Een online afsprakensysteem is een aparte uitbreiding op offertebasis. Geen verrassingen op de factuur.
           </p>
           <Link href="/prijzen" className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[#E53E3E] text-white font-semibold hover:bg-[#C53030] transition-colors">
             Bekijk alle pakketten en prijzen
@@ -134,15 +134,15 @@ export default function KapperPage() {
           </p>
           <ol className="space-y-3 text-gray-700 text-sm list-decimal pl-5">
             <li><strong>Intake (dag 1).</strong> We bespreken uw diensten, tarieven, stijl en de wijken waar uw klanten vandaan komen.</li>
-            <li><strong>Bouw (week 1).</strong> Wij zetten de website op met portfolio, dienstenoverzicht en een online afsprakenmodule gekoppeld aan uw agenda.</li>
+            <li><strong>Bouw (week 1).</strong> Wij zetten de website op met portfolio, dienstenoverzicht en eventueel een online afsprakenmodule (aparte uitbreiding).</li>
             <li><strong>Lokale SEO (week 2).</strong> We optimaliseren voor &quot;kapper [uw stad]&quot; en richten uw Google Bedrijfsprofiel goed in.</li>
-            <li><strong>Live &amp; beheer.</strong> De site gaat online; klanten boeken voortaan zelf, ook &apos;s avonds. Wij houden alles up-to-date.</li>
+            <li><strong>Live &amp; beheer.</strong> De site gaat online; heeft u een afsprakenmodule laten toevoegen, dan boeken klanten voortaan zelf, ook &apos;s avonds. Wij houden alles up-to-date.</li>
           </ol>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            'Online afspraken inboeken',
+            'Online afsprakensysteem (optionele uitbreiding)',
             'Portfolio met voor-en-na foto\'s',
             'Diensten en tarieven overzicht',
             'Lokale SEO voor uw buurt',

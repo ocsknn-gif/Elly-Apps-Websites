@@ -3,7 +3,10 @@
 import { useEffect, useState, Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
 
-type Status = 'loading' | 'valid' | 'already' | 'invalid' | 'success' | 'error'
+type Status = 'loading' | 'valid' | 'already' | 'invalid' | 'success' | 'error' | 'config'
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL
+const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 function UnsubscribeContent() {
   const params = useSearchParams()
@@ -12,9 +15,14 @@ function UnsubscribeContent() {
 
   useEffect(() => {
     if (!token) { setStatus('invalid'); return }
+    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+      console.error('Uitschrijven: NEXT_PUBLIC_SUPABASE_URL of NEXT_PUBLIC_SUPABASE_ANON_KEY ontbreekt')
+      setStatus('config')
+      return
+    }
 
-    const url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/handle-email-unsubscribe?token=${encodeURIComponent(token)}`
-    fetch(url, { headers: { apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '' } })
+    const url = `${SUPABASE_URL}/functions/v1/handle-email-unsubscribe?token=${encodeURIComponent(token)}`
+    fetch(url, { headers: { apikey: SUPABASE_ANON_KEY } })
       .then((r) => r.json())
       .then((d) => {
         if (d.valid === false && d.reason === 'already_unsubscribed') setStatus('already')
@@ -25,12 +33,12 @@ function UnsubscribeContent() {
   }, [token])
 
   const handleUnsubscribe = async () => {
-    if (!token) return
+    if (!token || !SUPABASE_URL || !SUPABASE_ANON_KEY) return
     try {
-      const url = `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/handle-email-unsubscribe`
+      const url = `${SUPABASE_URL}/functions/v1/handle-email-unsubscribe`
       const res = await fetch(url, {
         method: 'POST',
-        headers: { apikey: process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? '', 'Content-Type': 'application/json' },
+        headers: { apikey: SUPABASE_ANON_KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({ token }),
       })
       const data = await res.json()
@@ -69,6 +77,12 @@ function UnsubscribeContent() {
           <>
             <h1 className="text-2xl font-bold text-gray-900">Ongeldige link</h1>
             <p className="text-gray-600">Deze uitschrijflink is ongeldig of verlopen.</p>
+          </>
+        )}
+        {status === 'config' && (
+          <>
+            <h1 className="text-2xl font-bold text-gray-900">Uitschrijven is tijdelijk niet mogelijk</h1>
+            <p className="text-gray-600">Er ging iets mis aan onze kant. Stuur een e-mail naar info@elly-apps.nl, dan schrijven wij u handmatig uit.</p>
           </>
         )}
         {status === 'error' && (

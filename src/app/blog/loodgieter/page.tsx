@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const IMAGE_URL = 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&fm=webp&q=75'
+const IMAGE_URL = 'https://elly-apps.nl/images/branches/loodgieter.webp'
 
 const schema = {
   '@context': 'https://schema.org',
