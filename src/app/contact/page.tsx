@@ -55,30 +55,33 @@ export default function ContactPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
       />
 
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">Neem contact op</h1>
-          <p className="mt-4 text-xl text-gray-600">
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="h1 text-ink">Neem contact op</h1>
+          <p className="body-lg text-muted mt-4">
             Wij reageren altijd binnen één werkdag.
           </p>
         </div>
+      </section>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contactgegevens */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-5">Contactgegevens</h2>
+              <h2 className="h3 text-ink mb-5">Contactgegevens</h2>
               <ul className="space-y-5">
                 <li className="flex items-start gap-4">
                   <div className="inline-flex items-center justify-center size-10 rounded-full bg-brand-tint shrink-0">
                     <PhoneIcon className="size-5 text-brand" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">Telefoon</p>
+                    <p className="text-xs text-muted uppercase tracking-wide mb-0.5">Telefoon</p>
                     <ContactLink
                       type="phone"
                       location="contactpagina"
-                      className="font-semibold text-gray-900 hover:text-brand-strong transition-colors"
+                      className="font-semibold text-ink hover:text-brand-strong transition-colors"
                     >
                       +31 6 36 27 85 15
                     </ContactLink>
@@ -90,10 +93,10 @@ export default function ContactPage() {
                     <MailIcon className="size-5 text-brand" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">E-mail</p>
+                    <p className="text-xs text-muted uppercase tracking-wide mb-0.5">E-mail</p>
                     <a
                       href="mailto:info@elly-apps.nl"
-                      className="font-semibold text-gray-900 hover:text-brand-strong transition-colors"
+                      className="font-semibold text-ink hover:text-brand-strong transition-colors"
                     >
                       info@elly-apps.nl
                     </a>
@@ -105,11 +108,11 @@ export default function ContactPage() {
                     <MessageCircleIcon className="size-5 text-success" />
                   </div>
                   <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wide mb-0.5">WhatsApp</p>
+                    <p className="text-xs text-muted uppercase tracking-wide mb-0.5">WhatsApp</p>
                     <ContactLink
                       type="whatsapp"
                       location="contactpagina"
-                      className="font-semibold text-gray-900 hover:text-success transition-colors"
+                      className="font-semibold text-ink hover:text-success transition-colors"
                     >
                       Stuur een WhatsApp bericht
                     </ContactLink>
@@ -119,27 +122,27 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Openingstijden</h2>
+              <h2 className="h3 text-ink mb-4">Openingstijden</h2>
               <div className="flex items-start gap-4">
                 <div className="inline-flex items-center justify-center size-10 rounded-full bg-brand-tint shrink-0">
                   <ClockIcon className="size-5 text-brand" />
                 </div>
-                <div className="text-sm text-gray-700 space-y-1">
+                <div className="text-sm text-ink space-y-1">
                   <p>Maandag t/m vrijdag</p>
-                  <p className="font-semibold text-gray-900">09:00 – 18:00</p>
-                  <p className="text-gray-500">Buiten kantooruren kunt u een bericht sturen via WhatsApp of e-mail.</p>
+                  <p className="font-semibold text-ink">09:00 – 18:00</p>
+                  <p className="text-muted">Buiten kantooruren kunt u een bericht sturen via WhatsApp of e-mail.</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Formulier */}
-          <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
-            <h2 className="text-xl font-bold text-gray-900 mb-6">Stuur een bericht</h2>
+          <div className="rounded-2xl border border-line bg-bg p-4 sm:p-8 shadow-lg">
+            <h2 className="h3 text-ink mb-6">Stuur een bericht</h2>
             <ContactForm />
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }
