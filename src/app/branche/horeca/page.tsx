@@ -4,13 +4,13 @@ import { CheckCircleIcon } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
-  description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+  description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
   alternates: { canonical: 'https://elly-apps.nl/branche/horeca' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/horeca',
     title: 'Horeca website laten maken | Elly Apps',
-    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Horeca website laten maken | Elly Apps',
-    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu, reserveringen en lokale SEO. Vanaf €49/maand.',
+    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
     images: ['/og-image.png'],
   },
 }
@@ -28,12 +28,12 @@ const schema = {
   '@type': 'Service',
   name: 'Horeca website laten maken',
   provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
-  description: 'Professionele websites voor horecabedrijven. Online menu, reserveringen, lokale SEO en volledig beheerd.',
+  description: 'Professionele websites voor horecabedrijven. Online menu, lokale SEO en volledig beheerd. Een reserveringssysteem is als aparte uitbreiding mogelijk.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }
 
 const faqItems = [
-  { q: 'Wat kost een horeca website laten maken?', a: 'Een professionele horecawebsite bij Elly Apps begint vanaf €299 eenmalige setup en €49 per maand. Daarin zijn hosting, SSL, updates en basis SEO inbegrepen. Voor uitgebreidere functies zoals online reserveringen, bestelsystemen of menubeheersystemen adviseren wij het Groei of Pro pakket.' },
+  { q: 'Wat kost een horeca website laten maken?', a: 'Een professionele horecawebsite bij Elly Apps begint vanaf €299 eenmalige setup en €49 per maand. Daarin zijn hosting, SSL, updates en basis SEO inbegrepen. Voor uitgebreidere functies zoals online reserveringen of bestelsystemen zijn aparte uitbreidingen op offerte mogelijk.' },
   { q: 'Kan ik zelf mijn menu bijwerken op de website?', a: 'Ja. Wij bouwen een eenvoudig beheerpaneel waarmee u zelf uw menu kunt bijwerken — geen technische kennis nodig. Verandert er een prijs of een gerecht? U past het zelf aan in enkele klikken.' },
   { q: 'Werken jullie ook met bezorging of afhaal?', a: 'Ja. Wij kunnen een online bestelmodule integreren waarmee gasten direct via uw website kunnen bestellen voor bezorging of afhaal — zonder commissie aan platformen als Thuisbezorgd of Uber Eats.' },
   { q: 'Hoe snel kan mijn horeca website live?', a: 'Wij leveren gemiddeld binnen twee weken op. Na een gratis kennismakingsgesprek starten wij direct met het ontwerp en de technische opzet.' },
@@ -61,8 +61,8 @@ export default function HorecaPage() {
             Horeca website laten maken
           </h1>
           <p className="text-xl text-gray-600">
-            Meer gasten via Google. Een professionele horecawebsite met online menu,
-            reserveringen en lokale SEO — volledig beheerd vanaf €49 per maand.
+            Meer gasten via Google. Een professionele horecawebsite met online menu
+            en lokale SEO — volledig beheerd vanaf €49 per maand.
           </p>
         </div>
 
@@ -71,17 +71,16 @@ export default function HorecaPage() {
             De horeca is een van de meest competitieve sectoren van Nederland. Gasten kiezen
             hun restaurant, café of hotel al online — op basis van de website, de foto's, het
             menu en de reviews. Een slechte of verouderde website kost u gasten. Een professionele
-            horecawebsite, geoptimaliseerd voor Google en voorzien van een online reserveringssysteem,
-            is geen luxe maar een noodzaak voor elk serieus horecabedrijf.
+            horecawebsite, geoptimaliseerd voor Google, is geen luxe maar een noodzaak voor elk serieus horecabedrijf.
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Wat heeft een goede horecawebsite nodig?</h2>
           <p>
             Een effectieve horecawebsite doet meer dan er goed uitzien. Ten eerste moet de website
             snel laden — zeker op mobiel, want meer dan 70 procent van de zoekopdrachten naar
             horeca vindt plaats op een smartphone. Ten tweede moet uw menu duidelijk en aantrekkelijk
-            gepresenteerd worden, inclusief foto's, prijzen en allergeneninformatie. Ten derde moet
-            er een reserveringssysteem op staan zodat gasten 24/7 een tafel kunnen boeken. En ten
-            vierde moet de website vindbaar zijn in Google — voor zoektermen als "restaurant [stad]"
+            gepresenteerd worden, inclusief foto's, prijzen en allergeneninformatie. Ten derde moeten
+            gasten makkelijk een tafel kunnen reserveren; een online reserveringssysteem voegen wij
+            toe als aparte uitbreiding. En ten vierde moet de website vindbaar zijn in Google — voor zoektermen als "restaurant [stad]"
             of "[uw type keuken] [stad]".
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mt-8">Online bestellen zonder commissie</h2>
@@ -121,7 +120,7 @@ export default function HorecaPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
             'Online menu met foto\'s en allergenen',
-            'Reserveringssysteem 24/7',
+            'Reserveringssysteem (optionele uitbreiding)',
             'Bestelmodule zonder commissie',
             'Lokale SEO en Google Business',
             'Reviews integratie',

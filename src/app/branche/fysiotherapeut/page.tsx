@@ -5,13 +5,13 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
   description:
-    'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+    'Professionele website voor uw fysiotherapiepraktijk. Behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd. Online afspraken zijn als aparte uitbreiding mogelijk.',
   alternates: { canonical: 'https://elly-apps.nl/branche/fysiotherapeut' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/fysiotherapeut',
     title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
-    description: 'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+    description: 'Professionele website voor uw fysiotherapiepraktijk. Behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd. Online afspraken zijn als aparte uitbreiding mogelijk.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
-    description: 'Professionele website voor uw fysiotherapiepraktijk. Online afspraken, behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd.',
+    description: 'Professionele website voor uw fysiotherapiepraktijk. Behandelingsinfo en lokale vindbaarheid. Vanaf €49/maand volledig beheerd. Online afspraken zijn als aparte uitbreiding mogelijk.',
     images: ['/og-image.png'],
   },
 }
@@ -29,7 +29,7 @@ const schema = {
   '@type': 'MedicalBusiness',
   name: 'Elly Apps — Websites voor fysiotherapeuten',
   url: 'https://elly-apps.nl/branche/fysiotherapeut',
-  description: 'Professionele websites voor fysiotherapiepraktijken, inclusief online afspraken en behandelingsinfo.',
+  description: 'Professionele websites voor fysiotherapiepraktijken, met behandelingsinfo en lokale SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
 }
 
 export default function FysiotherapeutPage() {
@@ -64,10 +64,12 @@ export default function FysiotherapeutPage() {
             drempel en verhoogt het vertrouwen.
           </p>
           <p>
-            Online afspraken maken is voor patiënten een groot gemak. Wij integreren een
-            afsprakensysteem waarmee patiënten eenvoudig een eerste consult of vervolgafspraak
-            inplannen. Dit ontlast uw receptie en zorgt voor minder no-shows dankzij automatische
-            herinneringen.
+            Online afspraken maken is voor patiënten een groot gemak. Een online afsprakensysteem
+            is geen onderdeel van de websitepakketten, maar kunt u als aparte uitbreiding laten
+            toevoegen. Patiënten plannen dan zelf een eerste consult of vervolgafspraak, met
+            automatische herinneringen. De prijs is afhankelijk van uw wensen; wij maken daarvoor
+            een vrijblijvende offerte. Meer weten? Bekijk dan onze pagina over het{' '}
+            <Link href="/diensten/boekingssysteem" className="text-[#E53E3E] underline hover:no-underline">online boekingssysteem</Link>.
           </p>
           <p>
             Verwijzingen van huisartsen en specialisten zijn voor veel fysiotherapeuten een
@@ -85,7 +87,7 @@ export default function FysiotherapeutPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            'Online afspraken plannen',
+            'Online afsprakensysteem (optionele uitbreiding)',
             'Behandelingsoverzicht per specialisatie',
             'Teampagina en specialisaties',
             'Lokale SEO voor uw regio',
