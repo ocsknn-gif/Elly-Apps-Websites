@@ -8,10 +8,10 @@ export function PrijzenFilter({ actief }: { actief: string }) {
           key={dienst}
           href={`/prijzen?dienst=${encodeURIComponent(dienst)}`}
           className={[
-            'px-5 py-2 rounded-full text-sm font-semibold transition-colors cursor-pointer',
+            'inline-flex min-h-10 items-center px-5 rounded-full text-sm font-semibold transition-colors cursor-pointer',
             actief === dienst
-              ? 'bg-[#E53E3E] text-white'
-              : 'bg-gray-100 text-gray-600 hover:bg-gray-200',
+              ? 'bg-brand-strong text-white'
+              : 'bg-bg border border-line text-muted hover:border-brand-strong hover:text-brand-strong',
           ].join(' ')}
         >
           {dienst}
