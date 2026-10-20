@@ -47,7 +47,7 @@ const schema = {
 
 const faq = [
   { q: 'Voldoet mijn zorgwebsite aan de AVG?', a: 'Ja. Wij bouwen alle zorgwebsites AVG-compliant. Dit betekent veilige formulieren, een correcte privacyverklaring en cookiebeheer dat voldoet aan de Nederlandse wetgeving.' },
-  { q: 'Kan ik een online afspraakmodule integreren?', a: 'Dat kan, als aparte uitbreiding. Een online afspraakmodule zit niet in de websitepakketten, maar wij kunnen het voor u integreren. Neem contact op voor een vrijblijvende offerte. Dit ontlast uw balie en verhoogt de tevredenheid van patiënten.' },
+  { q: 'Kan ik een online afspraakmodule integreren?', a: 'Dat kan, als aparte uitbreiding. Een online afspraakmodule zit niet in de websitepakketten, maar wij kunnen het voor u integreren. Neem contact op voor een vrijblijvende offerte.' },
   { q: 'Hoe toon ik mijn specialisaties op de website?', a: 'Wij maken voor elke specialisatie een aparte pagina of sectie, zodat patiënten snel vinden wat ze zoeken en Google uw expertise herkent.' },
   { q: 'Kan ik een patiëntenportaal koppelen?', a: 'Ja. We kunnen een koppeling maken met bestaande patiëntenportalen of EPD-systemen, afhankelijk van uw huidige software.' },
   { q: 'Is mijn website toegankelijk voor mensen met een beperking?', a: 'Ja. Wij bouwen websites die voldoen aan de WCAG-richtlijnen voor digitale toegankelijkheid, zodat ook patiënten met een visuele of motorische beperking uw website goed kunnen gebruiken.' },

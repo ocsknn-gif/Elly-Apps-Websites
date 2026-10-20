@@ -33,7 +33,7 @@ const schema = {
 }
 
 const faqItems = [
-  { q: 'Wat kost een horeca website laten maken?', a: 'Een professionele horecawebsite bij Elly Apps begint vanaf €299 eenmalige setup en €49 per maand. Daarin zijn hosting, SSL, updates en basis SEO inbegrepen. Voor uitgebreidere functies zoals online reserveringen of bestelsystemen zijn aparte uitbreidingen op offerte mogelijk; voor menubeheersystemen adviseren wij het Groei of Pro pakket.' },
+  { q: 'Wat kost een horeca website laten maken?', a: 'Een professionele horecawebsite bij Elly Apps begint vanaf €299 eenmalige setup en €49 per maand. Daarin zijn hosting, SSL, updates en basis SEO inbegrepen. Voor uitgebreidere functies zoals online reserveringen of bestelsystemen zijn aparte uitbreidingen op offerte mogelijk.' },
   { q: 'Kan ik zelf mijn menu bijwerken op de website?', a: 'Ja. Wij bouwen een eenvoudig beheerpaneel waarmee u zelf uw menu kunt bijwerken — geen technische kennis nodig. Verandert er een prijs of een gerecht? U past het zelf aan in enkele klikken.' },
   { q: 'Werken jullie ook met bezorging of afhaal?', a: 'Ja. Wij kunnen een online bestelmodule integreren waarmee gasten direct via uw website kunnen bestellen voor bezorging of afhaal — zonder commissie aan platformen als Thuisbezorgd of Uber Eats.' },
   { q: 'Hoe snel kan mijn horeca website live?', a: 'Wij leveren gemiddeld binnen twee weken op. Na een gratis kennismakingsgesprek starten wij direct met het ontwerp en de technische opzet.' },
