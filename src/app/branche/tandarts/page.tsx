@@ -5,13 +5,13 @@ import { CheckCircleIcon } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Website laten maken voor tandartsen | Elly Apps',
   description:
-    'Professionele website voor uw tandartspraktijk. Online afspraken, behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand.',
+    'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
   alternates: { canonical: 'https://elly-apps.nl/branche/tandarts' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/tandarts',
     title: 'Website laten maken voor tandartsen | Elly Apps',
-    description: 'Professionele website voor uw tandartspraktijk. Online afspraken, behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand.',
+    description: 'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor tandartsen | Elly Apps',
-    description: 'Professionele website voor uw tandartspraktijk. Online afspraken, behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand.',
+    description: 'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     images: ['/og-image.png'],
   },
 }
@@ -29,7 +29,7 @@ const schema = {
   '@type': 'Dentist',
   name: 'Elly Apps — Websites voor tandartsen',
   url: 'https://elly-apps.nl/branche/tandarts',
-  description: 'Professionele websites voor tandartspraktijken, inclusief online afspraken en patiënteninfo.',
+  description: 'Professionele websites voor tandartspraktijken, met patiënteninfo en lokale SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
 }
 
 export default function TandartsPage() {
@@ -44,8 +44,8 @@ export default function TandartsPage() {
             Website laten maken voor tandartsen
           </h1>
           <p className="text-xl text-gray-600">
-            Nieuwe patiënten online aantrekken, afspraken digitaal laten plannen en vertrouwen
-            wekken — dat is wat een goede tandartsenwebsite voor u doet.
+            Nieuwe patiënten online aantrekken en vertrouwen wekken — dat is wat een goede
+            tandartsenwebsite voor u doet.
           </p>
         </div>
 
@@ -64,10 +64,12 @@ export default function TandartsPage() {
             patiënten te begrijpen wat ze kunnen verwachten.
           </p>
           <p>
-            Online afspraken plannen is voor patiënten een groot gemak. Wij integreren een
-            afsprakensysteem in uw website waarmee patiënten 24/7 een afspraak kunnen inplannen.
-            Automatische bevestigingen en herinneringen per e-mail of SMS verminderen het aantal
-            no-shows en ontlasten uw receptie.
+            Online afspraken plannen is voor patiënten een groot gemak. Een online afsprakensysteem
+            is geen onderdeel van de websitepakketten, maar kunt u als aparte uitbreiding laten
+            toevoegen. Het stuurt automatische bevestigingen en herinneringen per e-mail of SMS.
+            De prijs is afhankelijk van uw wensen; wij maken daarvoor een vrijblijvende offerte.
+            Meer weten? Bekijk dan onze pagina over het{' '}
+            <Link href="/diensten/boekingssysteem" className="text-[#E53E3E] underline hover:no-underline">online boekingssysteem</Link>.
           </p>
           <p>
             Het team is het gezicht van uw praktijk. Wij bouwen een teampagina met foto's en
@@ -84,7 +86,7 @@ export default function TandartsPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            'Online afspraken plannen',
+            'Online afsprakensysteem (optionele uitbreiding)',
             'Behandelingsoverzicht met uitleg',
             'Teampagina met foto\'s',
             'Lokale SEO voor uw regio',
