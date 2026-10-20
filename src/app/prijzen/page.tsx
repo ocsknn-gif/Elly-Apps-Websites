@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { CheckCircleIcon } from 'lucide-react'
 import { PrijzenFilter } from '@/components/PrijzenFilter'
+import { PakketKaart } from '@/components/PakketKaart'
+import { Faq } from '@/components/home/Faq'
+import { ClosingCta } from '@/components/home/ClosingCta'
+import { SectionHeader } from '@/components/home/SectionHeader'
 import { websitePakketten } from '@/lib/pakketten'
 
 export const metadata: Metadata = {
@@ -216,6 +219,17 @@ const faqItems = [
   },
 ]
 
+const brancheLinks = [
+  { label: 'Kapper', href: '/branche/kapper' },
+  { label: 'Restaurant', href: '/branche/restaurant' },
+  { label: 'Loodgieter', href: '/branche/loodgieter' },
+  { label: 'Tandarts', href: '/branche/tandarts' },
+  { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut' },
+  { label: 'Alle branches', href: '/branche' },
+]
+
+const NOTE = '✓ Gratis \u00a0 ✓ Vrijblijvend \u00a0 ✓ Binnen 24 uur reactie'
+
 export default function PrijzenPage({
   searchParams,
 }: {
@@ -225,128 +239,82 @@ export default function PrijzenPage({
   const huidigePakketten = pakketten[actief as keyof typeof pakketten] ?? pakketten['Websites']
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
+    <>
       {/* Header */}
-      <div className="text-center">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
-          Transparante prijzen — wat u ziet is wat u betaalt
-        </h1>
-        <p className="mt-4 text-xl text-gray-600">
-          Geen verborgen kosten. Vaste maandprijs. Tevredenheidsgarantie.
-        </p>
-      </div>
-
-      {/* Vergelijking banner */}
-      <div className="max-w-3xl mx-auto text-center bg-gray-50 rounded-2xl px-6 py-4 text-sm text-gray-600 border border-gray-200">
-        <span className="font-semibold text-gray-900">Traditioneel webbureau:</span> €3.000 - €10.000 eenmalig, zonder doorlopend beheer. &nbsp;·&nbsp;
-        <span className="font-semibold text-[#E53E3E]">Elly Apps:</span> vanaf €49/maand — inclusief hosting, SEO en onderhoud.
-      </div>
-
-      {/* Tabs */}
-      <PrijzenFilter actief={actief} />
-
-      {/* Pakketten */}
-      <div className={`grid gap-8 items-stretch ${huidigePakketten.length === 1 ? 'max-w-sm mx-auto' : 'grid-cols-1 md:grid-cols-3'}`}>
-        {huidigePakketten.map((pakket) => (
-          <div
-            key={pakket.naam}
-            className={`flex flex-col rounded-2xl p-8 shadow-sm relative ${
-              pakket.populair
-                ? 'border-2 border-[#E53E3E] shadow-lg'
-                : 'border border-gray-200'
-            }`}
-          >
-            {pakket.populair && (
-              <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E53E3E] text-white text-xs font-bold px-4 py-1 rounded-full">
-                Meest gekozen
-              </span>
-            )}
-            <p className="text-lg font-bold text-gray-900">{pakket.naam}</p>
-            <p className="mt-2 text-4xl font-extrabold text-[#E53E3E]">
-              {pakket.prijs.startsWith('€') ? (
-                <>{pakket.prijs}<span className="text-lg font-medium text-gray-500">/maand</span></>
-              ) : pakket.prijs}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-8 md:pt-20 md:pb-10 bg-surface">
+        <div className="max-w-7xl mx-auto space-y-8">
+          <div className="text-center">
+            <h1 className="h1 text-ink">Transparante prijzen — wat u ziet is wat u betaalt</h1>
+            <p className="body-lg text-muted mt-4">
+              Geen verborgen kosten. Vaste maandprijs. Tevredenheidsgarantie.
             </p>
-            <p className="text-sm text-gray-500 mt-1">{pakket.eenmalig}</p>
-            <ul className="mt-6 space-y-3 text-sm text-gray-700 flex-1">
-              {pakket.features.map((f) => (
-                <li key={f} className="flex items-start gap-2">
-                  <CheckCircleIcon className="size-4 text-[#E53E3E] shrink-0 mt-0.5" />
-                  {f}
-                </li>
-              ))}
-            </ul>
-            <Link
-              href={pakket.href}
-              className={`mt-8 block text-center py-3 rounded-xl font-semibold transition-colors text-sm ${
-                pakket.populair
-                  ? 'bg-[#E53E3E] text-white hover:bg-[#C53030]'
-                  : 'border-2 border-[#E53E3E] text-[#E53E3E] hover:bg-red-50'
-              }`}
-            >
-              {pakket.cta}
-            </Link>
-            <p className="text-xs text-gray-400 text-center mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
           </div>
-        ))}
-      </div>
 
-      {/* FAQ */}
-      <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">
-          Vragen over onze prijzen
-        </h2>
-        <div className="space-y-4">
-          {faqItems.map((item) => (
-            <details
-              key={item.q}
-              className="group rounded-xl border border-gray-200 shadow-sm overflow-hidden"
-            >
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50 transition-colors">
-                {item.q}
-                <span className="shrink-0 text-[#E53E3E] text-xl leading-none group-open:rotate-45 transition-transform duration-200">
-                  +
-                </span>
-              </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
-            </details>
-          ))}
+          {/* Vergelijking banner */}
+          <div className="max-w-3xl mx-auto text-center bg-bg rounded-2xl px-6 py-4 text-sm text-muted border border-line">
+            <span className="font-semibold text-ink">Traditioneel webbureau:</span> €3.000 - €10.000 eenmalig, zonder doorlopend beheer. &nbsp;·&nbsp;
+            <span className="font-semibold text-brand-strong">Elly Apps:</span> vanaf €49/maand — inclusief hosting, SEO en onderhoud.
+          </div>
+
+          {/* Tabs */}
+          <PrijzenFilter actief={actief} />
         </div>
       </section>
 
+      {/* Pakketten */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-label="Pakketten">
+        <div className="max-w-7xl mx-auto">
+          <div className={`grid gap-6 lg:gap-8 items-stretch ${huidigePakketten.length === 1 ? 'max-w-sm mx-auto' : 'grid-cols-1 md:grid-cols-3'}`}>
+            {huidigePakketten.map((pakket) => (
+              <PakketKaart
+                key={pakket.naam}
+                naam={pakket.naam}
+                prijs={pakket.prijs}
+                periode={pakket.prijs.startsWith('€') ? '/maand' : undefined}
+                eenmalig={pakket.eenmalig}
+                populair={pakket.populair}
+                features={pakket.features}
+                cta={{ label: pakket.cta, href: pakket.href }}
+                note={NOTE}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <Faq items={faqItems} title="Vragen over onze prijzen" className="bg-surface" />
+
       {/* Branches */}
-      <section className="max-w-3xl mx-auto">
-        <h2 className="text-2xl font-bold text-gray-900 mb-3 text-center">Prijzen per branche</h2>
-        <p className="text-center text-gray-600 mb-8">Benieuwd hoe een website er voor uw vak uitziet? Bekijk de mogelijkheden per branche.</p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-          {[
-            { label: 'Kapper', href: '/branche/kapper' },
-            { label: 'Restaurant', href: '/branche/restaurant' },
-            { label: 'Loodgieter', href: '/branche/loodgieter' },
-            { label: 'Tandarts', href: '/branche/tandarts' },
-            { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut' },
-            { label: 'Alle branches', href: '/branche' },
-          ].map((b) => (
-            <Link key={b.href} href={b.href} className="text-center text-sm font-medium text-gray-700 border border-gray-200 rounded-xl px-4 py-3 hover:text-[#E53E3E] hover:border-[#E53E3E] transition-colors">
-              {b.label}
-            </Link>
-          ))}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="branches-titel">
+        <div className="max-w-3xl mx-auto">
+          <SectionHeader
+            id="branches-titel"
+            title="Prijzen per branche"
+            intro="Benieuwd hoe een website er voor uw vak uitziet? Bekijk de mogelijkheden per branche."
+          />
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {brancheLinks.map((b) => (
+              <Link
+                key={b.href}
+                href={b.href}
+                className="flex min-h-12 items-center justify-center rounded-2xl border border-line bg-bg px-4 py-3 text-center font-semibold text-ink shadow-sm transition-all hover:border-brand-strong hover:text-brand-strong hover:shadow-md"
+              >
+                {b.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <div className="text-center bg-[#E53E3E] rounded-2xl p-10">
-        <h2 className="text-2xl font-bold text-white mb-4">Twijfelt u nog?</h2>
-        <p className="text-white/90 mb-6">
-          Vraag vrijblijvend een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen.
-        </p>
-        <Link
-          href="/gratis-websitescan"
-          className="inline-flex items-center px-7 py-3.5 rounded-xl bg-white text-[#E53E3E] font-semibold hover:bg-red-50 transition-colors"
-        >
-          Gratis websitescan aanvragen
-        </Link>
-      </div>
-    </div>
+      <ClosingCta
+        title="Twijfelt u nog?"
+        text="Vraag vrijblijvend een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen."
+        buttonLabel="Gratis websitescan aanvragen"
+        note={null}
+        beeld={false}
+      />
+    </>
   )
 }

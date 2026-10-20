@@ -2,11 +2,19 @@ import { PlusIcon } from 'lucide-react'
 import { SectionHeader } from './SectionHeader'
 
 /** Uitklapbare FAQ. Krijgt dezelfde items als het FAQ-schema, zodat die altijd gelijk lopen. */
-export function Faq({ items }: { items: { q: string; a: string }[] }) {
+export function Faq({
+  items,
+  title = 'Veelgestelde vragen',
+  className = 'bg-surface',
+}: {
+  items: { q: string; a: string }[]
+  title?: string
+  className?: string
+}) {
   return (
-    <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-labelledby="faq-titel">
+    <section className={`section px-4 sm:px-6 lg:px-8 ${className}`} aria-labelledby="faq-titel">
       <div className="max-w-3xl mx-auto">
-        <SectionHeader id="faq-titel" title="Veelgestelde vragen" />
+        <SectionHeader id="faq-titel" title={title} />
         <div className="space-y-3">
           {items.map((item) => (
             <details key={item.q} className="group rounded-xl border border-line bg-bg">
