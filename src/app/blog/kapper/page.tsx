@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const IMAGE_URL = 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1200&fm=webp&q=75'
+const IMAGE_URL = 'https://elly-apps.nl/images/branches/kapper.webp'
 
 const schema = {
   '@context': 'https://schema.org',

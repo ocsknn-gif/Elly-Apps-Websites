@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
 }
 
-const IMAGE_URL = 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&fm=webp&q=75'
+const IMAGE_URL = 'https://elly-apps.nl/images/branches/restaurant.webp'
 
 const schema = {
   '@context': 'https://schema.org',

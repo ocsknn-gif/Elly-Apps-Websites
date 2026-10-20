@@ -36,9 +36,9 @@ const schema = {
 }
 
 const previews = [
-  { label: 'Restaurant', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80' },
-  { label: 'Loodgieter', img: 'https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?w=800&q=80' },
-  { label: 'Rijschool', img: 'https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80' },
+  { label: 'Restaurant', img: '/images/branches/restaurant.webp' },
+  { label: 'Loodgieter', img: '/images/branches/loodgieter.webp' },
+  { label: 'Rijschool', img: '/images/branches/rijschool.webp' },
 ]
 
 const comparison = [
