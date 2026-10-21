@@ -116,7 +116,7 @@ export default function GoedkopeWebsitePage() {
           </p>
           <p>
             Dit is precies wat Elly Apps doet. Voor €299 setup en €49 per maand heeft u een
-            professionele, SEO-geoptimaliseerde website die wij volledig beheren. Geen verrassingen,
+            professionele website met basis SEO die wij volledig beheren. Geen verrassingen,
             geen losse facturen voor elke aanpassing, geen technische zorgen. U betaalt een eerlijke
             prijs voor een complete dienst.
           </p>

@@ -104,7 +104,7 @@ export default function WebsiteZZPPage() {
           <p>
             Bij Elly Apps bieden wij een betaalbaar abonnementsmodel speciaal voor zzp&apos;ers en
             kleine ondernemers. Voor een eenmalige setup van €299 en €49 per maand heeft u een
-            professionele, SEO-geoptimaliseerde website inclusief hosting, SSL-certificaat en
+            professionele website met basis SEO, inclusief hosting, SSL-certificaat en
             technische updates. U heeft geen technische kennis nodig en hoeft zich nergens druk
             om te maken. Wij regelen alles.
           </p>
