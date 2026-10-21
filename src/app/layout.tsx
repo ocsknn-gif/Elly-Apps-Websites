@@ -21,7 +21,7 @@ const jakarta = Plus_Jakarta_Sans({
 export const metadata: Metadata = {
   title: 'Professionele website laten maken voor MKB | Elly Apps',
   description:
-    'Elly Apps bouwt professionele websites voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49 per maand.',
+    'Elly Apps bouwt professionele websites voor het MKB. Met basis SEO, volledig ontzorgd. Vanaf €49 per maand.',
   metadataBase: new URL('https://elly-apps.nl'),
   alternates: {
     canonical: 'https://elly-apps.nl',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     url: 'https://elly-apps.nl',
     title: 'Professionele website laten maken voor MKB | Elly Apps',
     description:
-      'Elly Apps bouwt professionele websites voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49 per maand.',
+      'Elly Apps bouwt professionele websites voor het MKB. Met basis SEO, volledig ontzorgd. Vanaf €49 per maand.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Professionele website laten maken voor MKB | Elly Apps',
     description:
-      'Professionele websites en apps voor het MKB. SEO-geoptimaliseerd, volledig ontzorgd. Vanaf €49/maand.',
+      'Elly Apps bouwt professionele websites voor het MKB. Met basis SEO, volledig ontzorgd. Vanaf €49 per maand.',
     images: ['/og-image.png'],
   },
 }

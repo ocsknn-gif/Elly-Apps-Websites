@@ -6,13 +6,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Boekingssysteem website laten integreren | Elly Apps',
-  description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een professioneel online reserveringssysteem aan uw bestaande website. Snel, betaalbaar en volledig beheerd.',
+  description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een online reserveringssysteem aan uw bestaande website, volledig beheerd.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/boekingssysteem' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/diensten/boekingssysteem',
     title: 'Boekingssysteem website laten integreren | Elly Apps',
-    description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een professioneel online reserveringssysteem aan uw bestaande website. Snel, betaalbaar en volledig beheerd.',
+    description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een online reserveringssysteem aan uw bestaande website, volledig beheerd.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Boekingssysteem website laten integreren | Elly Apps',
-    description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een professioneel online reserveringssysteem aan uw bestaande website. Snel, betaalbaar en volledig beheerd.',
+    description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een online reserveringssysteem aan uw bestaande website, volledig beheerd.',
     images: ['/og-image.png'],
   },
 }
@@ -30,7 +30,7 @@ const schema = {
   '@type': 'Service',
   name: 'Boekingssysteem website integratie',
   provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
-  description: 'Professioneel boekingssysteem laten integreren op uw website. Voor restaurants, kappers, therapeuten en andere dienstverleners.',
+  description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een online reserveringssysteem aan uw bestaande website, volledig beheerd.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }
 

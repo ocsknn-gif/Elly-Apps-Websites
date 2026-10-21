@@ -6,13 +6,13 @@ import { buttonVariants } from '@/components/ui/button'
 export const metadata: Metadata = {
   title: 'Over ons | Elly Apps',
   description:
-    'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+    'Elly Apps is opgericht door Omer Coskun in Aalsmeer en bouwt betaalbare, professionele websites voor het MKB.',
   alternates: { canonical: 'https://elly-apps.nl/over-ons' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/over-ons',
     title: 'Over ons | Elly Apps',
-    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer en bouwt betaalbare, professionele websites voor het MKB.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Over ons | Elly Apps',
-    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer. Wij bouwen betaalbare, professionele websites voor het MKB. Onze missie: elk bedrijf verdient een goede online aanwezigheid.',
+    description: 'Elly Apps is opgericht door Omer Coskun in Aalsmeer en bouwt betaalbare, professionele websites voor het MKB.',
     images: ['/og-image.png'],
   },
 }

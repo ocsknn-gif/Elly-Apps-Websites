@@ -12,13 +12,13 @@ import { buttonVariants } from '@/components/ui/button'
 export const metadata: Metadata = {
   title: 'Diensten | Elly Apps',
   description:
-    'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+    'Websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten van Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/diensten' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/diensten',
     title: 'Diensten | Elly Apps',
-    description: 'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+    description: 'Websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten van Elly Apps.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Diensten | Elly Apps',
-    description: 'Elly Apps biedt professionele websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten en hoe wij uw bedrijf online laten groeien.',
+    description: 'Websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten van Elly Apps.',
     images: ['/og-image.png'],
   },
 }
