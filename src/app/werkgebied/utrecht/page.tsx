@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken in Utrecht | Elly Apps',
@@ -25,10 +26,17 @@ export const metadata: Metadata = {
   },
 }
 
+const schema = serviceSchema({
+  name: 'Website laten maken in Utrecht',
+  url: 'https://elly-apps.nl/werkgebied/utrecht',
+  description: 'Actief in Utrecht, Amersfoort, Nieuwegein, Zeist, Woerden en Houten — wij bouwen en beheren websites voor ondernemers in de provincie Utrecht.',
+  areaServed: { '@type': 'AdministrativeArea', name: 'Provincie Utrecht' },
+})
+
 export default function WerkgebiedUtrechtPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({ '@context': 'https://schema.org', '@type': 'LocalBusiness', name: 'Elly Apps — Werkgebied Utrecht', url: 'https://elly-apps.nl/werkgebied/utrecht', areaServed: 'Utrecht' }) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">

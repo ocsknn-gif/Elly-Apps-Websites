@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken Rotterdam | Elly Apps',
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — Website laten maken Rotterdam',
+const schema = serviceSchema({
+  name: 'Website laten maken in Rotterdam',
   url: 'https://elly-apps.nl/stad/rotterdam',
-  areaServed: { '@type': 'City', name: 'Rotterdam' },
   description: 'Website laten maken in Rotterdam? Elly Apps bouwt professionele websites voor Rotterdamse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
-}
+  areaServed: { '@type': 'City', name: 'Rotterdam' },
+})
 
 export default function RotterdamPage() {
   return (

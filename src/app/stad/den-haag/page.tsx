@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken Den Haag | Elly Apps',
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — Website laten maken Den Haag',
+const schema = serviceSchema({
+  name: 'Website laten maken in Den Haag',
   url: 'https://elly-apps.nl/stad/den-haag',
-  areaServed: { '@type': 'City', name: 'Den Haag' },
   description: 'Website laten maken in Den Haag? Elly Apps bouwt professionele websites voor Haagse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
-}
+  areaServed: { '@type': 'City', name: 'Den Haag' },
+})
 
 export default function DenHaagPage() {
   return (

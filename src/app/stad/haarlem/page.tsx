@@ -4,6 +4,7 @@ import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken Haarlem | Elly Apps',
@@ -46,10 +47,18 @@ const schema = {
   })),
 }
 
+const serviceJsonLd = serviceSchema({
+  name: 'Website laten maken in Haarlem',
+  url: 'https://elly-apps.nl/stad/haarlem',
+  description: 'Website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Vraag een gratis offerte aan.',
+  areaServed: { '@type': 'City', name: 'Haarlem' },
+})
+
 export default function HaarlemPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
