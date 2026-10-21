@@ -8,6 +8,7 @@ import { ClosingCta } from '@/components/home/ClosingCta'
 import { SectionHeader } from '@/components/home/SectionHeader'
 import { websitePakketten } from '@/lib/pakketten'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Professionele website laten maken & beheren | Elly Apps',
@@ -65,10 +66,18 @@ const faq = [
 
 const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie'
 
+const serviceJsonLd = serviceSchema({
+  name: 'Professionele website laten maken',
+  url: 'https://elly-apps.nl/diensten/websites',
+  description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle websites met basis SEO voor het MKB. Bekijk onze diensten.',
+  serviceType: 'Website laten maken en beheren',
+})
+
 export default function DienstenWebsitesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
       {/* Hero */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">

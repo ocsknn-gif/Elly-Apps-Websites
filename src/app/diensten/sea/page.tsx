@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Google Ads voor MKB | SEA & Betaald Adverteren | Elly Apps',
@@ -55,10 +56,18 @@ const schema = {
   })),
 }
 
+const serviceJsonLd = serviceSchema({
+  name: 'Google Ads beheer',
+  url: 'https://elly-apps.nl/diensten/sea',
+  description: 'Google Ads laten beheren? Elly Apps beheert uw campagnes volledig. Vaste beheerkosten, meetbaar resultaat, geen verborgen kosten. Gratis scan aanvragen.',
+  serviceType: 'Google Ads beheer (SEA)',
+})
+
 export default function DienstenSeaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">

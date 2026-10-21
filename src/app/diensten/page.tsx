@@ -8,6 +8,7 @@ import {
   Share2Icon,
 } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { webPageSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Diensten | Elly Apps',
@@ -108,9 +109,16 @@ const diensten = [
   },
 ]
 
+const pageJsonLd = webPageSchema({
+  name: 'Diensten',
+  url: 'https://elly-apps.nl/diensten',
+  description: 'Websites, apps, SEO, Google Ads en social media beheer voor het MKB. Ontdek alle diensten van Elly Apps.',
+})
+
 export default function DienstenPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }} />
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-5xl mx-auto text-center">
