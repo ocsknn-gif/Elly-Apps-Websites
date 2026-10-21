@@ -61,7 +61,7 @@ export default function NijmegenPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Nijmegen is de oudste stad van Nederland en een van de snelst groeiende steden van Gelderland. Met de Radboud Universiteit, een actieve middenstand en duizenden ondernemers is de stad economisch sterk. Klanten zoeken tegenwoordig altijd eerst online — zonder professionele website verliest u dagelijks potentiële klanten.</p>
+          <p>Nijmegen is de oudste stad van Nederland en een van de snelst groeiende steden van Gelderland. Met de Radboud Universiteit, een actieve middenstand en veel ondernemers is de stad economisch sterk. Klanten zoeken tegenwoordig altijd eerst online — zonder professionele website verliest u dagelijks potentiële klanten.</p>
           <p>Elly Apps bouwt voor Nijmeegse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft in de binnenstad nabij het Valkhof, een kantoor runt in de regio of diensten aanbiedt in heel Nijmegen — wij bouwen een website die aansluit bij uw doelgroep.</p>
           <p>Een effectieve website voor een Nijmeegs bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Nijmegen en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>

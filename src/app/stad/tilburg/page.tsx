@@ -61,7 +61,7 @@ export default function TilburgPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Tilburg is de zesde stad van Nederland en een van de snelst groeiende steden van Noord-Brabant. Met meer dan 220.000 inwoners, een actieve maakindustrie en een groeiende dienstensector is de concurrentie groot. Klanten zoeken altijd eerst online voordat ze contact opnemen.</p>
+          <p>Tilburg is de zesde stad van Nederland en een van de snelst groeiende steden van Noord-Brabant. Met een actieve maakindustrie en een groeiende dienstensector is de concurrentie groot. Klanten zoeken altijd eerst online voordat ze contact opnemen.</p>
           <p>Elly Apps bouwt voor Tilburgse ondernemers websites die geoptimaliseerd zijn voor lokale vindbaarheid. Wij werken met een AI-gedreven aanpak. Van het centrum tot Reeshof, Berkel-Enschot en Udenhout — wij zorgen dat klanten u vinden.</p>
           <p>Een effectieve website voor een Tilburgs bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Tilburg en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. We voegen lokale content toe zodat u optimaal vindbaar bent, ook in de regio Waalwijk, Dongen en Goirle. Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>

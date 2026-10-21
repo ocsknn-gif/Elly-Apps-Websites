@@ -40,7 +40,7 @@ export default function WerkgebiedZuidHollandPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Zuid-Holland telt meer dan 3,7 miljoen inwoners en een enorm aanbod aan concurrerende bedrijven. Zichtbaar zijn in Google is cruciaal. Elly Apps helpt ondernemers in Zuid-Holland met een professionele website die klanten aantrekt en converteert.</p>
+          <p>Zuid-Holland kent een enorm aanbod aan concurrerende bedrijven. Zichtbaar zijn in Google is cruciaal. Elly Apps helpt ondernemers in Zuid-Holland met een professionele website die klanten aantrekt en converteert.</p>
           <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Zuid-Holland.</p>
           <p>Lokale SEO is onderdeel van elk pakket. Wij optimaliseren uw website voor zoektermen relevant voor uw stad of regio binnen Zuid-Holland en zorgen voor een volledig Google Business Profile.</p>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>

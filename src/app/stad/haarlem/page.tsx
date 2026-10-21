@@ -61,7 +61,7 @@ export default function HaarlemPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Haarlem is een van de mooiste steden van Noord-Holland, bekend om zijn rijke cultuur, de Grote Houtstraat en de oevers van de Spaarne. Met tienduizenden actieve ondernemers en een groeiende middenstand is de online concurrentie groot. Klanten zoeken altijd eerst online voordat ze binnenlopen of bellen.</p>
+          <p>Haarlem is een van de mooiste steden van Noord-Holland, bekend om zijn rijke cultuur, de Grote Houtstraat en de oevers van de Spaarne. Met een groeiende middenstand is de online concurrentie groot. Klanten zoeken altijd eerst online voordat ze binnenlopen of bellen.</p>
           <p>Elly Apps bouwt voor Haarlemse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft aan de Grote Houtstraat, een kantoor runt nabij het Spaarne of diensten aanbiedt in de regio — wij bouwen een website die aansluit bij uw doelgroep.</p>
           <p>Een effectieve website voor een Haarlems bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Haarlem en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
