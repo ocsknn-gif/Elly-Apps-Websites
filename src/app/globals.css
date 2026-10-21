@@ -78,7 +78,7 @@
     }
   }
 
-  /* ── Lopende artikeltekst (alleen blog) ──
+  /* ── Lopende tekst (blog en juridische pagina's) ──
      Stijlt kale h2/h3/p/ul/ol/li/strong/a binnen een wrapper met class "artikel". */
   .artikel {
     color: rgb(var(--muted));
@@ -144,6 +144,22 @@
     }
     .artikel h2 {
       font-size: 36px;
+    }
+  }
+
+  /* Juridische pagina's: dichte tekst, dus kleinere koppen en normale tekstmaat. */
+  .artikel-recht h2 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  @media (min-width: theme('screens.md')) {
+    .artikel-recht {
+      font-size: 16px;
+    }
+    .artikel-recht h2 {
+      font-size: 27px;
     }
   }
 }
