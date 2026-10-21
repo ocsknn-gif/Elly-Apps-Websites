@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Boekingssysteem website laten integreren | Elly Apps',
@@ -29,7 +30,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Boekingssysteem website integratie',
-  provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  provider: organizationRef,
   description: 'Boekingssysteem laten integreren op uw website? Elly Apps koppelt een online reserveringssysteem aan uw bestaande website, volledig beheerd.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }
