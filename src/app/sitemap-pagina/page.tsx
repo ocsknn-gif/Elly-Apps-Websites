@@ -127,34 +127,38 @@ const sections = [
 
 export default function SitemapPaginaPage() {
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="mb-10">
-        <p className="text-sm text-[#E53E3E] font-medium mb-2">Navigatie</p>
-        <h1 className="text-4xl font-extrabold text-gray-900 mb-3">Sitemap</h1>
-        <p className="text-lg text-gray-600">Overzicht van alle pagina&apos;s op elly-apps.nl</p>
-      </div>
+    <>
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-sm text-brand-strong font-medium mb-2">Navigatie</p>
+          <h1 className="h1 text-ink mb-3">Sitemap</h1>
+          <p className="body-lg text-muted">Overzicht van alle pagina&apos;s op elly-apps.nl</p>
+        </div>
+      </section>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {sections.map((section) => (
-          <div key={section.title}>
-            <h2 className="text-sm font-bold text-[#E53E3E] uppercase tracking-wider mb-3">
-              {section.title}
-            </h2>
-            <ul className="space-y-2">
-              {section.links.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-gray-700 hover:text-[#E53E3E] hover:underline transition-colors"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </div>
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {sections.map((section) => (
+            <div key={section.title}>
+              <h2 className="text-sm font-bold text-brand-strong uppercase tracking-wider mb-3">
+                {section.title}
+              </h2>
+              <ul>
+                {section.links.map((link) => (
+                  <li key={link.href}>
+                    <Link
+                      href={link.href}
+                      className="block py-2 text-sm text-muted hover:text-brand-strong hover:underline transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
