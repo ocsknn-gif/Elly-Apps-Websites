@@ -143,9 +143,8 @@ export default function WatKostGoogleAdsPage() {
             per maand rekent een bureau dus al snel €75 tot €100 extra voor het beheer.
           </p>
           <p>
-            Bij Elly Apps voegen wij Google Ads beheer toe als onderdeel van ons Pro pakket of
-            als losse dienst. U heeft één aanspreekpunt voor zowel uw website, SEO als advertenties —
-            zodat alles op elkaar afgestemd is en uw advertentiebudget zo efficiënt mogelijk
+            Bij Elly Apps voegen wij Google Ads beheer toe als losse dienst.
+            Zo zijn uw website, SEO en advertenties op elkaar afgestemd en uw advertentiebudget zo efficiënt mogelijk
             wordt ingezet.
           </p>
 

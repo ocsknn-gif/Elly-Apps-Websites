@@ -84,7 +84,7 @@ export default function RotterdamPage() {
           </p>
           <p>
             Met onze vaste maandprijzen weet u exact wat u betaalt. Geen verborgen kosten, geen
-            verrassingen. Hosting, onderhoud en SEO zijn altijd inbegrepen. Zo kunt u als
+            verrassingen. Hosting, onderhoud en basis SEO zijn altijd inbegrepen. Zo kunt u als
             Rotterdamse ondernemer vol vertrouwen investeren in uw online aanwezigheid.
           </p>
         </div>

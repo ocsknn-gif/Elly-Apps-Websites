@@ -105,8 +105,8 @@ export default function OverOnsPage() {
             wij zorgen dat u online zichtbaar bent en gevonden wordt door de juiste klanten.
           </p>
           <p>
-            Wij werken altijd persoonlijk, transparant en resultaatgericht. U heeft één vast
-            aanspreekpunt, ontvangt duidelijke rapportages en weet altijd waar u aan toe bent.
+            Wij werken altijd persoonlijk, transparant en resultaatgericht. U ontvangt duidelijke
+            rapportages vanaf het Groei pakket en weet altijd waar u aan toe bent.
           </p>
         </div>
       </section>

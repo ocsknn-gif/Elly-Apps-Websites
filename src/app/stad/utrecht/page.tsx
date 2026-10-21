@@ -82,8 +82,8 @@ export default function UtrechtPage() {
             zoeken.
           </p>
           <p>
-            Onze websites worden gemiddeld binnen twee weken opgeleverd. U heeft één vast
-            aanspreekpunt en een vaste maandprijs die alles omvat. Zo investeert u als Utrechtse
+            Onze websites worden gemiddeld binnen twee weken opgeleverd. U heeft een vaste
+            maandprijs die alles omvat. Zo investeert u als Utrechtse
             ondernemer vertrouwd in uw groei.
           </p>
         </div>

@@ -38,8 +38,8 @@ const features = [
 
 const faq = [
   { q: 'Hoe lang duurt het voordat SEO resultaat geeft?', a: 'SEO is een langetermijninvestering. Doorgaans ziet u na 3 tot 6 maanden meetbare resultaten in hogere posities en meer organisch verkeer. Na 6 tot 12 maanden worden de resultaten echt zichtbaar.' },
-  { q: 'Is SEO inbegrepen bij uw websites?', a: 'Ja. Basis on-page SEO en lokale SEO zijn inbegrepen in al onze website pakketten. Google Business optimalisatie is inbegrepen in het Groei pakket en hoger.' },
-  { q: 'Wat kost SEO bij Elly Apps?', a: 'Lokale SEO is inbegrepen in onze maandelijkse pakketten vanaf €49/mnd. Voor uitgebreide SEO-campagnes met contentcreatie en linkbuilding kunt u contact opnemen voor een offerte op maat.' },
+  { q: 'Is SEO inbegrepen bij uw websites?', a: 'Ja. Basis SEO is inbegrepen in al onze website pakketten. Lokale SEO en Google Business optimalisatie zijn inbegrepen in het Groei pakket en hoger.' },
+  { q: 'Wat kost SEO bij Elly Apps?', a: 'Basis SEO is inbegrepen in onze maandelijkse pakketten vanaf €49/mnd; lokale SEO vanaf het Groei pakket (€199/mnd). Voor uitgebreide SEO-campagnes met contentcreatie en linkbuilding kunt u contact opnemen voor een offerte op maat.' },
   { q: 'Verschil SEO en Google Ads?', a: 'SEO levert organisch (gratis) verkeer op de lange termijn. Google Ads geeft directe zichtbaarheid, maar u betaalt per klik. Wij adviseren vaak een combinatie: Google Ads voor snelle resultaten, SEO voor duurzame groei.' },
   { q: 'Garanderen jullie positie 1 in Google?', a: 'Nee — dat kan niemand eerlijk garanderen, want Google bepaalt de rankings. Wij werken met meetbare doelen en transparante rapportages zodat u precies weet wat er gebeurt en wat de voortgang is.' },
 ]
@@ -75,7 +75,7 @@ export default function DienstenSeoPage() {
           <p>De meeste MKB-bedrijven worden nauwelijks gevonden op Google. Niet omdat hun dienst niet goed is, maar omdat hun website technisch niet in orde is of te weinig relevante content bevat. Dat veranderen wij.</p>
           <p>Elly Apps verzorgt lokale SEO die écht werkt voor kleine en middelgrote bedrijven. We beginnen met een grondige analyse van uw huidige positie, uw concurrenten en de zoekwoorden waarop uw klanten zoeken. Op basis daarvan bouwen we een SEO-strategie die past bij uw budget en doelen.</p>
           <p>Voor lokale bedrijven is lokale SEO de krachtigste tool. Wanneer iemand in Amsterdam zoekt naar &ldquo;loodgieter Amsterdam&rdquo; of &ldquo;kapper Utrecht&rdquo;, wilt u bovenaan staan. Met de combinatie van on-page optimalisatie, Google Business Profile en lokale content zorgen we daar voor.</p>
-          <p>SEO is inbegrepen in al onze website pakketten. U hoeft geen extra investering te doen voor de basis. Voor uitgebreide SEO-campagnes met blogcontent, linkbuilding en maandelijkse audits bieden wij een apart SEO-pakket aan.</p>
+          <p>Basis SEO is inbegrepen in al onze website pakketten. U hoeft geen extra investering te doen voor de basis. Voor uitgebreide SEO-campagnes met blogcontent, linkbuilding en maandelijkse audits bieden wij een apart SEO-pakket aan.</p>
         </div>
       </section>
 

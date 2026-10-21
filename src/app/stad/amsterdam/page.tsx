@@ -85,7 +85,7 @@ export default function AmsterdamPage() {
           <p>
             Wij werken al met Amsterdamse bedrijven in sectoren als horeca, zorg, beauty,
             technische dienstverlening en zakelijke dienstverlening. Onze websites zijn altijd
-            volledig beheerd: hosting, updates en SEO zijn inbegrepen in de vaste maandprijs.
+            volledig beheerd: hosting, updates en basis SEO zijn inbegrepen in de vaste maandprijs.
           </p>
         </div>
       </section>

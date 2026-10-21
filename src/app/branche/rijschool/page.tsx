@@ -29,7 +29,7 @@ const schema = {
   '@type': 'DrivingSchool',
   name: 'Elly Apps — Websites voor rijscholen',
   url: 'https://elly-apps.nl/branche/rijschool',
-  description: 'Professionele websites voor rijscholen, inclusief lokale SEO en online lesaanvragen.',
+  description: 'Professionele websites voor rijscholen, inclusief basis SEO en online lesaanvragen.',
 }
 
 export default function RijschoolPage() {

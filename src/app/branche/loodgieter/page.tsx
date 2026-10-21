@@ -30,7 +30,7 @@ const schema = {
   '@type': 'Plumber',
   name: 'Elly Apps — Websites voor loodgieters',
   url: 'https://elly-apps.nl/branche/loodgieter',
-  description: 'Professionele websites voor loodgieters, inclusief lokale SEO en spoedaanvragen.',
+  description: 'Professionele websites voor loodgieters, inclusief basis SEO en spoedaanvragen.',
 }
 
 export default function LoodgieterPage() {

@@ -31,7 +31,7 @@ const faq = [
   { q: 'Kan ik klantreviews tonen op mijn website?', a: 'Ja. We zorgen dat uw Google-reviews automatisch worden weergegeven op uw website. Positieve beoordelingen van eerdere klanten wekken vertrouwen en overtuigen twijfelaars om toch contact op te nemen.' },
   { q: 'Hoe zorg je dat ik gevonden word in mijn werkgebied?', a: 'We optimaliseren uw website specifiek voor de steden en regio\'s waar u actief bent. Voor elke stad voegen we een aparte pagina toe zodat u ook vindbaar bent op zoekopdrachten als "schilder Amsterdam" of "schildersbedrijf Utrecht".' },
   { q: 'Is een website voor een klein schildersbedrijf de investering waard?', a: 'Absoluut. Schilderswebsites via Elly Apps beginnen vanaf €49 per maand. De meeste klanten verdienen dit terug met één extra opdracht per maand. En doordat uw website 24/7 zichtbaar is, blijft het nieuwe opdrachten aantrekken.' },
-  { q: 'Wat kost een website voor een schildersbedrijf?', a: 'Een schilderswebsite via Elly Apps kost vanaf €49 per maand. Dit is inclusief ontwerp, hosting, lokale SEO en onderhoud. Er zijn geen verborgen kosten.' },
+  { q: 'Wat kost een website voor een schildersbedrijf?', a: 'Een schilderswebsite via Elly Apps kost vanaf €49 per maand met een eenmalige setup van €299. Dit is inclusief hosting, onderhoud en basis SEO. Er zijn geen verborgen kosten.' },
   { q: 'Hoe snel kan mijn schilderswebsite online?', a: 'Gemiddeld staat uw website binnen 5 tot 10 werkdagen live. Na een kort intakegesprek verwerken wij alles voor u — inclusief uw portfolio, diensten en werkgebied.' },
 ]
 
@@ -81,7 +81,6 @@ export default function SchilderPage() {
             'Agenda het hele jaar gevuld',
             'Hosting, SSL en onderhoud inbegrepen',
             'Binnen 5-10 werkdagen live',
-            'Persoonlijk contact en support',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />

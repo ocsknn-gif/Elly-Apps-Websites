@@ -124,8 +124,7 @@ export default function SEOvsGoogleAdsPage() {
           </p>
           <p>
             Bij Elly Apps beheren wij zowel uw SEO als uw Google Ads campagnes. In het Groei pakket
-            is lokale SEO inbegrepen. Google Ads beheer voegen wij op aanvraag toe. U hoeft maar
-            één aanspreekpunt te hebben voor uw volledige online zichtbaarheid.
+            is lokale SEO inbegrepen. Google Ads beheer voegen wij op aanvraag toe.
           </p>
 
           <h2>Conclusie</h2>
