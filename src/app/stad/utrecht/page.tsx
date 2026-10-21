@@ -116,6 +116,7 @@ export default function UtrechtPage() {
         links={[
           { label: "Website laten maken in de provincie Utrecht", href: "/werkgebied/utrecht" },
           { label: "Website laten maken in Amsterdam", href: "/stad/amsterdam" },
+          { label: "Website laten maken in Almere", href: "/stad/almere" },
           { label: "Website laten maken en beheren", href: "/diensten/websites" },
         ]}
       />

@@ -118,6 +118,7 @@ export default function AmsterdamPage() {
           { label: "Website laten maken in Noord-Holland", href: "/werkgebied/noord-holland" },
           { label: "Website laten maken in Haarlem", href: "/stad/haarlem" },
           { label: "App laten maken in Amsterdam", href: "/apps/amsterdam" },
+          { label: "Website laten maken in Almere", href: "/stad/almere" },
           { label: "Website laten maken en beheren", href: "/diensten/websites" },
         ]}
       />

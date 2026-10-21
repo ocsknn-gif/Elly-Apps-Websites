@@ -104,6 +104,7 @@ export default function ZorgPage() {
           { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
           { label: "Website laten maken voor een tandarts", href: "/branche/tandarts" },
           { label: "Website laten maken voor een fysiotherapeut", href: "/branche/fysiotherapeut" },
+          { label: "Website laten maken voor een accountantskantoor", href: "/branche/accountantskantoor" },
           { label: "Website niet gevonden op Google? Oorzaken en oplossingen", href: "/blog/website-niet-gevonden-google" },
           { label: "Website laten maken per branche", href: "/branche" },
         ]}
