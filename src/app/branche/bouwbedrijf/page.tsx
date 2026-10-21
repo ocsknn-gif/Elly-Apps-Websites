@@ -99,10 +99,10 @@ export default function BouwbedrijfPage() {
             Daarmee optimaliseren wij uw website voor deze zoektermen — met gerichte content
             per dienst en per regio — en richten wij uw Google Business Profile in, zodat u
             beter vindbaar kunt zijn in de lokale zoekresultaten. Werkt u in een van de genoemde steden? Bekijk dan onze
-            pagina's voor website laten maken in
-            {' '}<Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">Utrecht</Link>,
-            {' '}<Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">Amsterdam</Link> en
-            {' '}<Link href="/stad/den-haag" className="text-brand-strong underline hover:no-underline">Den Haag</Link>.
+            pagina's over
+            {' '}<Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">website laten maken in Utrecht</Link>,
+            {' '}<Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">website laten maken in Amsterdam</Link> en
+            {' '}<Link href="/stad/den-haag" className="text-brand-strong underline hover:no-underline">website laten maken in Den Haag</Link>.
           </p>
           <h2 className="h2 text-ink pt-6">Professionele uitstraling, betaalbare prijs</h2>
           <p>
