@@ -38,7 +38,7 @@ const faqItems = [
   { q: 'Wat kost een app laten maken in Tilburg?', a: 'De kosten zijn afhankelijk van het type en de complexiteit van de app. Wij werken met een transparante vaste prijs. Neem contact op voor een vrijblijvende offerte op maat.' },
   { q: 'Kunnen jullie ook samenwerken met studenten of interns?', a: 'Wij bouwen onze apps zelf — geen studenten of interns op productieprojecten. U krijgt altijd ervaren ontwikkelaars die verantwoordelijk zijn voor kwaliteit en oplevering.' },
   { q: 'Heeft Tilburg specifieke voordelen als vestigingsplaats voor app-ontwikkeling?', a: 'Tilburg heeft een sterke creatieve sector en een groeiend tech-ecosysteem, mede dankzij Tilburg University en Fontys. Dat betekent dat er veel innovatieve bedrijven zijn die open staan voor digitale oplossingen.' },
-  { q: 'Hoe verloopt het kennismakingsgesprek?', a: 'Het kennismakingsgesprek duurt 30-45 minuten en vindt online of op locatie plaats. We bespreken uw wensen, processen en budget. U ontvangt binnen 48 uur een offerte.' },
+  { q: 'Hoe verloopt het kennismakingsgesprek?', a: 'Het kennismakingsgesprek duurt 30-45 minuten en vindt online of op locatie plaats. We bespreken uw wensen, processen en budget. Daarna ontvangt u een offerte.' },
 ]
 
 export default function AppTilburgPage() {
@@ -82,7 +82,7 @@ export default function AppTilburgPage() {
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {['Maatwerk apps voor alle sectoren', 'AI-functionaliteiten standaard', 'Koppelingen met Exact, AFAS, SAP', 'Gemiddeld binnen 4-6 weken live', 'Vaste prijs, geen uurtarieven', 'Volledig beheer na lancering'].map((f) => (
+          {['Maatwerk apps voor alle sectoren', 'AI-functionaliteiten standaard', 'Koppelingen met Exact, AFAS, SAP', 'Oplevertijd bepaald na intake', 'Vaste prijs, geen uurtarieven', 'Volledig beheer na lancering'].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
