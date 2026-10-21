@@ -4,6 +4,7 @@ import { ShoppingCart, CalendarCheck, Users } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
 import { SectionHeader } from '@/components/home/SectionHeader'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Professionele app laten maken & beheren | Elly Apps',
@@ -48,9 +49,17 @@ const faq = [
   { q: 'Wordt mijn app ook beheerd?', a: 'Ja, wij bieden volledig beheer inclusief updates, bugfixes en nieuwe functies.' },
 ]
 
+const serviceJsonLd = serviceSchema({
+  name: 'App laten maken',
+  url: 'https://elly-apps.nl/diensten/apps',
+  description: 'Elly Apps bouwt en beheert uw iOS én Android app. Op maat voor uw bedrijf. Van bestelapp tot ledenapp — volledig ontzorgd.',
+  serviceType: 'App ontwikkeling en beheer',
+})
+
 export default function DienstenAppsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       {/* Hero */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-3xl mx-auto text-center">

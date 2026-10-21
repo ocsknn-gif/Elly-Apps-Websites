@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App laten maken Den Haag | Elly Apps',
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App laten maken Den Haag',
+const schema = serviceSchema({
+  name: 'App laten maken in Den Haag',
   url: 'https://elly-apps.nl/apps/den-haag',
-  areaServed: { '@type': 'City', name: 'Den Haag' },
   description: 'Professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag.',
-}
+  areaServed: { '@type': 'City', name: 'Den Haag' },
+})
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Den Haag?', a: 'De kosten zijn afhankelijk van de complexiteit en het type app. Wij werken altijd met een transparante vaste prijs. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },

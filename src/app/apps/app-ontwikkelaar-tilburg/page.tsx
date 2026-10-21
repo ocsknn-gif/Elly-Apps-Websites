@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Tilburg | Elly Apps',
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App ontwikkelaar Tilburg',
+const schema = serviceSchema({
+  name: 'App ontwikkelaar in Tilburg',
   url: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg',
-  areaServed: { '@type': 'City', name: 'Tilburg' },
   description: 'App ontwikkelaar in Tilburg voor professionele web-apps en mobiele applicaties.',
-}
+  areaServed: { '@type': 'City', name: 'Tilburg' },
+})
 
 const faqItems = [
   { q: 'Wat maakt een goede app ontwikkelaar?', a: 'Een goede app ontwikkelaar combineert technische kennis met zakelijk inzicht. Hij begrijpt niet alleen hoe hij code schrijft, maar ook waarom u een app nodig heeft en hoe die uw bedrijf vooruithelpt.' },

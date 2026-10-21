@@ -5,6 +5,7 @@ import { buttonVariants } from '@/components/ui/button'
 import { PakketKaart } from '@/components/PakketKaart'
 import { Faq } from '@/components/home/Faq'
 import { SectionHeader } from '@/components/home/SectionHeader'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Social media advertenties | Facebook & Instagram | Elly Apps',
@@ -83,10 +84,18 @@ const faq = [
 
 const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie'
 
+const serviceJsonLd = serviceSchema({
+  name: 'Social media advertenties',
+  url: 'https://elly-apps.nl/diensten/social-media',
+  description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+  serviceType: 'Social media advertenties',
+})
+
 export default function DienstenSocialMediaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
       {/* Hero + pakketten */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">

@@ -20,6 +20,7 @@ export function serviceSchema(opts: {
   url: string
   description: string
   audienceType?: string
+  serviceType?: string
   areaServed?: { '@type': string; name: string }
 }) {
   return {
@@ -30,6 +31,19 @@ export function serviceSchema(opts: {
     description: opts.description,
     provider: organizationRef,
     areaServed: opts.areaServed ?? { '@type': 'Country', name: 'Netherlands' },
+    ...(opts.serviceType ? { serviceType: opts.serviceType } : {}),
     ...(opts.audienceType ? { audience: { '@type': 'Audience', audienceType: opts.audienceType } } : {}),
+  }
+}
+
+export function webPageSchema(opts: { name: string; url: string; description: string }) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: opts.name,
+    url: opts.url,
+    description: opts.description,
+    isPartOf: { '@type': 'WebSite', name: ORG_NAME, url: SITE_URL },
+    publisher: organizationRef,
   }
 }

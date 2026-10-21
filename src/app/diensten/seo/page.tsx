@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'SEO voor MKB-bedrijven | Elly Apps',
@@ -55,10 +56,18 @@ const schema = {
   })),
 }
 
+const serviceJsonLd = serviceSchema({
+  name: 'SEO voor MKB-bedrijven',
+  url: 'https://elly-apps.nl/diensten/seo',
+  description: 'SEO voor MKB-bedrijven: technische optimalisatie, contentstrategie en lokale SEO, door Elly Apps voor u verzorgd. Vraag een gratis scan aan.',
+  serviceType: 'Zoekmachineoptimalisatie (SEO)',
+})
+
 export default function DienstenSeoPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
 
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
