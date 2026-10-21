@@ -1,45 +1,37 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { WebsiteScanForm } from '@/components/WebsiteScanForm'
+import ScanLink from '@/components/ScanLink'
 import { buttonVariants } from '@/components/ui/button'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-surface px-4 sm:px-6 lg:px-8 pt-6 pb-12 md:py-20 lg:py-24">
-      {/* Achtergrondbeeld — het enige beeld met priority op de site */}
-      <Image
-        src="/images/hero-team.webp"
-        alt="Ondernemers werken samen aan hun website"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center"
-      />
-      {/* Witte laag: mobiel egaal 90%, desktop alleen een lichte rand links (max. 30% breed) */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 bg-bg/90 lg:bg-transparent lg:bg-gradient-to-r lg:from-bg/60 lg:to-bg/0 lg:to-30%"
-      />
-
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-16 lg:items-center">
+    <section className="hero-gradient overflow-hidden px-4 sm:px-6 lg:px-8 pt-10 pb-16 md:pt-16 md:pb-24 lg:py-24">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
         <div>
-          {/* Desktop: eigen, deels doorzichtige ondergrond per tekstblok, zodat de foto zichtbaar blijft */}
-          <h1 className="h1 text-ink lg:w-fit lg:-mx-4 lg:px-4 lg:py-2 lg:rounded-xl lg:bg-bg/60 lg:backdrop-blur-sm">Een professionele website die gevonden wordt op Google</h1>
-        </div>
-
-        <div className="w-full max-w-md lg:justify-self-end">
-          <div id="scan" className="scroll-mt-24 rounded-2xl border border-line bg-bg p-4 sm:p-6 shadow-lg">
-            <WebsiteScanForm variant="compact" />
-          </div>
-          {/* Witte ondergrond: deze tekst staat over het beeld */}
-          <div className="mt-3 rounded-xl bg-bg/95 px-4 py-3">
-            <p className="text-sm text-muted">
-              Gratis en vrijblijvend. Persoonlijk rapport binnen één werkdag.
-            </p>
-            <Link href="/prijzen" className={buttonVariants({ variant: 'link', className: 'mt-2 text-base' })}>
-              Bekijk prijzen
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight text-ink">
+            Website of app laten maken
+          </h1>
+          <p className="body-lg text-ink mt-5">Beter vindbaar in Google, volledig ontzorgd.</p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-3">
+            <ScanLink className={buttonVariants({ size: 'lg', className: 'w-full sm:w-auto' })}>
+              Gratis websitescan aanvragen
+            </ScanLink>
+            <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg', className: 'w-full sm:w-auto' })}>
+              Bekijk de pakketten
             </Link>
           </div>
+        </div>
+
+        <div className="w-full max-w-sm sm:max-w-md lg:max-w-[480px] mx-auto lg:mx-0 lg:justify-self-end">
+          <Image
+            src="/images/home/hero-vrouw-laptop.webp"
+            alt="Lachende vrouw met een laptop op kantoor"
+            width={512}
+            height={512}
+            priority
+            sizes="(min-width: 1024px) 480px, (min-width: 640px) 448px, 90vw"
+            className="w-full h-auto aspect-square rounded-2xl shadow-lg object-cover"
+          />
         </div>
       </div>
     </section>
