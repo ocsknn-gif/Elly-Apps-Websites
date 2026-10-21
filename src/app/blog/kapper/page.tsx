@@ -25,24 +25,32 @@ export const metadata: Metadata = {
   },
 }
 
-const IMAGE_URL = 'https://elly-apps.nl/images/branches/kapper.webp'
-
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Website laten maken voor een kapper — zo wordt uw kapperszaak beter gevonden',
   description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
-  image: [IMAGE_URL],
   author: organizationRef,
   publisher: { ...organizationRef, logo: { '@type': 'ImageObject', url: 'https://elly-apps.nl/elly-logo.png' } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/kapper' },
   inLanguage: 'nl-NL',
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://elly-apps.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://elly-apps.nl/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Website laten maken voor een kapper', item: 'https://elly-apps.nl/blog/kapper' },
+  ],
+}
+
 export default function BlogKapperPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-3xl mx-auto">
           <nav className="text-sm text-muted mb-6">
