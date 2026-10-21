@@ -10,6 +10,7 @@ import { Faq } from '@/components/home/Faq'
 import { About } from '@/components/home/About'
 import { ClosingCta } from '@/components/home/ClosingCta'
 import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
+import { ORG_ALTERNATE_NAME, ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
 
@@ -20,33 +21,19 @@ const schemaNamen: Record<WebsitePakket['naam'], string> = {
   Pro: 'Uitgebreide website met SEO-strategie',
 }
 
-const localBusinessSchema = {
-  '@context': 'https://schema.org',
-  '@type': ['LocalBusiness', 'ProfessionalService'],
-  name: 'Elly Apps & Websites',
+const organizationSchema = {
+  '@type': 'Organization',
+  '@id': ORG_ID,
+  name: ORG_NAME,
+  alternateName: ORG_ALTERNATE_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/elly-logo.png`,
   telephone: '+31636278515',
-  email: 'info@elly-apps.nl',
-  url: 'https://elly-apps.nl',
-  logo: 'https://elly-apps.nl/elly-logo.png',
   description: 'Elly Apps bouwt professionele websites voor het MKB. Met basis SEO, volledig ontzorgd. Vanaf €49 per maand.',
   areaServed: {
     '@type': 'Country',
     name: 'Netherlands',
   },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Aalsmeer',
-    addressRegion: 'Noord-Holland',
-    addressCountry: 'NL',
-  },
-  openingHoursSpecification: [
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '18:00',
-    },
-  ],
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'Website en SEO pakketten',
@@ -57,16 +44,32 @@ const localBusinessSchema = {
         name: `${p.naam} pakket — ${schemaNamen[p.naam]}`,
         description: `${p.features.join(', ')}. ${p.eenmalig}.`,
       },
-      price: String(p.maandprijs ?? 0),
-      priceCurrency: 'EUR',
-      priceSpecification: {
-        '@type': 'UnitPriceSpecification',
-        price: String(p.maandprijs ?? 0),
-        priceCurrency: 'EUR',
-        unitText: p.maandprijs === null ? 'op aanvraag' : 'per maand',
-      },
+      ...(p.maandprijs === null
+        ? {}
+        : {
+            price: String(p.maandprijs),
+            priceCurrency: 'EUR',
+            priceSpecification: {
+              '@type': 'UnitPriceSpecification',
+              price: String(p.maandprijs),
+              priceCurrency: 'EUR',
+              unitText: 'per maand',
+            },
+          }),
     })),
   },
+}
+
+const websiteSchema = {
+  '@type': 'WebSite',
+  name: ORG_NAME,
+  url: SITE_URL,
+  publisher: { '@id': ORG_ID },
+}
+
+const homeSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [organizationSchema, websiteSchema],
 }
 
 const faqItems = [
@@ -111,7 +114,7 @@ const faqSchema = {
 export default function HomePage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* ── SECTIE 1 — Hero ── */}

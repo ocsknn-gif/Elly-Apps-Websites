@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor restaurants | Elly Apps',
@@ -26,13 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Restaurant',
-  name: 'Elly Apps — Websites voor restaurants',
+const schema = serviceSchema({
+  name: 'Websites voor restaurants',
   url: 'https://elly-apps.nl/branche/restaurant',
   description: 'Professionele websites voor restaurants, met online menu en basis SEO. Een reserveringssysteem is als aparte uitbreiding mogelijk.',
-}
+  audienceType: 'restaurants',
+})
 
 export default function RestaurantPage() {
   return (

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor kappers | Elly Apps',
@@ -26,13 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'HairSalon',
-  name: 'Elly Apps — Websites voor kappers',
+const schema = serviceSchema({
+  name: 'Websites voor kappers',
   url: 'https://elly-apps.nl/branche/kapper',
   description: 'Professionele websites voor kappers en kapperszaken, met portfolio en basis SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
-}
+  audienceType: 'kappers',
+})
 
 const faqItems = [
   { q: 'Wat kost een website voor mijn kapsalon?', a: 'U betaalt een eenmalig startbedrag voor het ontwerp en de bouw, en daarna een vast bedrag vanaf €49 per maand voor hosting, onderhoud, updates en beveiliging. Geen verrassingen achteraf. Bekijk onze pakketten op de prijzenpagina voor een exact overzicht.' },

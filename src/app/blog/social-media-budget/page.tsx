@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Hoeveel budget voor social media advertenties? | Elly Apps',
@@ -28,8 +29,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Hoeveel budget heb je nodig voor social media advertenties?',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-11',
   url: 'https://elly-apps.nl/blog/social-media-budget',
 }

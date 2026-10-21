@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: "Website laten maken als zzp'er in 2026 | Elly Apps",
@@ -30,8 +31,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: "Website laten maken als zzp'er: wat u moet weten in 2026",
   description: "Als zzp'er een website laten maken? Ontdek wat het kost en waar u op moet letten.",
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-09',
   url: 'https://elly-apps.nl/blog/website-zzp',
 }

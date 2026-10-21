@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
@@ -30,8 +31,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: '7 praktische SEO tips voor MKB-bedrijven in 2026',
   description: 'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-09',
   url: 'https://elly-apps.nl/blog/seo-tips-mkb',
 }

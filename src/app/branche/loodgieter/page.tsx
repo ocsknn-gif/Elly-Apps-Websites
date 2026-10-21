@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor loodgieters | Elly Apps',
@@ -26,13 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Plumber',
-  name: 'Elly Apps — Websites voor loodgieters',
+const schema = serviceSchema({
+  name: 'Websites voor loodgieters',
   url: 'https://elly-apps.nl/branche/loodgieter',
   description: 'Professionele websites voor loodgieters, inclusief basis SEO en spoedaanvragen.',
-}
+  audienceType: 'loodgieters',
+})
 
 export default function LoodgieterPage() {
   return (
