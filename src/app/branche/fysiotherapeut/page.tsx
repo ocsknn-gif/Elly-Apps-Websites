@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
@@ -104,6 +105,20 @@ export default function FysiotherapeutPage() {
           ))}
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Website laten maken voor een zorgpraktijk", href: "/branche/zorg" },
+          { label: "Website laten maken voor een tandarts", href: "/branche/tandarts" },
+          { label: "Online boekingssysteem voor uw website", href: "/diensten/boekingssysteem" },
+          { label: "7 praktische SEO tips voor MKB-bedrijven in 2026", href: "/blog/seo-tips-mkb" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

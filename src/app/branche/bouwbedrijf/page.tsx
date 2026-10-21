@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
@@ -97,7 +98,11 @@ export default function BouwbedrijfPage() {
             Amsterdam", "dakkapel plaatsen Den Haag". Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger.
             Daarmee optimaliseren wij uw website voor deze zoektermen — met gerichte content
             per dienst en per regio — en richten wij uw Google Business Profile in, zodat u
-            beter vindbaar kunt zijn in de lokale zoekresultaten.
+            beter vindbaar kunt zijn in de lokale zoekresultaten. Werkt u in een van de genoemde steden? Bekijk dan onze
+            pagina's voor website laten maken in
+            {' '}<Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">Utrecht</Link>,
+            {' '}<Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">Amsterdam</Link> en
+            {' '}<Link href="/stad/den-haag" className="text-brand-strong underline hover:no-underline">Den Haag</Link>.
           </p>
           <h2 className="h2 text-ink pt-6">Professionele uitstraling, betaalbare prijs</h2>
           <p>
@@ -131,6 +136,19 @@ export default function BouwbedrijfPage() {
       </section>
 
       <Faq items={faqItems} title="Veelgestelde vragen over websites voor bouwbedrijven" className="bg-bg" />
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Website laten maken voor een schildersbedrijf", href: "/branche/schilder" },
+          { label: "Website laten maken voor een loodgieter", href: "/branche/loodgieter" },
+          { label: "Wat kost een website laten maken in 2026?", href: "/blog/wat-kost-een-website" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

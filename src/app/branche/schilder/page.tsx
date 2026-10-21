@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
@@ -67,7 +68,7 @@ export default function SchilderPage() {
           <p>Wanneer iemand een schilder zoekt, gaat men online op zoek naar voor/na foto&apos;s, reviews en een betrouwbare indruk. Ze typen &quot;schilder [stad]&quot; of &quot;schildersbedrijf [regio]&quot; en bellen de eerste die hen overtuigt. Als uw bedrijf niet op pagina 1 staat of geen professionele website heeft, kan die opdracht naar een concurrent gaan.</p>
           <h2 className="h2 text-ink pt-6">Wat een goede schilderswebsite laat zien</h2>
           <p>Een goede website voor een schildersbedrijf laat uw vakmanschap zien. Met een portfolio van eerder uitgevoerde projecten, een duidelijk overzicht van uw diensten en een online offerteformulier maakt u het potentiële klanten zo makkelijk mogelijk om voor u te kiezen.</p>
-          <p>Elly Apps bouwt schilderswebsites die goed vindbaar zijn op Google. Wij werken met een AI-gedreven aanpak.</p>
+          <p>Elly Apps bouwt schilderswebsites die goed vindbaar zijn op Google. Wij werken met een AI-gedreven aanpak. Zit u in een grote stad? Bekijk dan onze pagina's voor website laten maken in <Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">Amsterdam</Link>, <Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">Utrecht</Link> en <Link href="/stad/rotterdam" className="text-brand-strong underline hover:no-underline">Rotterdam</Link>.</p>
           <h2 className="h2 text-ink pt-6">Wat kost een schilderswebsite?</h2>
           <p>Een professionele schilderswebsite via Elly Apps begint vanaf €49 per maand, inclusief portfolio, online offerteformulier, basis SEO en een klikbaar telefoonnummer. Geen verborgen kosten, geen technische zorgen.</p>
         </div>
@@ -94,6 +95,19 @@ export default function SchilderPage() {
       </section>
 
       <Faq items={faq} title="Veelgestelde vragen over een website voor uw schildersbedrijf" className="bg-bg" />
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Website laten maken voor een bouwbedrijf", href: "/branche/bouwbedrijf" },
+          { label: "Website laten maken voor een loodgieter", href: "/branche/loodgieter" },
+          { label: "Wat kost een website laten maken in 2026?", href: "/blog/wat-kost-een-website" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

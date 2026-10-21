@@ -185,6 +185,9 @@ export default function KapperPage() {
               { label: 'Website laten maken — onze aanpak', href: '/diensten/websites' },
               { label: 'Online boekingssysteem', href: '/diensten/boekingssysteem' },
               { label: 'Blog: website voor kappers', href: '/blog/kapper' },
+              { label: 'Wat kost een website? Bekijk de prijzen', href: '/prijzen' },
+              { label: 'Website laten maken voor een restaurant', href: '/branche/restaurant' },
+              { label: 'Website laten maken voor een fysiotherapeut', href: '/branche/fysiotherapeut' },
               { label: 'Alle branches', href: '/branche' },
             ].map((r) => (
               <Link
