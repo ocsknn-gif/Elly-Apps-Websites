@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Website of app laten maken in Groningen | Elly Apps',
@@ -56,6 +57,16 @@ export default function WerkgebiedGroningenPage() {
           ))}
         </div>
       </section>
+
+      <RelatedLinks
+        id="steden-titel"
+        title="Website laten maken per stad in Groningen"
+        className="bg-bg"
+        links={[
+          { label: "Website laten maken in Groningen", href: "/stad/groningen" },
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

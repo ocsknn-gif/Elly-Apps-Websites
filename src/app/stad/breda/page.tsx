@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
@@ -77,6 +78,20 @@ export default function BredaPage() {
       </section>
 
       <Faq items={faq} title="Veelgestelde vragen over website laten maken in Breda" className="bg-bg" />
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        className="bg-bg"
+        links={[
+          { label: "Website laten maken in Noord-Brabant", href: "/werkgebied/noord-brabant" },
+          { label: "Website laten maken in Eindhoven", href: "/stad/eindhoven" },
+          { label: "Website laten maken in Tilburg", href: "/stad/tilburg" },
+          { label: "Website laten maken in Den Bosch", href: "/stad/den-bosch" },
+          { label: "App laten maken in Breda", href: "/apps/breda" },
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
