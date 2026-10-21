@@ -55,15 +55,6 @@ export default function BedanktPage() {
         <Link href="/" className={buttonVariants()}>
           Terug naar de homepage
         </Link>
-
-        <div className="mt-8">
-          <p className="text-sm text-muted mb-3">Volg ons op social media</p>
-          <div className="flex justify-center gap-4">
-            {['LinkedIn', 'Instagram', 'TikTok'].map((s) => (
-              <a key={s} href="#" className="text-brand-strong hover:underline text-sm font-semibold">{s}</a>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )
