@@ -15,7 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/gratis-websitescan`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${BASE}/branche`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${BASE}/portfolio`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/diensten/boekingssysteem`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${BASE}/diensten/websites`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/diensten/seo`, lastModified, changeFrequency: 'monthly', priority: 0.9 },
