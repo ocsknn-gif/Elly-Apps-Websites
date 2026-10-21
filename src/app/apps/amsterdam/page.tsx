@@ -7,13 +7,13 @@ import { Faq } from '@/components/home/Faq'
 export const metadata: Metadata = {
   title: 'App laten maken Amsterdam | Elly Apps',
   description:
-    'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+    'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven en betaalbaar.',
   alternates: { canonical: 'https://elly-apps.nl/apps/amsterdam' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/apps/amsterdam',
     title: 'App laten maken Amsterdam | Elly Apps',
-    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven en betaalbaar.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'App laten maken Amsterdam | Elly Apps',
-    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven, snel en betaalbaar.',
+    description: 'App laten maken in Amsterdam? Elly Apps bouwt professionele web-apps en mobiele apps voor Amsterdamse MKB-bedrijven. AI-gedreven en betaalbaar.',
     images: ['/og-image.png'],
   },
 }
@@ -37,7 +37,7 @@ const schema = {
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Amsterdam?', a: 'De kosten hangen af van het type en de complexiteit van de app. Wij werken altijd met een transparante vaste prijs — geen uurtarieven en geen verrassingen achteraf. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },
-  { q: 'Hoe lang duurt het om een app te laten bouwen?', a: 'Gemiddeld leveren wij een app op binnen 4 tot 6 weken, van eerste kennismaking tot live lancering. Eenvoudige applicaties kunnen sneller, complexere platforms vragen wat meer tijd.' },
+  { q: 'Hoe lang duurt het om een app te laten bouwen?', a: 'Dat is afhankelijk van de app en wordt na een kennismaking (intake) bepaald.' },
   { q: 'Bouwen jullie web-apps of ook native mobiele apps?', a: 'Beide. Voor veel Amsterdamse MKB-bedrijven is een web-app de slimste keuze: toegankelijk via elke browser, sneller te bouwen en makkelijker te onderhouden. Waar een native app in de App Store of Google Play meerwaarde biedt, bouwen wij die uiteraard ook.' },
   { q: 'Kan de app gekoppeld worden aan mijn bestaande systemen?', a: 'Ja. Wij bouwen koppelingen met CRM-systemen, boekhoudpakketten, betaalproviders en andere externe platformen, zodat uw data automatisch synchroniseert en u niet dubbel werkt.' },
 ]
@@ -65,7 +65,7 @@ export default function AppAmsterdamPage() {
           </h1>
           <p className="body-lg text-muted mt-4">
             Professionele web-apps en mobiele apps voor Amsterdamse ondernemers.
-            AI-gedreven ontwikkeling, snel live en volledig ontzorgd.
+            AI-gedreven ontwikkeling, en volledig ontzorgd.
           </p>
         </div>
       </section>
@@ -87,8 +87,8 @@ export default function AppAmsterdamPage() {
             systemen zoals boekhoudpakketten, CRM-software of betaalproviders.
           </p>
           <p>
-            De Amsterdamse markt vraagt om snelheid en kwaliteit. Wij leveren apps gemiddeld binnen
-            vier tot zes weken op — van eerste kennismaking tot live lancering. U wordt gedurende
+            De Amsterdamse markt vraagt om kwaliteit. De oplevertijd is afhankelijk van de app en
+            wordt na een kennismaking (intake) bepaald. U wordt gedurende
             het hele traject op de hoogte gehouden en heeft altijd inzicht in de voortgang.
             Na de lancering beheren wij de app volledig: updates, beveiliging en technische
             monitoring zijn inbegrepen.
@@ -114,7 +114,7 @@ export default function AppAmsterdamPage() {
             'Web-apps en mobiele apps op maat',
             'AI-gedreven functionaliteiten',
             'Koppelingen met externe systemen',
-            'Gemiddeld binnen 4-6 weken live',
+            'Oplevertijd bepaald na intake',
             'Volledig beheer na lancering',
             'Vaste prijs, geen verrassingen',
           ].map((f) => (

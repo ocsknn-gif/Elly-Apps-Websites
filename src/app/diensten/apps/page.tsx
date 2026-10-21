@@ -43,7 +43,7 @@ const steden = [
 
 const faq = [
   { q: 'Hoeveel kost een app laten maken?', a: 'Dit is afhankelijk van de complexiteit. Neem contact op voor een vrijblijvende offerte op maat.' },
-  { q: 'Hoe lang duurt het om een app te bouwen?', a: 'Gemiddeld 6–12 weken, afhankelijk van de functionaliteit.' },
+  { q: 'Hoe lang duurt het om een app te bouwen?', a: 'Dat is afhankelijk van de app en wordt na een kennismaking (intake) bepaald.' },
   { q: 'Kan ik mijn app later uitbreiden?', a: 'Ja, wij bouwen uw app modulair zodat uitbreidingen altijd mogelijk zijn.' },
   { q: 'Wordt mijn app ook beheerd?', a: 'Ja, wij bieden volledig beheer inclusief updates, bugfixes en nieuwe functies.' },
 ]

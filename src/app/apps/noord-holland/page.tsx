@@ -38,7 +38,7 @@ const faqItems = [
   { q: 'In welke steden in Noord-Holland werken jullie?', a: 'Wij werken voor bedrijven door heel Noord-Holland: Amsterdam, Haarlem, Alkmaar, Zaandam, Hoorn, Den Helder, Purmerend en alle omliggende gemeenten. Onze samenwerking verloopt grotendeels online, dus locatie is nooit een belemmering.' },
   { q: 'Wat is het verschil tussen een web-app en een mobiele app?', a: 'Een web-app draait in de browser en is toegankelijk via elke smartphone, tablet of computer zonder installatie. Een mobiele app wordt geïnstalleerd via de App Store of Google Play. Voor de meeste MKB-bedrijven is een web-app de beste keuze: goedkoper, sneller te bouwen en makkelijker te onderhouden.' },
   { q: 'Kunnen jullie ook een app bouwen voor mijn franchise?', a: 'Ja. Wij bouwen schaalbare applicaties voor franchiseketens waarbij meerdere vestigingen toegang hebben tot één centraal systeem met lokale aanpassingsmogelijkheden.' },
-  { q: 'Hoe snel kan ik een offerte krijgen?', a: 'Na een gratis kennismakingsgesprek van 30-45 minuten ontvangt u binnen 48 uur een gedetailleerde offerte met een vaste prijs en een realistische planning.' },
+  { q: 'Hoe krijg ik een offerte?', a: 'Op uw aanvraag reageren wij binnen één werkdag. Na een gratis kennismakingsgesprek van 30-45 minuten ontvangt u een gedetailleerde offerte met een vaste prijs en een realistische planning.' },
 ]
 
 export default function AppNoordHollandPage() {
@@ -64,7 +64,7 @@ export default function AppNoordHollandPage() {
           </h1>
           <p className="body-lg text-muted mt-4">
             Professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem,
-            Alkmaar en heel Noord-Holland. AI-gedreven, vaste prijs en snel opgeleverd.
+            Alkmaar en heel Noord-Holland. AI-gedreven, vaste prijs en volledig ontzorgd.
           </p>
         </div>
       </section>
@@ -108,11 +108,11 @@ export default function AppNoordHollandPage() {
           </p>
           <h2 className="h2 text-ink pt-6">Van idee naar werkende app: ons proces</h2>
           <p>
-            Wij hanteren een ontwikkelproces dat zorgt voor snelle oplevering en hoge
+            Wij hanteren een ontwikkelproces dat zorgt voor hoge
             kwaliteit. Na een gratis kennismakingsgesprek maken wij een functioneel ontwerp.
             Daarna bouwen wij in twee-wekelijkse sprints — u ziet elke twee weken de
             voortgang en kunt feedback geven. Na uitgebreid testen lanceren wij de app en
-            begeleiden wij de go-live. Gemiddeld staat uw app binnen 4 tot 6 weken live.
+            begeleiden wij de go-live. De oplevertijd is afhankelijk van de app en wordt na een kennismaking (intake) bepaald.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function AppNoordHollandPage() {
             'Actief in Amsterdam, Haarlem, Alkmaar en meer',
             'AI-functionaliteiten standaard',
             'Vaste prijs, geen uurtarieven',
-            'Gemiddeld binnen 4-6 weken live',
+            'Oplevertijd bepaald na intake',
             'Ervaring in toerisme, zorg en retail',
             'Volledig beheer na lancering',
           ].map((f) => (

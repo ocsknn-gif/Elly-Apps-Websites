@@ -60,7 +60,7 @@ export default function AppBredaPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Breda</p>
           <h1 className="h1 text-ink">App laten maken in Breda</h1>
-          <p className="body-lg text-muted mt-4">Professionele web-apps en mobiele apps voor ondernemers in Breda en West-Brabant. Van idee tot werkende applicatie — snel, betaalbaar en volledig ontzorgd.</p>
+          <p className="body-lg text-muted mt-4">Professionele web-apps en mobiele apps voor ondernemers in Breda en West-Brabant. Van idee tot werkende applicatie — betaalbaar en volledig ontzorgd.</p>
         </div>
       </section>
 
@@ -72,8 +72,8 @@ export default function AppBredaPage() {
           <p>Elly Apps bouwt alle soorten digitale applicaties. Van een eenvoudig reserveringssysteem voor een restaurant in Breda tot een complex logistiek platform voor een distributiebedrijf in West-Brabant. Wij beginnen altijd met een grondige analyse van uw bedrijfsprocessen en doelgroep — zodat de app die wij bouwen niet alleen technisch perfect is, maar ook daadwerkelijk de problemen oplost die u heeft. Elk project is uniek en verdient een unieke aanpak.</p>
           <h2 className="h2 text-ink pt-6">AI-integratie: slimmere apps voor Bredase bedrijven</h2>
           <p>Wij integreren standaard AI-mogelijkheden in onze apps. Dit betekent dat uw applicatie niet alleen doet wat u vraagt, maar ook leert van gebruik en steeds slimmer wordt. Denk aan automatische dataverwerking van formulieren, intelligente zoekfuncties, aanbevelingssystemen of geautomatiseerde rapportages. AI maakt uw app toekomstbestendig en geeft u een voorsprong op concurrenten die nog met verouderde systemen werken.</p>
-          <h2 className="h2 text-ink pt-6">Snelle oplevering, geen gedoe</h2>
-          <p>Wij leveren gemiddeld binnen 4 tot 6 weken op. Dat is mogelijk omdat wij een ontwikkelproces hanteren waarbij wij snel kunnen schakelen. Wekelijkse updates, een duidelijk projectplan en een vaste contactpersoon zorgen ervoor dat u altijd weet waar u aan toe bent. Na oplevering is uw app klaar voor gebruik — en wij staan klaar voor eventuele vragen of aanpassingen.</p>
+          <h2 className="h2 text-ink pt-6">Duidelijke planning, geen gedoe</h2>
+          <p>De oplevertijd is afhankelijk van de app en wordt na een kennismaking (intake) bepaald. Wekelijkse updates, een duidelijk projectplan en een vaste contactpersoon zorgen ervoor dat u altijd weet waar u aan toe bent. Na oplevering is uw app klaar voor gebruik — en wij staan klaar voor eventuele vragen of aanpassingen.</p>
           <h2 className="h2 text-ink pt-6">Lokale expertise, landelijke kwaliteit</h2>
           <p>Elly Apps werkt voor bedrijven door heel Nederland. Wij begrijpen de Bredase markt en de specifieke uitdagingen van ondernemers in West-Brabant. Tegelijkertijd brengen wij de kwaliteit en expertise van een landelijk opererende digitale dienstverlener. U krijgt het beste van twee werelden: persoonlijke aandacht gecombineerd met professionele uitvoering.</p>
         </div>
@@ -82,7 +82,7 @@ export default function AppBredaPage() {
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {['Web-apps en mobiele apps op maat', 'AI-integratie standaard beschikbaar', 'Ervaring met retail en logistiek', 'Gemiddeld binnen 4-6 weken live', 'Wekelijkse voortgangsupdate', 'Vaste prijs, volledig beheer na lancering'].map((f) => (
+          {['Web-apps en mobiele apps op maat', 'AI-integratie standaard beschikbaar', 'Ervaring met retail en logistiek', 'Oplevertijd bepaald na intake', 'Wekelijkse voortgangsupdate', 'Vaste prijs, volledig beheer na lancering'].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}

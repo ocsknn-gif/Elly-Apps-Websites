@@ -6,13 +6,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Tilburg | Elly Apps',
-  description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+  description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven en met een vaste prijs.',
   alternates: { canonical: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/apps/app-ontwikkelaar-tilburg',
     title: 'App ontwikkelaar Tilburg | Elly Apps',
-    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven en met een vaste prijs.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'App ontwikkelaar Tilburg | Elly Apps',
-    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven, vaste prijs en snel opgeleverd.',
+    description: 'Op zoek naar een app ontwikkelaar in Tilburg? Elly Apps is uw partner voor professionele web-apps en mobiele apps. AI-gedreven en met een vaste prijs.',
     images: ['/og-image.png'],
   },
 }
@@ -60,7 +60,7 @@ export default function AppOntwikkelaarTilburgPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Tilburg</p>
           <h1 className="h1 text-ink">App ontwikkelaar in Tilburg</h1>
-          <p className="body-lg text-muted mt-4">Elly Apps is uw app ontwikkelaar in Tilburg en omgeving. Wij bouwen professionele web-apps en mobiele applicaties met AI-gedreven functionaliteiten — snel, betrouwbaar en voor een vaste prijs.</p>
+          <p className="body-lg text-muted mt-4">Elly Apps is uw app ontwikkelaar in Tilburg en omgeving. Wij bouwen professionele web-apps en mobiele applicaties met AI-gedreven functionaliteiten — betrouwbaar en voor een vaste prijs.</p>
         </div>
       </section>
 
@@ -71,7 +71,7 @@ export default function AppOntwikkelaarTilburgPage() {
           <h2 className="h2 text-ink pt-6">Wat doet een app ontwikkelaar precies?</h2>
           <p>Een app ontwikkelaar analyseert uw bedrijfsprocessen, vertaalt die naar functionele eisen, ontwerpt de gebruikersinterface, schrijft de code en test de applicatie uitgebreid voor oplevering. Bij Elly Apps gaat dat verder: wij denken actief mee over hoe technologie uw bedrijf vooruitkan helpen. Wij zijn niet alleen uitvoerders — wij zijn strategische partners die u helpen de juiste digitale beslissingen te nemen.</p>
           <h2 className="h2 text-ink pt-6">Waarom kiezen voor Elly Apps als app ontwikkelaar in Tilburg?</h2>
-          <p>Er zijn meerdere redenen waarom Tilburgse ondernemers voor Elly Apps kiezen. Ten eerste onze transparante werkwijze: vaste prijs, heldere communicatie en geen verrassingen. Ten tweede onze AI-expertise: wij integreren standaard AI-functionaliteiten in onze apps waardoor uw applicatie slimmer en toekomstbestendiger wordt. Ten derde onze brede sectorervaring: van horeca en retail tot zorg en zakelijke dienstverlening. En ten vierde onze snelheid: gemiddeld binnen 4 tot 6 weken van idee naar werkende app.</p>
+          <p>Er zijn meerdere redenen waarom Tilburgse ondernemers voor Elly Apps kiezen. Ten eerste onze transparante werkwijze: vaste prijs, heldere communicatie en geen verrassingen. Ten tweede onze AI-expertise: wij integreren standaard AI-functionaliteiten in onze apps waardoor uw applicatie slimmer en toekomstbestendiger wordt. Ten derde onze brede sectorervaring: van horeca en retail tot zorg en zakelijke dienstverlening. En ten vierde onze werkwijze: na een kennismaking bepalen we de planning en u ziet elke twee weken de voortgang.</p>
           <h2 className="h2 text-ink pt-6">Technologie die we gebruiken</h2>
           <p>Wij werken met moderne, bewezen technologieën die schaalbaar en onderhoudsvriendelijk zijn. Voor web-apps gebruiken wij Next.js en React, voor databases Supabase of PostgreSQL, voor AI-integraties de Anthropic Claude API, en voor betalingen Stripe of Mollie. Al onze code is goed gedocumenteerd en overdraagbaar — u bent nooit afhankelijk van ons voor de technologie die u bezit.</p>
           <h2 className="h2 text-ink pt-6">Van idee naar app: ons proces</h2>
@@ -82,7 +82,7 @@ export default function AppOntwikkelaarTilburgPage() {
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {['Specialist in Next.js, React en AI', 'Transparante vaste prijs', 'Gemiddeld binnen 4-6 weken live', 'Code reviews en geautomatiseerde tests', 'Volledig beheer na lancering', 'Sectorervaring in horeca, zorg en retail'].map((f) => (
+          {['Specialist in Next.js, React en AI', 'Transparante vaste prijs', 'Oplevertijd bepaald na intake', 'Code reviews en geautomatiseerde tests', 'Volledig beheer na lancering', 'Sectorervaring in horeca, zorg en retail'].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
               {f}
