@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Goedkope website laten maken: wat is slim en wat niet?',
   description: 'Op zoek naar een goedkope website? Wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel blijft.',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-09',
-  url: 'https://elly-apps.nl/blog/goedkope-website',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/goedkope-website' },
 }
 
 export default function GoedkopeWebsitePage() {

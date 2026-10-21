@@ -28,14 +28,14 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Wat kost een website laten maken in 2026?',
   description:
     'Wat kost een professionele website in 2026? Wat de prijs bepaalt, veelgemaakte fouten en wat een vaste maandprijs vanaf €49 inhoudt voor het MKB.',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-08',
-  url: 'https://elly-apps.nl/blog/wat-kost-een-website',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/wat-kost-een-website' },
 }
 
 export default function WatKostEenWebsitePage() {

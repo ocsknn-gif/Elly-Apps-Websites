@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'SEO vs Google Ads: wat werkt beter voor jouw bedrijf?',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-08',
-  url: 'https://elly-apps.nl/blog/seo-vs-google-ads',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/seo-vs-google-ads' },
 }
 
 export default function SEOvsGoogleAdsPage() {

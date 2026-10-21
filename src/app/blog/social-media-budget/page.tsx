@@ -32,7 +32,7 @@ const schema = {
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-11',
-  url: 'https://elly-apps.nl/blog/social-media-budget',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/social-media-budget' },
 }
 
 export default function BlogSocialMediaBudgetPage() {
