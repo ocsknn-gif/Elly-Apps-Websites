@@ -64,10 +64,10 @@ export default function WatKostSEOPage() {
 
           <h2>Wat zijn de kosten van SEO?</h2>
           <p>
-            SEO-kosten in Nederland variëren enorm. Een freelance SEO-specialist rekent gemiddeld
-            €75 tot €150 per uur. Een SEO-bureau vraagt voor een maandelijks pakket doorgaans
-            tussen de €500 en €2.500 per maand. Voor grote e-commerce websites of nationale
-            campagnes lopen de kosten snel op tot €5.000 of meer per maand.
+            SEO-kosten variëren enorm, afhankelijk van of u met een freelancer of een bureau werkt,
+            hoe groot uw website is en hoe concurrerend uw branche is. Vraag altijd om een
+            duidelijke offerte waarin staat wat er precies wordt gedaan en wat u maandelijks
+            terugziet.
           </p>
           <p>
             Bij Elly Apps hebben wij SEO geïntegreerd in onze pakketten. In het Groei pakket
