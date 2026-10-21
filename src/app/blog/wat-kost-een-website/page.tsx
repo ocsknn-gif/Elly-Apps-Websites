@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Wat kost een website laten maken in 2026? | Elly Apps',
@@ -163,6 +164,18 @@ export default function WatKostEenWebsitePage() {
           </Link>
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde artikelen"
+        narrow
+        links={[
+          { label: "Goedkope website laten maken: wat is slim en wat niet?", href: "/blog/goedkope-website" },
+          { label: "Wat kost SEO in Nederland?", href: "/blog/wat-kost-seo" },
+          { label: "Hoeveel kost Google Ads? Prijzen voor MKB", href: "/blog/wat-kost-google-ads" },
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+        ]}
+      />
     </>
   )
 }

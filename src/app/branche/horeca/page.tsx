@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
@@ -139,6 +140,19 @@ export default function HorecaPage() {
       </section>
 
       <Faq items={faqItems} title="Veelgestelde vragen over horeca websites" className="bg-bg" />
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Website laten maken voor restaurants", href: "/branche/restaurant" },
+          { label: "Online boekingssysteem voor uw website", href: "/diensten/boekingssysteem" },
+          { label: "Website laten maken voor een restaurant in 2026", href: "/blog/restaurant" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

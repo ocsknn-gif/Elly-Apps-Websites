@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor restaurants | Elly Apps',
@@ -87,7 +88,7 @@ export default function RestaurantPage() {
             een loyalty-app waarbij vaste klanten punten sparen, of een keuken-app die bestellingen
             direct naar de keuken stuurt. Een eigen app geeft u meer controle dan platforms zoals
             Thuisbezorgd — en u betaalt geen commissie per bestelling. Elly Apps bouwt dit soort
-            apps voor een vaste prijs, inclusief beheer en updates.
+            apps voor een vaste prijs, inclusief beheer en updates. Meer weten? Bekijk onze pagina over <Link href="/diensten/apps" className="text-brand-strong underline hover:no-underline">app laten maken</Link>.
           </p>
           <h2 className="h2 text-ink pt-6">Online reserveringen als uitbreiding</h2>
           <p>
@@ -119,6 +120,20 @@ export default function RestaurantPage() {
           ))}
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Online boekingssysteem voor uw website", href: "/diensten/boekingssysteem" },
+          { label: "Horeca website laten maken", href: "/branche/horeca" },
+          { label: "Website laten maken voor een kapper", href: "/branche/kapper" },
+          { label: "Website laten maken voor een restaurant in 2026", href: "/blog/restaurant" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

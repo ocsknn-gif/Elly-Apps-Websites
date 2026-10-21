@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'SEO vs Google Ads: wat werkt beter? | Elly Apps',
@@ -150,6 +151,18 @@ export default function SEOvsGoogleAdsPage() {
           </Link>
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde artikelen"
+        narrow
+        links={[
+          { label: "Wat kost SEO in Nederland?", href: "/blog/wat-kost-seo" },
+          { label: "Hoeveel kost Google Ads? Prijzen voor MKB", href: "/blog/wat-kost-google-ads" },
+          { label: "SEO voor het MKB", href: "/diensten/seo" },
+          { label: "Google Ads laten beheren", href: "/diensten/sea" },
+        ]}
+      />
     </>
   )
 }

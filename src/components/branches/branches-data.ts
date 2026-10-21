@@ -9,6 +9,7 @@ import {
   PaintRollerIcon,
   BeerIcon,
   CalculatorIcon,
+  StethoscopeIcon,
   type LucideIcon,
 } from 'lucide-react'
 
@@ -32,6 +33,7 @@ const alleBranches: Branche[] = [
     slug: 'accountantskantoor',
     alt: 'Kantoor met laptop vol grafieken en een accountant die papieren bekijkt',
   },
+  { icon: StethoscopeIcon, label: 'Zorgpraktijk', slug: 'zorg', alt: 'Zorgpraktijk' },
 ]
 
 function kies(slugs: string[]): Branche[] {
@@ -43,5 +45,5 @@ export const homeBranches = kies([
 ])
 
 export const overzichtBranches = kies([
-  'loodgieter', 'kapper', 'restaurant', 'tandarts', 'fysiotherapeut', 'horeca', 'accountantskantoor', 'bouwbedrijf', 'rijschool',
+  'loodgieter', 'kapper', 'restaurant', 'tandarts', 'fysiotherapeut', 'horeca', 'accountantskantoor', 'bouwbedrijf', 'rijschool', 'schilder', 'zorg',
 ])

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
@@ -157,6 +158,18 @@ export default function SEOTipsMKBPage() {
           </Link>
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde artikelen"
+        narrow
+        links={[
+          { label: "Wat kost SEO in Nederland?", href: "/blog/wat-kost-seo" },
+          { label: "Website niet gevonden op Google? Oorzaken en oplossingen", href: "/blog/website-niet-gevonden-google" },
+          { label: "SEO vs Google Ads: wat werkt beter?", href: "/blog/seo-vs-google-ads" },
+          { label: "SEO voor het MKB", href: "/diensten/seo" },
+        ]}
+      />
     </>
   )
 }

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: "Website laten maken als zzp'er: wat u moet weten in 2026 | Elly Apps",
@@ -161,6 +162,18 @@ export default function WebsiteZZPPage() {
           </Link>
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde artikelen"
+        narrow
+        links={[
+          { label: "Wat kost een website laten maken in 2026?", href: "/blog/wat-kost-een-website" },
+          { label: "Goedkope website laten maken: wat is slim en wat niet?", href: "/blog/goedkope-website" },
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
     </>
   )
 }

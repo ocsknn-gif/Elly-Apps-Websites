@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor een rijschool | Elly Apps',
@@ -53,7 +54,7 @@ export default function RijschoolPage() {
           <p>De rijschoolmarkt is competitief. Leerlingen en hun ouders vergelijken rijscholen online voordat ze bellen. Als uw website verouderd of slecht vindbaar is, kiest men voor de concurrent. Een professionele website helpt u gevonden te worden wanneer iemand zoekt op &quot;rijschool [uw stad]&quot;.</p>
           <p>Elly Apps bouwt rijschoolwebsites gericht op conversie: een duidelijke aanmeldknop, overzicht van pakketten en tarieven, slagingspercentages en een reviewsectie. Met een geïntegreerd contactformulier komen lesaanvragen direct in uw mailbox.</p>
           <h2 className="h2 text-ink pt-6">Lokale SEO en Google Business Profile voor rijscholen</h2>
-          <p>Lokale SEO is voor rijscholen belangrijk en zit in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen als &quot;rijles [stad]&quot; en &quot;snel rijbewijs halen&quot;. Ook uw Google Business Profile hoort bij het Groei pakket en hoger, zodat uw rijschool ook in Google Maps zichtbaar is.</p>
+          <p>Lokale SEO is voor rijscholen belangrijk en zit in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen als &quot;rijles [stad]&quot; en &quot;snel rijbewijs halen&quot;. Ook uw Google Business Profile hoort bij het Groei pakket en hoger, zodat uw rijschool ook in Google Maps zichtbaar is. Werkt u in een van deze steden? Bekijk dan onze pagina's over <Link href="/stad/eindhoven" className="text-brand-strong underline hover:no-underline">website laten maken in Eindhoven</Link>, <Link href="/stad/nijmegen" className="text-brand-strong underline hover:no-underline">website laten maken in Nijmegen</Link> en <Link href="/stad/groningen" className="text-brand-strong underline hover:no-underline">website laten maken in Groningen</Link>.</p>
           <h2 className="h2 text-ink pt-6">Reviews voor nieuwe leerlingen</h2>
           <p>Reviews zijn belangrijk voor nieuwe leerlingen. Wij bouwen een prominente reviewsectie en helpen u actief meer beoordelingen te verzamelen. Een slagingspercentage kunt u op uw site tonen.</p>
           <h2 className="h2 text-ink pt-6">Volledig beheerd</h2>
@@ -81,6 +82,19 @@ export default function RijschoolPage() {
           ))}
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde pagina's"
+        links={[
+          { label: "Website laten maken en beheren", href: "/diensten/websites" },
+          { label: "Wat kost een website? Bekijk de prijzen", href: "/prijzen" },
+          { label: "Website laten maken voor een kapper", href: "/branche/kapper" },
+          { label: "Website laten maken voor een fysiotherapeut", href: "/branche/fysiotherapeut" },
+          { label: "Website laten maken als zzp'er: wat u moet weten in 2026", href: "/blog/website-zzp" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
 
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">

@@ -7,6 +7,7 @@ import { Faq } from '@/components/home/Faq'
 import { ClosingCta } from '@/components/home/ClosingCta'
 import { SectionHeader } from '@/components/home/SectionHeader'
 import { websitePakketten } from '@/lib/pakketten'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Professionele website laten maken & beheren | Elly Apps',
@@ -173,6 +174,42 @@ export default function DienstenWebsitesPage() {
       </section>
 
       <Faq items={faq} title="Veelgestelde vragen over websites laten maken" className="bg-surface" />
+
+      <RelatedLinks
+        id="steden-titel"
+        title="Website laten maken in uw stad"
+        className="bg-bg"
+        links={[
+          { label: "Website laten maken in Amsterdam", href: "/stad/amsterdam" },
+          { label: "Website laten maken in Rotterdam", href: "/stad/rotterdam" },
+          { label: "Website laten maken in Den Haag", href: "/stad/den-haag" },
+          { label: "Website laten maken in Utrecht", href: "/stad/utrecht" },
+          { label: "Website laten maken in Eindhoven", href: "/stad/eindhoven" },
+          { label: "Website laten maken in Tilburg", href: "/stad/tilburg" },
+          { label: "Website laten maken in Breda", href: "/stad/breda" },
+          { label: "Website laten maken in Den Bosch", href: "/stad/den-bosch" },
+          { label: "Website laten maken in Groningen", href: "/stad/groningen" },
+          { label: "Website laten maken in Haarlem", href: "/stad/haarlem" },
+          { label: "Website laten maken in Leiden", href: "/stad/leiden" },
+          { label: "Website laten maken in Nijmegen", href: "/stad/nijmegen" },
+          { label: "Website laten maken in Zwolle", href: "/stad/zwolle" },
+          { label: "Website laten maken in Almere", href: "/stad/almere" },
+        ]}
+      />
+
+      <RelatedLinks
+        id="werkgebieden-titel"
+        title="Website laten maken in uw werkgebied"
+        links={[
+          { label: "Website laten maken in Noord-Holland", href: "/werkgebied/noord-holland" },
+          { label: "Website laten maken in Zuid-Holland", href: "/werkgebied/zuid-holland" },
+          { label: "Website laten maken in de provincie Utrecht", href: "/werkgebied/utrecht" },
+          { label: "Website laten maken in Noord-Brabant", href: "/werkgebied/noord-brabant" },
+          { label: "Website laten maken in Gelderland", href: "/werkgebied/gelderland" },
+          { label: "Website laten maken in Overijssel", href: "/werkgebied/overijssel" },
+          { label: "Website laten maken in de provincie Groningen", href: "/werkgebied/groningen" },
+        ]}
+      />
 
       <ClosingCta
         title="Klaar om uw bedrijf online te laten groeien?"
