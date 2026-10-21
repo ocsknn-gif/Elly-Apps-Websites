@@ -53,7 +53,7 @@ export default function TimedPopup() {
         >
           Ja, ik wil mijn gratis scan
         </Link>
-        <p className="text-xs text-gray-500 text-center mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
+        <p className="text-xs text-gray-500 text-center mt-2">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen één werkdag reactie</p>
       </div>
     </div>
   )

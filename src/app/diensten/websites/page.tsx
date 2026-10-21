@@ -70,7 +70,7 @@ const faq = [
   { q: 'Beheert Elly Apps mijn website volledig?', a: 'Ja, wij nemen het volledige beheer over zodat u zich kunt focussen op uw bedrijf.' },
 ]
 
-const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen 24 uur reactie'
+const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie'
 
 export default function DienstenWebsitesPage() {
   return (
