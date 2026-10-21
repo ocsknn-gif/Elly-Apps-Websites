@@ -7,13 +7,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 export const metadata: Metadata = {
   title: 'Website laten maken Utrecht | Elly Apps',
   description:
-    'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+    'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/stad/utrecht' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/stad/utrecht',
     title: 'Website laten maken Utrecht | Elly Apps',
-    description: 'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+    description: 'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken Utrecht | Elly Apps',
-    description: 'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Lokale SEO en volledig ontzorgd. Vanaf €49/maand.',
+    description: 'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
     images: ['/og-image.png'],
   },
 }
@@ -32,7 +32,7 @@ const schema = {
   name: 'Elly Apps — Website laten maken Utrecht',
   url: 'https://elly-apps.nl/stad/utrecht',
   areaServed: { '@type': 'City', name: 'Utrecht' },
-  description: 'Professionele websites voor MKB-bedrijven in Utrecht. Lokale SEO en volledig beheerd.',
+  description: 'Website laten maken in Utrecht? Elly Apps bouwt professionele websites voor Utrechtse MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
 }
 
 export default function UtrechtPage() {

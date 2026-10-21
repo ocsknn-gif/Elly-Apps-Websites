@@ -6,22 +6,22 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken Leiden | Professioneel & Betaalbaar | Elly Apps',
-  description: 'Professionele website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Lokale SEO voor de sleutelstad. Vraag gratis offerte aan!',
+  title: 'Website laten maken Leiden | Elly Apps',
+  description: 'Website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Vraag een gratis offerte aan.',
   alternates: { canonical: 'https://elly-apps.nl/stad/leiden' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/stad/leiden',
-    title: 'Website laten maken Leiden | Professioneel & Betaalbaar | Elly Apps',
-    description: 'Professionele website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Lokale SEO voor de sleutelstad. Vraag gratis offerte aan!',
+    title: 'Website laten maken Leiden | Elly Apps',
+    description: 'Website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Vraag een gratis offerte aan.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken Leiden | Professioneel & Betaalbaar | Elly Apps',
-    description: 'Professionele website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Lokale SEO voor de sleutelstad. Vraag gratis offerte aan!',
+    title: 'Website laten maken Leiden | Elly Apps',
+    description: 'Website laten maken in Leiden? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Leiden. Vraag een gratis offerte aan.',
     images: ['/og-image.png'],
   },
 }

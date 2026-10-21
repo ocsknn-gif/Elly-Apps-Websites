@@ -6,22 +6,22 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken Haarlem | Professioneel & Betaalbaar | Elly Apps',
-  description: 'Professionele website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Lokale SEO voor de Spaarnestad. Vraag gratis offerte aan!',
+  title: 'Website laten maken Haarlem | Elly Apps',
+  description: 'Website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Vraag een gratis offerte aan.',
   alternates: { canonical: 'https://elly-apps.nl/stad/haarlem' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/stad/haarlem',
-    title: 'Website laten maken Haarlem | Professioneel & Betaalbaar | Elly Apps',
-    description: 'Professionele website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Lokale SEO voor de Spaarnestad. Vraag gratis offerte aan!',
+    title: 'Website laten maken Haarlem | Elly Apps',
+    description: 'Website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Vraag een gratis offerte aan.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken Haarlem | Professioneel & Betaalbaar | Elly Apps',
-    description: 'Professionele website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Lokale SEO voor de Spaarnestad. Vraag gratis offerte aan!',
+    title: 'Website laten maken Haarlem | Elly Apps',
+    description: 'Website laten maken in Haarlem? Elly Apps bouwt snelle, betaalbare websites voor ondernemers in Haarlem. Vraag een gratis offerte aan.',
     images: ['/og-image.png'],
   },
 }

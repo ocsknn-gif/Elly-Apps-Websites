@@ -6,22 +6,22 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
-  description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
+  title: 'Website laten maken Groningen – vanaf €49/mnd | Elly Apps',
+  description: 'Website laten maken in Groningen? Elly Apps bouwt websites met basis SEO voor ondernemers in Groningen. Vanaf €49 per maand. Vraag een gratis scan aan.',
   alternates: { canonical: 'https://elly-apps.nl/stad/groningen' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/stad/groningen',
-    title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
-    description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
+    title: 'Website laten maken Groningen – vanaf €49/mnd | Elly Apps',
+    description: 'Website laten maken in Groningen? Elly Apps bouwt websites met basis SEO voor ondernemers in Groningen. Vanaf €49 per maand. Vraag een gratis scan aan.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken Groningen | Professionele websites vanaf €49 | Elly Apps',
-    description: 'Op zoek naar een professionele website laten maken in Groningen? Elly Apps bouwt SEO-geoptimaliseerde websites voor Groningse ondernemers. Vanaf €49/maand. Vraag gratis websitescan aan.',
+    title: 'Website laten maken Groningen – vanaf €49/mnd | Elly Apps',
+    description: 'Website laten maken in Groningen? Elly Apps bouwt websites met basis SEO voor ondernemers in Groningen. Vanaf €49 per maand. Vraag een gratis scan aan.',
     images: ['/og-image.png'],
   },
 }
