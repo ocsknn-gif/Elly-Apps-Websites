@@ -4,6 +4,7 @@ import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
@@ -30,7 +31,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Horeca website laten maken',
-  provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  provider: organizationRef,
   description: 'Horeca website laten maken? Online menu en basis SEO voor restaurants, cafés en hotels, vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }

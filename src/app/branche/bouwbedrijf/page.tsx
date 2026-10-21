@@ -4,6 +4,7 @@ import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor bouwbedrijf | Elly Apps',
@@ -30,7 +31,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Website laten maken voor bouwbedrijf',
-  provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  provider: organizationRef,
   description: 'Professionele websites voor bouwbedrijven en aannemers. Portfolio, offerteformulier en basis SEO.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }

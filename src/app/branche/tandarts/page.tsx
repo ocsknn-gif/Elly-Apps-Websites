@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor tandartsen | Elly Apps',
@@ -26,13 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'Dentist',
-  name: 'Elly Apps — Websites voor tandartsen',
+const schema = serviceSchema({
+  name: 'Websites voor tandartsen',
   url: 'https://elly-apps.nl/branche/tandarts',
   description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
-}
+  audienceType: 'tandartsen',
+})
 
 export default function TandartsPage() {
   return (

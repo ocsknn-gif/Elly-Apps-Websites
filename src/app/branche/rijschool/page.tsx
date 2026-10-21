@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor een rijschool | Elly Apps',
@@ -25,13 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'DrivingSchool',
-  name: 'Elly Apps — Websites voor rijscholen',
+const schema = serviceSchema({
+  name: 'Websites voor rijscholen',
   url: 'https://elly-apps.nl/branche/rijschool',
   description: 'Professionele websites voor rijscholen, inclusief basis SEO en online lesaanvragen.',
-}
+  audienceType: 'rijscholen',
+})
 
 export default function RijschoolPage() {
   return (

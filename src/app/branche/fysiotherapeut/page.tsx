@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor fysiotherapeuten | Elly Apps',
@@ -26,13 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'MedicalBusiness',
-  name: 'Elly Apps — Websites voor fysiotherapeuten',
+const schema = serviceSchema({
+  name: 'Websites voor fysiotherapeuten',
   url: 'https://elly-apps.nl/branche/fysiotherapeut',
   description: 'Website laten maken voor uw fysiotherapiepraktijk? Met behandelingsinfo, beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
-}
+  audienceType: 'fysiotherapeuten',
+})
 
 export default function FysiotherapeutPage() {
   return (
