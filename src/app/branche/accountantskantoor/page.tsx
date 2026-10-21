@@ -37,7 +37,7 @@ const schema = {
 const faqItems = [
   { q: 'Wat moet er op de website van een accountantskantoor staan?', a: 'Een goede accountantswebsite bevat minimaal: een duidelijke dienstenpagina (jaarrekening, belastingaangifte, loonadministratie), een over-ons sectie met de expertise van uw team, klantcases of testimonials, contactgegevens en een contactformulier. SEO-geoptimaliseerde content rond zoekwoorden als "accountant [stad]" is essentieel voor vindbaarheid.' },
   { q: 'Hoe onderscheidt een accountantswebsite zich van de concurrentie?', a: 'De meeste accountantswebsites zien er hetzelfde uit. U onderscheidt zich door concreet te zijn: welke sectoren bedient u, welke bedrijfsgroottes, welke specifieke expertise? Wij helpen u dit helder te verwoorden en te vertalen naar een website die direct vertrouwen wekt.' },
-  { q: 'Kan ik een beveiligde klantomgeving toevoegen?', a: 'Ja. Wij kunnen een beveiligd klantportaal integreren waar cliënten documenten kunnen uploaden en downloaden. Dit bespaart veel heen-en-weer mailen en verhoogt de professionele uitstraling.' },
+  { q: 'Kan ik een beveiligde klantomgeving toevoegen?', a: 'Een klantportaal waar cliënten documenten kunnen uploaden en downloaden is op aanvraag mogelijk, in overleg. Dit bespaart veel heen-en-weer mailen en verhoogt de professionele uitstraling.' },
   { q: 'Is een accountantswebsite duur?', a: 'Bij Elly Apps betaalt u €299 eenmalige setup en €49 per maand. Dat is inclusief hosting, SSL, updates en basis SEO. Er zijn geen verborgen kosten.' },
 ]
 
@@ -97,8 +97,7 @@ export default function AccountantskantoorPage() {
           <p>
             Steeds meer accountantskantoren kiezen voor een digitaal klantportaal waar
             cliënten documenten kunnen uploaden, jaarrekeningen kunnen downloaden en
-            vragen kunnen stellen. Wij bouwen dit soort portalen — veilig, gebruiksvriendelijk
-            en volledig geïntegreerd in uw website. Dit bespaart uw team tijd en verhoogt
+            vragen kunnen stellen. Een portaal is op aanvraag mogelijk, in overleg. Dit bespaart uw team tijd en verhoogt
             de tevredenheid van uw klanten.
           </p>
           <h2 className="h2 text-ink pt-6">Specialisaties en sectorfocus</h2>
@@ -118,7 +117,7 @@ export default function AccountantskantoorPage() {
           {[
             'Vertrouwenwekkend en professioneel ontwerp',
             'SEO voor "accountant [stad]" zoektermen',
-            'Beveiligd klantportaal mogelijk',
+            'Klantportaal op aanvraag, in overleg',
             'Specialisatie landingspagina\'s',
             'Google Business optimalisatie',
             'Volledig beheerd, vaste prijs',
