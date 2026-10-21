@@ -41,11 +41,11 @@ export default function WerkgebiedGroningenPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
+          <h2 className="h2 text-ink">Ondernemen in de provincie Groningen</h2>
+          <p>De provincie Groningen grenst in het noorden aan de Waddenzee, in het westen aan Friesland, in het zuiden aan Drenthe en in het oosten aan Duitsland. Er liggen tien gemeenten: Eemsdelta, Groningen, Het Hogeland, Midden-Groningen, Oldambt, Pekela, Stadskanaal, Veendam, Westerkwartier en Westerwolde. Van oudsher is de provincie vooral een landbouwgebied; dienstverlening en handel zijn geconcentreerd in <Link href="/stad/groningen" className="text-brand-strong underline hover:no-underline">de stad Groningen</Link>. Groningen Seaports beheert de havens van Delfzijl en de Eemshaven. In Delfzijl ligt een chemiepark en bij de Eemshaven staan energiecentrales en een datacenter van Google.</p>
           <h2 className="h2 text-ink">Website of app laten maken in Groningen</h2>
-          <p>In de provincie Groningen is online zichtbaarheid juist belangrijk omdat de regio groot en verspreid is. Goed vindbaar zijn in Google helpt klanten u te vinden. Elly Apps helpt ondernemers in Groningen met een professionele website voor hun bedrijf.</p>
-          <p>Wij bouwen snelle, mobielvriendelijke websites die technisch geoptimaliseerd zijn voor zoekmachines. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Groningen. Heeft u een app nodig? Lees meer over <Link href="/diensten/apps" className="text-brand-strong underline hover:no-underline">app laten maken</Link>.</p>
-          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Groningen en uw Google Business Profile.</p>
-          <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
+          <p>In de provincie Groningen is online zichtbaarheid belangrijk omdat de regio groot en verspreid is. Elly Apps helpt ondernemers in Groningen met een professionele website, van een eenvoudige bedrijfswebsite tot een site met meerdere pagina's, passend bij uw branche. Op aanvraag bouwen wij ook een boekingssysteem of webshop. Heeft u een app nodig? Lees meer over <Link href="/diensten/apps" className="text-brand-strong underline hover:no-underline">app laten maken</Link>.</p>
+          <p>Onze websites zijn snel, mobielvriendelijk, hebben basis SEO en zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger, voor zoektermen relevant voor uw stad of regio binnen Groningen en uw Google Business Profile.</p>
         </div>
       </section>
 
