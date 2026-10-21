@@ -7,13 +7,13 @@ import { Faq } from '@/components/home/Faq'
 export const metadata: Metadata = {
   title: 'Website laten maken voor kappers | Elly Apps',
   description:
-    'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    'Website laten maken voor uw kapperszaak? Portfolio en basis SEO, volledig beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/kapper' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/kapper',
     title: 'Website laten maken voor kappers | Elly Apps',
-    description: 'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw kapperszaak? Portfolio en basis SEO, volledig beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor kappers | Elly Apps',
-    description: 'Een professionele website voor uw kapperszaak: portfolio en lokale SEO zodat u gevonden wordt in uw stad. Volledig beheerd vanaf €49 per maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw kapperszaak? Portfolio en basis SEO, volledig beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
 }
@@ -31,14 +31,14 @@ const schema = {
   '@type': 'HairSalon',
   name: 'Elly Apps — Websites voor kappers',
   url: 'https://elly-apps.nl/branche/kapper',
-  description: 'Professionele websites voor kappers en kapperszaken, met portfolio en lokale SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
+  description: 'Professionele websites voor kappers en kapperszaken, met portfolio en basis SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
 }
 
 const faqItems = [
   { q: 'Wat kost een website voor mijn kapsalon?', a: 'U betaalt een eenmalig startbedrag voor het ontwerp en de bouw, en daarna een vast bedrag vanaf €49 per maand voor hosting, onderhoud, updates en beveiliging. Geen verrassingen achteraf. Bekijk onze pakketten op de prijzenpagina voor een exact overzicht.' },
   { q: 'Kunnen klanten online een afspraak boeken?', a: 'Dat kan, als aparte uitbreiding. Een online afsprakensysteem zit niet in de websitepakketten, maar wij kunnen het voor u integreren: het neemt 24/7 boekingen aan, stuurt bevestigingen en herinneringen en kan gekoppeld worden aan uw agenda. De prijs hangt af van uw wensen; neem contact op voor een vrijblijvende offerte.' },
-  { q: 'Hoe snel staat mijn kapperswebsite online?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een korte intake bouwen wij een eerste versie die u kunt bekijken en aanpassen, waarna wij de site publiceren en de lokale SEO inrichten.' },
-  { q: 'Word ik gevonden door klanten in mijn stad?', a: 'Daar richten wij de website specifiek op in. Wij optimaliseren uw pagina voor zoektermen als "kapper [uw stad]" en zorgen dat uw Google Bedrijfsprofiel klopt met openingstijden, foto\'s en reviews, zodat u verschijnt in Google Maps en de lokale resultaten.' },
+  { q: 'Hoe snel staat mijn kapperswebsite online?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een korte intake bouwen wij een eerste versie die u kunt bekijken en aanpassen, waarna wij de site publiceren en, in het Groei pakket en hoger, de lokale SEO inrichten.' },
+  { q: 'Word ik gevonden door klanten in mijn stad?', a: 'In het Groei pakket en hoger richten wij de website specifiek hierop in. Dan optimaliseren wij uw pagina voor zoektermen als "kapper [uw stad]" en zorgen wij dat uw Google Bedrijfsprofiel klopt met openingstijden, foto\'s en reviews, zodat u beter vindbaar kunt zijn in Google Maps en de lokale resultaten.' },
   { q: 'Kan ik mijn portfolio en tarieven zelf bijwerken?', a: 'Ja. U kunt eenvoudig nieuwe foto\'s toevoegen en tarieven aanpassen. Heeft u daar liever geen omkijken naar? Dan regelen wij het voor u als onderdeel van het maandelijkse beheer.' },
 ]
 
@@ -61,7 +61,7 @@ export default function KapperPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
           <h1 className="h1 text-ink">Website laten maken voor kappers</h1>
-          <p className="body-lg text-muted mt-4">Toon uw portfolio en word gevonden door nieuwe klanten in uw buurt — voor een vaste maandprijs, volledig ontzorgd.</p>
+          <p className="body-lg text-muted mt-4">Toon uw portfolio, zodat klanten u in uw buurt kunnen vinden — voor een vaste maandprijs, volledig ontzorgd.</p>
         </div>
       </section>
 
@@ -95,10 +95,10 @@ export default function KapperPage() {
 
           <h2 className="h2 text-ink pt-6">Gevonden worden in uw stad</h2>
           <p>
-            Lokale SEO is voor kappers essentieel. De meeste klanten zoeken op &quot;kapper [stad]&quot;
-            of &quot;kapper [wijk]&quot;. Wij optimaliseren uw website voor deze lokale zoektermen en
-            zorgen dat uw Google Bedrijfsprofiel up-to-date is met openingstijden, foto&apos;s en
-            reviews. Zo verschijnt u bovenaan in de lokale Google-resultaten en op Google Maps.
+            Lokale SEO is voor kappers belangrijk en zit in het Groei pakket en hoger. De meeste klanten zoeken op &quot;kapper [stad]&quot;
+            of &quot;kapper [wijk]&quot;. Daarmee optimaliseren wij uw website voor deze lokale zoektermen en
+            zorgen wij dat uw Google Bedrijfsprofiel up-to-date is met openingstijden, foto&apos;s en
+            reviews, zodat u beter vindbaar kunt zijn in de lokale Google-resultaten en op Google Maps.
             Zit u in een grote stad? Bekijk ook onze pagina&apos;s voor
             {' '}<Link href="/stad/amsterdam" className="text-brand-strong underline hover:no-underline">Amsterdam</Link>,
             {' '}<Link href="/stad/rotterdam" className="text-brand-strong underline hover:no-underline">Rotterdam</Link> en
@@ -145,7 +145,7 @@ export default function KapperPage() {
             </li>
             <li className="flex items-start gap-3">
               <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">3</span>
-              <span><strong>Lokale SEO (week 2).</strong> We optimaliseren voor &quot;kapper [uw stad]&quot; en richten uw Google Bedrijfsprofiel goed in.</span>
+              <span><strong>Lokale SEO (Groei pakket en hoger, week 2).</strong> We optimaliseren voor &quot;kapper [uw stad]&quot; en richten uw Google Bedrijfsprofiel goed in.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="bg-brand-strong text-white size-8 rounded-full flex items-center justify-center font-bold text-sm shrink-0">4</span>
@@ -162,8 +162,8 @@ export default function KapperPage() {
             'Online afsprakensysteem (optionele uitbreiding)',
             'Portfolio met voor-en-na foto\'s',
             'Diensten en tarieven overzicht',
-            'Lokale SEO voor uw buurt',
-            'Google Bedrijfsprofiel optimalisatie',
+            'Basis SEO; lokale SEO in het Groei pakket en hoger',
+            'Google Bedrijfsprofiel optimalisatie in het Groei pakket en hoger',
             'Mobiel-vriendelijk ontwerp',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
@@ -202,7 +202,7 @@ export default function KapperPage() {
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Meer klanten voor uw salon?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Een website voor uw salon?</h2>
           <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek uw kansen online.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>

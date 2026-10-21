@@ -4,23 +4,23 @@ import { Faq } from '@/components/home/Faq'
 import { buttonVariants } from '@/components/ui/button'
 
 export const metadata: Metadata = {
-  title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
+  title: 'Hoeveel kost Google Ads? Prijzen voor MKB | Elly Apps',
   description:
-    'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+    'Hoeveel kost Google Ads voor een MKB-bedrijf? Lees de prijzen: kosten per klik, maandbudget en beheerkosten, en hoe u geen budget verspilt.',
   alternates: { canonical: 'https://elly-apps.nl/blog/wat-kost-google-ads' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/wat-kost-google-ads',
-    title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
-    description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+    title: 'Hoeveel kost Google Ads? Prijzen voor MKB | Elly Apps',
+    description: 'Hoeveel kost Google Ads voor een MKB-bedrijf? Lees de prijzen: kosten per klik, maandbudget en beheerkosten, en hoe u geen budget verspilt.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Wat kost Google Ads in 2026? Eerlijk overzicht voor MKB | Elly Apps',
-    description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten, wat bepaalt uw prijs per klik en hoe u slim adverteert zonder budget te verspillen.',
+    title: 'Hoeveel kost Google Ads? Prijzen voor MKB | Elly Apps',
+    description: 'Hoeveel kost Google Ads voor een MKB-bedrijf? Lees de prijzen: kosten per klik, maandbudget en beheerkosten, en hoe u geen budget verspilt.',
     images: ['/og-image.png'],
   },
 }
@@ -79,9 +79,9 @@ export default function WatKostGoogleAdsPage() {
         <div className="max-w-3xl mx-auto artikel">
           <p>
             Google Ads is een van de krachtigste manieren om snel nieuwe klanten te bereiken.
-            Maar wat kost het eigenlijk? Veel ondernemers schrikken van onduidelijke prijzen,
+            Maar hoeveel kost Google Ads eigenlijk? Veel ondernemers schrikken van onduidelijke prijzen,
             onverwacht hoge kosten per klik of teleurstellende resultaten na een te klein budget.
-            In dit artikel geven wij een eerlijk en volledig overzicht van de kosten van Google Ads
+            In dit artikel geven wij een eerlijk en volledig overzicht van de prijzen en kosten van Google Ads
             voor het Nederlandse MKB in 2026.
           </p>
 
@@ -100,7 +100,7 @@ export default function WatKostGoogleAdsPage() {
             betaalt u dus minder dan een slecht ingerichte campagne voor hetzelfde zoekwoord.
           </p>
 
-          <h2>Wat is de gemiddelde prijs per klik in Nederland?</h2>
+          <h2>Prijzen van Google Ads: wat is de gemiddelde prijs per klik in Nederland?</h2>
           <p>
             De gemiddelde kosten per klik variëren sterk per branche. Voor algemene zoekwoorden
             in het MKB-segment liggen de kosten doorgaans tussen de €0,50 en €3,00 per klik.
@@ -120,7 +120,7 @@ export default function WatKostGoogleAdsPage() {
             zoekwoorden en de kwaliteit van uw campagne.
           </p>
 
-          <h2>Wat is een realistisch maandbudget?</h2>
+          <h2>Hoeveel kost Google Ads per maand? Een realistisch budget</h2>
           <p>
             Voor de meeste MKB-bedrijven is een startbudget van €300 tot €600 per maand een
             realistisch beginpunt om zinvolle data te verzamelen en eerste resultaten te boeken.

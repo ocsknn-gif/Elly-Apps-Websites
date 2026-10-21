@@ -6,13 +6,13 @@ import { buttonVariants } from '@/components/ui/button'
 export const metadata: Metadata = {
   title: 'Website laten maken voor restaurants | Elly Apps',
   description:
-    'Professionele website voor uw restaurant. Online menu, Google Maps en reviews. Volledig beheerd vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+    'Website laten maken voor uw restaurant? Online menu, reviews en basis SEO, volledig beheerd vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/restaurant' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/restaurant',
     title: 'Website laten maken voor restaurants | Elly Apps',
-    description: 'Professionele website voor uw restaurant. Online menu, Google Maps en reviews. Volledig beheerd vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw restaurant? Online menu, reviews en basis SEO, volledig beheerd vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor restaurants | Elly Apps',
-    description: 'Professionele website voor uw restaurant. Online menu, Google Maps en reviews. Volledig beheerd vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw restaurant? Online menu, reviews en basis SEO, volledig beheerd vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
 }
@@ -30,7 +30,7 @@ const schema = {
   '@type': 'Restaurant',
   name: 'Elly Apps — Websites voor restaurants',
   url: 'https://elly-apps.nl/branche/restaurant',
-  description: 'Professionele websites voor restaurants, met online menu en lokale SEO. Een reserveringssysteem is als aparte uitbreiding mogelijk.',
+  description: 'Professionele websites voor restaurants, met online menu en basis SEO. Een reserveringssysteem is als aparte uitbreiding mogelijk.',
 }
 
 export default function RestaurantPage() {
@@ -43,19 +43,20 @@ export default function RestaurantPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
           <h1 className="h1 text-ink">Website laten maken voor restaurants</h1>
-          <p className="body-lg text-muted mt-4">Toon uw menu online en word gevonden door hongerige klanten in uw buurt.</p>
+          <p className="body-lg text-muted mt-4">Toon uw menu online, zodat gasten uw restaurant in de buurt kunnen vinden.</p>
         </div>
       </section>
 
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
+          <h2 className="h2 text-ink">Website laten maken voor uw restaurant</h2>
           <p>
             Mensen die een restaurant zoeken, starten hun zoektocht online. Ze kijken naar het
             menu, de sfeer, de prijzen en de reviews — voordat ze een stap over de drempel zetten.
             Als uw restaurant geen goede website heeft, of als uw menu moeilijk te vinden is,
-            kiest de potentiële gast een concurrent. Een professionele restaurantwebsite is
-            daarmee direct van invloed op uw omzet.
+            kan de potentiële gast naar een concurrent gaan. Een professionele restaurantwebsite is
+            daarmee onderdeel van de eerste indruk van uw zaak.
           </p>
           <p>
             Elly Apps bouwt restaurantwebsites die gasten overtuigen. Wij presenteren uw menu
@@ -64,16 +65,15 @@ export default function RestaurantPage() {
             gasten ook buiten openingstijden een tafel kunnen boeken.
           </p>
           <p>
-            Google Maps is voor restaurants een van de belangrijkste vindkanalen. Wij zorgen dat
-            uw restaurant goed zichtbaar is in Google Maps en Google Search, met de juiste
+            Google Maps is voor restaurants een van de belangrijkste vindkanalen. In het Groei
+            pakket en hoger richten wij uw Google Business Profile in voor Google Maps en Google Search, met de juiste
             categorisering, openingstijden, foto's en beschrijving. Klanten kunnen met één klik
             de routebeschrijving openen of bellen.
           </p>
           <p>
-            Reviews zijn goud waard voor restaurants. Wij integreren uw Google-reviews en
+            Reviews zijn belangrijk voor restaurants. Wij integreren uw Google-reviews en
             Tripadvisor-beoordelingen in uw website, zodat nieuwe gasten direct het vertrouwen
-            zien dat anderen in uw restaurant hebben. Positieve reviews verhogen ook uw positie
-            in Google. Wij helpen u een strategie op te zetten om meer reviews te verzamelen.
+            zien dat anderen in uw restaurant hebben. Wij helpen u een strategie op te zetten om meer reviews te verzamelen.
           </p>
           <p>
             Of u nu een koffiezaak, een eetcafé, een sushi-restaurant of een fine dining
@@ -107,9 +107,9 @@ export default function RestaurantPage() {
           {[
             'Online menu met foto\'s en prijzen',
             'Reserveringssysteem (optionele uitbreiding)',
-            'Google Maps optimalisatie',
+            'Google Maps optimalisatie in het Groei pakket en hoger',
             'Reviews integratie',
-            'Lokale SEO voor uw buurt',
+            'Basis SEO; lokale SEO in het Groei pakket en hoger',
             'Mobiel-vriendelijk en snel',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
@@ -123,7 +123,7 @@ export default function RestaurantPage() {
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Meer gasten voor uw zaak?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Een website voor uw restaurant?</h2>
           <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek wat er beter kan.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
