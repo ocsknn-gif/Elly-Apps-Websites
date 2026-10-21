@@ -203,7 +203,7 @@ const pakketten = {
 const faqItems = [
   {
     q: 'Zijn er verborgen kosten?',
-    a: 'Nee. De maandprijs is allesomvattend: hosting, SSL, updates en support zijn inbegrepen. De enige extra kosten zijn de eenmalige setup en eventuele betaalde advertenties (Google Ads).',
+    a: 'Nee. De maandprijs is allesomvattend: hosting, SSL en maandelijks beheer zijn inbegrepen. De enige extra kosten zijn de eenmalige setup en eventuele betaalde advertenties (Google Ads).',
   },
   {
     q: 'Kan ik tussentijds wisselen van pakket?',
