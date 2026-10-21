@@ -42,7 +42,7 @@ export default function WerkgebiedNoordBrabantPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Noord-Brabant is een ondernemende provincie. Of u nu in Eindhoven, Tilburg of Breda zit — online zichtbaarheid bepaalt wie de klant kiest. Elly Apps helpt ondernemers in Noord-Brabant met een professionele website die klanten aantrekt en converteert.</p>
           <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Noord-Brabant.</p>
-          <p>Lokale SEO is onderdeel van elk pakket. Wij optimaliseren uw website voor zoektermen relevant voor uw stad of regio binnen Noord-Brabant en zorgen voor een volledig Google Business Profile.</p>
+          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Noord-Brabant en uw Google Business Profile.</p>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>

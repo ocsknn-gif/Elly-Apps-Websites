@@ -42,7 +42,7 @@ export default function WerkgebiedOverijsselPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Overijssel kent een sterke ondernemerscultuur. In steden als Zwolle en Enschede is de concurrentie online groot — een professionele website is onmisbaar. Elly Apps helpt ondernemers in Overijssel met een website die klanten aantrekt en converteert.</p>
           <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Overijssel.</p>
-          <p>Lokale SEO is onderdeel van elk pakket. Wij optimaliseren uw website voor zoektermen relevant voor uw stad of regio binnen Overijssel en zorgen voor een volledig Google Business Profile.</p>
+          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Overijssel en uw Google Business Profile.</p>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>

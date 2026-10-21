@@ -42,7 +42,7 @@ export default function WerkgebiedGelderlandPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Gelderland is de grootste provincie van Nederland. Lokale vindbaarheid in Google is voor bedrijven in Arnhem, Nijmegen en omgeving doorslaggevend. Elly Apps helpt ondernemers in Gelderland met een professionele website die klanten aantrekt en converteert.</p>
           <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Gelderland.</p>
-          <p>Lokale SEO is onderdeel van elk pakket. Wij optimaliseren uw website voor zoektermen relevant voor uw stad of regio binnen Gelderland en zorgen voor een volledig Google Business Profile.</p>
+          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Gelderland en uw Google Business Profile.</p>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>
