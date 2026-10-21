@@ -74,7 +74,7 @@ export default function DienstenSeaPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Met Google Ads staat uw bedrijf direct bovenaan in de zoekresultaten — zelfs als uw website nog niet hoog rankt organisch. U betaalt alleen wanneer iemand op uw advertentie klikt. Dat maakt Google Ads een van de meest meetbare vormen van online adverteren.</p>
           <p>Voor MKB-bedrijven is Google Ads bijzonder effectief voor lokale diensten waarbij klanten actief zoeken: loodgieters, kappers, tandartsenpraktijken, rijscholen en meer. Wanneer iemand zoekt naar &ldquo;loodgieter Amsterdam spoed&rdquo; wilt u als eerste zichtbaar zijn.</p>
-          <p>Elly Apps beheert uw Google Ads-campagnes volledig. Van het instellen van campagnes en het schrijven van advertentieteksten tot dagelijkse optimalisatie van biedstrategieën en uitgebreide maandrapportages. U hoeft zelf niets te doen — wij zorgen dat uw budget zo efficiënt mogelijk wordt ingezet.</p>
+          <p>Elly Apps beheert uw Google Ads-campagnes volledig. Van het instellen van campagnes en het schrijven van advertentieteksten tot optimalisatie van biedstrategieën en maandelijkse rapportage. U hoeft zelf niets te doen — wij zorgen dat uw budget zo efficiënt mogelijk wordt ingezet.</p>
           <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €149 per maand. Geen verborgen kosten, geen langetermijncontract.</p>
         </div>
       </section>

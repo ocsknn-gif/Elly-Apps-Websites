@@ -81,7 +81,6 @@ export default function SchilderPage() {
             'Agenda het hele jaar gevuld',
             'Hosting, SSL en onderhoud inbegrepen',
             'Binnen 5-10 werkdagen live',
-            'Persoonlijk contact en support',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />

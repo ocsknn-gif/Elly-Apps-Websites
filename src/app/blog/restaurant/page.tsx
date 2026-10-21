@@ -99,7 +99,7 @@ export default function BlogRestaurantPage() {
           <section>
             <h2>Binnen twee weken online</h2>
             <p>
-              Wij leveren uw restaurantwebsite gemiddeld binnen twee weken op. U hoeft zelf niets te regelen — wij verzorgen het ontwerp, de teksten, de hosting en de SEO. U focust op uw gasten, wij zorgen dat ze u online vinden.
+              Wij leveren uw restaurantwebsite gemiddeld binnen twee weken op. U hoeft zelf niets te regelen — wij verzorgen het ontwerp, de hosting en de SEO. U focust op uw gasten, wij zorgen dat ze u online vinden.
             </p>
           </section>
 

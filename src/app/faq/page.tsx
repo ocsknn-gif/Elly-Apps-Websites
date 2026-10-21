@@ -55,7 +55,7 @@ const faqItems = [
   },
   {
     q: 'Kan ik mijn eigen teksten en foto\'s aanleveren?',
-    a: 'Ja, u kunt eigen content aanleveren. Wij verzorgen ook professionele teksten en stockfoto\'s indien gewenst.',
+    a: 'Ja, u kunt eigen content aanleveren. Professionele teksten zijn optioneel beschikbaar bij het Groei pakket (+€149) en inbegrepen bij het Pro pakket.',
   },
   {
     q: 'Wat gebeurt er als mijn website stuk gaat?',

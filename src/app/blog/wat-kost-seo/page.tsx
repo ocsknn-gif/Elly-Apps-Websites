@@ -71,8 +71,8 @@ export default function WatKostSEOPage() {
           </p>
           <p>
             Bij Elly Apps hebben wij SEO geïntegreerd in onze pakketten. In het Groei pakket
-            (€199/mnd) is lokale SEO inclusief: zoekwoordoptimalisatie, Google Business en een
-            maandelijks rapport. Zo betaalt u een vaste prijs zonder verrassing.
+            (€199/mnd) is lokale SEO inclusief: zoekwoordoptimalisatie, Google Business en
+            performance rapportage. Zo betaalt u een vaste prijs zonder verrassing.
           </p>
 
           <h2>Wat valt er onder SEO?</h2>

@@ -130,13 +130,13 @@ export default function WatKostEenWebsitePage() {
             Bij Elly Apps betaalt u een eerlijke vaste prijs voor een complete online aanwezigheid.
             In ons Starter pakket (€299 setup + €49/mnd) krijgt u een professionele website,
             hosting, SSL, basis SEO en maandelijks beheer. In ons Groei pakket (€499 setup + €199/mnd)
-            voegen we lokale SEO, Google Business optimalisatie en een maandelijks rapport toe.
+            voegen we lokale SEO, Google Business optimalisatie en performance rapportage toe.
             Voor grotere projecten is er het Pro pakket met maatwerk mogelijkheden.
           </p>
           <p>
             Wij werken uitsluitend voor het MKB en begrijpen dat u uw tijd en budget efficiënt wilt
             inzetten. Daarom ontzorgen wij u volledig: van het eerste gesprek tot de lancering en
-            daarna. U heeft één vast aanspreekpunt en weet altijd waar u aan toe bent.
+            daarna. U weet altijd waar u aan toe bent.
           </p>
 
           <h2>Conclusie</h2>
