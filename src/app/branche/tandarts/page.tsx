@@ -94,7 +94,7 @@ export default function TandartsPage() {
             'Teampagina met foto\'s',
             'Lokale SEO voor uw regio',
             'Google Business optimalisatie',
-            'AVG-conforme contactformulieren',
+            'Contactformulier met privacyverklaring',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
               <CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />
