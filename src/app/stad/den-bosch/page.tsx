@@ -62,7 +62,7 @@ export default function DenBoschPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Ben je ondernemer in Den Bosch en wil je online meer klanten aantrekken? Of je nu een winkel hebt in de Hinthamerstraat, een kantoor runt nabij de Sint-Janskathedraal of een dienst aanbiedt in de regio — Elly Apps bouwt een website die past bij jouw bedrijf en jouw doelgroep.</p>
+          <p>Ben je ondernemer in Den Bosch en wil je online beter gevonden worden? Of je nu een winkel hebt in de Hinthamerstraat, een kantoor runt nabij de Sint-Janskathedraal of een dienst aanbiedt in de regio — Elly Apps bouwt een website die past bij jouw bedrijf en jouw doelgroep.</p>
           <p>Den Bosch is de bruisende hoofdstad van Noord-Brabant, met een rijke historie en een groeiende ondernemersscene. Van de gezellige binnenstad tot de moderne bedrijventerreinen — de concurrentie is groot. Elly Apps combineert strak design, snelle laadtijden en lokale SEO zodat jouw website gevonden wordt door klanten in Den Bosch en omgeving.</p>
           <p>Wij kennen de Bossche markt. We bouwen websites die aansluiten bij de lokale doelgroep — van horeca en retail in de binnenstad tot bouw, zorg en dienstverlening in de regio. Onze klanten kiezen voor ons omdat we snel werken, eerlijk communiceren en resultaat leveren. Het hele traject duurt gemiddeld twee weken.</p>
         </div>

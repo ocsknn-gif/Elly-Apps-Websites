@@ -76,7 +76,7 @@ export default function AmsterdamPage() {
             Denk aan "loodgieter Amsterdam-West", "kapper De Pijp" of "fysiotherapeut
             Amsterdam-Noord". Wij doen uitgebreid zoekwoordonderzoek voor uw specifieke situatie
             en verwerken die termen strategisch in uw website. Combineer dit met een volledig
-            geoptimaliseerd Google Business Profile en u staat bovenaan in de lokale resultaten.
+            geoptimaliseerd Google Business Profile en u bent beter vindbaar in de lokale resultaten.
           </p>
           <p>
             Amsterdam heeft ook een groot toeristen- en expat-publiek. Als uw bedrijf ook
