@@ -198,6 +198,8 @@ export default function WatKostGoogleAdsPage() {
               { label: 'Google Ads: zelf doen of uitbesteden?', href: '/blog/google-ads-zelf-of-uitbesteden' },
               { label: 'SEO vs Google Ads: wat werkt beter?', href: '/blog/seo-vs-google-ads' },
               { label: 'Onze Google Ads-dienst', href: '/diensten/sea' },
+              { label: 'Wat kost SEO in Nederland?', href: '/blog/wat-kost-seo' },
+              { label: 'Wat kost een website laten maken in 2026?', href: '/blog/wat-kost-een-website' },
               { label: 'Bekijk onze prijzen', href: '/prijzen' },
             ].map((r) => (
               <Link key={r.href} href={r.href} className="flex items-center gap-2 text-sm font-medium text-ink border border-line rounded-xl px-4 py-3 hover:text-brand-strong hover:border-brand-strong transition-colors">

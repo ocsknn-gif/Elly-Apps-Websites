@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Hoeveel budget heb je nodig voor social media advertenties? | Elly Apps',
@@ -104,6 +105,18 @@ export default function BlogSocialMediaBudgetPage() {
           </Link>
         </div>
       </section>
+
+      <RelatedLinks
+        id="gerelateerd-titel"
+        title="Gerelateerde artikelen"
+        narrow
+        links={[
+          { label: "Social media: zelf doen of uitbesteden?", href: "/blog/social-media-zelf-of-uitbesteden" },
+          { label: "Social Media met AI: zo doet u het slim", href: "/blog/social-media-ai" },
+          { label: "Social media advertenties", href: "/diensten/social-media" },
+          { label: "Prijzen van websites, SEO, Google Ads en social media", href: "/prijzen" },
+        ]}
+      />
     </>
   )
 }
