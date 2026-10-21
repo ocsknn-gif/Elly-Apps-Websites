@@ -6,13 +6,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-  description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+  description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
   alternates: { canonical: 'https://elly-apps.nl/branche/zorg' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/zorg',
     title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,17 +20,17 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. AVG-compliant en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
     images: ['/og-image.png'],
   },
 }
 
 const faq = [
-  { q: 'Voldoet mijn zorgwebsite aan de AVG?', a: 'Ja. Wij bouwen alle zorgwebsites AVG-compliant. Dit betekent veilige formulieren, een correcte privacyverklaring en cookiebeheer dat voldoet aan de Nederlandse wetgeving.' },
+  { q: 'Is er een privacyverklaring en cookiebeheer op mijn zorgwebsite?', a: 'Wij nemen een privacyverklaring en cookiebeheer op in uw website.' },
   { q: 'Kan ik een online afspraakmodule integreren?', a: 'Dat kan, als aparte uitbreiding. Een online afspraakmodule zit niet in de websitepakketten, maar wij kunnen het voor u integreren. Neem contact op voor een vrijblijvende offerte.' },
   { q: 'Hoe toon ik mijn specialisaties op de website?', a: 'Wij maken voor elke specialisatie een aparte pagina of sectie, zodat patiënten snel vinden wat ze zoeken en Google uw expertise herkent.' },
-  { q: 'Kan ik een patiëntenportaal koppelen?', a: 'Ja. We kunnen een koppeling maken met bestaande patiëntenportalen of EPD-systemen, afhankelijk van uw huidige software.' },
-  { q: 'Is mijn website toegankelijk voor mensen met een beperking?', a: 'Ja. Wij bouwen websites die voldoen aan de WCAG-richtlijnen voor digitale toegankelijkheid, zodat ook patiënten met een visuele of motorische beperking uw website goed kunnen gebruiken.' },
+  { q: 'Kan ik een patiëntenportaal koppelen?', a: 'Koppelingen met bestaande patiëntenportalen of EPD-systemen zijn op aanvraag mogelijk, in overleg en afhankelijk van uw huidige software.' },
+  { q: 'Is mijn website toegankelijk voor mensen met een beperking?', a: 'Wij letten op toegankelijkheid, zodat ook patiënten met een visuele of motorische beperking uw website goed kunnen gebruiken.' },
   { q: 'Wat als ik al een zorgwebsite heb?', a: 'Dan analyseren wij uw huidige website gratis op SEO, snelheid en conversie. Daarna kunt u kiezen voor een volledige redesign of gerichte verbeteringen.' },
   { q: 'Wat kost een zorgwebsite?', a: 'Een professionele zorgwebsite via Elly Apps begint vanaf €299 eenmalig + €49 per maand, inclusief hosting, onderhoud en basis SEO-optimalisatie.' },
 ]
@@ -65,7 +65,7 @@ export default function ZorgPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Elke dag zoeken mensen in uw regio online naar een zorgverlener. Ze lezen reviews, bekijken uw behandelaanbod en willen direct een afspraak kunnen maken — zonder te bellen. Als uw praktijk daar niet professioneel zichtbaar is, kiezen ze voor een concurrent die dat wél is.</p>
           <p>Een zorgwebsite is meer dan een digitale visitekaart. Het is uw eerste indruk, uw online spreekuur en uw belangrijkste instrument om nieuwe patiënten te bereiken. Bij Elly Apps bouwen we zorgwebsites die niet alleen vertrouwen uitstralen, maar ook technisch correct zijn opgebouwd zodat Google u vindt.</p>
-          <p>Een goede zorgwebsite bevat: een duidelijk overzicht van uw behandelingen en specialisaties, informatie over uw team en werkwijze, uw praktijklocatie en bereikbaarheid, klantbeoordelingen en een AVG-compliant contactformulier.</p>
+          <p>Een goede zorgwebsite bevat: een duidelijk overzicht van uw behandelingen en specialisaties, informatie over uw team en werkwijze, uw praktijklocatie en bereikbaarheid, klantbeoordelingen en een contactformulier met privacyverklaring.</p>
           <p>De meeste patiënten zoeken lokaal — &quot;huisarts Amsterdam&quot; of &quot;fysiotherapeut Den Haag&quot;. Met lokale SEO zorgen wij dat uw praktijk bovenaan verschijnt bij mensen in uw regio. Google Business optimalisatie is standaard inbegrepen in ons Groei pakket.</p>
           <p>Wilt u dat patiënten zelf een afspraak kunnen inplannen, ook buiten kantooruren? Dan kunt u een online afspraakmodule als aparte uitbreiding laten toevoegen. De prijs is afhankelijk van uw wensen; vraag een vrijblijvende offerte aan.</p>
           <p>Een professionele zorgwebsite via Elly Apps begint vanaf €299 eenmalig + €49 per maand, inclusief hosting, onderhoud en SEO-optimalisatie. Er zijn geen verborgen kosten.</p>
@@ -76,13 +76,13 @@ export default function ZorgPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            'AVG-compliant en veilig',
+            'Privacyverklaring en cookiebeheer',
             'Online afspraakmodule (optionele uitbreiding)',
             'Lokale SEO voor uw regio',
             'Google Business Profile optimalisatie',
-            'WCAG toegankelijkheidsrichtlijnen',
+            'Wij letten op toegankelijkheid',
             'Hosting, SSL en onderhoud inbegrepen',
-            'Patiëntenportaal koppeling mogelijk',
+            'Koppelingen op aanvraag, in overleg',
             'Professioneel design op maat',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
