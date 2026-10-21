@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Wat kost een website laten maken in 2026? | Elly Apps',
@@ -31,8 +32,8 @@ const articleSchema = {
   headline: 'Wat kost een website laten maken in 2026?',
   description:
     'Wat kost een professionele website in 2026? Wat de prijs bepaalt, veelgemaakte fouten en wat een vaste maandprijs vanaf €49 inhoudt voor het MKB.',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-08',
   url: 'https://elly-apps.nl/blog/wat-kost-een-website',
 }

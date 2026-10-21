@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { Faq } from '@/components/home/Faq'
 import { buttonVariants } from '@/components/ui/button'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Hoeveel kost Google Ads? Prijzen voor MKB | Elly Apps',
@@ -30,8 +31,8 @@ const articleSchema = {
   '@type': 'Article',
   headline: 'Wat kost Google Ads in 2026? Een eerlijk overzicht voor MKB',
   description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten per klik en hoe u slim adverteert.',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-09',
   url: 'https://elly-apps.nl/blog/wat-kost-google-ads',
 }

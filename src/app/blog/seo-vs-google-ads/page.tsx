@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'SEO vs Google Ads: wat werkt beter? | Elly Apps',
@@ -29,8 +30,8 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'SEO vs Google Ads: wat werkt beter voor jouw bedrijf?',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-08',
   url: 'https://elly-apps.nl/blog/seo-vs-google-ads',
 }

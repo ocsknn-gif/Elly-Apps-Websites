@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
+import { organizationRef } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Google Ads: zelf doen of uitbesteden? | Elly Apps',
@@ -27,8 +28,8 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Google Ads: zelf doen of uitbesteden?',
-  author: { '@type': 'Organization', name: 'Elly Apps' },
-  publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
+  author: organizationRef,
+  publisher: organizationRef,
   datePublished: '2026-06-11',
   url: 'https://elly-apps.nl/blog/google-ads-zelf-of-uitbesteden',
 }
