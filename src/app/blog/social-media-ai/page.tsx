@@ -5,13 +5,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Social Media met AI: zo doet u het slim | Elly Apps',
-  description: 'AI maakt social media beheer sneller en goedkoper. Ontdek hoe MKB-bedrijven AI-tools inzetten voor content, targeting en rapportages — en waar de grenzen liggen.',
+  description: 'Hoe MKB-bedrijven AI-tools inzetten voor social media: content, targeting en rapportages, en waar de grenzen liggen.',
   alternates: { canonical: 'https://elly-apps.nl/blog/social-media-ai' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/social-media-ai',
     title: 'Social Media met AI: zo doet u het slim | Elly Apps',
-    description: 'AI maakt social media beheer sneller en goedkoper. Ontdek hoe MKB-bedrijven AI-tools inzetten voor content, targeting en rapportages — en waar de grenzen liggen.',
+    description: 'Hoe MKB-bedrijven AI-tools inzetten voor social media: content, targeting en rapportages, en waar de grenzen liggen.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Social Media met AI: zo doet u het slim | Elly Apps',
-    description: 'AI maakt social media beheer sneller en goedkoper. Ontdek hoe MKB-bedrijven AI-tools inzetten voor content, targeting en rapportages — en waar de grenzen liggen.',
+    description: 'Hoe MKB-bedrijven AI-tools inzetten voor social media: content, targeting en rapportages, en waar de grenzen liggen.',
     images: ['/og-image.png'],
   },
 }

@@ -4,23 +4,23 @@ import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Goedkope website laten maken: wat is slim en wat niet? | Elly Apps',
+  title: 'Goedkope website laten maken: slim of niet? | Elly Apps',
   description:
-    'Op zoek naar een goedkope website? Wij leggen uit wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel kunt zijn.',
+    'Op zoek naar een goedkope website? Wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel blijft.',
   alternates: { canonical: 'https://elly-apps.nl/blog/goedkope-website' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/goedkope-website',
-    title: 'Goedkope website laten maken: wat is slim en wat niet? | Elly Apps',
-    description: 'Op zoek naar een goedkope website? Wij leggen uit wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel kunt zijn.',
+    title: 'Goedkope website laten maken: slim of niet? | Elly Apps',
+    description: 'Op zoek naar een goedkope website? Wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel blijft.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Goedkope website laten maken: wat is slim en wat niet? | Elly Apps',
-    description: 'Op zoek naar een goedkope website? Wij leggen uit wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel kunt zijn.',
+    title: 'Goedkope website laten maken: slim of niet? | Elly Apps',
+    description: 'Op zoek naar een goedkope website? Wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel blijft.',
     images: ['/og-image.png'],
   },
 }
@@ -29,7 +29,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: 'Goedkope website laten maken: wat is slim en wat niet?',
-  description: 'Op zoek naar een goedkope website? Ontdek wat u kunt verwachten en waar de valkuilen zitten.',
+  description: 'Op zoek naar een goedkope website? Wat u kunt verwachten bij een laag budget, waar de valkuilen zitten en hoe u betaalbaar toch professioneel blijft.',
   author: { '@type': 'Organization', name: 'Elly Apps' },
   publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
   datePublished: '2026-06-09',

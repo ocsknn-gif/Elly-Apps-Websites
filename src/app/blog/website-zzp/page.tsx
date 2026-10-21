@@ -4,14 +4,14 @@ import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: "Website laten maken als zzp'er: wat u moet weten in 2026 | Elly Apps",
+  title: "Website laten maken als zzp'er in 2026 | Elly Apps",
   description:
     "Als zzp'er een website laten maken? Ontdek wat een goede zzp-website kost, waar u op moet letten en hoe u snel online staat zonder gedoe.",
   alternates: { canonical: 'https://elly-apps.nl/blog/website-zzp' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/website-zzp',
-    title: 'Website laten maken als zzp\'er: wat u moet weten in 2026 | Elly Apps',
+    title: 'Website laten maken als zzp\'er in 2026 | Elly Apps',
     description: 'Als zzp\'er een website laten maken? Ontdek wat een goede zzp-website kost, waar u op moet letten en hoe u snel online staat zonder gedoe.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken als zzp\'er: wat u moet weten in 2026 | Elly Apps',
+    title: 'Website laten maken als zzp\'er in 2026 | Elly Apps',
     description: 'Als zzp\'er een website laten maken? Ontdek wat een goede zzp-website kost, waar u op moet letten en hoe u snel online staat zonder gedoe.',
     images: ['/og-image.png'],
   },
