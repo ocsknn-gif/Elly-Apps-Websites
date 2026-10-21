@@ -35,6 +35,8 @@ const diensten = [
   {
     icon: <GlobeIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Websites',
+    href: '/diensten/websites',
+    linkTekst: 'Website laten maken en beheren',
     body: `Een professionele website is het fundament van uw online aanwezigheid. Bij Elly Apps bouwen
     wij websites die niet alleen mooi ogen, maar ook technisch uitstekend presteren. Elke website
     is volledig responsive — optimaal weergegeven op desktop, tablet én mobiel. Wij zorgen voor
@@ -47,6 +49,8 @@ const diensten = [
   {
     icon: <SmartphoneIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Apps',
+    href: '/diensten/apps',
+    linkTekst: 'App laten maken',
     body: `Heeft uw bedrijf behoefte aan een maatwerk webapplicatie of mobiele app? Elly Apps
     ontwikkelt slimme digitale oplossingen die aansluiten op uw specifieke bedrijfsprocessen.
     Denk aan een klantportaal, boekingssysteem, offertegenerator of interne tool voor uw team.
@@ -60,6 +64,8 @@ const diensten = [
   {
     icon: <SearchIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'SEO',
+    href: '/diensten/seo',
+    linkTekst: 'SEO voor het MKB',
     body: `Gevonden worden op Google is voor elk bedrijf essentieel. Elly Apps biedt uitgebreide
     zoekmachineoptimalisatie (SEO) die uw website structureel hoger in de zoekresultaten brengt.
     Wij starten met een grondige analyse van uw huidige situatie: welke zoekwoorden zijn relevant,
@@ -73,6 +79,8 @@ const diensten = [
   {
     icon: <TrendingUpIcon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Google Ads',
+    href: '/diensten/sea',
+    linkTekst: 'Google Ads laten beheren',
     body: `Wilt u snel meer bezoekers en leads? Met Google Ads (SEA) betaalt u alleen voor kliks van
     potentiële klanten die actief zoeken naar uw product of dienst. Elly Apps beheert uw
     advertentiecampagnes van A tot Z: van zoekwoordonderzoek en het schrijven van pakkende
@@ -86,6 +94,8 @@ const diensten = [
   {
     icon: <Share2Icon className="size-6 text-brand" aria-hidden="true" />,
     title: 'Social Media',
+    href: '/diensten/social-media',
+    linkTekst: 'Social media advertenties',
     body: `Een actieve aanwezigheid op sociale media versterkt uw merk en bouwt vertrouwen bij
     potentiële klanten. Elly Apps verzorgt het beheer van uw social media kanalen — van strategie
     en contentcreatie tot planning en publicatie. Wij schrijven prikkelende teksten, ontwerpen
@@ -124,9 +134,14 @@ export default function DienstenPage() {
               <h2 className="h2 text-ink">{d.title}</h2>
             </div>
             <p className="body text-muted mb-6">{d.body}</p>
-            <Link href="/gratis-websitescan" className={buttonVariants()}>
-              Vraag een gratis scan aan
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/gratis-websitescan" className={buttonVariants()}>
+                Vraag een gratis scan aan
+              </Link>
+              <Link href={d.href} className={buttonVariants({ variant: 'secondary' })}>
+                {d.linkTekst}
+              </Link>
+            </div>
           </div>
         </section>
       ))}
