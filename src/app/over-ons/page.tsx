@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { HeartIcon, UsersIcon, TargetIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
+import { ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Over ons | Elly Apps',
@@ -28,18 +29,14 @@ export const metadata: Metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
-  name: 'Elly Apps',
-  url: 'https://elly-apps.nl',
-  email: 'info@elly-apps.nl',
+  '@id': ORG_ID,
+  name: ORG_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/elly-logo.png`,
   telephone: '+31636278515',
   founder: {
     '@type': 'Person',
     name: 'Omer Coskun',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Aalsmeer',
-    addressCountry: 'NL',
   },
   description:
     'Elly Apps bouwt en beheert professionele websites voor het MKB. Betaalbaar, snel en volledig ontzorgd.',
