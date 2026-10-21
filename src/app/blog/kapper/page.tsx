@@ -90,7 +90,7 @@ export default function BlogKapperPage() {
           <section>
             <h2>Wat kost een kapperwebsite bij Elly Apps?</h2>
             <p>
-              Traditionele webbureaus rekenen al snel €2.000 tot €5.000 voor een eenvoudige website. Bij Elly Apps kunt u een{' '}
+              Bij Elly Apps kunt u een{' '}
               <Link href="/branche/kapper" className="text-brand-strong underline hover:no-underline">professionele website laten maken als kapper</Link>
               {' '}vanaf €49 per maand inclusief hosting, onderhoud en basis SEO. Wilt u ook lokale vindbaarheid in meerdere steden? Dan is het Groei pakket voor €199 per maand de slimste keuze.
             </p>

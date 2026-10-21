@@ -95,10 +95,10 @@ export default function WebsiteZZPPage() {
 
           <h2>Wat kost een website voor een zzp&apos;er?</h2>
           <p>
-            De kosten van een zzp-website variëren sterk. Zelf bouwen via Wix of Squarespace
-            kost €10 tot €30 per maand, maar vergt tijd en levert doorgaans minder goede
-            SEO-resultaten op. Een freelance webdesigner rekent voor een eenvoudige website
-            doorgaans €500 tot €2.000 eenmalig, zonder doorlopend onderhoud inbegrepen.
+            De kosten van een zzp-website variëren sterk, afhankelijk van of u zelf bouwt of
+            het uitbesteedt. Zelf bouwen vergt tijd en levert doorgaans minder goede
+            SEO-resultaten op. Bij uitbesteden is het verstandig te vragen of onderhoud
+            en hosting zijn inbegrepen.
           </p>
           <p>
             Bij Elly Apps bieden wij een betaalbaar abonnementsmodel speciaal voor zzp&apos;ers en
