@@ -78,8 +78,8 @@ export default function GoedkopeWebsitePage() {
           <h2>Optie 1: Zelf bouwen via een websitebouwer</h2>
           <p>
             Platforms zoals Wix, Squarespace of Jimdo bieden kant-en-klare templates waarmee u
-            zelf een website in elkaar kunt zetten. De kosten liggen tussen de €10 en €30 per
-            maand. Dit klinkt aantrekkelijk, maar er zijn serieuze beperkingen.
+            zelf een website in elkaar kunt zetten. Dit is laagdrempelig en voordelig om te starten,
+            maar er zijn serieuze beperkingen.
           </p>
           <ul>
             <li><strong>Beperkte SEO:</strong> Deze platforms genereren code die minder goed leesbaar is voor Google. U bouwt structureel een achterstand op ten opzichte van concurrenten met een professionele website.</li>
