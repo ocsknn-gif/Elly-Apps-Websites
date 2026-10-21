@@ -57,8 +57,8 @@ export default function AmsterdamPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
-            Amsterdam is een van de meest competitieve markten van Nederland. De stad telt meer
-            dan 900.000 inwoners en herbergt tienduizenden bedrijven — van kleine ambachtslieden
+            Amsterdam is een van de meest competitieve markten van Nederland. De stad herbergt
+            veel bedrijven — van kleine ambachtslieden
             in de Jordaan tot techbedrijven in Sloterdijk. In zo'n dynamische markt is een
             professionele online aanwezigheid geen luxe, maar een noodzaak. Klanten zoeken online
             voordat ze een bedrijf bellen, en wie niet gevonden wordt, bestaat niet.

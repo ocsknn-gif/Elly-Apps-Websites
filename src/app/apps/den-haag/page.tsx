@@ -74,7 +74,7 @@ export default function AppDenHaagPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
             Den Haag is niet alleen de politieke hoofdstad van Nederland — het is ook een van de
-            grootste economische centra van het land. De stad herbergt duizenden bedrijven in
+            grootste economische centra van het land. De stad herbergt veel bedrijven in
             sectoren als zakelijke dienstverlening, juridische sector, IT, zorg en overheid.
             Steeds meer van deze bedrijven ontdekken dat een maatwerk app hun processen drastisch
             kan verbeteren: minder handmatig werk, betere klantcommunicatie en meer grip op data.

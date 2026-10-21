@@ -90,7 +90,7 @@ export default function BlogLoodgieterPage() {
           <section>
             <h2>Wat kost een website voor een loodgieter bij Elly Apps?</h2>
             <p>
-              Traditionele webbureaus rekenen €2.000 tot €8.000 voor een loodgieterwebsite. Bij Elly Apps kunt u een{' '}
+              Bij Elly Apps kunt u een{' '}
               <Link href="/branche/loodgieter" className="text-brand-strong underline hover:no-underline">professionele website laten maken als loodgieter</Link>
               {' '}vanaf €49 per maand inclusief hosting, onderhoud en basis SEO. Wilt u ook lokale vindbaarheid in meerdere steden? Dan is het Groei pakket voor €199 per maand de slimste keuze — inclusief stadspagina&apos;s en Google Business optimalisatie.
             </p>

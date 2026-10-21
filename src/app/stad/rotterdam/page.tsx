@@ -79,7 +79,7 @@ export default function RotterdamPage() {
           <p>
             Lokale SEO voor Rotterdam is een van onze specialiteiten. Zoekopdrachten als
             "aannemer Rotterdam-Zuid" of "tandarts Rotterdam-Centrum" worden dagelijks
-            tienduizenden keren ingevoerd. Wij zorgen dat u bij die zoekopdrachten zichtbaar
+            ingevoerd. Wij zorgen dat u bij die zoekopdrachten zichtbaar
             bent, zowel in de organische resultaten als in Google Maps.
           </p>
           <p>

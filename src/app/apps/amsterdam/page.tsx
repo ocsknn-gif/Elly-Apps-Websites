@@ -74,7 +74,7 @@ export default function AppAmsterdamPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>
-            Amsterdam is het digitale hart van Nederland. De stad herbergt duizenden innovatieve
+            Amsterdam is het digitale hart van Nederland. De stad herbergt veel innovatieve
             bedrijven, startups en scale-ups die hun processen willen automatiseren of hun klanten
             willen bedienen via een app. Of u nu een webapplicatie nodig heeft voor uw interne
             processen, een klantportaal wilt bouwen of een volledig maatwerk platform zoekt —

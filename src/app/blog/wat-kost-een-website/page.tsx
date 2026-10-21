@@ -66,11 +66,11 @@ export default function WatKostEenWebsitePage() {
 
           <h2>De gemiddelde kosten van een website in 2026</h2>
           <p>
-            De kosten voor een professionele website lopen in Nederland uiteen van een paar honderd
-            euro tot tienduizenden euro's. Voor een eenvoudige zakelijke website betaalt u bij een
-            professioneel bureau doorgaans tussen de €1.500 en €5.000 eenmalig, plus maandelijkse
-            kosten voor hosting en onderhoud. Bij een goedkope aanbieder kan het goedkoper, maar
-            dan levert u in op kwaliteit, snelheid en SEO.
+            De kosten voor een professionele website verschillen sterk, afhankelijk van het aantal
+            pagina's, het ontwerp, de functionaliteiten en wat er na oplevering aan hosting en
+            onderhoud is geregeld. Let niet alleen op de aanschafprijs, maar ook op wat er
+            maandelijks bij komt. Een goedkope aanbieder kan voordeliger zijn, maar dan levert u
+            mogelijk in op kwaliteit, snelheid en SEO.
           </p>
           <p>
             Bij Elly Apps hanteren wij een transparant abonnementsmodel. U betaalt een eenmalige
@@ -114,8 +114,8 @@ export default function WatKostEenWebsitePage() {
 
           <h2>Goedkoop vs professioneel: wat is het verschil?</h2>
           <p>
-            Een website via een websitebouwer zoals Wix of Squarespace kost u zo'n €10 tot €30 per
-            maand. Dat klinkt aantrekkelijk, maar er zijn nadelen. Deze platforms zijn minder goed
+            Een website via een websitebouwer zoals Wix of Squarespace is snel en goedkoop te
+            starten. Dat klinkt aantrekkelijk, maar er zijn nadelen. Deze platforms zijn minder goed
             voor SEO, bieden beperkte maatwerkmogelijkheden en uw website staat volledig op hun
             platform. Als het platform stopt of zijn prijzen verhoogt, bent u afhankelijk.
           </p>

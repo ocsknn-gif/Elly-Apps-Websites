@@ -87,8 +87,8 @@ export default function AccountantskantoorPage() {
           <h2 className="h2 text-ink pt-6">Gevonden worden door MKB-ondernemers</h2>
           <p>
             De meeste accountants worden gevonden via Google. Zoektermen als "accountant
-            [stad]", "boekhouder MKB" of "belastingaangifte zzp" hebben duizenden
-            maandelijkse zoekopdrachten. Wij optimaliseren uw website specifiek voor deze
+            [stad]", "boekhouder MKB" of "belastingaangifte zzp" worden
+            regelmatig gezocht. Wij optimaliseren uw website specifiek voor deze
             zoekwoorden — zodat u bovenaan verschijnt wanneer ondernemers in uw regio op
             zoek zijn naar een accountant. Dit is duurzame marketing die maand na maand
             nieuwe klanten oplevert, zonder advertentiekosten.

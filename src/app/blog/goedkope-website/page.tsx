@@ -78,8 +78,8 @@ export default function GoedkopeWebsitePage() {
           <h2>Optie 1: Zelf bouwen via een websitebouwer</h2>
           <p>
             Platforms zoals Wix, Squarespace of Jimdo bieden kant-en-klare templates waarmee u
-            zelf een website in elkaar kunt zetten. De kosten liggen tussen de €10 en €30 per
-            maand. Dit klinkt aantrekkelijk, maar er zijn serieuze beperkingen.
+            zelf een website in elkaar kunt zetten. Dit is laagdrempelig en voordelig om te starten,
+            maar er zijn serieuze beperkingen.
           </p>
           <ul>
             <li><strong>Beperkte SEO:</strong> Deze platforms genereren code die minder goed leesbaar is voor Google. U bouwt structureel een achterstand op ten opzichte van concurrenten met een professionele website.</li>
@@ -128,7 +128,7 @@ export default function GoedkopeWebsitePage() {
           <ul>
             <li><strong>Is SEO inbegrepen?</strong> Een website zonder basis SEO wordt nauwelijks gevonden op Google. Dit is geen luxe maar een noodzaak.</li>
             <li><strong>Wie beheert de hosting?</strong> Hosting, SSL-certificaten en technische updates moeten geregeld zijn. Anders gaat uw website op een dag offline.</li>
-            <li><strong>Is de website mobielvriendelijk?</strong> Meer dan 60% van het webverkeer komt van mobiele apparaten. Een website die er slecht uitziet op een telefoon kost u klanten.</li>
+            <li><strong>Is de website mobielvriendelijk?</strong> Veel bezoekers komen via een mobiele telefoon. Een website die er slecht uitziet op een telefoon kost u klanten.</li>
             <li><strong>Wie heeft toegang tot uw domein?</strong> Zorg dat uw domeinnaam op uw eigen naam staat, niet op die van de bouwer.</li>
             <li><strong>Is er ondersteuning na oplevering?</strong> Vraag altijd wie u kunt bellen als er iets misgaat.</li>
           </ul>
