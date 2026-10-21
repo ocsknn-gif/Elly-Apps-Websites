@@ -64,7 +64,7 @@ export default function AlmerePage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Almere</p>
           <h1 className="h1 text-ink">Website laten maken in Almere</h1>
-          <p className="body-lg text-muted mt-4">Meer klanten uit Almere via Google. Elly Apps bouwt professionele websites voor Almeerse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
+          <p className="body-lg text-muted mt-4">Elly Apps bouwt professionele websites voor Almeerse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
         </div>
       </section>
 
