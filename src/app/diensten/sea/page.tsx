@@ -38,7 +38,7 @@ const features = [
 
 const faq = [
   { q: 'Wat is het verschil tussen SEO en Google Ads?', a: 'SEO levert organisch verkeer op de lange termijn. Google Ads (SEA) geeft directe zichtbaarheid bovenaan Google, maar u betaalt per klik. Samen vormen ze een krachtige groeistrategie.' },
-  { q: 'Wat kost Google Ads beheer bij Elly Apps?', a: 'Onze beheerkosten starten vanaf €149/mnd. Het advertentiebudget betaalt u direct aan Google — dat is volledig uw keuze en staat los van onze beheerskosten.' },
+  { q: 'Wat kost Google Ads beheer bij Elly Apps?', a: 'Onze beheerkosten starten vanaf €199/mnd (Google Ads Starter, met €249 eenmalige opstartkosten). Het advertentiebudget betaalt u direct aan Google — dat is volledig uw keuze en staat los van onze beheerskosten.' },
   { q: 'Hoe snel zie ik resultaat?', a: 'Google Ads campagnes zijn vrijwel direct actief. Na activering verschijnen uw advertenties al binnen enkele uren in de zoekresultaten.' },
   { q: 'Wat als ik mijn campagne wil pauzeren?', a: 'U kunt uw campagne op elk moment pauzeren of stoppen. Er zijn geen minimale looptijden en geen opzegtermijnen bij ons.' },
   { q: 'Beheren jullie ook bestaande Google Ads accounts?', a: 'Ja. Wij nemen graag een bestaand account over, voeren een audit uit en optimaliseren waar nodig. Dit gaat gepaard met een eenmalige analyse.' },
@@ -75,7 +75,7 @@ export default function DienstenSeaPage() {
           <p>Met Google Ads staat uw bedrijf direct bovenaan in de zoekresultaten — zelfs als uw website nog niet hoog rankt organisch. U betaalt alleen wanneer iemand op uw advertentie klikt. Dat maakt Google Ads een van de meest meetbare vormen van online adverteren.</p>
           <p>Voor MKB-bedrijven is Google Ads bijzonder effectief voor lokale diensten waarbij klanten actief zoeken: loodgieters, kappers, tandartsenpraktijken, rijscholen en meer. Wanneer iemand zoekt naar &ldquo;loodgieter Amsterdam spoed&rdquo; wilt u als eerste zichtbaar zijn.</p>
           <p>Elly Apps beheert uw Google Ads-campagnes volledig. Van het instellen van campagnes en het schrijven van advertentieteksten tot optimalisatie van biedstrategieën en maandelijkse rapportage. U hoeft zelf niets te doen — wij zorgen dat uw budget zo efficiënt mogelijk wordt ingezet.</p>
-          <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €149 per maand. Geen verborgen kosten, geen langetermijncontract.</p>
+          <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €199 per maand, met €249 eenmalige opstartkosten. Geen verborgen kosten, geen langetermijncontract.</p>
         </div>
       </section>
 

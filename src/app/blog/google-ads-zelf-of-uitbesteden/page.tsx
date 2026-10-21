@@ -74,12 +74,12 @@ export default function BlogGoogleAdsZelfOfUitbestedenPage() {
             <li>U wilt schalen en meer uit uw budget halen</li>
           </ul>
           <p>
-            Een goed Google Ads-bureau verdient zichzelf terug door uw cost-per-click te verlagen en uw conversieratio te verhogen. Als uw beheerkosten €149 per maand zijn, maar u daarmee €500 aan verspild budget bespaart en 20% meer conversies haalt, is de rekening snel gemaakt.
+            Een goed Google Ads-bureau verdient zichzelf terug door uw cost-per-click te verlagen en uw conversieratio te verhogen. Als uw beheerkosten €199 per maand zijn, maar u daarmee €500 aan verspild budget bespaart en 20% meer conversies haalt, is de rekening snel gemaakt.
           </p>
 
           <h2>Wat kost Google Ads beheer?</h2>
           <p>
-            Google Ads-beheer door een bureau kost gemiddeld €150 tot €500 per maand, afhankelijk van de complexiteit van de campagnes en het advertentiebudget. Bij Elly Apps starten onze beheerkosten vanaf €149 per maand — volledig transparant, zonder langetermijncontract.
+            Google Ads-beheer door een bureau kost gemiddeld €150 tot €500 per maand, afhankelijk van de complexiteit van de campagnes en het advertentiebudget. Bij Elly Apps starten onze beheerkosten vanaf €199 per maand (plus €249 eenmalige opstartkosten) — volledig transparant, zonder langetermijncontract.
           </p>
           <p>
             Belangrijk om te begrijpen: de beheerkosten en het advertentiebudget zijn twee aparte posten. Het advertentiebudget betaalt u direct aan Google; de beheerkosten zijn de vergoeding voor het beheer van uw account.
