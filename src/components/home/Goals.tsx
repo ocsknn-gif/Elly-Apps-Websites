@@ -4,7 +4,7 @@ import { SectionHeader } from './SectionHeader'
 
 const doelen = [
   { icon: GlobeIcon, title: 'Een nieuwe website', text: 'Een professionele website die past bij uw bedrijf.', href: '/diensten/websites' },
-  { icon: SearchIcon, title: 'Beter gevonden worden in Google', text: 'Hoger in de zoekresultaten, structureel meer bezoekers.', href: '/diensten/seo' },
+  { icon: SearchIcon, title: 'Beter gevonden worden in Google', text: 'Beter vindbaar in de zoekresultaten.', href: '/diensten/seo' },
   { icon: MousePointerClickIcon, title: 'Direct zichtbaar via Google Ads', text: 'Gerichte advertenties voor mensen die nu zoeken.', href: '/diensten/sea' },
   { icon: SmartphoneIcon, title: 'Een app laten bouwen', text: 'Een webapp of platform op maat van uw werkwijze.', href: '/diensten/apps' },
 ]
