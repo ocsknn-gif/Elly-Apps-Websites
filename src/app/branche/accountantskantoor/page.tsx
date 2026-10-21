@@ -7,13 +7,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor accountantskantoor | Elly Apps',
-  description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+  description: 'Website laten maken voor uw accountantskantoor? Professionele websites voor accountants en administratiekantoren, met basis SEO en een vaste prijs.',
   alternates: { canonical: 'https://elly-apps.nl/branche/accountantskantoor' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/accountantskantoor',
     title: 'Website laten maken voor accountantskantoor | Elly Apps',
-    description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+    description: 'Website laten maken voor uw accountantskantoor? Professionele websites voor accountants en administratiekantoren, met basis SEO en een vaste prijs.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor accountantskantoor | Elly Apps',
-    description: 'Website laten maken voor uw accountantskantoor? Elly Apps bouwt professionele, betrouwbare websites voor accountants en administratiekantoren. SEO-geoptimaliseerd, vaste prijs.',
+    description: 'Website laten maken voor uw accountantskantoor? Professionele websites voor accountants en administratiekantoren, met basis SEO en een vaste prijs.',
     images: ['/og-image.png'],
   },
 }
@@ -31,7 +31,7 @@ const schema = {
   '@type': 'Service',
   name: 'Website laten maken voor accountantskantoor',
   provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
-  description: 'Professionele websites voor accountants en administratiekantoren. Betrouwbaar, SEO-geoptimaliseerd en volledig beheerd.',
+  description: 'Website laten maken voor uw accountantskantoor? Professionele websites voor accountants en administratiekantoren, met basis SEO en een vaste prijs.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }
 

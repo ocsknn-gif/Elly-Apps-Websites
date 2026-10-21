@@ -6,22 +6,22 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-  description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+  title: 'Website laten maken voor zorgpraktijk | Elly Apps',
+  description: 'Website laten maken voor uw zorgpraktijk? Met privacyverklaring en cookiebeheer, beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/zorg' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/zorg',
-    title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    title: 'Website laten maken voor zorgpraktijk | Elly Apps',
+    description: 'Website laten maken voor uw zorgpraktijk? Met privacyverklaring en cookiebeheer, beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken voor zorgpraktijk | Meer patiënten via Google | Elly Apps',
-    description: 'Een professionele zorgwebsite laten maken? Elly Apps zorgt dat uw praktijk gevonden wordt op Google. Met privacyverklaring, cookiebeheer en volledig beheer. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    title: 'Website laten maken voor zorgpraktijk | Elly Apps',
+    description: 'Website laten maken voor uw zorgpraktijk? Met privacyverklaring en cookiebeheer, beheerd vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
 }

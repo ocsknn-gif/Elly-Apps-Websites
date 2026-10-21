@@ -7,13 +7,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'Horeca website laten maken | Elly Apps',
-  description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+  description: 'Horeca website laten maken? Online menu en basis SEO voor restaurants, cafés en hotels, vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/horeca' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/horeca',
     title: 'Horeca website laten maken | Elly Apps',
-    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+    description: 'Horeca website laten maken? Online menu en basis SEO voor restaurants, cafés en hotels, vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Horeca website laten maken | Elly Apps',
-    description: 'Horeca website laten maken? Elly Apps bouwt professionele websites voor restaurants, cafés, hotels en horecabedrijven. Online menu en lokale SEO. Vanaf €49/maand. Online reserveringen zijn als aparte uitbreiding mogelijk.',
+    description: 'Horeca website laten maken? Online menu en basis SEO voor restaurants, cafés en hotels, vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
 }
@@ -31,7 +31,7 @@ const schema = {
   '@type': 'Service',
   name: 'Horeca website laten maken',
   provider: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
-  description: 'Professionele websites voor horecabedrijven. Online menu, lokale SEO en volledig beheerd. Een reserveringssysteem is als aparte uitbreiding mogelijk.',
+  description: 'Horeca website laten maken? Online menu en basis SEO voor restaurants, cafés en hotels, vanaf €49 per maand. Reserveren is een aparte uitbreiding.',
   areaServed: { '@type': 'Country', name: 'Netherlands' },
 }
 

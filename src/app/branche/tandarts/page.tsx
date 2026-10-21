@@ -7,13 +7,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 export const metadata: Metadata = {
   title: 'Website laten maken voor tandartsen | Elly Apps',
   description:
-    'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/tandarts' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/tandarts',
     title: 'Website laten maken voor tandartsen | Elly Apps',
-    description: 'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor tandartsen | Elly Apps',
-    description: 'Professionele website voor uw tandartspraktijk. Behandelingsoverzicht en vertrouwen opbouwen bij nieuwe patiënten. Vanaf €49/maand. Online afspraken zijn als aparte uitbreiding mogelijk.',
+    description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
 }
@@ -31,7 +31,7 @@ const schema = {
   '@type': 'Dentist',
   name: 'Elly Apps — Websites voor tandartsen',
   url: 'https://elly-apps.nl/branche/tandarts',
-  description: 'Professionele websites voor tandartspraktijken, met patiënteninfo en lokale SEO. Een online afsprakensysteem is als aparte uitbreiding mogelijk.',
+  description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
 }
 
 export default function TandartsPage() {
