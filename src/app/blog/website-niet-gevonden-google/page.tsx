@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Website niet gevonden op Google? Dit zijn de oorzaken en oplossingen',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-08',
-  url: 'https://elly-apps.nl/blog/website-niet-gevonden-google',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/website-niet-gevonden-google' },
 }
 
 export default function WebsiteNietGevondenPage() {

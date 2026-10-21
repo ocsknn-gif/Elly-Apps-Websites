@@ -28,12 +28,12 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Wat kost SEO in Nederland?',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-08',
-  url: 'https://elly-apps.nl/blog/wat-kost-seo',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/wat-kost-seo' },
 }
 
 export default function WatKostSEOPage() {

@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: 'Wat kost Google Ads in 2026? Een eerlijk overzicht voor MKB',
   description: 'Wat kost Google Ads voor een MKB-bedrijf? Ontdek de werkelijke kosten per klik en hoe u slim adverteert.',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-09',
-  url: 'https://elly-apps.nl/blog/wat-kost-google-ads',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/wat-kost-google-ads' },
 }
 
 const faqItems = [

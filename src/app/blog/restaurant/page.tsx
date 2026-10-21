@@ -25,24 +25,32 @@ export const metadata: Metadata = {
   },
 }
 
-const IMAGE_URL = 'https://elly-apps.nl/images/branches/restaurant.webp'
-
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Website laten maken voor een restaurant — zo wordt uw restaurant beter gevonden',
   description: 'Een website laten maken voor uw restaurant? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
-  image: [IMAGE_URL],
   author: organizationRef,
   publisher: { ...organizationRef, logo: { '@type': 'ImageObject', url: 'https://elly-apps.nl/elly-logo.png' } },
   mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/restaurant' },
   inLanguage: 'nl-NL',
 }
 
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://elly-apps.nl/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://elly-apps.nl/blog' },
+    { '@type': 'ListItem', position: 3, name: 'Website laten maken voor een restaurant', item: 'https://elly-apps.nl/blog/restaurant' },
+  ],
+}
+
 export default function BlogRestaurantPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-3xl mx-auto">
           <nav className="text-sm text-muted mb-6">

@@ -31,7 +31,7 @@ const schema = {
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-11',
-  url: 'https://elly-apps.nl/blog/google-ads-zelf-of-uitbesteden',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/google-ads-zelf-of-uitbesteden' },
 }
 
 export default function BlogGoogleAdsZelfOfUitbestedenPage() {

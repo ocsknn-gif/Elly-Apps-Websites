@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: "Website laten maken als zzp'er: wat u moet weten in 2026",
   description: "Als zzp'er een website laten maken? Ontdek wat het kost en waar u op moet letten.",
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-09',
-  url: 'https://elly-apps.nl/blog/website-zzp',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/website-zzp' },
 }
 
 export default function WebsiteZZPPage() {

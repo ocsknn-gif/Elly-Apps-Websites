@@ -28,13 +28,13 @@ export const metadata: Metadata = {
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: '7 praktische SEO tips voor MKB-bedrijven in 2026',
   description: 'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
   author: organizationRef,
   publisher: organizationRef,
   datePublished: '2026-06-09',
-  url: 'https://elly-apps.nl/blog/seo-tips-mkb',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://elly-apps.nl/blog/seo-tips-mkb' },
 }
 
 export default function SEOTipsMKBPage() {
