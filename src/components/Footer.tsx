@@ -39,7 +39,6 @@ export function Footer() {
               {[
                 { label: 'Home', href: '/' },
                 { label: 'Prijzen', href: '/prijzen' },
-                { label: 'Portfolio', href: '/portfolio' },
                 { label: 'FAQ', href: '/faq' },
                 { label: 'Contact', href: '/contact' },
                 { label: 'Privacybeleid', href: '/privacybeleid' },

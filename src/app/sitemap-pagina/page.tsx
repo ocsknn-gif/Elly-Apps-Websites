@@ -29,7 +29,6 @@ const sections = [
       { label: 'Home', href: '/' },
       { label: 'Diensten', href: '/diensten' },
       { label: 'Prijzen', href: '/prijzen' },
-      { label: 'Portfolio', href: '/portfolio' },
       { label: 'Over ons', href: '/over-ons' },
       { label: 'Contact', href: '/contact' },
       { label: 'FAQ', href: '/faq' },
