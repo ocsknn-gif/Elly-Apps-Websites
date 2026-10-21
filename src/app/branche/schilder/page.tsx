@@ -65,7 +65,7 @@ export default function SchilderPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Wanneer iemand een schilder zoekt, gaat hij online op zoek naar voor/na foto&apos;s, reviews en een betrouwbare indruk. Ze typen &quot;schilder [stad]&quot; of &quot;schildersbedrijf [regio]&quot; en bellen de eerste die hen overtuigt. Als uw bedrijf niet op pagina 1 staat of geen professionele website heeft, gaat die opdracht naar een concurrent — zonder dat u het ooit weet.</p>
           <p>Een goede website voor een schildersbedrijf laat uw vakmanschap zien. Met een portfolio van eerder uitgevoerde projecten, een duidelijk overzicht van uw diensten en een online offerteformulier maakt u het potentiële klanten zo makkelijk mogelijk om voor u te kiezen.</p>
-          <p>Elly Apps bouwt schilderswebsites die scoren op Google én opdrachten binnenhalen. Onze AI analyseert seizoenspatronen in zoekgedrag en past uw website daar automatisch op aan. In de zomer promoten we buitenschilderwerk, in de winter binnenschilderwerk. Zo blijft uw agenda het hele jaar door gevuld.</p>
+          <p>Elly Apps bouwt schilderswebsites die goed vindbaar zijn op Google. Wij werken met een AI-gedreven aanpak.</p>
           <p>Een professionele schilderswebsite via Elly Apps begint vanaf €49 per maand, inclusief portfolio, online offerteformulier, lokale SEO-optimalisatie en een klikbaar telefoonnummer. Geen verborgen kosten, geen technische zorgen.</p>
         </div>
       </section>

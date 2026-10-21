@@ -62,7 +62,7 @@ export default function GroningenPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Groningen is de grootste stad van Noord-Nederland en een van de meest dynamische studentensteden van het land. Met meer dan 230.000 inwoners, duizenden studenten en een groeiend aantal bedrijven is de concurrentie groot. Klanten zoeken altijd eerst online voordat ze contact opnemen.</p>
-          <p>Elly Apps bouwt voor Groningse ondernemers websites die geoptimaliseerd zijn voor lokale vindbaarheid. Onze AI analyseert wanneer en hoe mensen in Groningen zoeken naar uw diensten. Van de Grote Markt tot het Noorderplantsoen — wij zorgen dat klanten u vinden.</p>
+          <p>Elly Apps bouwt voor Groningse ondernemers websites die geoptimaliseerd zijn voor lokale vindbaarheid. Wij werken met een AI-gedreven aanpak. Van de Grote Markt tot het Noorderplantsoen — wij zorgen dat klanten u vinden.</p>
           <p>Een effectieve website voor een Gronings bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Groningen en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. We voegen lokale content toe zodat u optimaal vindbaar bent — niet alleen in het centrum maar ook in wijken als Helpman, De Hoogte, Paddepoel en omliggende gemeenten. Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>
