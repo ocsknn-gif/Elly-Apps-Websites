@@ -9,13 +9,13 @@ import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Social media advertenties | Facebook & Instagram | Elly Apps',
-  description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+  description: 'Social media advertenties op Facebook en Instagram laten beheren? Elly Apps beheert uw campagnes volledig, tegen vaste beheerkosten. Bekijk onze pakketten.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/social-media' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/diensten/social-media',
     title: 'Social media advertenties | Facebook & Instagram | Elly Apps',
-    description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+    description: 'Social media advertenties op Facebook en Instagram laten beheren? Elly Apps beheert uw campagnes volledig, tegen vaste beheerkosten. Bekijk onze pakketten.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Social media advertenties | Facebook & Instagram | Elly Apps',
-    description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+    description: 'Social media advertenties op Facebook en Instagram laten beheren? Elly Apps beheert uw campagnes volledig, tegen vaste beheerkosten. Bekijk onze pakketten.',
     images: ['/og-image.png'],
   },
 }
@@ -87,7 +87,7 @@ const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie
 const serviceJsonLd = serviceSchema({
   name: 'Social media advertenties',
   url: 'https://elly-apps.nl/diensten/social-media',
-  description: 'Meer klanten via Facebook en Instagram? Elly Apps beheert uw social media advertenties volledig. Vaste prijs, meetbaar resultaat. Bekijk onze pakketten.',
+  description: 'Social media advertenties op Facebook en Instagram laten beheren? Elly Apps beheert uw campagnes volledig, tegen vaste beheerkosten. Bekijk onze pakketten.',
   serviceType: 'Social media advertenties',
 })
 
@@ -101,7 +101,7 @@ export default function DienstenSocialMediaPage() {
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="h1 text-ink">Social media advertenties — meer klanten via Facebook &amp; Instagram</h1>
+            <h1 className="h1 text-ink">Social media advertenties op Facebook &amp; Instagram — volledig ontzorgd</h1>
             <p className="body-lg text-muted mt-4 max-w-2xl mx-auto">Geen gedoe met ingewikkelde campagnes. Wij regelen alles. Vaste prijs, meetbaar resultaat.</p>
           </div>
 
@@ -115,7 +115,7 @@ export default function DienstenSocialMediaPage() {
                 eenmalig={p.monthly ? `${p.setup} eenmalige opstartkosten` : `${p.setup} eenmalige opstartkosten · Prijs op aanvraag`}
                 populair={p.popular}
                 features={p.features}
-                cta={{ label: 'Ja, ik wil meer klanten via social media', href: '/gratis-websitescan' }}
+                cta={{ label: 'Ja, ik wil social media advertenties laten beheren', href: '/gratis-websitescan' }}
                 note={NOTE}
               />
             ))}
@@ -152,7 +152,7 @@ export default function DienstenSocialMediaPage() {
           </ul>
           <div className="text-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
-              Ja, ik wil meer klanten via social media
+              Ja, ik wil social media advertenties laten beheren
             </Link>
           </div>
         </div>

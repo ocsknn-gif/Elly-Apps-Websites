@@ -64,7 +64,7 @@ export default function TilburgPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Tilburg</p>
           <h1 className="h1 text-ink">Website laten maken in Tilburg</h1>
-          <p className="body-lg text-muted mt-4">Meer klanten uit Tilburg via Google. Elly Apps bouwt professionele websites voor Tilburgse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
+          <p className="body-lg text-muted mt-4">Elly Apps bouwt professionele websites voor Tilburgse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
         </div>
       </section>
 

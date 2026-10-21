@@ -65,7 +65,7 @@ const pakketten = {
         'Doelgroep targeting op maat',
         'Maandelijkse rapportage',
       ],
-      cta: 'Ja, ik wil meer klanten via social media',
+      cta: 'Ja, ik wil social media advertenties laten beheren',
       href: '/contact',
     },
     {
@@ -80,7 +80,7 @@ const pakketten = {
         'Retargeting',
         'Wekelijkse rapportage',
       ],
-      cta: 'Ja, ik wil meer klanten via social media',
+      cta: 'Ja, ik wil social media advertenties laten beheren',
       href: '/contact',
     },
     {
@@ -95,7 +95,7 @@ const pakketten = {
         'Persoonlijke accountmanager',
         'Bi-weekly gesprek',
       ],
-      cta: 'Ja, ik wil meer klanten via social media',
+      cta: 'Ja, ik wil social media advertenties laten beheren',
       href: '/contact',
     },
   ],

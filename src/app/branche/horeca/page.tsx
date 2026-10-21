@@ -63,7 +63,7 @@ export default function HorecaPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
           <h1 className="h1 text-ink">Horeca website laten maken</h1>
-          <p className="body-lg text-muted mt-4">Meer gasten via Google. Een professionele horecawebsite met online menu en lokale SEO — volledig beheerd vanaf €49 per maand.</p>
+          <p className="body-lg text-muted mt-4">Een professionele horecawebsite met online menu en basis SEO — volledig beheerd vanaf €49 per maand.</p>
         </div>
       </section>
 
@@ -102,7 +102,7 @@ export default function HorecaPage() {
             relevantie, afstand en bekendheid. Wij optimaliseren uw website en Google Business
             Profile op alle drie deze factoren. Wij voegen de juiste zoekwoorden toe, zorgen
             voor consistente NAP-gegevens (naam, adres, telefoonnummer) en helpen u actief
-            meer reviews te verzamelen. Het resultaat: structureel meer gasten via Google.
+            meer reviews te verzamelen. Zo wordt uw zaak beter vindbaar via Google.
           </p>
           <h2 className="h2 text-ink pt-6">Voor welke horecabedrijven werken wij?</h2>
           <p>
