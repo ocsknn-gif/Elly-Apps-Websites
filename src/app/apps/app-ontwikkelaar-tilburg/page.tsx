@@ -74,7 +74,7 @@ export default function AppOntwikkelaarTilburgPage() {
           <p>Er zijn meerdere redenen waarom Tilburgse ondernemers voor Elly Apps kiezen. Ten eerste onze transparante werkwijze: vaste prijs, heldere communicatie en geen verrassingen. Ten tweede onze AI-expertise: wij integreren standaard AI-functionaliteiten in onze apps waardoor uw applicatie slimmer en toekomstbestendiger wordt. Ten derde onze brede sectorervaring: van horeca en retail tot zorg en zakelijke dienstverlening. En ten vierde onze snelheid: gemiddeld binnen 4 tot 6 weken van idee naar werkende app.</p>
           <h2 className="h2 text-ink pt-6">Technologie die we gebruiken</h2>
           <p>Wij werken met moderne, bewezen technologieën die schaalbaar en onderhoudsvriendelijk zijn. Voor web-apps gebruiken wij Next.js en React, voor databases Supabase of PostgreSQL, voor AI-integraties de Anthropic Claude API, en voor betalingen Stripe of Mollie. Al onze code is goed gedocumenteerd en overdraagbaar — u bent nooit afhankelijk van ons voor de technologie die u bezit.</p>
-          <h2 className="h2 text-ink pt-6">Van idee naar app: ons bewezen proces</h2>
+          <h2 className="h2 text-ink pt-6">Van idee naar app: ons proces</h2>
           <p>Ons ontwikkelproces is lean en transparant. Na een gratis kennismakingsgesprek stellen wij een gedetailleerde offerte op. Na akkoord starten wij met het functioneel ontwerp. Daarna bouwen wij in twee-wekelijkse sprints, waarbij u na elke sprint een werkende versie kunt testen. Na uitgebreid testen lanceren wij de app en begeleiden wij de go-live. Daarna nemen wij het beheer volledig over.</p>
         </div>
       </section>
