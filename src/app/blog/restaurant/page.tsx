@@ -71,7 +71,7 @@ export default function BlogRestaurantPage() {
           <section>
             <h2>Wat moet een restaurantwebsite bevatten?</h2>
             <p>
-              Een goede restaurantwebsite bevat uw menu inclusief prijzen, sfeervolle foto&apos;s van uw gerechten en interieur, openingstijden en locatie, een reserveringsknop en klantreviews. Hoe aantrekkelijker en overzichtelijker uw website eruitziet, hoe meer gasten u binnenhaalt.
+              Een goede restaurantwebsite bevat uw menu inclusief prijzen, sfeervolle foto&apos;s van uw gerechten en interieur, openingstijden en locatie, een reserveringsknop en klantreviews. Hoe aantrekkelijker en overzichtelijker uw website eruitziet, hoe beter hij uw zaak presenteert.
             </p>
           </section>
 
@@ -101,7 +101,7 @@ export default function BlogRestaurantPage() {
           <section>
             <h2>Conclusie</h2>
             <p>
-              Een professionele restaurantwebsite is in 2026 onmisbaar. Het verschil tussen een volle en een lege zaak begint steeds vaker online. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u meer gasten via Google kunt aantrekken.
+              Een professionele restaurantwebsite is in 2026 onmisbaar. Het verschil tussen een volle en een lege zaak begint steeds vaker online. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u beter gevonden wordt in Google.
             </p>
           </section>
         </div>
@@ -121,7 +121,7 @@ export default function BlogRestaurantPage() {
 
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om meer gasten via Google te krijgen?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om beter gevonden te worden in Google?</h2>
           <p className="body-lg text-navy-muted mt-4">Ontvang binnen één werkdag een gratis analyse van uw huidige website met concrete verbeterpunten.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
