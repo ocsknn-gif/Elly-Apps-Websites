@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken Eindhoven – vanaf €49/mnd | Elly Apps',
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — Website laten maken Eindhoven',
+const schema = serviceSchema({
+  name: 'Website laten maken in Eindhoven',
   url: 'https://elly-apps.nl/stad/eindhoven',
-  areaServed: { '@type': 'City', name: 'Eindhoven' },
   description: 'Website laten maken in Eindhoven? Elly Apps bouwt professionele websites voor Eindhovense MKB-bedrijven. Volledig ontzorgd, vanaf €49 per maand.',
-}
+  areaServed: { '@type': 'City', name: 'Eindhoven' },
+})
 
 export default function EindhovenPage() {
   return (

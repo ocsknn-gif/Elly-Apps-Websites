@@ -4,6 +4,7 @@ import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Website laten maken Groningen – vanaf €49/mnd | Elly Apps',
@@ -46,10 +47,18 @@ const schema = {
   })),
 }
 
+const serviceJsonLd = serviceSchema({
+  name: 'Website laten maken in Groningen',
+  url: 'https://elly-apps.nl/stad/groningen',
+  description: 'Website laten maken in Groningen? Elly Apps bouwt websites met basis SEO voor ondernemers in Groningen. Vanaf €49 per maand. Vraag een gratis scan aan.',
+  areaServed: { '@type': 'City', name: 'Groningen' },
+})
+
 export default function GroningenPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
