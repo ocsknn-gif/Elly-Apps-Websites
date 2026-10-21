@@ -47,14 +47,6 @@ const previews = [
   { label: 'Rijschool', img: '/images/branches/rijschool.webp' },
 ]
 
-const comparison = [
-  ['Prijs', '€0–100/jaar', '€3.000–10.000', 'Vanaf €299 + €49/mnd'],
-  ['Snelheid', 'Weken–maanden', '4–8 weken', '~2 weken'],
-  ['SEO', 'Beperkt', 'Extra kosten', 'Inbegrepen'],
-  ['Beheer', 'Zelf', 'Extra kosten', 'Inbegrepen'],
-  ['Kwaliteit', 'Variabel', 'Hoog', 'Hoog'],
-]
-
 const techSpecs = [
   { Icon: Zap, text: 'Snelle laadtijden' },
   { Icon: Search, text: 'SEO-geoptimaliseerd vanaf dag 1' },
@@ -98,35 +90,6 @@ export default function DienstenWebsitesPage() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Vergelijking */}
-      <section className="section px-4 sm:px-6 lg:px-8 bg-bg" aria-labelledby="vergelijk-titel">
-        <div className="max-w-4xl mx-auto">
-          <SectionHeader id="vergelijk-titel" title="Vergelijk uw opties" />
-          <div className="overflow-x-auto rounded-2xl border border-line">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-line bg-surface">
-                  <th scope="col" className="text-left py-3 px-4"><span className="sr-only">Onderdeel</span></th>
-                  <th scope="col" className="py-3 px-4 text-muted">Zelf doen</th>
-                  <th scope="col" className="py-3 px-4 text-muted">Duur bureau</th>
-                  <th scope="col" className="py-3 px-4 text-brand-strong font-bold">Elly Apps</th>
-                </tr>
-              </thead>
-              <tbody>
-                {comparison.map(([label, ...vals]) => (
-                  <tr key={label} className="border-b border-line last:border-b-0">
-                    <th scope="row" className="py-3 px-4 text-left font-semibold text-ink">{label}</th>
-                    {vals.map((v, i) => (
-                      <td key={i} className={`py-3 px-4 text-center ${i === 2 ? 'text-brand-strong font-semibold' : 'text-muted'}`}>{v}</td>
-                    ))}
-                  </tr>
-                ))}
-              </tbody>
-            </table>
           </div>
         </div>
       </section>
