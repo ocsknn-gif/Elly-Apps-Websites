@@ -34,17 +34,18 @@ export default function WerkgebiedUtrechtPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Werkgebied</p>
           <h1 className="h1 text-ink">Website laten maken in Utrecht</h1>
-          <p className="body-lg text-muted mt-4">Actief in Utrecht, Amersfoort, Nieuwegein, Zeist, Woerden en Houten — wij helpen Utrechtse ondernemers groeien via een betere online aanwezigheid.</p>
+          <p className="body-lg text-muted mt-4">Actief in Utrecht, Amersfoort, Nieuwegein, Zeist, Woerden en Houten — wij bouwen en beheren websites voor ondernemers in de provincie Utrecht.</p>
         </div>
       </section>
 
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>De provincie Utrecht groeit snel en telt veel ondernemers die strijden om dezelfde klanten. Een goed vindbare website maakt het verschil. Elly Apps helpt ondernemers in Utrecht met een professionele website die klanten aantrekt en converteert.</p>
-          <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Utrecht.</p>
-          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Utrecht en uw Google Business Profile.</p>
-          <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
+          <h2 className="h2 text-ink">Ondernemen in de provincie Utrecht</h2>
+          <p>De hoofdstad van de provincie Utrecht is de stad <Link href="/stad/utrecht" className="text-brand-strong underline hover:no-underline">Utrecht</Link>. De provincie grenst onder meer aan Zuid-Holland, Gelderland en Noord-Holland. Het oosten wordt doorsneden door de Utrechtse Heuvelrug, de zuidgrens wordt deels gevormd door de Nederrijn en de Lek en ten noorden van de stad liggen de Vechtstreek en de Loosdrechtse Plassen. In de noordoosthoek ligt Amersfoort, in het zuiden liggen Nieuwegein en Houten en Zeist ligt aan de zuidflank van de Utrechtse Heuvelrug. Op het Utrecht Science Park in de stad Utrecht zijn onder meer de Hogeschool Utrecht, het UMC Utrecht en enkele faculteiten van de Universiteit Utrecht gevestigd.</p>
+          <h2 className="h2 text-ink">Zo helpen wij ondernemers in de provincie Utrecht</h2>
+          <p>Elly Apps helpt ondernemers in de provincie Utrecht met een professionele website, van een eenvoudige bedrijfswebsite tot een site met meerdere pagina's, passend bij uw branche in Utrecht. Op aanvraag bouwen wij ook een boekingssysteem of webshop.</p>
+          <p>Onze websites zijn snel, mobielvriendelijk, hebben basis SEO en zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger, voor zoektermen relevant voor uw stad of regio binnen Utrecht en uw Google Business Profile.</p>
         </div>
       </section>
 
