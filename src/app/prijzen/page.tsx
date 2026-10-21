@@ -113,7 +113,7 @@ const pakketten = {
         'Maandelijkse rapportage',
         'Aanbevolen ad spend: €300-€500/mnd',
       ],
-      cta: 'Ja, ik wil meer klanten via Google Ads',
+      cta: 'Ja, ik wil Google Ads laten beheren',
       href: '/contact',
     },
     {
@@ -129,7 +129,7 @@ const pakketten = {
         'Wekelijkse optimalisatie',
         'Aanbevolen ad spend: €500-€1.000/mnd',
       ],
-      cta: 'Ja, ik wil meer klanten via Google Ads',
+      cta: 'Ja, ik wil Google Ads laten beheren',
       href: '/contact',
     },
     {
@@ -145,7 +145,7 @@ const pakketten = {
         'Bi-weekly gesprek',
         'Aanbevolen ad spend: €1.000+/mnd',
       ],
-      cta: 'Ja, ik wil meer klanten via Google Ads',
+      cta: 'Ja, ik wil Google Ads laten beheren',
       href: '/contact',
     },
   ],
