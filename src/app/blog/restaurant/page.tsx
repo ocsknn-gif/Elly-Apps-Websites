@@ -29,7 +29,7 @@ const IMAGE_URL = 'https://elly-apps.nl/images/branches/restaurant.webp'
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Website laten maken voor een restaurant — zo trekt u meer gasten aan',
+  headline: 'Website laten maken voor een restaurant — zo wordt uw restaurant beter gevonden',
   description: 'Een website laten maken voor uw restaurant? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
   datePublished: '2026-01-26',
@@ -60,7 +60,7 @@ export default function BlogRestaurantPage() {
           </nav>
 
           <h1 className="h1 text-ink">
-            Website laten maken voor een restaurant — zo trekt u meer gasten aan
+            Website laten maken voor een restaurant — zo wordt uw restaurant beter gevonden
           </h1>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function BlogRestaurantPage() {
           <section>
             <h2>Lokaal gevonden worden op Google Maps</h2>
             <p>
-              Veel gasten vinden restaurants via Google Maps. Een goed ingesteld Google Business profiel in combinatie met een geoptimaliseerde website zorgt ervoor dat uw restaurant bovenaan verschijnt bij mensen in uw buurt. Bij Elly Apps is Google Business optimalisatie standaard inbegrepen in het Groei pakket.
+              Veel gasten vinden restaurants via Google Maps. Een goed ingesteld Google Business profiel in combinatie met een geoptimaliseerde website helpt uw restaurant beter vindbaar te zijn bij mensen in uw buurt. Bij Elly Apps is Google Business optimalisatie standaard inbegrepen in het Groei pakket.
             </p>
           </section>
 
