@@ -37,15 +37,15 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto lg:mx-0 lg:justify-self-end lg:self-end">
+        <div className="w-full max-w-sm mx-auto lg:mx-0 lg:justify-self-end lg:self-end -mt-12 sm:max-w-[560px] lg:max-w-none lg:-mt-[105px] xl:-mt-[128px] pointer-events-none">
           <Image
             src="/images/home/hero-vrouw-vrijstaand.webp"
             alt="Lachende vrouw met een laptop op kantoor"
-            width={512}
-            height={512}
+            width={640}
+            height={640}
             priority
-            sizes="(min-width: 1280px) 512px, (min-width: 1024px) 420px, (min-width: 640px) 448px, 90vw"
-            className="block w-full h-auto"
+            sizes="(min-width: 1280px) 640px, (min-width: 1024px) 525px, (min-width: 640px) 560px, 125vw"
+            className="block h-auto max-w-none w-[125%] sm:w-full lg:w-[125%]"
           />
         </div>
       </div>
