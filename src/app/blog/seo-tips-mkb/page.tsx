@@ -94,8 +94,8 @@ export default function SEOTipsMKBPage() {
 
           <h2>Tip 4: Maak uw website snel</h2>
           <p>
-            Laadtijd is een directe rankingfactor voor Google. Een website die trager dan 3 seconden
-            laadt, verliest gemiddeld 40% van zijn bezoekers nog vóór de pagina geladen is. Meet
+            Laadtijd is een directe rankingfactor voor Google. Een trage website
+            kost bezoekers: veel mensen haken af als een pagina niet snel laadt. Meet
             uw laadtijd via Google PageSpeed Insights en pak de grootste knelpunten aan: te grote
             afbeeldingen, onnodige scripts of een trage hostingomgeving. Bij Elly Apps bouwen wij
             websites op Next.js — een modern framework dat specifiek is ontworpen voor snelheid
