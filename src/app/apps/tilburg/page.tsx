@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App laten maken Tilburg | Elly Apps',
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App laten maken Tilburg',
+const schema = serviceSchema({
+  name: 'App laten maken in Tilburg',
   url: 'https://elly-apps.nl/apps/tilburg',
-  areaServed: { '@type': 'City', name: 'Tilburg' },
   description: 'Professionele web-apps voor MKB-bedrijven in Tilburg en Midden-Brabant.',
-}
+  areaServed: { '@type': 'City', name: 'Tilburg' },
+})
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Tilburg?', a: 'De kosten zijn afhankelijk van het type en de complexiteit van de app. Wij werken met een transparante vaste prijs. Neem contact op voor een vrijblijvende offerte op maat.' },

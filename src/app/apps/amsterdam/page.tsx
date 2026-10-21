@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App laten maken Amsterdam | Elly Apps',
@@ -26,14 +27,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App laten maken Amsterdam',
+const schema = serviceSchema({
+  name: 'App laten maken in Amsterdam',
   url: 'https://elly-apps.nl/apps/amsterdam',
-  areaServed: { '@type': 'City', name: 'Amsterdam' },
   description: 'Professionele web-apps en mobiele apps voor MKB-bedrijven in Amsterdam. AI-gedreven en volledig beheerd.',
-}
+  areaServed: { '@type': 'City', name: 'Amsterdam' },
+})
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Amsterdam?', a: 'De kosten hangen af van het type en de complexiteit van de app. Wij werken altijd met een transparante vaste prijs — geen uurtarieven en geen verrassingen achteraf. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },

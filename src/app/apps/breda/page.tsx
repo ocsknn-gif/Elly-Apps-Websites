@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App laten maken Breda | Elly Apps',
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App laten maken Breda',
+const schema = serviceSchema({
+  name: 'App laten maken in Breda',
   url: 'https://elly-apps.nl/apps/breda',
-  areaServed: { '@type': 'City', name: 'Breda' },
   description: 'App laten maken in Breda? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Betaalbaar en AI-gedreven.',
-}
+  areaServed: { '@type': 'City', name: 'Breda' },
+})
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Breda?', a: 'De prijs hangt af van de complexiteit en het type app. Wij werken altijd met een transparante vaste prijs. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },

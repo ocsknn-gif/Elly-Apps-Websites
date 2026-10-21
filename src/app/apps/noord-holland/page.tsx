@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { Faq } from '@/components/home/Faq'
+import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'App ontwikkelaar Noord-Holland | Elly Apps',
@@ -25,14 +26,12 @@ export const metadata: Metadata = {
   },
 }
 
-const schema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Elly Apps — App ontwikkelaar Noord-Holland',
+const schema = serviceSchema({
+  name: 'App ontwikkelaar in Noord-Holland',
   url: 'https://elly-apps.nl/apps/noord-holland',
-  areaServed: { '@type': 'State', name: 'Noord-Holland' },
   description: 'App ontwikkelaar in Noord-Holland? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Amsterdam, Haarlem, Alkmaar en heel Noord-Holland.',
-}
+  areaServed: { '@type': 'State', name: 'Noord-Holland' },
+})
 
 const faqItems = [
   { q: 'In welke steden in Noord-Holland werken jullie?', a: 'Wij werken voor bedrijven door heel Noord-Holland: Amsterdam, Haarlem, Alkmaar, Zaandam, Hoorn, Den Helder, Purmerend en alle omliggende gemeenten. Onze samenwerking verloopt grotendeels online, dus locatie is nooit een belemmering.' },
