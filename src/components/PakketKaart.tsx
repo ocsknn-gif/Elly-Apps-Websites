@@ -36,6 +36,7 @@ export function PakketKaart({ naam, prijs, periode, eenmalig, populair, features
         {periode && <span className="text-base font-semibold text-muted">{periode}</span>}
       </p>
       <p className="mt-1 text-sm text-muted">{eenmalig}</p>
+      <p className="text-sm text-muted">Alle prijzen zijn exclusief BTW</p>
 
       <ul className="mt-6 space-y-3 body text-ink flex-1">
         {features.map((f) => (
