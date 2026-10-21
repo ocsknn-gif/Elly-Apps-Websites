@@ -32,8 +32,6 @@ const schema = {
   headline: 'Website laten maken voor een loodgieter — zo wordt u beter gevonden in Google',
   description: 'Een website laten maken als loodgieter? Ontdek wat een professionele loodgieterwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
-  datePublished: '2026-01-22',
-  dateModified: '2026-01-22',
   author: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
   publisher: {
     '@type': 'Organization',

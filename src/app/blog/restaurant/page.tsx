@@ -32,8 +32,6 @@ const schema = {
   headline: 'Website laten maken voor een restaurant — zo wordt uw restaurant beter gevonden',
   description: 'Een website laten maken voor uw restaurant? Ontdek wat een professionele restaurantwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
-  datePublished: '2026-01-26',
-  dateModified: '2026-01-26',
   author: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
   publisher: {
     '@type': 'Organization',

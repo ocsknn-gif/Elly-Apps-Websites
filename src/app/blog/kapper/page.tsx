@@ -32,8 +32,6 @@ const schema = {
   headline: 'Website laten maken voor een kapper — zo wordt uw kapperszaak beter gevonden',
   description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
-  datePublished: '2026-01-15',
-  dateModified: '2026-01-15',
   author: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
   publisher: {
     '@type': 'Organization',
