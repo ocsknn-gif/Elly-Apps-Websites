@@ -37,7 +37,7 @@ const schema = {
 const faqItems = [
   { q: 'Wat moet er op de website van een accountantskantoor staan?', a: 'Een goede accountantswebsite bevat minimaal: een duidelijke dienstenpagina (jaarrekening, belastingaangifte, loonadministratie), een over-ons sectie met de expertise van uw team, klantcases of testimonials, contactgegevens en een contactformulier. SEO-geoptimaliseerde content rond zoekwoorden als "accountant [stad]" is essentieel voor vindbaarheid.' },
   { q: 'Hoe onderscheidt een accountantswebsite zich van de concurrentie?', a: 'De meeste accountantswebsites zien er hetzelfde uit. U onderscheidt zich door concreet te zijn: welke sectoren bedient u, welke bedrijfsgroottes, welke specifieke expertise? Wij helpen u dit helder te verwoorden en te vertalen naar een website die direct vertrouwen wekt.' },
-  { q: 'Kan ik een beveiligde klantomgeving toevoegen?', a: 'Een klantportaal waar cliënten documenten kunnen uploaden en downloaden is op aanvraag mogelijk, in overleg. Dit bespaart veel heen-en-weer mailen en verhoogt de professionele uitstraling.' },
+  { q: 'Kan ik een klantomgeving toevoegen?', a: 'Een klantportaal waar cliënten documenten kunnen uploaden en downloaden is op aanvraag mogelijk, in overleg. Dit bespaart veel heen-en-weer mailen en verhoogt de professionele uitstraling.' },
   { q: 'Is een accountantswebsite duur?', a: 'Bij Elly Apps betaalt u €299 eenmalige setup en €49 per maand. Dat is inclusief hosting, SSL, updates en basis SEO. Er zijn geen verborgen kosten.' },
 ]
 
@@ -93,7 +93,7 @@ export default function AccountantskantoorPage() {
             zoek zijn naar een accountant. Dit is duurzame marketing die maand na maand
             nieuwe klanten oplevert, zonder advertentiekosten.
           </p>
-          <h2 className="h2 text-ink pt-6">Beveiligd klantportaal</h2>
+          <h2 className="h2 text-ink pt-6">Klantportaal</h2>
           <p>
             Steeds meer accountantskantoren kiezen voor een digitaal klantportaal waar
             cliënten documenten kunnen uploaden, jaarrekeningen kunnen downloaden en
