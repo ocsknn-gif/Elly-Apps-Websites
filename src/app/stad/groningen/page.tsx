@@ -27,9 +27,9 @@ export const metadata: Metadata = {
 }
 
 const faq = [
-  { q: 'Hoe zorg je dat ik gevonden word in Groningen op Google?', a: 'We optimaliseren uw website specifiek voor Groningen en omgeving. We verwerken lokale zoektermen zoals "website laten maken Groningen" in uw paginateksten, titels en meta descriptions. Daarnaast zorgen we dat uw Google Business-profiel correct is ingesteld.' },
+  { q: 'Hoe zorg je dat ik gevonden word in Groningen op Google?', a: 'We optimaliseren uw website specifiek voor Groningen en omgeving. We verwerken lokale zoektermen zoals "website laten maken Groningen" in uw paginateksten, titels en meta descriptions. Met het Groei pakket en hoger optimaliseren we ook uw Google Business Profile.' },
   { q: 'Hoe snel kan mijn website live staan in Groningen?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een kort intakegesprek verwerken wij alles voor u.' },
-  { q: 'Maken jullie websites voor alle branches in Groningen?', a: 'Ja, absoluut. We bouwen websites voor alle soorten Groningse bedrijven — van restaurants en winkels tot loodgieters, kappers, accountants en MKB-bedrijven.' },
+  { q: 'Maken jullie websites voor alle branches in Groningen?', a: 'Ja. Wij bouwen websites voor ondernemers in elke branche.' },
   { q: 'Is een website voor een klein Gronings bedrijf betaalbaar?', a: 'Absoluut. Onze websites beginnen vanaf €49 per maand met een eenmalige setup van €299, inclusief hosting, onderhoud en basis SEO.' },
   { q: 'Werken jullie ook in de regio rondom Groningen?', a: 'Ja, we bedienen ook ondernemers in Assen, Drachten, Emmen, Leeuwarden en andere gemeenten rondom Groningen.' },
   { q: 'Kan ik ook een webshop laten maken in Groningen?', a: 'Ja, we bouwen ook webshops voor Groningse ondernemers — snel, veilig en goed vindbaar in Google Groningen.' },
@@ -55,16 +55,17 @@ export default function GroningenPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Groningen</p>
           <h1 className="h1 text-ink">Website laten maken in Groningen</h1>
-          <p className="body-lg text-muted mt-4">Meer klanten uit Groningen via Google. Elly Apps bouwt professionele websites voor Groningse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
+          <p className="body-lg text-muted mt-4">Elly Apps bouwt professionele websites voor Groningse ondernemers — snel, betaalbaar en volledig ontzorgd.</p>
         </div>
       </section>
 
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Groningen is de grootste stad van Noord-Nederland en een van de meest dynamische studentensteden van het land. Met een grote studentenpopulatie en een groeiend aantal bedrijven is de concurrentie groot. Klanten zoeken altijd eerst online voordat ze contact opnemen.</p>
-          <p>Elly Apps bouwt voor Groningse ondernemers websites die geoptimaliseerd zijn voor lokale vindbaarheid. Wij werken met een AI-gedreven aanpak. Van de Grote Markt tot het Noorderplantsoen — wij zorgen dat klanten u vinden.</p>
-          <p>Een effectieve website voor een Gronings bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Groningen en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. We voegen lokale content toe zodat u optimaal vindbaar bent — niet alleen in het centrum maar ook in wijken als Helpman, De Hoogte, Paddepoel en omliggende gemeenten. Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
+          <h2 className="h2 text-ink">Ondernemen in Groningen</h2>
+          <p>Groningen is de hoofdstad van de provincie Groningen en ligt op de noordelijke uitloper van de Hondsrug. De Grote Markt is het historische centrale plein van de stad en het UMCG ligt op loopafstand daarvan. In Paddepoel staat de Zernike Campus met gebouwen van de Rijksuniversiteit Groningen en de Hanzehogeschool Groningen. Bij Hoogkerk, in het westen van de gemeente, ligt het industriegebied Westpoort met een eigen aansluiting op de A7.</p>
+          <p>Elly Apps bouwt voor Groningse ondernemers websites met aandacht voor vindbaarheid. Wij werken met een AI-gedreven aanpak. Wij bouwen websites voor ondernemers in elke branche.</p>
+          <p>Een goede website bevat een duidelijke omschrijving van uw diensten, uw werkgebied in Groningen en omgeving en een contactformulier. Lokale SEO zit in het Groei pakket en hoger. Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>
 
