@@ -74,17 +74,19 @@ export default function OverOnsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-16">
-        {/* Header */}
-        <div className="text-center">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">Over Elly Apps</h1>
-          <p className="mt-4 text-xl text-gray-600">
+      {/* Header */}
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="h1 text-ink">Over Elly Apps</h1>
+          <p className="body-lg text-muted mt-4">
             Wij helpen het MKB groeien met een sterke online aanwezigheid.
           </p>
         </div>
+      </section>
 
-        {/* Verhaal */}
-        <section className="prose prose-lg max-w-none text-gray-700 space-y-5">
+      {/* Verhaal */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-3xl mx-auto artikel">
           <p>
             Elly Apps is opgericht door <strong>Omer Coskun</strong>, gevestigd in Aalsmeer. Na
             jarenlange ervaring in digitale dienstverlening zag Omer dat veel MKB-bedrijven
@@ -106,49 +108,53 @@ export default function OverOnsPage() {
             Wij werken altijd persoonlijk, transparant en resultaatgericht. U heeft één vast
             aanspreekpunt, ontvangt duidelijke rapportages en weet altijd waar u aan toe bent.
           </p>
-        </section>
+        </div>
+      </section>
 
-        {/* Kernwaarden */}
-        <section>
-          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Onze kernwaarden</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Kernwaarden */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-surface">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="h2 text-ink mb-10 text-center">Onze kernwaarden</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
             {kernwaarden.map((w) => (
               <div
                 key={w.title}
-                className="text-center p-6 rounded-2xl border border-gray-100 shadow-sm"
+                className="text-center p-6 rounded-2xl border border-line bg-bg"
               >
                 <div className="inline-flex items-center justify-center size-12 rounded-full bg-brand-tint mb-4">
                   {w.icon}
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{w.title}</h3>
-                <p className="text-sm text-gray-600 leading-relaxed">{w.description}</p>
+                <h3 className="text-lg font-bold text-ink mb-2">{w.title}</h3>
+                <p className="body text-muted">{w.description}</p>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* CTA */}
-        <div className="text-center bg-brand-tint rounded-2xl p-10">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Klaar voor een kennismaking?</h2>
-          <p className="text-gray-600 mb-6">
+      {/* CTA */}
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="h2 text-on-navy">Klaar voor een kennismaking?</h2>
+          <p className="body-lg text-navy-muted mt-4 mb-8">
             Neem vrijblijvend contact op of vraag direct een gratis websitescan aan.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/gratis-websitescan"
-              className={buttonVariants()}
+              className={buttonVariants({ size: 'lg' })}
             >
               Gratis websitescan
             </Link>
             <Link
               href="/contact"
-              className={buttonVariants({ variant: 'secondary' })}
+              className={buttonVariants({ variant: 'secondary', size: 'lg' })}
             >
               Neem contact op
             </Link>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

@@ -49,46 +49,46 @@ function UnsubscribeContent() {
   }
 
   return (
-    <section className="min-h-[60vh] flex items-center justify-center py-16">
-      <div className="max-w-md text-center space-y-4 px-4">
-        {status === 'loading' && <p className="text-gray-500">Laden...</p>}
+    <section className="section min-h-[60vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-surface">
+      <div className="max-w-md w-full text-center space-y-4 p-8 rounded-2xl border border-line bg-bg">
+        {status === 'loading' && <p className="text-muted">Laden...</p>}
         {status === 'valid' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Uitschrijven</h1>
-            <p className="text-gray-600">Wilt u zich uitschrijven voor e-mails van Elly Apps?</p>
-            <button onClick={handleUnsubscribe} className="bg-[#E53E3E] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#C53030] transition-colors">
+            <h1 className="h3 text-ink">Uitschrijven</h1>
+            <p className="body text-muted">Wilt u zich uitschrijven voor e-mails van Elly Apps?</p>
+            <button onClick={handleUnsubscribe} className="inline-flex min-h-12 items-center justify-center rounded-btn bg-brand-strong px-6 font-semibold text-white transition-colors hover:bg-brand-strong-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-strong">
               Ja, schrijf mij uit
             </button>
           </>
         )}
         {status === 'success' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Uitgeschreven</h1>
-            <p className="text-gray-600">U bent succesvol uitgeschreven. U ontvangt geen e-mails meer van ons.</p>
+            <h1 className="h3 text-ink">Uitgeschreven</h1>
+            <p className="body text-muted">U bent succesvol uitgeschreven. U ontvangt geen e-mails meer van ons.</p>
           </>
         )}
         {status === 'already' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Al uitgeschreven</h1>
-            <p className="text-gray-600">U bent al uitgeschreven voor onze e-mails.</p>
+            <h1 className="h3 text-ink">Al uitgeschreven</h1>
+            <p className="body text-muted">U bent al uitgeschreven voor onze e-mails.</p>
           </>
         )}
         {status === 'invalid' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Ongeldige link</h1>
-            <p className="text-gray-600">Deze uitschrijflink is ongeldig of verlopen.</p>
+            <h1 className="h3 text-ink">Ongeldige link</h1>
+            <p className="body text-muted">Deze uitschrijflink is ongeldig of verlopen.</p>
           </>
         )}
         {status === 'config' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Uitschrijven is tijdelijk niet mogelijk</h1>
-            <p className="text-gray-600">Er ging iets mis aan onze kant. Stuur een e-mail naar info@elly-apps.nl, dan schrijven wij u handmatig uit.</p>
+            <h1 className="h3 text-ink">Uitschrijven is tijdelijk niet mogelijk</h1>
+            <p className="body text-muted">Er ging iets mis aan onze kant. Stuur een e-mail naar info@elly-apps.nl, dan schrijven wij u handmatig uit.</p>
           </>
         )}
         {status === 'error' && (
           <>
-            <h1 className="text-2xl font-bold text-gray-900">Er ging iets mis</h1>
-            <p className="text-gray-600">Probeer het later opnieuw of neem contact met ons op.</p>
+            <h1 className="h3 text-ink">Er ging iets mis</h1>
+            <p className="body text-muted">Probeer het later opnieuw of neem contact met ons op.</p>
           </>
         )}
       </div>
@@ -98,7 +98,7 @@ function UnsubscribeContent() {
 
 export default function UnsubscribePage() {
   return (
-    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><p className="text-gray-500">Laden...</p></div>}>
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><p className="text-muted">Laden...</p></div>}>
       <UnsubscribeContent />
     </Suspense>
   )
