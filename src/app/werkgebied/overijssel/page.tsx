@@ -34,17 +34,18 @@ export default function WerkgebiedOverijsselPage() {
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Werkgebied</p>
           <h1 className="h1 text-ink">Website laten maken in Overijssel</h1>
-          <p className="body-lg text-muted mt-4">Actief in Zwolle, Enschede, Deventer, Almelo, Hengelo en Kampen — wij bouwen websites die MKB-bedrijven in Overijssel beter vindbaar maken.</p>
+          <p className="body-lg text-muted mt-4">Actief in Zwolle, Enschede, Deventer, Almelo, Hengelo en Kampen — wij bouwen websites voor MKB-bedrijven in Overijssel, met aandacht voor vindbaarheid.</p>
         </div>
       </section>
 
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Overijssel kent een sterke ondernemerscultuur. In steden als Zwolle en Enschede is de concurrentie online groot — een professionele website is onmisbaar. Elly Apps helpt ondernemers in Overijssel met een website die klanten aantrekt en converteert.</p>
-          <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk passend bij uw branche in Overijssel.</p>
-          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen relevant voor uw stad of regio binnen Overijssel en uw Google Business Profile.</p>
-          <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
+          <h2 className="h2 text-ink">Ondernemen in Overijssel</h2>
+          <p>De hoofdstad van Overijssel is Zwolle. De provincie grenst aan Drenthe, Gelderland, Flevoland en Friesland, en over de grens liggen de Duitse deelstaten Nedersaksen en Noordrijn-Westfalen. De IJssel en de Overijsselse Vecht stromen door de provincie. Tot de streken horen de Kop van Overijssel, Salland en Twente: Salland is van oudsher vooral agrarisch, terwijl de textielindustrie de Twentse cultuur mede heeft gevormd. Grotere steden zijn Almelo, Deventer, Enschede, Hengelo, Kampen en <Link href="/stad/zwolle" className="text-brand-strong underline hover:no-underline">Zwolle</Link>. In Enschede staat de Universiteit Twente, een universiteit voor technische en sociale wetenschappen, op het voormalige landgoed Drienerlo.</p>
+          <h2 className="h2 text-ink">Zo helpen wij ondernemers in Overijssel</h2>
+          <p>Elly Apps helpt ondernemers in Overijssel met een professionele website, van een eenvoudige bedrijfswebsite tot een site met meerdere pagina's, passend bij uw branche in Overijssel. Op aanvraag bouwen wij ook een boekingssysteem of webshop.</p>
+          <p>Onze websites zijn snel, mobielvriendelijk, hebben basis SEO en zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger, voor zoektermen relevant voor uw stad of regio binnen Overijssel en uw Google Business Profile.</p>
         </div>
       </section>
 
