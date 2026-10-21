@@ -42,7 +42,7 @@ export default function WerkgebiedNoordHollandPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Noord-Holland is een van de meest competitieve provincies van Nederland. Goed vindbaar zijn in Google is hier geen luxe maar noodzaak. Elly Apps helpt ondernemers in Noord-Holland met een professionele website die klanten aantrekt en converteert.</p>
           <p>Wij bouwen snelle, mobielvriendelijke websites die hoog scoren in Google. Van een eenvoudige bedrijfswebsite tot een uitgebreide site met boekingssysteem of webshop — wij leveren maatwerk dat past bij uw branche en doelgroep in Noord-Holland.</p>
-          <p>Lokale SEO is onderdeel van elk pakket. Wij optimaliseren uw website voor zoektermen die relevant zijn voor uw stad of regio binnen Noord-Holland en zorgen voor een volledig Google Business Profile.</p>
+          <p>Lokale SEO en Google Business optimalisatie zitten in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen die relevant zijn voor uw stad of regio binnen Noord-Holland en uw Google Business Profile.</p>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen.</p>
         </div>
       </section>

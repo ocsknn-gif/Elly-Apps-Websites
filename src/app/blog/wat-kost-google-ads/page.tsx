@@ -39,7 +39,7 @@ const articleSchema = {
 const faqItems = [
   { q: 'Wat is een realistisch startbudget voor Google Ads?', a: 'Voor een MKB-bedrijf is een advertentiebudget vanaf ongeveer €300 tot €500 per maand een realistisch startpunt. Daarmee verzamelt u genoeg data om te zien welke zoekwoorden werken. Een te klein budget levert te weinig vertoningen op om iets zinnigs te leren.' },
   { q: 'Betaal ik per klik of per vertoning?', a: 'Bij Google Ads betaalt u standaard per klik (cost-per-click). U betaalt dus alleen wanneer iemand daadwerkelijk op uw advertentie klikt, niet wanneer die alleen wordt getoond. Wat u per klik betaalt, hangt af van de concurrentie op uw zoekwoorden.' },
-  { q: 'Wat kost het om Google Ads te laten beheren?', a: 'Naast uw advertentiebudget betaalt u een vergoeding voor het beheer: het opzetten van campagnes, zoekwoordonderzoek, advertentieteksten, biedstrategie en optimalisatie. Bij Elly Apps zit dit beheer in een vaste maandprijs, zodat u vooraf precies weet waar u aan toe bent.' },
+  { q: 'Wat kost het om Google Ads te laten beheren?', a: 'Naast uw advertentiebudget betaalt u een vergoeding voor het beheer: het opzetten van campagnes, zoekwoordonderzoek, advertentieteksten, biedstrategie en optimalisatie. Bij Elly Apps betaalt u een vaste maandprijs voor het beheer, vanaf €199 per maand met €249 eenmalige opstartkosten. Het advertentiebudget is daar niet in inbegrepen en betaalt u direct aan Google.' },
   { q: 'Hoe snel zie ik resultaat van Google Ads?', a: 'Anders dan bij SEO ziet u vrijwel direct verkeer: zodra uw campagne live staat, kunnen mensen op uw advertentie klikken. De eerste weken zijn vooral bedoeld om data te verzamelen en bij te sturen. Reken op enkele weken voordat een campagne echt geoptimaliseerd draait.' },
   { q: 'Is Google Ads of SEO slimmer voor mijn bedrijf?', a: 'Google Ads levert direct verkeer maar stopt zodra u stopt met betalen. SEO bouwt duurzaam op maar kost tijd. Voor de meeste MKB-bedrijven werkt een combinatie het best: Ads voor snelle resultaten, SEO voor structurele groei op de lange termijn.' },
 ]
@@ -143,9 +143,9 @@ export default function WatKostGoogleAdsPage() {
             per maand rekent een bureau dus al snel €75 tot €100 extra voor het beheer.
           </p>
           <p>
-            Bij Elly Apps voegen wij Google Ads beheer toe als losse dienst.
-            Zo zijn uw website, SEO en advertenties op elkaar afgestemd en uw advertentiebudget zo efficiënt mogelijk
-            wordt ingezet.
+            Bij Elly Apps is Google Ads beheer een losse dienst, los van de websitepakketten.
+            De beheerkosten starten vanaf €199 per maand, met €249 eenmalige opstartkosten. Het advertentiebudget
+            komt daar bovenop en betaalt u direct aan Google.
           </p>
 
           <h2>Valkuilen die u geld kosten</h2>
