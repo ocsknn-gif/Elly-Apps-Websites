@@ -6,13 +6,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'App laten maken Den Haag | Elly Apps',
-  description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven, betaalbaar en snel live.',
+  description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven en betaalbaar.',
   alternates: { canonical: 'https://elly-apps.nl/apps/den-haag' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/apps/den-haag',
     title: 'App laten maken Den Haag | Elly Apps',
-    description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven, betaalbaar en snel live.',
+    description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven en betaalbaar.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'App laten maken Den Haag | Elly Apps',
-    description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven, betaalbaar en snel live.',
+    description: 'App laten maken in Den Haag? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Den Haag. AI-gedreven en betaalbaar.',
     images: ['/og-image.png'],
   },
 }
@@ -36,7 +36,7 @@ const schema = {
 
 const faqItems = [
   { q: 'Wat kost een app laten maken in Den Haag?', a: 'De kosten zijn afhankelijk van de complexiteit en het type app. Wij werken altijd met een transparante vaste prijs. Vraag een vrijblijvende offerte aan voor een exacte prijsindicatie.' },
-  { q: 'Hoe lang duurt het om een app te laten bouwen?', a: 'Gemiddeld leveren wij een app op binnen 4 tot 6 weken. Eenvoudigere applicaties kunnen sneller, complexere platforms vragen meer tijd. U heeft altijd inzicht in de voortgang.' },
+  { q: 'Hoe lang duurt het om een app te laten bouwen?', a: 'Dat is afhankelijk van de app en wordt na een kennismaking (intake) bepaald. U heeft altijd inzicht in de voortgang.' },
   { q: 'Bouwen jullie ook apps voor de overheid of non-profit?', a: 'Ja. Den Haag is de bestuurlijke hoofdstad van Nederland en herbergt veel overheidsinstanties en non-profit organisaties. Wij hebben ervaring met veilige, toegankelijke applicaties voor deze sectoren.' },
   { q: 'Kan een app ook gekoppeld worden aan bestaande systemen?', a: 'Absoluut. Wij bouwen koppelingen met CRM-systemen, boekhoudpakketten, betaalproviders en andere externe platformen.' },
 ]
@@ -64,7 +64,7 @@ export default function AppDenHaagPage() {
           </h1>
           <p className="body-lg text-muted mt-4">
             Professionele web-apps en mobiele apps voor ondernemers in Den Haag en omgeving.
-            Van concept tot lancering — AI-gedreven, snel en volledig ontzorgd.
+            Van concept tot lancering — AI-gedreven en volledig ontzorgd.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function AppDenHaagPage() {
             'Web-apps en mobiele apps op maat',
             'AI-functionaliteiten standaard beschikbaar',
             'Ervaring met overheid en non-profit',
-            'Gemiddeld binnen 4-6 weken live',
+            'Oplevertijd bepaald na intake',
             'Koppelingen met externe systemen',
             'Vaste prijs, volledig beheer',
           ].map((f) => (
