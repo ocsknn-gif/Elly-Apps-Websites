@@ -278,7 +278,6 @@ export default function PrijzenPage({
               />
             ))}
           </div>
-          <p className="mt-6 text-center text-sm text-muted">Alle prijzen zijn exclusief BTW.</p>
         </div>
       </section>
 
