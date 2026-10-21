@@ -6,13 +6,13 @@ import { Faq } from '@/components/home/Faq'
 
 export const metadata: Metadata = {
   title: 'App laten maken Breda | Elly Apps',
-  description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+  description: 'App laten maken in Breda? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Betaalbaar en AI-gedreven.',
   alternates: { canonical: 'https://elly-apps.nl/apps/breda' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/apps/breda',
     title: 'App laten maken Breda | Elly Apps',
-    description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+    description: 'App laten maken in Breda? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Betaalbaar en AI-gedreven.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'App laten maken Breda | Elly Apps',
-    description: 'App laten maken in Breda? Elly Apps bouwt professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Snel, betaalbaar en AI-gedreven.',
+    description: 'App laten maken in Breda? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Betaalbaar en AI-gedreven.',
     images: ['/og-image.png'],
   },
 }
@@ -31,7 +31,7 @@ const schema = {
   name: 'Elly Apps — App laten maken Breda',
   url: 'https://elly-apps.nl/apps/breda',
   areaServed: { '@type': 'City', name: 'Breda' },
-  description: 'Professionele web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant.',
+  description: 'App laten maken in Breda? Elly Apps bouwt web-apps en mobiele apps voor MKB-bedrijven in Breda en West-Brabant. Betaalbaar en AI-gedreven.',
 }
 
 const faqItems = [
