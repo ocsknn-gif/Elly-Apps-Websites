@@ -253,7 +253,7 @@ export default function PrijzenPage({
           {/* Vergelijking banner */}
           <div className="max-w-3xl mx-auto text-center bg-bg rounded-2xl px-6 py-4 text-sm text-muted border border-line">
             <span className="font-semibold text-ink">Traditioneel webbureau:</span> €3.000 - €10.000 eenmalig, zonder doorlopend beheer. &nbsp;·&nbsp;
-            <span className="font-semibold text-brand-strong">Elly Apps:</span> vanaf €49/maand — inclusief hosting, SEO en onderhoud.
+            <span className="font-semibold text-brand-strong">Elly Apps:</span> vanaf €49/maand — inclusief hosting, basis SEO en onderhoud.
           </div>
 
           {/* Tabs */}
