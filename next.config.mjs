@@ -48,6 +48,9 @@ const nextConfig = {
       { source: '/website-laten-maken/gelderland', destination: '/werkgebied/gelderland', permanent: true },
       { source: '/website-laten-maken/overijssel', destination: '/werkgebied/overijssel', permanent: true },
 
+      // Portfolio is vervallen
+      { source: '/portfolio', destination: '/', permanent: true },
+
       // Oude Lovable diensten URLs
       { source: '/seo', destination: '/diensten/seo', permanent: true },
       { source: '/sea', destination: '/diensten/sea', permanent: true },
