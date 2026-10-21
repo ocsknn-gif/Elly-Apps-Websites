@@ -106,9 +106,9 @@ export default function AppNoordHollandPage() {
             retail en e-commerce, logistiek en transport. Elke sector heeft eigen processen en
             behoeften — wij passen onze aanpak daarop aan.
           </p>
-          <h2 className="h2 text-ink pt-6">Van idee naar werkende app: ons bewezen proces</h2>
+          <h2 className="h2 text-ink pt-6">Van idee naar werkende app: ons proces</h2>
           <p>
-            Wij hanteren een bewezen ontwikkelproces dat zorgt voor snelle oplevering en hoge
+            Wij hanteren een ontwikkelproces dat zorgt voor snelle oplevering en hoge
             kwaliteit. Na een gratis kennismakingsgesprek maken wij een functioneel ontwerp.
             Daarna bouwen wij in twee-wekelijkse sprints — u ziet elke twee weken de
             voortgang en kunt feedback geven. Na uitgebreid testen lanceren wij de app en

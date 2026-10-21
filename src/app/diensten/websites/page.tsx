@@ -36,7 +36,7 @@ const schema = {
     { '@type': 'Question', name: 'Hoe lang duurt het om een website te laten maken bij Elly Apps?', acceptedAnswer: { '@type': 'Answer', text: 'Gemiddeld staat uw website binnen 2 weken online. Afhankelijk van de complexiteit kan dit variëren.' } },
     { '@type': 'Question', name: 'Wat is inbegrepen in het maandelijkse bedrag?', acceptedAnswer: { '@type': 'Answer', text: 'Hosting, SSL, maandelijks beheer en basis SEO-optimalisatie.' } },
     { '@type': 'Question', name: 'Kan ik mijn website later uitbreiden?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, u kunt altijd upgraden naar een groter pakket of extra pagina\'s laten toevoegen.' } },
-    { '@type': 'Question', name: 'Wat als ik niet tevreden ben?', acceptedAnswer: { '@type': 'Answer', text: 'Wij werken door totdat u 100% tevreden bent. Dat is onze garantie.' } },
+    { '@type': 'Question', name: 'Wat als ik niet tevreden ben?', acceptedAnswer: { '@type': 'Answer', text: 'Wij werken met een feedbackronde: u geeft feedback, daarna gaan we live.' } },
     { '@type': 'Question', name: 'Beheert Elly Apps mijn website volledig?', acceptedAnswer: { '@type': 'Answer', text: 'Ja, wij nemen het volledige beheer over zodat u zich kunt focussen op uw bedrijf.' } },
   ],
 }
@@ -66,7 +66,7 @@ const faq = [
   { q: 'Hoe lang duurt het om een website te laten maken bij Elly Apps?', a: 'Gemiddeld staat uw website binnen 2 weken online. Afhankelijk van de complexiteit kan dit variëren.' },
   { q: 'Wat is inbegrepen in het maandelijkse bedrag?', a: 'Hosting, SSL, maandelijks beheer en basis SEO-optimalisatie.' },
   { q: "Kan ik mijn website later uitbreiden?", a: "Ja, u kunt altijd upgraden naar een groter pakket of extra pagina's laten toevoegen." },
-  { q: 'Wat als ik niet tevreden ben?', a: 'Wij werken door totdat u 100% tevreden bent. Dat is onze garantie.' },
+  { q: 'Wat als ik niet tevreden ben?', a: 'Wij werken met een feedbackronde: u geeft feedback, daarna gaan we live.' },
   { q: 'Beheert Elly Apps mijn website volledig?', a: 'Ja, wij nemen het volledige beheer over zodat u zich kunt focussen op uw bedrijf.' },
 ]
 

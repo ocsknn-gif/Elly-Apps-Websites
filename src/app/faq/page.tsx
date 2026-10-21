@@ -59,7 +59,7 @@ const faqItems = [
   },
   {
     q: 'Wat gebeurt er als mijn website stuk gaat?',
-    a: 'Wij monitoren uw website 24/7 en lossen problemen proactief op.',
+    a: 'Wij beheren uw website maandelijks en lossen problemen op.',
   },
   {
     q: 'Is mijn website mobiel-vriendelijk?',

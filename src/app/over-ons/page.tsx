@@ -62,7 +62,7 @@ const kernwaarden = [
     icon: <TargetIcon className="size-7 text-brand" />,
     title: 'Resultaatgericht',
     description:
-      'Een mooie website is een middel, geen doel. Wij richten ons altijd op meetbare resultaten: meer bezoekers, meer leads en meer omzet voor uw bedrijf.',
+      'Een mooie website is een middel, geen doel. Wij richten ons altijd op meetbare resultaten en duidelijke rapportages.',
   },
 ]
 

@@ -246,7 +246,7 @@ export default function PrijzenPage({
           <div className="text-center">
             <h1 className="h1 text-ink">Transparante prijzen — wat u ziet is wat u betaalt</h1>
             <p className="body-lg text-muted mt-4">
-              Geen verborgen kosten. Vaste maandprijs. Tevredenheidsgarantie.
+              Geen verborgen kosten. Vaste maandprijs. U geeft feedback, daarna gaan we live.
             </p>
           </div>
 
