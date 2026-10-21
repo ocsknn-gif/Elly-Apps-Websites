@@ -29,7 +29,7 @@ const IMAGE_URL = 'https://elly-apps.nl/images/branches/kapper.webp'
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Website laten maken voor een kapper — zo krijgt u meer klanten',
+  headline: 'Website laten maken voor een kapper — zo wordt uw kapperszaak beter gevonden',
   description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
   datePublished: '2026-01-15',
@@ -60,7 +60,7 @@ export default function BlogKapperPage() {
           </nav>
 
           <h1 className="h1 text-ink">
-            Website laten maken voor een kapper — zo krijgt u meer klanten
+            Website laten maken voor een kapper — zo wordt uw kapperszaak beter gevonden
           </h1>
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function BlogKapperPage() {
           <section>
             <h2>Conclusie</h2>
             <p>
-              Als kapper is een professionele website één van de beste investeringen die u kunt doen. Het levert direct meer afspraken op uit uw eigen buurt. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u meer klanten via Google kunt krijgen.
+              Als kapper is een professionele website één van de beste investeringen die u kunt doen. Het helpt u om afspraken uit uw eigen buurt te ontvangen. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u beter gevonden wordt in Google.
             </p>
           </section>
         </div>
@@ -128,7 +128,7 @@ export default function BlogKapperPage() {
 
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om meer klanten via Google te krijgen?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om beter gevonden te worden in Google?</h2>
           <p className="body-lg text-navy-muted mt-4">Ontvang binnen één werkdag een gratis analyse van uw huidige website met concrete verbeterpunten.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>

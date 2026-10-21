@@ -36,7 +36,7 @@ export default function ScrollCTA() {
           className="hover:underline"
           onClick={() => setDismissed(true)}
         >
-          Wil u ook meer klanten via Google? Vraag uw gratis websitescan aan →
+          Wil u ook beter gevonden worden in Google? Vraag uw gratis websitescan aan →
         </Link>
         <button
           onClick={() => setDismissed(true)}

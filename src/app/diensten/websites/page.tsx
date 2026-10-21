@@ -11,13 +11,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Professionele website laten maken & beheren | Elly Apps',
-  description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle, SEO-geoptimaliseerde websites voor het MKB. Bekijk onze diensten.',
+  description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle websites met basis SEO voor het MKB. Bekijk onze diensten.',
   alternates: { canonical: 'https://elly-apps.nl/diensten/websites' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/diensten/websites',
     title: 'Professionele website laten maken & beheren | Elly Apps',
-    description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle, SEO-geoptimaliseerde websites voor het MKB. Bekijk onze diensten.',
+    description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle websites met basis SEO voor het MKB. Bekijk onze diensten.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Professionele website laten maken & beheren | Elly Apps',
-    description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle, SEO-geoptimaliseerde websites voor het MKB. Bekijk onze diensten.',
+    description: 'Professionele website laten maken voor uw bedrijf? Elly Apps bouwt snelle websites met basis SEO voor het MKB. Bekijk onze diensten.',
     images: ['/og-image.png'],
   },
 }
@@ -50,7 +50,7 @@ const previews = [
 
 const techSpecs = [
   { Icon: Zap, text: 'Snelle laadtijden' },
-  { Icon: Search, text: 'SEO-geoptimaliseerd vanaf dag 1' },
+  { Icon: Search, text: 'Basis SEO vanaf dag 1' },
   { Icon: Accessibility, text: 'Wij letten op toegankelijkheid' },
   { Icon: Smartphone, text: 'Mobielvriendelijk' },
 ]
@@ -144,7 +144,7 @@ export default function DienstenWebsitesPage() {
           </p>
           <ul className="space-y-3 body text-ink">
             {[
-              'Professionele, SEO-geoptimaliseerde teksten',
+              'Professionele teksten met SEO-aandacht',
               'Geschreven voor uw doelgroep',
               'Inbegrepen in het Pro pakket, optioneel bij andere pakketten',
             ].map((t) => (

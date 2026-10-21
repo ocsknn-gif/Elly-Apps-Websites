@@ -33,7 +33,7 @@ const features = [
   'Maandelijkse rapportage met concrete cijfers',
   'Zoekwoordonderzoek op maat',
   'SEO-vriendelijke content',
-  'Inbegrepen in alle website pakketten',
+  'Basis SEO inbegrepen in alle website pakketten',
 ]
 
 const faq = [
@@ -64,7 +64,7 @@ export default function DienstenSeoPage() {
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Diensten</p>
-          <h1 className="h1 text-ink">SEO — meer klanten via Google zonder per klik te betalen</h1>
+          <h1 className="h1 text-ink">SEO — beter gevonden worden in Google zonder per klik te betalen</h1>
           <p className="body-lg text-muted mt-4">Lokale SEO voor MKB-bedrijven. Wij zorgen dat uw website gevonden wordt door klanten in uw regio — structureel en duurzaam.</p>
         </div>
       </section>
@@ -74,7 +74,7 @@ export default function DienstenSeoPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>De meeste MKB-bedrijven worden nauwelijks gevonden op Google. Niet omdat hun dienst niet goed is, maar omdat hun website technisch niet in orde is of te weinig relevante content bevat. Dat veranderen wij.</p>
           <p>Elly Apps verzorgt lokale SEO die écht werkt voor kleine en middelgrote bedrijven. We beginnen met een grondige analyse van uw huidige positie, uw concurrenten en de zoekwoorden waarop uw klanten zoeken. Op basis daarvan bouwen we een SEO-strategie die past bij uw budget en doelen.</p>
-          <p>Voor lokale bedrijven is lokale SEO de krachtigste tool. Wanneer iemand in Amsterdam zoekt naar &ldquo;loodgieter Amsterdam&rdquo; of &ldquo;kapper Utrecht&rdquo;, wilt u bovenaan staan. Met de combinatie van on-page optimalisatie, Google Business Profile en lokale content zorgen we daar voor.</p>
+          <p>Voor lokale bedrijven is lokale SEO de krachtigste tool. Wanneer iemand in Amsterdam zoekt naar &ldquo;loodgieter Amsterdam&rdquo; of &ldquo;kapper Utrecht&rdquo;, wilt u goed gevonden worden. Met de combinatie van on-page optimalisatie, Google Business Profile en lokale content werken we daaraan.</p>
           <p>Basis SEO is inbegrepen in al onze website pakketten. U hoeft geen extra investering te doen voor de basis. Voor uitgebreide SEO-campagnes met blogcontent, linkbuilding en maandelijkse audits bieden wij een apart SEO-pakket aan.</p>
         </div>
       </section>

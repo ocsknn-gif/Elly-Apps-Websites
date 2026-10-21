@@ -110,7 +110,7 @@ export default function SEOTipsMKBPage() {
             correct en volledig zijn ingevuld. Voeg foto&apos;s toe, verzamel actief reviews en reageer
             op alle beoordelingen — ook de negatieve. Een goed geoptimaliseerd Google Business
             profiel zorgt ervoor dat u verschijnt in de lokale resultaten en op Google Maps,
-            wat direct meer belletjes en bezoek oplevert.
+            wat kan helpen aan meer belletjes en bezoek.
           </p>
 
           <h2>Tip 6: Schrijf regelmatig nuttige content</h2>

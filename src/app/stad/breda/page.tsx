@@ -62,7 +62,7 @@ export default function BredaPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Ben je ondernemer in Breda en wil je online meer klanten aantrekken? Een professionele website is tegenwoordig onmisbaar. Of je nu een winkel in het centrum runt, een bouwbedrijf hebt in Teteringen of een dienst aanbiedt in de regio — Elly Apps bouwt een website die past bij jouw bedrijf en jouw doelgroep.</p>
+          <p>Ben je ondernemer in Breda en wil je online beter gevonden worden? Een professionele website is tegenwoordig onmisbaar. Of je nu een winkel in het centrum runt, een bouwbedrijf hebt in Teteringen of een dienst aanbiedt in de regio — Elly Apps bouwt een website die past bij jouw bedrijf en jouw doelgroep.</p>
           <p>Breda is een groeiende stad met een levendige ondernemersscene. Van de sfeervolle binnenstad tot de moderne bedrijventerreinen — de concurrentie is groot. Met een sterke online aanwezigheid val jij op. Elly Apps combineert strak design, snelle laadtijden en lokale SEO zodat jouw website gevonden wordt door klanten in Breda en omgeving.</p>
           <p>Wij kennen de Bredase markt. We bouwen websites die aansluiten bij de lokale doelgroep — van de horeca in de binnenstad tot de zorg- en bouwsector. Onze klanten kiezen voor ons omdat we snel werken, eerlijk communiceren en resultaat leveren. Na de oplevering laten wij je niet los: wij bieden doorlopend onderhoud zodat jouw website altijd up-to-date blijft.</p>
         </div>

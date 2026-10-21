@@ -78,8 +78,8 @@ export default function UtrechtPage() {
           <p>
             Lokale SEO voor Utrecht richt zich op zoekopdrachten zoals "accountant Utrecht",
             "kinderopvang Utrecht-West" of "schilder Zeist". Wij verwerken deze termen
-            strategisch in uw website en optimaliseren uw Google Business Profile. Zo verschijnt
-            u bovenaan in de lokale zoekresultaten en Google Maps wanneer potentiële klanten
+            strategisch in uw website en optimaliseren uw Google Business Profile. Zo bent
+            u beter vindbaar in de lokale zoekresultaten en Google Maps wanneer potentiële klanten
             zoeken.
           </p>
           <p>

@@ -29,7 +29,7 @@ const IMAGE_URL = 'https://elly-apps.nl/images/branches/loodgieter.webp'
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  headline: 'Website laten maken voor een loodgieter — zo krijgt u meer klanten via Google',
+  headline: 'Website laten maken voor een loodgieter — zo wordt u beter gevonden in Google',
   description: 'Een website laten maken als loodgieter? Ontdek wat een professionele loodgieterwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
   datePublished: '2026-01-22',
@@ -60,7 +60,7 @@ export default function BlogLoodgieterPage() {
           </nav>
 
           <h1 className="h1 text-ink">
-            Website laten maken voor een loodgieter — zo krijgt u meer klanten via Google
+            Website laten maken voor een loodgieter — zo wordt u beter gevonden in Google
           </h1>
         </div>
       </section>
@@ -70,14 +70,14 @@ export default function BlogLoodgieterPage() {
           <section>
             <h2>Klanten zoeken online naar een loodgieter</h2>
             <p>
-              Wanneer een klant een lekkage heeft of de cv-ketel het begeeft, grijpt hij direct naar zijn telefoon. Hij zoekt op Google naar &quot;loodgieter + plaatsnaam&quot; en belt de eerste die hij ziet. Als uw bedrijf niet bovenaan staat in Google, bestaat u niet voor die klant. Een professionele website is voor loodgieters daarmee geen luxe maar pure noodzaak.
+              Wanneer een klant een lekkage heeft of de cv-ketel het begeeft, grijpt hij direct naar zijn telefoon. Hij zoekt op Google naar &quot;loodgieter + plaatsnaam&quot; en belt de eerste die hij ziet. Als uw bedrijf niet goed vindbaar is in Google, mist u die klant. Een professionele website is voor loodgieters daarmee geen luxe maar pure noodzaak.
             </p>
           </section>
 
           <section>
             <h2>Wat moet een goede loodgieterwebsite bevatten?</h2>
             <p>
-              Een effectieve website voor een loodgietersbedrijf bevat altijd een duidelijk telefoonnummer bovenaan de pagina, een overzicht van uw diensten zoals lekkages, cv-ketel onderhoud en ontstopping, uw werkgebied, klantbeoordelingen en een contactformulier. Daarnaast is snelheid cruciaal — een trage website verliest bezoekers voordat ze zelfs uw telefoonnummer zien.
+              Een effectieve website voor een loodgietersbedrijf bevat altijd een duidelijk telefoonnummer bovenin de pagina, een overzicht van uw diensten zoals lekkages, cv-ketel onderhoud en ontstopping, uw werkgebied, klantbeoordelingen en een contactformulier. Daarnaast is snelheid cruciaal — een trage website verliest bezoekers voordat ze zelfs uw telefoonnummer zien.
             </p>
           </section>
 
@@ -107,7 +107,7 @@ export default function BlogLoodgieterPage() {
           <section>
             <h2>Conclusie</h2>
             <p>
-              Als loodgieter is een professionele website één van de beste investeringen die u kunt doen. Het levert direct meer aanvragen op uit uw regio. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u meer klanten via Google kunt krijgen.
+              Als loodgieter is een professionele website één van de beste investeringen die u kunt doen. Het helpt u om aanvragen uit uw regio te ontvangen. Vraag vandaag nog uw gratis websitescan aan en ontdek hoe u beter gevonden wordt in Google.
             </p>
           </section>
         </div>
@@ -127,7 +127,7 @@ export default function BlogLoodgieterPage() {
 
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om meer klanten via Google te krijgen?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om beter gevonden te worden in Google?</h2>
           <p className="body-lg text-navy-muted mt-4">Ontvang binnen één werkdag een gratis analyse van uw huidige website met concrete verbeterpunten.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>

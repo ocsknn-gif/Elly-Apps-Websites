@@ -56,7 +56,7 @@ export default function ZorgPage() {
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
-          <h1 className="h1 text-ink">Meer patiënten voor uw zorgpraktijk via Google — zonder gedoe</h1>
+          <h1 className="h1 text-ink">Website laten maken voor uw zorgpraktijk — zonder gedoe</h1>
           <p className="body-lg text-muted mt-4">Elke dag zoeken mensen in uw regio online naar een zorgverlener. Wees zichtbaar wanneer het telt.</p>
         </div>
       </section>
@@ -67,7 +67,7 @@ export default function ZorgPage() {
           <p>Elke dag zoeken mensen in uw regio online naar een zorgverlener. Ze lezen reviews, bekijken uw behandelaanbod en willen direct een afspraak kunnen maken — zonder te bellen. Als uw praktijk daar niet professioneel zichtbaar is, kiezen ze voor een concurrent die dat wél is.</p>
           <p>Een zorgwebsite is meer dan een digitale visitekaart. Het is uw eerste indruk, uw online spreekuur en uw belangrijkste instrument om nieuwe patiënten te bereiken. Bij Elly Apps bouwen we zorgwebsites die niet alleen vertrouwen uitstralen, maar ook technisch correct zijn opgebouwd zodat Google u vindt.</p>
           <p>Een goede zorgwebsite bevat: een duidelijk overzicht van uw behandelingen en specialisaties, informatie over uw team en werkwijze, uw praktijklocatie en bereikbaarheid, klantbeoordelingen en een contactformulier met privacyverklaring.</p>
-          <p>De meeste patiënten zoeken lokaal — &quot;huisarts Amsterdam&quot; of &quot;fysiotherapeut Den Haag&quot;. Met lokale SEO zorgen wij dat uw praktijk bovenaan verschijnt bij mensen in uw regio. Google Business optimalisatie is standaard inbegrepen in ons Groei pakket.</p>
+          <p>De meeste patiënten zoeken lokaal — &quot;huisarts Amsterdam&quot; of &quot;fysiotherapeut Den Haag&quot;. Met lokale SEO zorgen wij dat uw praktijk beter vindbaar is bij mensen in uw regio. Google Business optimalisatie is standaard inbegrepen in ons Groei pakket.</p>
           <p>Wilt u dat patiënten zelf een afspraak kunnen inplannen, ook buiten kantooruren? Dan kunt u een online afspraakmodule als aparte uitbreiding laten toevoegen. De prijs is afhankelijk van uw wensen; vraag een vrijblijvende offerte aan.</p>
           <p>Een professionele zorgwebsite via Elly Apps begint vanaf €299 eenmalig + €49 per maand, inclusief hosting, onderhoud en SEO-optimalisatie. Er zijn geen verborgen kosten.</p>
         </div>
@@ -113,7 +113,7 @@ export default function ZorgPage() {
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om meer patiënten te krijgen via internet?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar voor een website voor uw praktijk?</h2>
           <p className="body-lg text-navy-muted mt-4">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen één werkdag reactie</p>
           <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg', className: 'mt-8' })}>
             Ja, ik wil een gratis websitescan

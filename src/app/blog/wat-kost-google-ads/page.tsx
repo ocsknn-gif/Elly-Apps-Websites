@@ -89,7 +89,7 @@ export default function WatKostGoogleAdsPage() {
           <p>
             Google Ads werkt op basis van een veilingsysteem. Elke keer dat iemand iets zoekt op
             Google, vindt er in milliseconden een veiling plaats tussen alle adverteerders die op
-            dat zoekwoord bieden. De winnaar verschijnt bovenaan de pagina. U betaalt alleen wanneer
+            dat zoekwoord bieden. De winnaar krijgt de beste advertentiepositie. U betaalt alleen wanneer
             iemand daadwerkelijk op uw advertentie klikt — dit heet cost-per-click (CPC).
           </p>
           <p>
