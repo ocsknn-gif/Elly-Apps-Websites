@@ -37,7 +37,7 @@ const features = [
 ]
 
 const faq = [
-  { q: 'Wat is het verschil tussen SEO en Google Ads?', a: 'SEO levert organisch verkeer op de lange termijn. Google Ads (SEA) geeft directe zichtbaarheid bovenaan Google, maar u betaalt per klik. Samen vormen ze een krachtige groeistrategie.' },
+  { q: 'Wat is het verschil tussen SEO en Google Ads?', a: 'SEO levert organisch verkeer op de lange termijn. Google Ads (SEA) geeft directe zichtbaarheid in Google, maar u betaalt per klik. Samen vormen ze een krachtige groeistrategie.' },
   { q: 'Wat kost Google Ads beheer bij Elly Apps?', a: 'Onze beheerkosten starten vanaf €199/mnd (Google Ads Starter, met €249 eenmalige opstartkosten). Het advertentiebudget betaalt u direct aan Google — dat is volledig uw keuze en staat los van onze beheerskosten.' },
   { q: 'Hoe snel zie ik resultaat?', a: 'Google Ads campagnes zijn vrijwel direct actief. Na activering verschijnen uw advertenties al binnen enkele uren in de zoekresultaten.' },
   { q: 'Wat als ik mijn campagne wil pauzeren?', a: 'U kunt uw campagne op elk moment pauzeren of stoppen. Er zijn geen minimale looptijden en geen opzegtermijnen bij ons.' },
@@ -64,7 +64,7 @@ export default function DienstenSeaPage() {
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Diensten</p>
-          <h1 className="h1 text-ink">Google Ads — direct bovenaan Google, volledig ontzorgd</h1>
+          <h1 className="h1 text-ink">Google Ads — direct zichtbaar in Google, volledig ontzorgd</h1>
           <p className="body-lg text-muted mt-4">SEA-beheer voor MKB-bedrijven die nu al klanten willen. Wij zetten uw campagnes op, optimaliseren dagelijks en rapporteren maandelijks.</p>
         </div>
       </section>
@@ -72,7 +72,7 @@ export default function DienstenSeaPage() {
       {/* Tekst */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
-          <p>Met Google Ads staat uw bedrijf direct bovenaan in de zoekresultaten — zelfs als uw website nog niet hoog rankt organisch. U betaalt alleen wanneer iemand op uw advertentie klikt. Dat maakt Google Ads een van de meest meetbare vormen van online adverteren.</p>
+          <p>Met Google Ads kan uw bedrijf direct in de zoekresultaten verschijnen — zelfs als uw website nog niet hoog rankt organisch. U betaalt alleen wanneer iemand op uw advertentie klikt. Dat maakt Google Ads een van de meest meetbare vormen van online adverteren.</p>
           <p>Voor MKB-bedrijven is Google Ads bijzonder effectief voor lokale diensten waarbij klanten actief zoeken: loodgieters, kappers, tandartsenpraktijken, rijscholen en meer. Wanneer iemand zoekt naar &ldquo;loodgieter Amsterdam spoed&rdquo; wilt u als eerste zichtbaar zijn.</p>
           <p>Elly Apps beheert uw Google Ads-campagnes volledig. Van het instellen van campagnes en het schrijven van advertentieteksten tot optimalisatie van biedstrategieën en maandelijkse rapportage. U hoeft zelf niets te doen — wij zorgen dat uw budget zo efficiënt mogelijk wordt ingezet.</p>
           <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €199 per maand, met €249 eenmalige opstartkosten. Geen verborgen kosten, geen langetermijncontract.</p>
@@ -119,7 +119,7 @@ export default function DienstenSeaPage() {
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om direct meer klanten te krijgen via Google?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om direct zichtbaar te zijn in Google?</h2>
           <p className="body-lg text-navy-muted mt-4">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen één werkdag reactie</p>
           <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg', className: 'mt-8' })}>
             Ja, ik wil een gratis scan
