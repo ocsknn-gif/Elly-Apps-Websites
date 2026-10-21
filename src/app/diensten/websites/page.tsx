@@ -74,7 +74,7 @@ export default function DienstenWebsitesPage() {
         <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <div>
             <h1 className="h1 text-ink">Professionele website laten maken voor uw bedrijf</h1>
-            <p className="body-lg text-muted mt-4 mb-6">8 op de 10 MKB-websites worden niet gevonden op Google. Elly Apps zorgt dat u wél gevonden wordt — volledig ontzorgd.</p>
+            <p className="body-lg text-muted mt-4 mb-6">Veel MKB-websites worden niet gevonden op Google. Elly Apps zorgt dat u wél gevonden wordt — volledig ontzorgd.</p>
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
               Ja, ik wil mijn gratis websitescan
             </Link>
