@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { PlusIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 
 export const metadata: Metadata = {
@@ -95,43 +96,48 @@ export default function FAQPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
+      <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
+        <div className="max-w-3xl mx-auto text-center">
+          <h1 className="h1 text-ink">
             Veelgestelde vragen
           </h1>
-          <p className="mt-4 text-xl text-gray-600">
+          <p className="body-lg text-muted mt-4">
             Staat uw vraag er niet bij? Neem gerust contact op.
           </p>
         </div>
+      </section>
 
-        <div className="space-y-4">
+      <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
+        <div className="max-w-3xl mx-auto space-y-3">
           {faqItems.map((item) => (
             <details
               key={item.q}
-              className="group rounded-xl border border-gray-200 bg-white shadow-sm overflow-hidden"
+              className="group rounded-xl border border-line bg-bg"
             >
-              <summary className="flex items-center justify-between gap-4 px-6 py-4 cursor-pointer font-semibold text-gray-900 list-none select-none hover:bg-gray-50 transition-colors">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between gap-4 rounded-xl px-5 py-4 font-semibold text-ink hover:text-brand-strong [&::-webkit-details-marker]:hidden">
                 {item.q}
-                <span className="shrink-0 text-brand-strong text-xl leading-none group-open:rotate-45 transition-transform duration-200">
-                  +
-                </span>
+                <PlusIcon
+                  className="size-5 shrink-0 text-brand-strong transition-transform duration-200 group-open:rotate-45"
+                  aria-hidden="true"
+                />
               </summary>
-              <div className="px-6 pb-5 text-sm text-gray-600 leading-relaxed">{item.a}</div>
+              <p className="body text-muted px-5 pb-5">{item.a}</p>
             </details>
           ))}
         </div>
+      </section>
 
-        <div className="mt-12 text-center bg-brand-tint rounded-2xl p-8">
-          <p className="text-gray-700 font-medium mb-4">Heeft u een andere vraag?</p>
+      <section className="section px-4 sm:px-6 lg:px-8 bg-navy">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="h2 text-on-navy mb-8">Heeft u een andere vraag?</h2>
           <a
             href="/contact"
-            className={buttonVariants()}
+            className={buttonVariants({ size: 'lg' })}
           >
             Neem contact op
           </a>
         </div>
-      </div>
+      </section>
     </>
   )
 }
