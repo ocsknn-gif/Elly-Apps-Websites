@@ -7,6 +7,7 @@ import LeadConversion from '@/components/LeadConversion'
 export const metadata: Metadata = {
   title: 'Bedankt voor uw aanvraag | Elly Apps',
   description: 'Bedankt! U ontvangt binnen één werkdag een persoonlijke reactie van ons.',
+  robots: { index: false, follow: true },
   alternates: { canonical: 'https://elly-apps.nl/bedankt' },
   openGraph: {
     type: 'website',
