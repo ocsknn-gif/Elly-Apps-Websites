@@ -97,7 +97,7 @@ export default function DienstenSeoPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="afsluiting-titel" className="h2 text-on-navy">Ontdek hoe uw website scoort in Google</h2>
-          <p className="body-lg text-navy-muted mt-4">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen 24 uur reactie</p>
+          <p className="body-lg text-navy-muted mt-4">✓ Gratis &nbsp; ✓ Vrijblijvend &nbsp; ✓ Binnen één werkdag reactie</p>
           <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg', className: 'mt-8' })}>
             Ja, ik wil een gratis SEO-scan
           </Link>

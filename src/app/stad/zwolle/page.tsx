@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Wat kost een website laten maken in Zwolle?', a: 'Een website via Elly Apps begint vanaf €299 eenmalige setup plus €49 per maand, inclusief hosting, onderhoud en basis SEO-optimalisatie. De prijs hangt af van het aantal pagina\'s en de gewenste functionaliteit. Vraag een gratis offerte aan voor een exacte prijs.' },
-  { q: 'Hoe snel is mijn website klaar?', a: 'De meeste websites zijn binnen 5 tot 7 werkdagen live. Bij complexere projecten stemmen we de planning vooraf af.' },
+  { q: 'Hoe snel is mijn website klaar?', a: 'Websites zijn gemiddeld binnen twee weken live. Bij complexere projecten stemmen we de planning vooraf af.' },
   { q: 'Wordt mijn website gevonden in Google?', a: 'Ja. Wij optimaliseren elke website voor zoekmachines, met extra aandacht voor lokale zoektermen in Zwolle en omgeving.' },
   { q: 'Bouwen jullie ook webshops in Zwolle?', a: 'Ja, wij bouwen webshops voor ondernemers in Zwolle. Neem contact op voor de mogelijkheden en een offerte.' },
   { q: 'Werken jullie ook buiten Zwolle?', a: 'Ja, we bedienen ook ondernemers in Kampen, Deventer, Hardenberg, Meppel en andere gemeenten rondom Zwolle en in Oost-Nederland.' },
@@ -63,7 +63,7 @@ export default function ZwollePage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Zwolle is het economisch centrum van Oost-Nederland en een van de sterkst groeiende steden van Overijssel. De historische Sassenpoort, het bruisende stadscentrum en de strategische ligging maken Zwolle tot een aantrekkelijke vestigingsplaats voor ondernemers uit allerlei sectoren.</p>
           <p>Elly Apps bouwt voor Zwolse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft in de binnenstad, een kantoor runt nabij het station of diensten aanbiedt in de regio — wij bouwen een website die aansluit bij uw doelgroep in Zwolle en omgeving.</p>
-          <p>Een effectieve website voor een Zwolls bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Zwolle en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld 5 tot 7 werkdagen.</p>
+          <p>Een effectieve website voor een Zwolls bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Zwolle en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
       </section>
 

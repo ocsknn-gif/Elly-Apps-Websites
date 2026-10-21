@@ -115,7 +115,7 @@ export default function BlogLoodgieterPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar om meer klanten via Google te krijgen?</h2>
-          <p className="body-lg text-navy-muted mt-4">Ontvang binnen 24 uur een gratis analyse van uw huidige website met concrete verbeterpunten.</p>
+          <p className="body-lg text-navy-muted mt-4">Ontvang binnen één werkdag een gratis analyse van uw huidige website met concrete verbeterpunten.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>
               Vraag uw gratis websitescan aan

@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Hoe zorg je dat ik gevonden word in Almere op Google?', a: 'We optimaliseren uw website specifiek voor Almere en omgeving. We verwerken lokale zoektermen zoals "website laten maken Almere" in uw paginateksten, titels en meta descriptions. Daarnaast zorgen we dat uw Google Business-profiel correct is ingesteld met uw Almeerse vestiging.' },
-  { q: 'Hoe snel kan mijn website live staan in Almere?', a: 'In de meeste gevallen staat uw website binnen 5 tot 10 werkdagen live. Na een kort intakegesprek verwerken wij alles voor u. U hoeft niets technisch te doen.' },
+  { q: 'Hoe snel kan mijn website live staan in Almere?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een kort intakegesprek verwerken wij alles voor u. U hoeft niets technisch te doen.' },
   { q: 'Maken jullie websites voor alle branches in Almere?', a: 'Ja, absoluut. We bouwen websites voor alle soorten Almeerse bedrijven — van restaurants en winkels tot loodgieters, kappers, accountants en MKB-bedrijven.' },
   { q: 'Is een website voor een klein Almeers bedrijf betaalbaar?', a: 'Absoluut. Onze websites beginnen vanaf €49 per maand met een eenmalige setup van €299, inclusief hosting, onderhoud en basis SEO. Eén nieuwe klant per maand verdient dit ruimschoots terug.' },
   { q: 'Werken jullie ook in de regio rondom Almere?', a: 'Ja, we bedienen ook ondernemers in Lelystad, Zeewolde, Huizen, Bussum en andere gemeenten rondom Almere.' },
@@ -71,7 +71,7 @@ export default function AlmerePage() {
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {['Basis SEO; lokale SEO in het Groei en Pro pakket', 'Mobielvriendelijk en snel', 'Google Business optimalisatie in het Groei pakket en hoger', 'Hosting, SSL en onderhoud inbegrepen', 'Professioneel ontwerp op maat', 'Binnen 5-10 werkdagen live'].map((f) => (
+          {['Basis SEO; lokale SEO in het Groei en Pro pakket', 'Mobielvriendelijk en snel', 'Google Business optimalisatie in het Groei pakket en hoger', 'Hosting, SSL en onderhoud inbegrepen', 'Professioneel ontwerp op maat', 'Gemiddeld binnen twee weken live'].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink"><CheckCircleIcon className="size-5 text-brand shrink-0" aria-hidden="true" />{f}</div>
           ))}
         </div>

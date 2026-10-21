@@ -228,7 +228,7 @@ const brancheLinks = [
   { label: 'Alle branches', href: '/branche' },
 ]
 
-const NOTE = '✓ Gratis \u00a0 ✓ Vrijblijvend \u00a0 ✓ Binnen 24 uur reactie'
+const NOTE = '✓ Gratis \u00a0 ✓ Vrijblijvend \u00a0 ✓ Binnen één werkdag reactie'
 
 export default function PrijzenPage({
   searchParams,

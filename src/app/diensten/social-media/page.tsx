@@ -81,7 +81,7 @@ const faq = [
   { q: 'Zit ik vast aan een contract?', a: 'Nee. U kunt maandelijks opzeggen zonder verdere verplichtingen.' },
 ]
 
-const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen 24 uur reactie'
+const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie'
 
 export default function DienstenSocialMediaPage() {
   return (

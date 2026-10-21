@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Wat kost een website laten maken in Haarlem?', a: 'Een website via Elly Apps begint vanaf €299 eenmalige setup plus €49 per maand, inclusief hosting, onderhoud en basis SEO-optimalisatie. De prijs hangt af van het aantal pagina\'s en de gewenste functionaliteit. Vraag een gratis offerte aan voor een exacte prijs.' },
-  { q: 'Hoe snel is mijn website klaar?', a: 'De meeste websites zijn binnen 5 tot 7 werkdagen live. Bij complexere projecten stemmen we de planning vooraf af.' },
+  { q: 'Hoe snel is mijn website klaar?', a: 'Websites zijn gemiddeld binnen twee weken live. Bij complexere projecten stemmen we de planning vooraf af.' },
   { q: 'Wordt mijn website gevonden in Google?', a: 'Ja. Wij optimaliseren elke website voor zoekmachines, met extra aandacht voor lokale zoektermen in Haarlem en omgeving.' },
   { q: 'Bouwen jullie ook webshops in Haarlem?', a: 'Ja, wij bouwen webshops voor ondernemers in Haarlem. Neem contact op voor de mogelijkheden en een offerte.' },
   { q: 'Werken jullie ook buiten Haarlem?', a: 'Ja, we bedienen ook ondernemers in Heemstede, Bloemendaal, Zandvoort, IJmuiden en andere plaatsen rondom Haarlem.' },
@@ -63,7 +63,7 @@ export default function HaarlemPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Haarlem is een van de mooiste steden van Noord-Holland, bekend om zijn rijke cultuur, de Grote Houtstraat en de oevers van de Spaarne. Met tienduizenden actieve ondernemers en een groeiende middenstand is de online concurrentie groot. Klanten zoeken altijd eerst online voordat ze binnenlopen of bellen.</p>
           <p>Elly Apps bouwt voor Haarlemse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft aan de Grote Houtstraat, een kantoor runt nabij het Spaarne of diensten aanbiedt in de regio — wij bouwen een website die aansluit bij uw doelgroep.</p>
-          <p>Een effectieve website voor een Haarlems bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Haarlem en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld 5 tot 7 werkdagen.</p>
+          <p>Een effectieve website voor een Haarlems bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Haarlem en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
       </section>
 

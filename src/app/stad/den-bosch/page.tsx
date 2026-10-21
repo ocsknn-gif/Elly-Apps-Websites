@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Wat kost een website laten maken in Den Bosch?', a: 'Een website via Elly Apps begint vanaf €299 eenmalige setup plus €49 per maand, inclusief hosting, onderhoud en basis SEO-optimalisatie. De prijs hangt af van het aantal pagina\'s en de gewenste functionaliteit. Vraag een gratis offerte aan voor een exacte prijs.' },
-  { q: 'Hoe snel is mijn website klaar?', a: 'De meeste websites zijn binnen 5 tot 7 werkdagen live. Bij complexere projecten stemmen we de planning vooraf af.' },
+  { q: 'Hoe snel is mijn website klaar?', a: 'Websites zijn gemiddeld binnen twee weken live. Bij complexere projecten stemmen we de planning vooraf af.' },
   { q: 'Wordt mijn website gevonden in Google?', a: 'Ja. Wij optimaliseren elke website voor zoekmachines, met extra aandacht voor lokale zoektermen in Den Bosch en omgeving.' },
   { q: 'Bouwen jullie ook webshops?', a: 'Ja, wij bouwen webshops voor ondernemers in Den Bosch. Neem contact op voor de mogelijkheden en een offerte.' },
   { q: 'Werken jullie alleen in Den Bosch?', a: 'Nee, wij werken voor ondernemers door heel Nederland. Maar wij kennen de Bossche markt goed en helpen lokale bedrijven graag.' },
@@ -63,7 +63,7 @@ export default function DenBoschPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Ben je ondernemer in Den Bosch en wil je online meer klanten aantrekken? Of je nu een winkel hebt in de Hinthamerstraat, een kantoor runt nabij de Sint-Janskathedraal of een dienst aanbiedt in de regio — Elly Apps bouwt een website die past bij jouw bedrijf en jouw doelgroep.</p>
           <p>Den Bosch is de bruisende hoofdstad van Noord-Brabant, met een rijke historie en een groeiende ondernemersscene. Van de gezellige binnenstad tot de moderne bedrijventerreinen — de concurrentie is groot. Elly Apps combineert strak design, snelle laadtijden en lokale SEO zodat jouw website gevonden wordt door klanten in Den Bosch en omgeving.</p>
-          <p>Wij kennen de Bossche markt. We bouwen websites die aansluiten bij de lokale doelgroep — van horeca en retail in de binnenstad tot bouw, zorg en dienstverlening in de regio. Onze klanten kiezen voor ons omdat we snel werken, eerlijk communiceren en resultaat leveren. Het hele traject duurt gemiddeld 5 tot 7 werkdagen.</p>
+          <p>Wij kennen de Bossche markt. We bouwen websites die aansluiten bij de lokale doelgroep — van horeca en retail in de binnenstad tot bouw, zorg en dienstverlening in de regio. Onze klanten kiezen voor ons omdat we snel werken, eerlijk communiceren en resultaat leveren. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
       </section>
 
