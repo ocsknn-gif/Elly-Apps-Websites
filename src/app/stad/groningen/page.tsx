@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Hoe zorg je dat ik gevonden word in Groningen op Google?', a: 'We optimaliseren uw website specifiek voor Groningen en omgeving. We verwerken lokale zoektermen zoals "website laten maken Groningen" in uw paginateksten, titels en meta descriptions. Daarnaast zorgen we dat uw Google Business-profiel correct is ingesteld.' },
-  { q: 'Hoe snel kan mijn website live staan in Groningen?', a: 'In de meeste gevallen staat uw website binnen 5 tot 10 werkdagen live. Na een kort intakegesprek verwerken wij alles voor u.' },
+  { q: 'Hoe snel kan mijn website live staan in Groningen?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een kort intakegesprek verwerken wij alles voor u.' },
   { q: 'Maken jullie websites voor alle branches in Groningen?', a: 'Ja, absoluut. We bouwen websites voor alle soorten Groningse bedrijven — van restaurants en winkels tot loodgieters, kappers, accountants en MKB-bedrijven.' },
   { q: 'Is een website voor een klein Gronings bedrijf betaalbaar?', a: 'Absoluut. Onze websites beginnen vanaf €49 per maand met een eenmalige setup van €299, inclusief hosting, onderhoud en basis SEO.' },
   { q: 'Werken jullie ook in de regio rondom Groningen?', a: 'Ja, we bedienen ook ondernemers in Assen, Drachten, Emmen, Leeuwarden en andere gemeenten rondom Groningen.' },

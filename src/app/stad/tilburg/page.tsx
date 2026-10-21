@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Hoe zorg je dat ik gevonden word in Tilburg op Google?', a: 'We optimaliseren uw website specifiek voor Tilburg en omgeving. We verwerken lokale zoektermen zoals "website laten maken Tilburg" in uw paginateksten, titels en meta descriptions. Daarnaast zorgen we dat uw Google Business-profiel correct is ingesteld.' },
-  { q: 'Hoe snel kan mijn website live staan in Tilburg?', a: 'In de meeste gevallen staat uw website binnen 5 tot 10 werkdagen live. Na een kort intakegesprek verwerken wij alles voor u.' },
+  { q: 'Hoe snel kan mijn website live staan in Tilburg?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een kort intakegesprek verwerken wij alles voor u.' },
   { q: 'Maken jullie websites voor alle branches in Tilburg?', a: 'Ja, absoluut. We bouwen websites voor alle soorten Tilburgse bedrijven — van restaurants en winkels tot loodgieters, kappers, accountants en MKB-bedrijven.' },
   { q: 'Is een website voor een klein Tilburgs bedrijf betaalbaar?', a: 'Absoluut. Onze websites beginnen vanaf €49 per maand met een eenmalige setup van €299, inclusief hosting, onderhoud en basis SEO.' },
   { q: 'Werken jullie ook in de regio rondom Tilburg?', a: 'Ja, we bedienen ook ondernemers in Waalwijk, Dongen, Goirle, Gilze en omliggende gemeenten rondom Tilburg. Ook wijken als Reeshof, Berkel-Enschot en Udenhout bedienen wij.' },

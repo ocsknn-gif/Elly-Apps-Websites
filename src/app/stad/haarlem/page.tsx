@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const faq = [
   { q: 'Wat kost een website laten maken in Haarlem?', a: 'Een website via Elly Apps begint vanaf €299 eenmalige setup plus €49 per maand, inclusief hosting, onderhoud en basis SEO-optimalisatie. De prijs hangt af van het aantal pagina\'s en de gewenste functionaliteit. Vraag een gratis offerte aan voor een exacte prijs.' },
-  { q: 'Hoe snel is mijn website klaar?', a: 'De meeste websites zijn binnen 5 tot 7 werkdagen live. Bij complexere projecten stemmen we de planning vooraf af.' },
+  { q: 'Hoe snel is mijn website klaar?', a: 'Websites zijn gemiddeld binnen twee weken live. Bij complexere projecten stemmen we de planning vooraf af.' },
   { q: 'Wordt mijn website gevonden in Google?', a: 'Ja. Wij optimaliseren elke website voor zoekmachines, met extra aandacht voor lokale zoektermen in Haarlem en omgeving.' },
   { q: 'Bouwen jullie ook webshops in Haarlem?', a: 'Ja, wij bouwen webshops voor ondernemers in Haarlem. Neem contact op voor de mogelijkheden en een offerte.' },
   { q: 'Werken jullie ook buiten Haarlem?', a: 'Ja, we bedienen ook ondernemers in Heemstede, Bloemendaal, Zandvoort, IJmuiden en andere plaatsen rondom Haarlem.' },
