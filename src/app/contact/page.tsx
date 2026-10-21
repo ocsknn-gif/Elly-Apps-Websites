@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { PhoneIcon, MailIcon, MessageCircleIcon, ClockIcon } from 'lucide-react'
 import { ContactForm } from '@/components/ContactForm'
 import ContactLink from '@/components/ContactLink'
-import { ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
+import { ORG_ALTERNATE_NAME, ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Contact & gratis websitescan | Elly Apps & Websites',
@@ -33,6 +33,7 @@ const contactSchema = {
     '@type': 'Organization',
     '@id': ORG_ID,
     name: ORG_NAME,
+    alternateName: ORG_ALTERNATE_NAME,
     url: SITE_URL,
     contactPoint: {
       '@type': 'ContactPoint',

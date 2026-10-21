@@ -1,6 +1,7 @@
 export const SITE_URL = 'https://elly-apps.nl'
 export const ORG_ID = `${SITE_URL}/#organization`
 export const ORG_NAME = 'Elly Apps & Websites'
+export const ORG_ALTERNATE_NAME = 'Elly Apps'
 
 // Google verwerkt JSON-LD per pagina: naam en url staan daarom altijd inline bij de verwijzing.
 export const organizationRef = {

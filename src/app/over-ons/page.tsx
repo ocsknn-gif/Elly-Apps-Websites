@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { HeartIcon, UsersIcon, TargetIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
-import { ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
+import { ORG_ALTERNATE_NAME, ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
 
 export const metadata: Metadata = {
   title: 'Over ons | Elly Apps',
@@ -31,6 +31,7 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': ORG_ID,
   name: ORG_NAME,
+  alternateName: ORG_ALTERNATE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/elly-logo.png`,
   telephone: '+31636278515',

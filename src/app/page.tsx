@@ -10,7 +10,7 @@ import { Faq } from '@/components/home/Faq'
 import { About } from '@/components/home/About'
 import { ClosingCta } from '@/components/home/ClosingCta'
 import { websitePakketten, type WebsitePakket } from '@/lib/pakketten'
-import { ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
+import { ORG_ALTERNATE_NAME, ORG_ID, ORG_NAME, SITE_URL } from '@/lib/schema'
 
 // ─── Schema.org JSON-LD ───────────────────────────────────────────────────────
 
@@ -25,6 +25,7 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': ORG_ID,
   name: ORG_NAME,
+  alternateName: ORG_ALTERNATE_NAME,
   url: SITE_URL,
   logo: `${SITE_URL}/elly-logo.png`,
   telephone: '+31636278515',
