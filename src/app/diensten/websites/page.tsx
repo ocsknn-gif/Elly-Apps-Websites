@@ -56,10 +56,10 @@ const comparison = [
 ]
 
 const techSpecs = [
-  { Icon: Zap, text: 'Laadtijd onder 2 seconden' },
+  { Icon: Zap, text: 'Snelle laadtijden' },
   { Icon: Search, text: 'SEO-geoptimaliseerd vanaf dag 1' },
-  { Icon: Accessibility, text: 'WCAG 2.1 AA toegankelijk' },
-  { Icon: Smartphone, text: '100% mobielvriendelijk' },
+  { Icon: Accessibility, text: 'Wij letten op toegankelijkheid' },
+  { Icon: Smartphone, text: 'Mobielvriendelijk' },
 ]
 
 const faq = [
