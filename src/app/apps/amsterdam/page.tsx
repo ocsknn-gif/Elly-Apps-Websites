@@ -151,7 +151,7 @@ export default function AppAmsterdamPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="afsluiting-titel" className="h2 text-on-navy">App laten bouwen in Amsterdam?</h2>
-          <p className="body-lg text-navy-muted mt-4">Vertel ons uw idee en ontvang binnen 24 uur een vrijblijvende terugkoppeling.</p>
+          <p className="body-lg text-navy-muted mt-4">Vertel ons uw idee en ontvang binnen één werkdag een vrijblijvende terugkoppeling.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className={buttonVariants({ size: 'lg' })}>Gratis kennismakingsgesprek</Link>
             <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>
