@@ -63,7 +63,7 @@ export default function ZwollePage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Zwolle is het economisch centrum van Oost-Nederland en een van de sterkst groeiende steden van Overijssel. De historische Sassenpoort, het bruisende stadscentrum en de strategische ligging maken Zwolle tot een aantrekkelijke vestigingsplaats voor ondernemers uit allerlei sectoren.</p>
           <p>Elly Apps bouwt voor Zwolse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft in de binnenstad, een kantoor runt nabij het station of diensten aanbiedt in de regio — wij bouwen een website die aansluit bij uw doelgroep in Zwolle en omgeving.</p>
-          <p>Een effectieve website voor een Zwolls bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Zwolle en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld 5 tot 7 werkdagen.</p>
+          <p>Een effectieve website voor een Zwolls bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Zwolle en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
       </section>
 

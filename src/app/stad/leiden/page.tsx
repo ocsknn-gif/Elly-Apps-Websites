@@ -63,7 +63,7 @@ export default function LeidenPage() {
         <div className="max-w-4xl mx-auto space-y-5 body text-muted">
           <p>Leiden is een van de oudste en meest dynamische steden van Nederland. Bekend om de Universiteit Leiden, de grachten en de levendige Haarlemmerstraat, trekt de stad zowel studenten als ondernemers uit alle sectoren aan. De markt is competitief — wie niet zichtbaar is online, mist klanten.</p>
           <p>Elly Apps bouwt voor Leidse ondernemers websites die professioneel ogen en hoog scoren in Google. Of u nu een winkel heeft in de binnenstad, een consultancybedrijf runt nabij de universiteit of diensten aanbiedt aan startups en kennisbedrijven in de regio — wij bouwen een website die aansluit bij uw doelgroep.</p>
-          <p>Een effectieve website voor een Leids bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Leiden en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld 5 tot 7 werkdagen.</p>
+          <p>Een effectieve website voor een Leids bedrijf bevat altijd een duidelijke omschrijving van uw diensten, uw werkgebied in Leiden en omgeving, klantbeoordelingen, een contactformulier en lokale SEO-optimalisatie. Onze websites worden volledig beheerd geleverd: hosting, SSL, updates en technisch onderhoud zijn inbegrepen. Het hele traject duurt gemiddeld twee weken.</p>
         </div>
       </section>
 
