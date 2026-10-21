@@ -36,7 +36,7 @@ const schema = {
 }
 
 const faqItems = [
-  { q: 'Wat moet er op de website van een accountantskantoor staan?', a: 'Een goede accountantswebsite bevat minimaal: een duidelijke dienstenpagina (jaarrekening, belastingaangifte, loonadministratie), een over-ons sectie met de expertise van uw team, klantcases of testimonials, contactgegevens en een contactformulier. SEO-geoptimaliseerde content rond zoekwoorden als "accountant [stad]" is essentieel voor vindbaarheid.' },
+  { q: 'Wat moet er op de website van een accountantskantoor staan?', a: 'Een goede accountantswebsite bevat minimaal: een duidelijke dienstenpagina (jaarrekening, belastingaangifte, loonadministratie), een over-ons sectie met de expertise van uw team, klantcases of testimonials, contactgegevens en een contactformulier. Content die op zoekwoorden als "accountant [stad]" is afgestemd, helpt bij vindbaarheid.' },
   { q: 'Hoe onderscheidt een accountantswebsite zich van de concurrentie?', a: 'De meeste accountantswebsites zien er hetzelfde uit. U onderscheidt zich door concreet te zijn: welke sectoren bedient u, welke bedrijfsgroottes, welke specifieke expertise? Wij helpen u dit helder te verwoorden en te vertalen naar een website die direct vertrouwen wekt.' },
   { q: 'Kan ik een klantomgeving toevoegen?', a: 'Een klantportaal waar cliënten documenten kunnen uploaden en downloaden is op aanvraag mogelijk, in overleg. Dit bespaart veel heen-en-weer mailen en verhoogt de professionele uitstraling.' },
   { q: 'Is een accountantswebsite duur?', a: 'Bij Elly Apps betaalt u €299 eenmalige setup en €49 per maand. Dat is inclusief hosting, SSL, updates en basis SEO. Er zijn geen verborgen kosten.' },
@@ -90,9 +90,9 @@ export default function AccountantskantoorPage() {
             De meeste accountants worden gevonden via Google. Zoektermen als "accountant
             [stad]", "boekhouder MKB" of "belastingaangifte zzp" worden
             regelmatig gezocht. Wij optimaliseren uw website specifiek voor deze
-            zoekwoorden — zodat u bovenaan verschijnt wanneer ondernemers in uw regio op
-            zoek zijn naar een accountant. Dit is duurzame marketing die maand na maand
-            nieuwe klanten oplevert, zonder advertentiekosten.
+            zoekwoorden — zodat u beter vindbaar bent wanneer ondernemers in uw regio op
+            zoek zijn naar een accountant. Dit is duurzame marketing
+            zonder advertentiekosten.
           </p>
           <h2 className="h2 text-ink pt-6">Klantportaal</h2>
           <p>
@@ -150,7 +150,7 @@ export default function AccountantskantoorPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="afsluiting-titel" className="h2 text-on-navy">Website voor uw accountantskantoor?</h2>
-          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij meer klanten naar uw kantoor brengen.</p>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe een website uw kantoor beter vindbaar maakt.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
             <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>

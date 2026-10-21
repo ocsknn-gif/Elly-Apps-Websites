@@ -97,7 +97,7 @@ export default function HorecaPage() {
           <h2 className="h2 text-ink pt-6">Lokale SEO voor horeca: zo werkt het</h2>
           <p>
             Wanneer iemand zoekt op "restaurant Amsterdam-West" of "sushi bezorgen Utrecht",
-            bepaalt Google welke bedrijven bovenaan verschijnen op basis van drie factoren:
+            bepaalt Google welke bedrijven hoog verschijnen op basis van drie factoren:
             relevantie, afstand en bekendheid. Wij optimaliseren uw website en Google Business
             Profile op alle drie deze factoren. Wij voegen de juiste zoekwoorden toe, zorgen
             voor consistente NAP-gegevens (naam, adres, telefoonnummer) en helpen u actief
@@ -158,7 +158,7 @@ export default function HorecaPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
           <h2 id="afsluiting-titel" className="h2 text-on-navy">Horeca website laten maken?</h2>
-          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij meer gasten naar uw zaak brengen.</p>
+          <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe een website uw zaak beter vindbaar maakt.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
             <Link href="/prijzen" className={buttonVariants({ variant: 'secondary', size: 'lg' })}>Bekijk prijzen</Link>

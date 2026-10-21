@@ -121,7 +121,7 @@ export default function LoodgieterPage() {
       {/* CTA */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-navy" aria-labelledby="afsluiting-titel">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 id="afsluiting-titel" className="h2 text-on-navy">Meer opdrachten via uw website?</h2>
+          <h2 id="afsluiting-titel" className="h2 text-on-navy">Klaar voor een website voor uw loodgietersbedrijf?</h2>
           <p className="body-lg text-navy-muted mt-4">Vraag een gratis websitescan aan en ontdek hoe wij uw online zichtbaarheid verbeteren.</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/gratis-websitescan" className={buttonVariants({ size: 'lg' })}>Gratis websitescan</Link>
