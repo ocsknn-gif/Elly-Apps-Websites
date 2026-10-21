@@ -5,14 +5,14 @@ import { ArrowRightIcon } from 'lucide-react'
 import { BlogFilter } from '@/components/BlogFilter'
 
 export const metadata: Metadata = {
-  title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+  title: 'Blog: tips over websites, SEO en Google Ads | Elly Apps',
   description:
     'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/blog' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog',
-    title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+    title: 'Blog: tips over websites, SEO en Google Ads | Elly Apps',
     description: 'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog | Elly Apps — Tips over websites, SEO en online marketing',
+    title: 'Blog: tips over websites, SEO en Google Ads | Elly Apps',
     description: 'Praktische tips en inzichten over websites, SEO, Google Ads en online marketing voor het MKB. Lees de laatste artikelen van Elly Apps.',
     images: ['/og-image.png'],
   },

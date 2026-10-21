@@ -5,13 +5,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
   title: 'Website laten maken voor een kapper in 2026 | Elly Apps',
-  description: 'Als kapper meer klanten via Google? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+  description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   alternates: { canonical: 'https://elly-apps.nl/blog/kapper' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/kapper',
     title: 'Website laten maken voor een kapper in 2026 | Elly Apps',
-    description: 'Als kapper meer klanten via Google? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+    description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Website laten maken voor een kapper in 2026 | Elly Apps',
-    description: 'Als kapper meer klanten via Google? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+    description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
     images: ['/og-image.png'],
   },
 }
@@ -30,7 +30,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: 'Website laten maken voor een kapper — zo krijgt u meer klanten',
-  description: 'Als kapper meer klanten via Google? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
+  description: 'Een website laten maken voor uw kapperszaak? Ontdek wat een professionele kapperwebsite moet hebben en hoe Elly Apps u helpt vanaf €49 per maand.',
   image: [IMAGE_URL],
   datePublished: '2026-01-15',
   dateModified: '2026-01-15',

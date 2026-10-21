@@ -4,14 +4,14 @@ import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
 
 export const metadata: Metadata = {
-  title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
+  title: 'Website niet gevonden op Google? Oorzaken | Elly Apps',
   description:
     'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
   alternates: { canonical: 'https://elly-apps.nl/blog/website-niet-gevonden-google' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/website-niet-gevonden-google',
-    title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
+    title: 'Website niet gevonden op Google? Oorzaken | Elly Apps',
     description: 'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website niet gevonden op Google? Oorzaken en oplossingen | Elly Apps',
+    title: 'Website niet gevonden op Google? Oorzaken | Elly Apps',
     description: 'Staat uw website niet in Google? Ontdek de meestvoorkomende technische oorzaken en hoe u ze stap voor stap oplost. Inclusief tips van Elly Apps.',
     images: ['/og-image.png'],
   },

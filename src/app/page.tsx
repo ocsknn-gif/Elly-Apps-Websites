@@ -28,7 +28,7 @@ const localBusinessSchema = {
   email: 'info@elly-apps.nl',
   url: 'https://elly-apps.nl',
   logo: 'https://elly-apps.nl/elly-logo.png',
-  description: 'Elly Apps bouwt en beheert professionele, SEO-geoptimaliseerde websites voor het Nederlandse MKB. AI-gedreven aanpak, vaste maandprijs vanaf €49.',
+  description: 'Elly Apps bouwt professionele websites voor het MKB. Met basis SEO, volledig ontzorgd. Vanaf €49 per maand.',
   areaServed: {
     '@type': 'Country',
     name: 'Netherlands',

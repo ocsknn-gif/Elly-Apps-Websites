@@ -6,13 +6,13 @@ import { RelatedLinks } from '@/components/RelatedLinks'
 export const metadata: Metadata = {
   title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
   description:
-    'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+    'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
   alternates: { canonical: 'https://elly-apps.nl/blog/seo-tips-mkb' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/blog/seo-tips-mkb',
     title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
-    description: 'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+    description: 'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
     images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Elly Apps & Websites' }],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: '7 praktische SEO tips voor MKB-bedrijven in 2026 | Elly Apps',
-    description: 'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen. Van technische optimalisatie tot content strategie — zo wordt uw website beter gevonden op Google.',
+    description: 'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
     images: ['/og-image.png'],
   },
 }
@@ -29,7 +29,7 @@ const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: '7 praktische SEO tips voor MKB-bedrijven in 2026',
-  description: 'Concrete SEO tips waarmee MKB-bedrijven direct aan de slag kunnen om beter gevonden te worden op Google.',
+  description: 'Concrete SEO tips voor MKB-bedrijven, van technische optimalisatie tot contentstrategie, zodat uw website beter gevonden kan worden op Google.',
   author: { '@type': 'Organization', name: 'Elly Apps' },
   publisher: { '@type': 'Organization', name: 'Elly Apps', url: 'https://elly-apps.nl' },
   datePublished: '2026-06-09',
