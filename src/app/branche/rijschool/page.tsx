@@ -3,6 +3,8 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { Faq } from '@/components/home/Faq'
+import { BranchePrijzen } from '@/components/branches/BranchePrijzen'
 import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
@@ -33,10 +35,29 @@ const schema = serviceSchema({
   audienceType: 'rijscholen',
 })
 
+const faqItems = [
+  { q: 'Wat kost een website voor een rijschool?', a: 'Het Starter pakket kost €49 per maand met €299 eenmalige setup. Groei kost €199 per maand met €499 eenmalige setup. Bij Pro is de eenmalige setup €799 en de maandprijs op aanvraag. Alle prijzen zijn exclusief BTW.' },
+  { q: 'Hoe snel staat mijn rijschoolwebsite online?', a: 'Gemiddeld staat uw website binnen twee weken online. Afhankelijk van de complexiteit kan dit variëren.' },
+  { q: 'Kunnen leerlingen online lessen inplannen?', a: 'Een aanmelding via een formulier is mogelijk. Online lessen inplannen vraagt een boekingssysteem. Dat is een aparte uitbreiding op offertebasis.' },
+  { q: 'Word ik gevonden door leerlingen in mijn plaats?', a: 'Basis SEO zit in elk pakket. Lokale SEO en Google Business optimalisatie horen bij het Groei pakket en hoger. Een positie in Google kunnen wij niet garanderen.' },
+  { q: 'Kan ik eigen teksten en foto’s aanleveren?', a: 'U kunt eigen teksten en foto’s aanleveren. Professionele teksten zijn optioneel bij het Groei pakket (+€149) en inbegrepen bij het Pro pakket.' },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
 export default function RijschoolPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
@@ -55,12 +76,29 @@ export default function RijschoolPage() {
           <p>Elly Apps bouwt rijschoolwebsites gericht op conversie: een duidelijke aanmeldknop, overzicht van pakketten en tarieven, slagingspercentages en een reviewsectie. Met een geïntegreerd contactformulier komen lesaanvragen direct in uw mailbox.</p>
           <h2 className="h2 text-ink pt-6">Lokale SEO en Google Business Profile voor rijscholen</h2>
           <p>Lokale SEO is voor rijscholen belangrijk en zit in het Groei pakket en hoger. Daarmee optimaliseren wij uw website voor zoektermen als &quot;rijles [stad]&quot; en &quot;snel rijbewijs halen&quot;. Ook uw Google Business Profile hoort bij het Groei pakket en hoger, zodat uw rijschool ook in Google Maps zichtbaar is. Werkt u in een van deze steden? Bekijk dan onze pagina's over <Link href="/stad/eindhoven" className="text-brand-strong underline hover:no-underline">website laten maken in Eindhoven</Link>, <Link href="/stad/nijmegen" className="text-brand-strong underline hover:no-underline">website laten maken in Nijmegen</Link> en <Link href="/stad/groningen" className="text-brand-strong underline hover:no-underline">website laten maken in Groningen</Link>.</p>
+          <h2 className="h2 text-ink pt-6">Wat staat er op een goede rijschoolwebsite?</h2>
+          <p>Wie een rijschool zoekt, wil snel weten wat u aanbiedt en wat het kost. Zet daarom deze onderdelen duidelijk op uw site:</p>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><strong className="text-ink">Lespakketten en tarieven:</strong> het aantal lessen, de lesduur, de prijs en of het examen is inbegrepen.</li>
+            <li><strong className="text-ink">Proefles aanvragen:</strong> een kort formulier met naam, contactgegevens en woonplaats.</li>
+            <li><strong className="text-ink">Type rijbewijs:</strong> schakel of automaat, en of u ook motor- of aanhangerlessen geeft.</li>
+            <li><strong className="text-ink">Lesgebied:</strong> de plaatsen en wijken waar u leerlingen ophaalt.</li>
+            <li><strong className="text-ink">Instructeurs:</strong> een foto en korte introductie, zodat leerlingen weten bij wie ze instappen.</li>
+          </ul>
+
+          <h2 className="h2 text-ink pt-6">Rijschool website template of laten maken?</h2>
+          <p>Met een template bouwt u zelf uw website. Dat kan goedkoper zijn als u tijd heeft om de teksten, de techniek en het onderhoud zelf te regelen. Laat u de site maken, dan nemen wij het ontwerp, de bouw en het maandelijkse beheer uit handen. Welke keuze past, hangt vooral af van de tijd die u er zelf in wilt steken.</p>
+
           <h2 className="h2 text-ink pt-6">Reviews voor nieuwe leerlingen</h2>
           <p>Reviews zijn belangrijk voor nieuwe leerlingen. Wij bouwen een prominente reviewsectie en helpen u actief meer beoordelingen te verzamelen. Een slagingspercentage kunt u op uw site tonen.</p>
           <h2 className="h2 text-ink pt-6">Volledig beheerd</h2>
           <p>Onze websites zijn volledig beheerd: hosting, SSL, updates en onderhoud zijn inbegrepen. U focust op het lesgeven, wij zorgen voor uw online zichtbaarheid.</p>
         </div>
       </section>
+
+      <BranchePrijzen title="Wat kost een rijschoolwebsite?">
+        U betaalt eenmalig voor de setup en daarna een vaste maandprijs. Online lessen inplannen met een boekingssysteem is een aparte uitbreiding op offertebasis.
+      </BranchePrijzen>
 
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
@@ -82,6 +120,8 @@ export default function RijschoolPage() {
           ))}
         </div>
       </section>
+
+      <Faq items={faqItems} title="Veelgestelde vragen over een rijschoolwebsite" className="bg-bg" />
 
       <RelatedLinks
         id="gerelateerd-titel"

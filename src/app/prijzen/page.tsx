@@ -225,6 +225,7 @@ const brancheLinks = [
   { label: 'Loodgieter', href: '/branche/loodgieter' },
   { label: 'Tandarts', href: '/branche/tandarts' },
   { label: 'Fysiotherapeut', href: '/branche/fysiotherapeut' },
+  { label: 'Rijschool', href: '/branche/rijschool' },
   { label: 'Alle branches', href: '/branche' },
 ]
 
