@@ -203,11 +203,11 @@ const pakketten = {
 const faqItems = [
   {
     q: 'Zijn er verborgen kosten?',
-    a: 'Nee. De maandprijs is allesomvattend: hosting, SSL en maandelijks beheer zijn inbegrepen. De enige extra kosten zijn de eenmalige setup en eventuele betaalde advertenties (Google Ads).',
+    a: 'Nee. De maandprijs is allesomvattend: hosting, SSL en maandelijks beheer zijn inbegrepen. Daarnaast betaalt u de eenmalige setup en eventuele advertentiebudgetten. Wijzigingen boven de 30 minuten per maand en een eventuele overname van de website gaan op offerte.',
   },
   {
     q: 'Kan ik tussentijds wisselen van pakket?',
-    a: 'Ja, u kunt op elk moment upgraden naar een hoger pakket. Downgraden is mogelijk na het eerste contractjaar.',
+    a: 'Ja. U kunt op elk moment upgraden. Downgraden kan na het eerste jaar en gaat in bij de volgende verlenging.',
   },
   {
     q: 'Wat is inbegrepen in de setup?',

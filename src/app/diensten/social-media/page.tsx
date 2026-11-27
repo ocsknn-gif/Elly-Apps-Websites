@@ -34,7 +34,7 @@ const schema = {
   mainEntity: [
     { '@type': 'Question', name: 'Wat is het verschil tussen beheerskosten en advertentiebudget?', acceptedAnswer: { '@type': 'Answer', text: 'De beheerskosten betaalt u aan Elly Apps voor het opzetten en optimaliseren van uw campagnes. Het advertentiebudget betaalt u direct aan Meta — dit is het bedrag dat daadwerkelijk aan het tonen van advertenties wordt besteed.' } },
     { '@type': 'Question', name: 'Hoe snel zie ik resultaat?', acceptedAnswer: { '@type': 'Answer', text: 'De meeste campagnes laten na 2 tot 4 weken eerste resultaten zien. Het algoritme heeft tijd nodig om te leren wie uw ideale klant is.' } },
-    { '@type': 'Question', name: 'Zit ik vast aan een contract?', acceptedAnswer: { '@type': 'Answer', text: 'Nee. U kunt maandelijks opzeggen zonder verdere verplichtingen.' } },
+    { '@type': 'Question', name: 'Zit ik vast aan een contract?', acceptedAnswer: { '@type': 'Answer', text: 'Ja. Het contract heeft een looptijd van 1 jaar, die begint bij uw schriftelijke akkoord, en wordt daarna steeds met 1 jaar verlengd. Opzeggen kan tot 1 kalendermaand voor het einde van de looptijd.' } },
   ],
 }
 
@@ -79,7 +79,7 @@ const goals = [
 const faq = [
   { q: 'Wat is het verschil tussen beheerskosten en advertentiebudget?', a: 'De beheerskosten betaalt u aan Elly Apps voor het opzetten en optimaliseren van uw campagnes. Het advertentiebudget betaalt u direct aan Meta — dit is het bedrag dat daadwerkelijk aan het tonen van advertenties wordt besteed.' },
   { q: 'Hoe snel zie ik resultaat?', a: 'De meeste campagnes laten na 2 tot 4 weken eerste resultaten zien. Het algoritme heeft tijd nodig om te leren wie uw ideale klant is.' },
-  { q: 'Zit ik vast aan een contract?', a: 'Nee. U kunt maandelijks opzeggen zonder verdere verplichtingen.' },
+  { q: 'Zit ik vast aan een contract?', a: 'Ja. Het contract heeft een looptijd van 1 jaar, die begint bij uw schriftelijke akkoord, en wordt daarna steeds met 1 jaar verlengd. Opzeggen kan tot 1 kalendermaand voor het einde van de looptijd.' },
 ]
 
 const NOTE = '✓ Gratis   ✓ Vrijblijvend   ✓ Binnen één werkdag reactie'

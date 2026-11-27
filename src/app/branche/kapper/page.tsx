@@ -39,7 +39,7 @@ const faqItems = [
   { q: 'Kunnen klanten online een afspraak boeken?', a: 'Dat kan, als aparte uitbreiding. Een online afsprakensysteem zit niet in de websitepakketten, maar wij kunnen het voor u integreren: het neemt 24/7 boekingen aan, stuurt bevestigingen en herinneringen en kan gekoppeld worden aan uw agenda. De prijs hangt af van uw wensen; neem contact op voor een vrijblijvende offerte.' },
   { q: 'Hoe snel staat mijn kapperswebsite online?', a: 'Gemiddeld staat uw website binnen twee weken live. Na een korte intake bouwen wij een eerste versie die u kunt bekijken en aanpassen, waarna wij de site publiceren en, in het Groei pakket en hoger, de lokale SEO inrichten.' },
   { q: 'Word ik gevonden door klanten in mijn stad?', a: 'In het Groei pakket en hoger richten wij de website specifiek hierop in. Dan optimaliseren wij uw pagina voor zoektermen als "kapper [uw stad]" en zorgen wij dat uw Google Bedrijfsprofiel klopt met openingstijden, foto\'s en reviews, zodat u beter vindbaar kunt zijn in Google Maps en de lokale resultaten.' },
-  { q: 'Kan ik mijn portfolio en tarieven zelf bijwerken?', a: 'Ja. U kunt eenvoudig nieuwe foto\'s toevoegen en tarieven aanpassen. Heeft u daar liever geen omkijken naar? Dan regelen wij het voor u als onderdeel van het maandelijkse beheer.' },
+  { q: 'Kan ik mijn portfolio en tarieven zelf bijwerken?', a: 'Ja. U kunt eenvoudig nieuwe foto\'s toevoegen en tarieven aanpassen. Heeft u daar liever geen omkijken naar? Dan regelen wij het voor u binnen de 30 minuten kleine wijzigingen per maand die bij het beheer horen.' },
 ]
 
 export default function KapperPage() {

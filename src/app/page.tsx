@@ -96,7 +96,7 @@ const faqItems = [
   },
   {
     q: 'Zit ik vast aan een lang contract?',
-    a: 'Wij hanteren een minimale contractduur van 1 jaar. Na het eerste jaar wordt het contract automatisch maandelijks verlengd. Zo houden wij de service betaalbaar en zorgen wij dat wij ons kunnen blijven inzetten voor uw online groei.',
+    a: 'Het contract heeft een looptijd van 1 jaar, die begint bij uw schriftelijke akkoord, en wordt daarna steeds met 1 jaar verlengd. Opzeggen kan tot 1 kalendermaand voor het einde van de looptijd.',
   },
 ]
 
