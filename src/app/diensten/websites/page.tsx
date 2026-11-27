@@ -189,6 +189,7 @@ export default function DienstenWebsitesPage() {
         title="Website laten maken in uw stad"
         className="bg-bg"
         links={[
+          { label: "Website laten maken in Aalsmeer", href: "/stad/aalsmeer" },
           { label: "Website laten maken in Amsterdam", href: "/stad/amsterdam" },
           { label: "Website laten maken in Rotterdam", href: "/stad/rotterdam" },
           { label: "Website laten maken in Den Haag", href: "/stad/den-haag" },

@@ -70,6 +70,7 @@ export default function WerkgebiedNoordHollandPage() {
         title="Website laten maken per stad in Noord-Holland"
         className="bg-bg"
         links={[
+          { label: "Website laten maken in Aalsmeer", href: "/stad/aalsmeer" },
           { label: "Website laten maken in Amsterdam", href: "/stad/amsterdam" },
           { label: "Website laten maken in Haarlem", href: "/stad/haarlem" },
           { label: "App laten maken in Amsterdam", href: "/apps/amsterdam" },

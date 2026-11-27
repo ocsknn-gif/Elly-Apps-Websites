@@ -66,6 +66,7 @@ const sections = [
   {
     title: 'Steden',
     links: [
+      { label: 'Aalsmeer', href: '/stad/aalsmeer' },
       { label: 'Amsterdam', href: '/stad/amsterdam' },
       { label: 'Rotterdam', href: '/stad/rotterdam' },
       { label: 'Utrecht', href: '/stad/utrecht' },
