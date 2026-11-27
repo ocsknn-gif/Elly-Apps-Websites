@@ -87,7 +87,8 @@ export default function OverOnsPage() {
       <section className="section px-4 sm:px-6 lg:px-8 bg-bg">
         <div className="max-w-3xl mx-auto artikel">
           <p>
-            Elly Apps is opgericht door <strong>Omer Coskun</strong>, gevestigd in Aalsmeer. Na
+            Elly Apps is opgericht door <strong>Omer Coskun</strong>, gevestigd in Aalsmeer (lees over{' '}
+            <Link href="/stad/aalsmeer">een website laten maken in Aalsmeer</Link>). Na
             jarenlange ervaring in digitale dienstverlening zag Omer dat veel MKB-bedrijven
             worstelen met hetzelfde probleem: ze weten dat ze een goede website nodig hebben, maar
             vinden het te duur, te ingewikkeld of te tijdrovend om dit goed aan te pakken.

@@ -41,7 +41,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const stadRoutes: MetadataRoute.Sitemap = [
     'amsterdam', 'rotterdam', 'utrecht', 'den-haag', 'eindhoven',
     'almere', 'breda', 'den-bosch', 'groningen', 'haarlem',
-    'leiden', 'nijmegen', 'tilburg', 'zwolle',
+    'leiden', 'nijmegen', 'tilburg', 'zwolle', 'aalsmeer',
   ].map((slug) => ({ url: `${BASE}/stad/${slug}` }))
 
   const appsRoutes: MetadataRoute.Sitemap = [
