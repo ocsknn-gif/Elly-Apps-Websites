@@ -33,7 +33,7 @@ const features = [
   'Conversietracking instellen',
   'Remarketing campagnes',
   'Maandelijkse rapportage',
-  'Geen langetermijncontract',
+  'Looptijd van 1 jaar',
   'Transparante beheerkosten',
 ]
 
@@ -41,7 +41,7 @@ const faq = [
   { q: 'Wat is het verschil tussen SEO en Google Ads?', a: 'SEO levert organisch verkeer op de lange termijn. Google Ads (SEA) geeft directe zichtbaarheid in Google, maar u betaalt per klik. Samen vormen ze een krachtige groeistrategie.' },
   { q: 'Wat kost Google Ads beheer bij Elly Apps?', a: 'Onze beheerkosten starten vanaf €199/mnd (Google Ads Starter, met €249 eenmalige opstartkosten). Het advertentiebudget betaalt u direct aan Google — dat is volledig uw keuze en staat los van onze beheerskosten.' },
   { q: 'Hoe snel zie ik resultaat?', a: 'Google Ads campagnes zijn vrijwel direct actief. Na activering verschijnen uw advertenties al binnen enkele uren in de zoekresultaten.' },
-  { q: 'Wat als ik mijn campagne wil pauzeren?', a: 'U kunt uw campagne op elk moment pauzeren of stoppen. Er zijn geen minimale looptijden en geen opzegtermijnen bij ons.' },
+  { q: 'Wat als ik mijn campagne wil pauzeren?', a: 'Uw campagne kan op uw verzoek worden gepauzeerd. Het contract en de beheerkosten lopen dan door. Het contract heeft een looptijd van 1 jaar, die begint bij uw schriftelijke akkoord, en wordt daarna steeds met 1 jaar verlengd. Opzeggen kan tot 1 kalendermaand voor het einde van de looptijd.' },
   { q: 'Beheren jullie ook bestaande Google Ads accounts?', a: 'Ja. Wij nemen graag een bestaand account over, voeren een audit uit en optimaliseren waar nodig. Dit gaat gepaard met een eenmalige analyse.' },
 ]
 
@@ -84,7 +84,7 @@ export default function DienstenSeaPage() {
           <p>Met Google Ads kan uw bedrijf direct in de zoekresultaten verschijnen — zelfs als uw website nog niet hoog rankt organisch. U betaalt alleen wanneer iemand op uw advertentie klikt. Dat maakt Google Ads een van de meest meetbare vormen van online adverteren.</p>
           <p>Voor MKB-bedrijven is Google Ads bijzonder effectief voor lokale diensten waarbij klanten actief zoeken: loodgieters, kappers, tandartsenpraktijken, rijscholen en meer. Wanneer iemand zoekt naar &ldquo;loodgieter Amsterdam spoed&rdquo; wilt u als eerste zichtbaar zijn.</p>
           <p>Elly Apps beheert uw Google Ads-campagnes volledig. Van het instellen van campagnes en het schrijven van advertentieteksten tot optimalisatie van biedstrategieën en maandelijkse rapportage. U hoeft zelf niets te doen — wij zorgen dat uw budget zo efficiënt mogelijk wordt ingezet.</p>
-          <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €199 per maand, met €249 eenmalige opstartkosten. Geen verborgen kosten, geen langetermijncontract.</p>
+          <p>Het advertentiebudget betaalt u direct aan Google. Onze beheerkosten zijn transparant en starten vanaf €199 per maand, met €249 eenmalige opstartkosten. Geen verborgen kosten. Het contract heeft een looptijd van 1 jaar.</p>
         </div>
       </section>
 

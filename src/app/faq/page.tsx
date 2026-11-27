@@ -47,7 +47,7 @@ const faqItems = [
   },
   {
     q: 'Zit ik vast aan een lang contract?',
-    a: 'Wij hanteren een minimale contractduur van 1 jaar. Na het eerste jaar wordt het contract automatisch verlengd.',
+    a: 'Het contract heeft een looptijd van 1 jaar, die begint bij uw schriftelijke akkoord, en wordt daarna steeds met 1 jaar verlengd. Opzeggen kan tot 1 kalendermaand voor het einde van de looptijd.',
   },
   {
     q: 'Welke sectoren bedienen jullie?',
@@ -67,7 +67,7 @@ const faqItems = [
   },
   {
     q: 'Kan ik later uitbreiden?',
-    a: 'Ja, u kunt altijd upgraden naar een hoger pakket.',
+    a: 'Ja. U kunt op elk moment upgraden. Downgraden kan na het eerste jaar en gaat in bij de volgende verlenging.',
   },
   {
     q: 'Bieden jullie ook onderhoud aan bestaande websites?',

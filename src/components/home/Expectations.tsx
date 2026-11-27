@@ -7,7 +7,7 @@ const toezeggingen = [
   { icon: ReceiptIcon, title: 'Vaste maandprijs', text: 'U weet vooraf wat u betaalt. Geen verborgen kosten.' },
   { icon: FileTextIcon, title: 'Scanrapport binnen één werkdag', text: 'Na uw aanvraag ontvangt u een persoonlijk rapport over uw website.' },
   { icon: ServerIcon, title: 'Techniek geregeld', text: 'Hosting, SSL, updates en beveiliging zitten in uw pakket.' },
-  { icon: HandshakeIcon, title: 'Duidelijke afspraken', text: 'Minimaal 1 jaar, daarna wordt het contract maandelijks verlengd.' },
+  { icon: HandshakeIcon, title: 'Duidelijke afspraken', text: 'Looptijd van 1 jaar, daarna steeds met 1 jaar verlengd. Opzeggen tot 1 maand voor het einde.' },
 ]
 
 export function Expectations() {

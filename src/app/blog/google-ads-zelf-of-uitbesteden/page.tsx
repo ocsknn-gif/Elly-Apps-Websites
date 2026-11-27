@@ -80,7 +80,7 @@ export default function BlogGoogleAdsZelfOfUitbestedenPage() {
 
           <h2>Wat kost Google Ads beheer?</h2>
           <p>
-            De kosten van Google Ads-beheer hangen af van de complexiteit van de campagnes en het advertentiebudget. Bij Elly Apps starten onze beheerkosten vanaf €199 per maand (plus €249 eenmalige opstartkosten) — volledig transparant, zonder langetermijncontract.
+            De kosten van Google Ads-beheer hangen af van de complexiteit van de campagnes en het advertentiebudget. Bij Elly Apps starten onze beheerkosten vanaf €199 per maand (plus €249 eenmalige opstartkosten) — met een contract met een looptijd van 1 jaar.
           </p>
           <p>
             Belangrijk om te begrijpen: de beheerkosten en het advertentiebudget zijn twee aparte posten. Het advertentiebudget betaalt u direct aan Google; de beheerkosten zijn de vergoeding voor het beheer van uw account.
