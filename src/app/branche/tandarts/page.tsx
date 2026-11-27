@@ -3,17 +3,19 @@ import Link from 'next/link'
 import { CheckCircleIcon } from 'lucide-react'
 import { buttonVariants } from '@/components/ui/button'
 import { RelatedLinks } from '@/components/RelatedLinks'
+import { Faq } from '@/components/home/Faq'
+import { BranchePrijzen } from '@/components/branches/BranchePrijzen'
 import { serviceSchema } from '@/lib/schema'
 
 export const metadata: Metadata = {
-  title: 'Website laten maken voor tandartsen | Elly Apps',
+  title: 'Website laten maken voor een tandarts | Elly Apps',
   description:
     'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
   alternates: { canonical: 'https://elly-apps.nl/branche/tandarts' },
   openGraph: {
     type: 'website',
     url: 'https://elly-apps.nl/branche/tandarts',
-    title: 'Website laten maken voor tandartsen | Elly Apps',
+    title: 'Website laten maken voor een tandarts | Elly Apps',
     description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     siteName: 'Elly Apps & Websites',
     locale: 'nl_NL',
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Website laten maken voor tandartsen | Elly Apps',
+    title: 'Website laten maken voor een tandarts | Elly Apps',
     description: 'Website laten maken voor uw tandartspraktijk? Met behandelingsoverzicht, vanaf €49 per maand. Online afspraken zijn een aparte uitbreiding.',
     images: ['/og-image.png'],
   },
@@ -34,17 +36,36 @@ const schema = serviceSchema({
   audienceType: 'tandartsen',
 })
 
+const faqItems = [
+  { q: 'Wat kost een website voor een tandartspraktijk?', a: 'Het Starter pakket kost €49 per maand met €299 eenmalige setup. Groei kost €199 per maand met €499 eenmalige setup. Bij Pro is de eenmalige setup €799 en de maandprijs op aanvraag. Alle prijzen zijn exclusief BTW.' },
+  { q: 'Hoe snel staat mijn praktijkwebsite online?', a: 'Gemiddeld staat uw website binnen twee weken online. Afhankelijk van de complexiteit kan dit variëren.' },
+  { q: 'Kunnen patiënten online een afspraak maken?', a: 'Dat kan als aparte uitbreiding. Een online afsprakensysteem zit niet in de websitepakketten; de prijs hangt af van uw wensen en wij maken daarvoor een offerte.' },
+  { q: 'Word ik gevonden door patiënten in mijn regio?', a: 'Basis SEO zit in elk pakket. Lokale SEO en Google Business optimalisatie horen bij het Groei pakket en hoger. Een positie in Google kunnen wij niet garanderen.' },
+  { q: 'Kunnen jullie mijn bestaande website overnemen?', a: 'Ja, wij nemen ook bestaande websites over voor beheer en optimalisatie.' },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.q,
+    acceptedAnswer: { '@type': 'Answer', text: item.a },
+  })),
+}
+
 export default function TandartsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Header */}
       <section className="px-4 sm:px-6 lg:px-8 pt-12 pb-12 md:pt-20 md:pb-16 bg-surface">
         <div className="max-w-4xl mx-auto">
           <p className="text-sm text-brand-strong font-medium mb-2">Branche</p>
-          <h1 className="h1 text-ink">Website laten maken voor tandartsen</h1>
-          <p className="body-lg text-muted mt-4">Nieuwe patiënten online aantrekken en vertrouwen wekken — dat is wat een goede tandartsenwebsite voor u doet.</p>
+          <h1 className="h1 text-ink">Website laten maken voor een tandarts</h1>
+          <p className="body-lg text-muted mt-4">Een website laten maken voor uw tandartspraktijk: informeer nieuwe patiënten en wek vertrouwen, vanaf €49 per maand excl. BTW.</p>
         </div>
       </section>
 
@@ -77,14 +98,30 @@ export default function TandartsPage() {
             korte introducties van uw tandartsen en medewerkers. Dit maakt uw praktijk persoonlijk
             en toegankelijk, wat de drempel verlaagt voor mensen die anders misschien uitstellen.
           </p>
+          <h2 className="h2 text-ink pt-6">Wat staat er op een goede praktijkwebsite?</h2>
+          <ul className="list-disc pl-5 space-y-2">
+            <li><strong className="text-ink">Nieuwe patiënten:</strong> of u nieuwe patiënten aanneemt en hoe iemand zich aanmeldt.</li>
+            <li><strong className="text-ink">Spoed:</strong> welk nummer patiënten bellen bij pijn of een ongeval, ook buiten openingstijden.</li>
+            <li><strong className="text-ink">Behandelingen en tarieven:</strong> korte uitleg per behandeling en waar de tarieven te vinden zijn.</li>
+            <li><strong className="text-ink">Bereikbaarheid:</strong> adres, openingstijden, parkeren en toegankelijkheid.</li>
+          </ul>
+
+          <h2 className="h2 text-ink pt-6">Privacy bij formulieren</h2>
+          <p>Vraag in een contactformulier alleen wat nodig is om terug te bellen of te mailen, en geen medische gegevens. Verwijs bij het formulier naar uw privacyverklaring.</p>
+
+          <h2 className="h2 text-ink pt-6">Gevonden worden in uw regio</h2>
           <p>
             Lokale SEO zorgt dat nieuwe patiënten in uw regio u vinden via Google. Zoekopdrachten
             als "tandarts [stad]" of "tandarts nieuw patiënt accepteren [wijk]" zijn voor uw
-            praktijk zeer waardevol. Wij optimaliseren uw website en Google Business Profile
-            zodat u precies op die momenten zichtbaar bent.
+            praktijk zeer waardevol. In het Groei pakket en hoger optimaliseren wij uw website
+            en Google Business Profile voor deze lokale zoekopdrachten.
           </p>
         </div>
       </section>
+
+      <BranchePrijzen title="Wat kost een tandartswebsite?">
+        U betaalt eenmalig voor de setup en daarna een vaste maandprijs. Een online afsprakensysteem is een aparte uitbreiding op offertebasis.
+      </BranchePrijzen>
 
       {/* Kenmerken */}
       <section className="section px-4 sm:px-6 lg:px-8 bg-surface" aria-label="Kenmerken">
@@ -93,8 +130,8 @@ export default function TandartsPage() {
             'Online afsprakensysteem (optionele uitbreiding)',
             'Behandelingsoverzicht met uitleg',
             'Teampagina met foto\'s',
-            'Lokale SEO voor uw regio',
-            'Google Business optimalisatie',
+            'Basis SEO; lokale SEO in het Groei pakket en hoger',
+            'Google Business optimalisatie in het Groei pakket en hoger',
             'Contactformulier met privacyverklaring',
           ].map((f) => (
             <div key={f} className="flex items-center gap-3 body text-ink">
@@ -104,6 +141,8 @@ export default function TandartsPage() {
           ))}
         </div>
       </section>
+
+      <Faq items={faqItems} title="Veelgestelde vragen over een tandartswebsite" className="bg-bg" />
 
       <RelatedLinks
         id="gerelateerd-titel"

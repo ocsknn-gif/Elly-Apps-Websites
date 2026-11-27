@@ -220,6 +220,18 @@ export default function DienstenWebsitesPage() {
         ]}
       />
 
+      <RelatedLinks
+        id="branches-titel"
+        title="Website laten maken voor uw branche"
+        className="bg-bg"
+        links={[
+          { label: "Website laten maken voor een rijschool", href: "/branche/rijschool" },
+          { label: "Website laten maken voor een tandarts", href: "/branche/tandarts" },
+          { label: "Website laten maken voor een kapper", href: "/branche/kapper" },
+          { label: "Website laten maken per branche", href: "/branche" },
+        ]}
+      />
+
       <ClosingCta
         title="Klaar om uw bedrijf online te laten groeien?"
         text="Vraag een gratis websitescan aan en ontdek wat wij voor uw bedrijf kunnen betekenen."
